@@ -81,7 +81,6 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-
               Row(
                 children: [
                   Container(
