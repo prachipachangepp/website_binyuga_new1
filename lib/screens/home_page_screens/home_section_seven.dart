@@ -112,7 +112,6 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 20,
                     ),
-
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
@@ -168,13 +167,13 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                               value: country,
                               child: Center(
                                   child: Text(
-                                    country,
-                                    style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeightManager.bold,
-                                      color: ColorManager.black,
-                                    ),
-                                  )),
+                                country,
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeightManager.bold,
+                                  color: ColorManager.black,
+                                ),
+                              )),
                             );
                           }).toList(),
                         ),
