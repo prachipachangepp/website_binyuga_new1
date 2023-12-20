@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/presentation/color_manager.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
@@ -36,90 +35,98 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text('Binyuga WebSite'),
-      // ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Column(
-            children: [
-              Row(
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          bool isMaximized =
+              constraints.maxWidth >= 1600 && constraints.maxHeight >= 900;
+          bool enableHorizontalScroll = !isMaximized;
+
+          return SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: SingleChildScrollView(
+              scrollDirection:
+                  enableHorizontalScroll ? Axis.horizontal : Axis.vertical,
+              child: Column(
                 children: [
-                  Container(
-                   // width: MediaQuery.of(context).size.width / 0.9,
-                    width: 1600,
-                    height: 970,
-                    color: ColorManager.white,
-                    child: Center(child: HomeSectionOne()),
+                  Row(
+                    children: [
+                      Container(
+                        width: 1600,
+                        height: 970,
+                        color: Colors.white,
+                        child: Center(child: HomeSectionOne()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: 1600,
+                        height: 500,
+                        color: Colors.white,
+                        child: Center(child: HomeSectionTwo()),
+                      ),
+                    ],
+                  ),
+                  // ... other sections
+                  Row(
+                    children: [
+                      Container(
+                        width: 1600,
+                        height: 2000,
+                        color: Colors.purpleAccent,
+                        child: Center(child: HomeSectionThree()),
+                      ),
+                    ],
+                  ),
+                  // ... other sections
+                  Row(
+                    children: [
+                      Container(
+                        width: 1600,
+                        height: 900,
+                        color: Colors.orange,
+                        child: Center(child: HomeSectionFour()),
+                      ),
+                    ],
+                  ),
+                  // ... other sections
+                  Row(
+                    children: [
+                      Container(
+                        width: 1600,
+                        height: 1500,
+                        color: Colors.red,
+                        child: Center(child: HomeSectionFive()),
+                      ),
+                    ],
+                  ),
+                  // ... other sections
+                  Row(
+                    children: [
+                      Container(
+                        width: 1600,
+                        height: 850,
+                        color: Colors.pink,
+                        child: Center(child: HomeSectionSix()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: 1600,
+                        height: 200,
+                        color: Colors.red,
+                        child: Center(child: BottomNavBarScreen()),
+                      ),
+                    ],
                   ),
                 ],
               ),
-              Row(
-                children: [
-                  Container(
-                    width: 1600,
-                   // width: MediaQuery.of(context).size.width / 0.9,
-                    height: 500,
-                    color: ColorManager.white,
-                    child: Center(child: HomeSectionTwo()),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: 1600,
-                    height: 2000,
-                    color: Colors.purpleAccent,
-                    child: Center(child: HomeSectionThree()),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: 1600,
-                    height: 900,
-                    color: Colors.orange,
-                    child: Center(child: HomeSectionFour()),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: 1600,
-                    height: 1500,
-                    color: Colors.red,
-                    child: Center(child: HomeSectionFive()),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: 1600,
-                    height: 850,
-                    color: Colors.pink,
-                    child: Center(child: HomeSectionSix()),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: 1600,
-                    height: 200,
-                    color: Colors.red,
-                    child: Center(child: BottomNavBarScreen()),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+            ),
+          );
+        },
       ),
     );
   }
