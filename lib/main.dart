@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     width: 1600,
                     height: 2000,
-                    color: Colors.purpleAccent,
+                    color: Colors.white,
                     child: Center(child: HomeSectionThree()),
                   ),
                 ],
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     width: 1600,
                     height: 900,
-                    color: Colors.orange,
+                    color: Colors.white,
                     child: Center(child: HomeSectionFour()),
                   ),
                 ],
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     width: 1600,
                     height: 1500,
-                    color: Colors.red,
+                    color: Colors.white,
                     child: Center(child: HomeSectionFive()),
                   ),
                 ],
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     width: 1600,
                     height: 850,
-                    color: Colors.pink,
+                    color: Colors.white,
                     child: Center(child: HomeSectionSix()),
                   ),
                 ],
@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     width: 1600,
                     height: 200,
-                    color: Colors.red,
+                    color: Colors.white,
                     child: Center(child: BottomNavBarScreen()),
                   ),
                 ],
