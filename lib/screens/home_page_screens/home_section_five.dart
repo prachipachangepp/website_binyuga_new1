@@ -23,7 +23,7 @@ class HomeSectionFive extends StatelessWidget {
                 'images/team_member_bg.png',
                 fit: BoxFit.fill,
                 height: 600,
-                width: 1800,
+                width: 1366,
                 // width: MediaQuery.of(context).size.width,
               ),
             ],

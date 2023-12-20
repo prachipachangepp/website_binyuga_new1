@@ -23,7 +23,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: EdgeInsets.only(top:40,right:350),
+                padding: EdgeInsets.only(top:40,right:150),
                 child: Text(AppString.aboutUs1,
                     style: AllScreensConstant.customTextStyle(
                         FontSize.s60,
@@ -36,7 +36,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
           ),
           SizedBox(height: 30,),
           Padding(
-            padding: const EdgeInsets.only(right:350),
+            padding: const EdgeInsets.only(right:100),
             child: Text(
                 AppString.everyYear,
                 textAlign: TextAlign.center,
@@ -52,7 +52,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.only(top:30,right:250),
+                padding: EdgeInsets.only(top:30,right:200),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
 
@@ -79,7 +79,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
               ),
               SizedBox(width: 10,),
               Padding(
-                padding: EdgeInsets.only(left:100,top:30),
+                padding: EdgeInsets.only(right:150,top:30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
 
