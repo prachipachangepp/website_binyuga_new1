@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_seven.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_six.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +25,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,60 +46,72 @@ class HomePage extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
+                   // width: MediaQuery.of(context).size.width / 0.9,
+                    width: 1600,
+                    height: 1200,
+                    color: Colors.amberAccent,
+                    child: Center(child: HomeSectionOne()),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: 1600,
+                   // width: MediaQuery.of(context).size.width / 0.9,
+                    height: 500,
+                    color: Colors.teal,
+                    child: Center(child: HomeSectionTwo()),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: 1600,
+                    height: 2000,
+                    color: Colors.purpleAccent,
+                    child: Center(child: HomeSectionThree()),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: 1600,
+                    height: 900,
+                    color: Colors.orange,
+                    child: Center(child: HomeSectionFour()),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: 1600,
+                    height: 1500,
+                    color: Colors.red,
+                    child: Center(child: HomeSectionFive()),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: 1600,
+                    height: 850,
+                    color: Colors.pink,
+                    child: Center(child: HomeSectionSix()),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: 1600,
                     height: 200,
                     color: Colors.red,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.green,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.red,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.green,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.red,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.green,
-                    child: Center(child: Text('Section 1')),
+                    child: Center(child: BottomNavBarScreen()),
                   ),
                 ],
               ),
