@@ -36,6 +36,46 @@ class HomePage extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width / 0.6,
                     height: 200,
+                    color: Colors.amberAccent,
+                    child: Center(child: Text('Section 1')),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width / 0.6,
+                    height: 200,
+                    color: Colors.teal,
+                    child: Center(child: Text('Section 1')),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width / 0.6,
+                    height: 200,
+                    color: Colors.purpleAccent,
+                    child: Center(child: Text('Section 1')),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width / 0.6,
+                    height: 200,
+                    color: Colors.orange,
+                    child: Center(child: Text('Section 1')),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width / 0.6,
+                    height: 200,
                     color: Colors.red,
                     child: Center(child: Text('Section 1')),
                   ),
@@ -46,47 +86,7 @@ class HomePage extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width / 0.6,
                     height: 200,
-                    color: Colors.green,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.red,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.green,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.red,
-                    child: Center(child: Text('Section 1')),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 0.6,
-                    height: 200,
-                    color: Colors.green,
+                    color: Colors.pink,
                     child: Center(child: Text('Section 1')),
                   ),
                 ],
