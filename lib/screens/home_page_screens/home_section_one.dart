@@ -212,7 +212,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             children: [
               /// Contact us
               Padding(
-                padding: const EdgeInsets.only(left:1050),
+                padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/1.8),
                 child: Text(
                   AppString.contactUs,
                   style: TextStyle(
@@ -228,7 +228,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
               //   height: MediaQuery.of(context).size.height / 18,
               //   width: MediaQuery.of(context).size.width / 18,
               // ),
-              SizedBox(width: MediaQuery.of(context).size.width / 50),
+              // SizedBox(width: MediaQuery.of(context).size.width / 50),
               // Padding(
               //   padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
               //   child: Image.asset(
@@ -249,7 +249,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     }),
               ),
               Padding(
-                padding: const EdgeInsets.only(right:250),
+                padding: const EdgeInsets.only(right: AppPadding.p35),
                 child: Container(
                   height: 40,
                   width: 40,
