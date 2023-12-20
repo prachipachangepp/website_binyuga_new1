@@ -24,7 +24,7 @@ class HomeSectionOne extends StatelessWidget {
         ),
         ///boy img
         Padding(
-          padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/1,top: AppPadding.p100),
+          padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/1.85,top: AppPadding.p100),
           child: Image.network(
             "images/boy.png",
             height: AppSize.s870,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/color_manager.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Binyuga WebSite',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -34,9 +36,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Binyuga WebSite'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('Binyuga WebSite'),
+      // ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: SingleChildScrollView(
@@ -48,8 +50,8 @@ class _HomePageState extends State<HomePage> {
                   Container(
                    // width: MediaQuery.of(context).size.width / 0.9,
                     width: 1600,
-                    height: 1200,
-                    color: Colors.amberAccent,
+                    height: 970,
+                    color: ColorManager.white,
                     child: Center(child: HomeSectionOne()),
                   ),
                 ],
@@ -60,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                     width: 1600,
                    // width: MediaQuery.of(context).size.width / 0.9,
                     height: 500,
-                    color: Colors.teal,
+                    color: ColorManager.white,
                     child: Center(child: HomeSectionTwo()),
                   ),
                 ],
