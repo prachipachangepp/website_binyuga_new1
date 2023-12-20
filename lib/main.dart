@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/color_manager.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Binyuga WebSite',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -34,9 +36,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Binyuga WebSite'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('Binyuga WebSite'),
+      // ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: SingleChildScrollView(
@@ -46,10 +48,10 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Container(
-                   // width: MediaQuery.of(context).size.width / 0.9,
-                    width: 1800,
-                    height: 1200,
-                    color: Colors.amberAccent,
+                    // width: MediaQuery.of(context).size.width / 0.9,
+                    width: 1600,
+                    height: 970,
+                    color: ColorManager.white,
                     child: Center(child: HomeSectionOne()),
                   ),
                 ],
@@ -57,10 +59,10 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Container(
-                    width: 1800,
-                   // width: MediaQuery.of(context).size.width / 0.9,
+                    width: 1600,
+                    // width: MediaQuery.of(context).size.width / 0.9,
                     height: 500,
-                    color: Colors.teal,
+                    color: ColorManager.white,
                     child: Center(child: HomeSectionTwo()),
                   ),
                 ],
@@ -68,9 +70,9 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Container(
-                    width: 1800,
+                    width: 1600,
                     height: 2000,
-                    color: Colors.purpleAccent,
+                    color: ColorManager.white,
                     child: Center(child: HomeSectionThree()),
                   ),
                 ],
@@ -78,9 +80,9 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Container(
-                    width: 1800,
+                    width: 1600,
                     height: 900,
-                    color: Colors.orange,
+                    color: ColorManager.white,
                     child: Center(child: HomeSectionFour()),
                   ),
                 ],
@@ -88,9 +90,9 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Container(
-                    width: 1800,
+                    width: 1600,
                     height: 1500,
-                    color: Colors.red,
+                    color: ColorManager.white,
                     child: Center(child: HomeSectionFive()),
                   ),
                 ],
@@ -98,9 +100,9 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Container(
-                    width: 1800,
+                    width: 1600,
                     height: 850,
-                    color: Colors.pink,
+                    color: ColorManager.white,
                     child: Center(child: HomeSectionSix()),
                   ),
                 ],
@@ -108,9 +110,9 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   Container(
-                    width: 1800,
+                    width: 1550,
                     height: 200,
-                    color: Colors.red,
+                    color: ColorManager.white,
                     child: Center(child: BottomNavBarScreen()),
                   ),
                 ],
