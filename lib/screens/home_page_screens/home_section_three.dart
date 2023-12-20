@@ -18,7 +18,8 @@ class HomeSectionThree extends StatelessWidget {
             'images/union.png',
             fit: BoxFit.fill,
             height: 2200,
-            width: MediaQuery.of(context).size.width,
+            width: 2000,
+            // width: MediaQuery.of(context).size.width,
           ),
           Padding(
             padding:  EdgeInsets.only(left:  MediaQuery.of(context).size.width/20,top:15,),
