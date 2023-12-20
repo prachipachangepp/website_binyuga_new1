@@ -220,7 +220,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                 ],
               ),
             ),
-
+            SizedBox(height: MediaQuery.of(context).size.height/10,),
             ///bottom row
             Padding(
                 padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/10,bottom:30),
