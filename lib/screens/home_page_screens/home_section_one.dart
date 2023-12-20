@@ -7,9 +7,15 @@ import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
 
-class HomeSectionOne extends StatelessWidget {
+class HomeSectionOne extends StatefulWidget {
   const HomeSectionOne({super.key});
 
+  @override
+  State<HomeSectionOne> createState() => _HomeSectionOneState();
+}
+
+class _HomeSectionOneState extends State<HomeSectionOne> {
+  bool _lights = false;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -205,28 +211,68 @@ class HomeSectionOne extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               /// Contact us
-              Text(
-                AppString.contactUs,
-                style: TextStyle(
-                  color: ColorManager.white,
-                  fontSize: MediaQuery.of(context).size.width / 70,
+              Padding(
+                padding: const EdgeInsets.only(left:1050),
+                child: Text(
+                  AppString.contactUs,
+                  style: TextStyle(
+                    color: ColorManager.white,
+                    fontSize: MediaQuery.of(context).size.width / 70,
+                  ),
                 ),
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
-              Image.asset(
-                'images/toggle_bg.png',
-                color:Color(0xff27C9B2),
-                height: MediaQuery.of(context).size.height / 18,
-                width: MediaQuery.of(context).size.width / 18,
-              ),
+              // Image.asset(
+              //   'images/toggle_bg.png',
+              //   color:Color(0xff27C9B2),
+              //   height: MediaQuery.of(context).size.height / 18,
+              //   width: MediaQuery.of(context).size.width / 18,
+              // ),
               SizedBox(width: MediaQuery.of(context).size.width / 50),
+              // Padding(
+              //   padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
+              //   child: Image.asset(
+              //     'images/search.png',
+              //     width: MediaQuery.of(context).size.width / 25,
+              //   ),
+              // ),
               Padding(
-                padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
-                child: Image.asset(
-                  'images/search.png',
-                  width: MediaQuery.of(context).size.width / 25,
-                ),
+                padding: const EdgeInsets.only(right:20),
+                child: Switch.adaptive(
+                    activeColor: Colors.cyanAccent,
+                    focusColor: Colors.white,
+                    value: _lights,
+                    onChanged: (bool value){
+                      setState((){
+                        _lights=value;
+                      });
+                    }),
               ),
+              Padding(
+                padding: const EdgeInsets.only(right:250),
+                child: Container(
+                  height: 40,
+                  width: 40,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(25.0),
+                    ),
+                  ),
+                  child: ShaderMask(
+                    shaderCallback: (Rect bounds) {
+                      return LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [Colors.red, Colors.yellow,Colors.blue],
+                      ).createShader(bounds);
+                    },
+                    child: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                      size: 35,   ), ),
+                ),
+              )
             ],
           ),
         ),
