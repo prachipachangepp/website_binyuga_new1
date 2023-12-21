@@ -389,7 +389,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-            Row(
+                  Row(
                     children: [
                       Container(
                         width: 1366,
@@ -419,7 +419,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  Row(
+                   Row(
                     children: [
                       Container(
                         width:1366,

@@ -29,7 +29,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
                         FontSize.s60,
                         FontWeightManager.bold,
                         ColorManager.darkBlue
-                    )
+                    ),
                 ),
               ),
             ],

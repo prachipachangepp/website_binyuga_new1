@@ -9,7 +9,6 @@ import '../constant_screens/description_page_constant.dart';
 
 class HomeSectionSix extends StatefulWidget {
   const HomeSectionSix({super.key});
-
   @override
   State<HomeSectionSix> createState() => _HomeSectionSixState();
 }

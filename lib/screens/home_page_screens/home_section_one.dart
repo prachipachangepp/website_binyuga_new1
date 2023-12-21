@@ -1,6 +1,5 @@
 ///start page code
 import 'package:flutter/material.dart';
-
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
