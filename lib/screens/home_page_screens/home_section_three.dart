@@ -54,14 +54,14 @@ class HomeSectionThree extends StatelessWidget {
               ),
             ],
           ),
-        ), Center(
+        ),
+
+        Center(
           child: Text(
             AppString.unionTxt2,
             //textAlign: TextAlign.center,
             style: UnionTxtScreen2.union2TextStyle(context),
           ),
-
-
         ),
         Padding(
           padding: const EdgeInsets.only(top: 1200.0, left:10),

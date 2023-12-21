@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../presentation/color_manager.dart';
+import 'constant_screens/bottom_nav_bar.dart';
+import 'constant_screens/description_page_constant.dart';
+import 'constant_screens/responsive_app_bar.dart';
 import 'features_screens/features_section_one.dart';
 import 'features_screens/features_section_three.dart';
 import 'features_screens/features_section_two.dart';
@@ -11,6 +14,9 @@ class FeaturesHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: ResponsiveAppBar(),),
       body: LayoutBuilder(
         builder: (context, constraints) {
           bool isWideScreen = constraints.maxWidth > 1200;
@@ -51,6 +57,28 @@ class FeaturesHomeScreen extends StatelessWidget {
                             : 1536,
                         height: 2000,
                         child: Center(child: FeatureSectionThree()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 1300,
+                        child: Center(child: DescriptionScreenConstant()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 1300,
+                        child: Center(child: BottomNavBarScreen()),
                       ),
                     ],
                   ),

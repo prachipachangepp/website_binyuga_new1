@@ -4,6 +4,9 @@ import 'package:website_binyuga_new1/screens/what_we_do_screens/wwd_section_thre
 import 'package:website_binyuga_new1/screens/what_we_do_screens/wwd_section_two.dart';
 
 import '../presentation/color_manager.dart';
+import 'constant_screens/bottom_nav_bar.dart';
+import 'constant_screens/description_page_constant.dart';
+import 'constant_screens/responsive_app_bar.dart';
 
 class WhatWeDoHomeScreen extends StatelessWidget {
   const WhatWeDoHomeScreen({super.key});
@@ -11,6 +14,9 @@ class WhatWeDoHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+        child: ResponsiveAppBar(),),
       body: LayoutBuilder(
         builder: (context, constraints) {
           bool isWideScreen = constraints.maxWidth > 1200;
@@ -51,6 +57,28 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                             : 1536,
                         height: 2000,
                         child: Center(child: WWDSectionThree()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 1300,
+                        child: Center(child: DescriptionScreenConstant()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 1300,
+                        child: Center(child: BottomNavBarScreen()),
                       ),
                     ],
                   ),
