@@ -116,7 +116,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                       AppString.homesTxt1,
                       style: AllScreensConstant.customTextStyle(
                          // MediaQuery.of(context).size.width/30,
-                        58,
+                        45,
                           FontWeightManager.bold,
                           ColorManager.white)
                   ),
@@ -127,7 +127,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                       textAlign: TextAlign.start,
                       style: AllScreensConstant.customTextStyle(
                           //MediaQuery.of(context).size.width/90,
-                        18,
+                        15,
                           FontWeightManager.medium,
                           ColorManager.lightBlue)
                   ),

@@ -46,10 +46,10 @@ class WWDSectionOne extends StatelessWidget {
                 SizedBox(height: AppSize.s80,),
                 ElevatedButton(
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => HomeSectionOne()),);
-                    // Button action
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeSectionOne()),);
+
                   },
                   child: Text(
                     AppString.letsTalk,

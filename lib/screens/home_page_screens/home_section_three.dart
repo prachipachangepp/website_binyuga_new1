@@ -70,7 +70,7 @@ class HomeSectionThree extends StatelessWidget {
           child: Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left:5),
+                padding: const EdgeInsets.only(left:25),
                 child: Text(
                   AppString.unionTxt3,
                   style: UnionTxtScreen1.union1TextStyle(context),
@@ -82,12 +82,12 @@ class HomeSectionThree extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /61,
                     left:MediaQuery.of(context).size.width /50,
-                    top:MediaQuery.of(context).size.width/50),
+                    top:100),
                 child: Image.network(
                   "images/union_2.png",
                   height: 700,
                   // width: MediaQuery.of(context).size.width * 0.8,
-                  width: MediaQuery.of(context).size.width / 1.9,
+                  width: MediaQuery.of(context).size.width / 2,
                 ),
               ),
             ],
@@ -95,12 +95,12 @@ class HomeSectionThree extends StatelessWidget {
         ),
 
         Padding(
-          padding: EdgeInsets.only(top: 1150,right: MediaQuery.of(context).size.width / 50,left: MediaQuery.of(context).size.width / 2.5,bottom:10),
+          padding: EdgeInsets.only(top: 1320,left:560,bottom:10),
           child: Image.network(
             "images/rectangle.png",
-            height: 855,
+            height: 730,
             // width: MediaQuery.of(context).size.width * 0.8,
-            width: MediaQuery.of(context).size.width / 1.8,
+            width: MediaQuery.of(context).size.width / 1.9,
           ),
         ),
       ],
