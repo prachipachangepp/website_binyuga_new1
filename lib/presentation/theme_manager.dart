@@ -9,6 +9,7 @@ class HomeScreen {
   static TextStyle sidebarTextStyle = GoogleFonts.inter(
       //textStyle: TextStyle(
       fontWeight: FontWeightManager.medium,
+      decoration:TextDecoration.none,
       fontSize: FontSize.s15,
       letterSpacing: -0.011,
       color: ColorManager.white
