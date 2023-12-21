@@ -41,11 +41,13 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
         //   color: Colors.red,
         // ),
         Container(
-          height: 187,
+          height: 200,
+          width: 1800,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/black_bg.png'),
               fit: BoxFit.cover,
+
             ),
           ),
           child: Padding(
@@ -128,7 +130,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(
-                        right: MediaQuery.of(context).size.width / 20,
+                        right: MediaQuery.of(context).size.width /5,
                       ),
                       child: Container(
                         decoration: BoxDecoration(

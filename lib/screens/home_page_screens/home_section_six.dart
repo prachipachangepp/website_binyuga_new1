@@ -20,6 +20,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
     return Container(
       color: ColorManager.nevyBlue,
       // height:AppSize.s1000,
+      height: 1000,
       child:Center(
         child: Column(
           children: [
@@ -33,7 +34,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                 ),
                 Spacer(),
                 Padding(
-                  padding:  EdgeInsets.only( top:MediaQuery.of(context).size.width/48,right:MediaQuery.of(context).size.width/90,),
+                  padding:  EdgeInsets.only( top:MediaQuery.of(context).size.width/48,right:250),
                   child: Image.asset(
                     "images/search.png",
                   ),
