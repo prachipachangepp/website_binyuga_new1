@@ -26,120 +26,150 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         Image.network(
           'images/team_member_bg.png',
           fit: BoxFit.fill,
-          height: MediaQuery.of(context).size.height/0.85,
+          height: MediaQuery.of(context).size.height / 0.85,
           //width: MediaQuery.of(context).size.width/0.9,
           width: 1600,
         ),
+
         ///boy img
         Padding(
-          padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/1.85,top: AppPadding.p100),
+          padding: EdgeInsets.only(
+              left: MediaQuery.of(context).size.width / 1.85,
+              top: AppPadding.p100),
           child: Image.network(
             "images/boy.png",
             height: AppSize.s870,
             // height: MediaQuery.of(context).size.height/1,
-           // width: MediaQuery.of(context).size.width /1.5,
+            // width: MediaQuery.of(context).size.width /1.5,
             width: 780,
             //alignment: Alignment.bottomLeft,
           ),
         ),
         Padding(
-          padding:  EdgeInsets.only(top: AppPadding.p150,left: MediaQuery.of(context).size.width/40),
+          padding: EdgeInsets.only(
+              top: AppPadding.p150,
+              left: MediaQuery.of(context).size.width / 40),
           child: Row(
             children: [
               ///sidebar
               Padding(
-                padding:  EdgeInsets.only(top: AppPadding.p150),
+                padding: EdgeInsets.only(top: AppPadding.p150),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     GestureDetector(
-                      onTap: (){},
-                      child: Text(
-                          AppString.whoWeAre,
-                          style: HomeScreen.sidebarTextStyle
-                      ),
-                    ),
-                    SizedBox(height: AppSize.s50,),
-                    GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => WhatWeDoHomeScreen()),);
+                          MaterialPageRoute(
+                              builder: (context) => WhatWeDoHomeScreen()),
+                        );
                       },
-                      child: Text(
-                          AppString.whatWeDo,
-                          style: HomeScreen.sidebarTextStyle
-                      ),
+                      child: Text(AppString.whoWeAre,
+                          style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(height: AppSize.s50,),
+                    SizedBox(
+                      height: AppSize.s50,
+                    ),
                     GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => FeaturesHomeScreen()),);
+                          MaterialPageRoute(
+                              builder: (context) => WhatWeDoHomeScreen()),
+                        );
                       },
-                      child: Text(
-                          AppString.features,
-                          style: HomeScreen.sidebarTextStyle
-                      ),
+                      child: Text(AppString.whatWeDo,
+                          style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(height: AppSize.s50,),
+                    SizedBox(
+                      height: AppSize.s50,
+                    ),
                     GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => CareerHomeScreen()),);
+                          MaterialPageRoute(
+                              builder: (context) => FeaturesHomeScreen()),
+                        );
                       },
-                      child: Text(
-                          AppString.career,
-                          style: HomeScreen.sidebarTextStyle
-                      ),
+                      child: Text(AppString.features,
+                          style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(height: AppSize.s50,),
+                    SizedBox(
+                      height: AppSize.s50,
+                    ),
                     GestureDetector(
-                      onTap: (){},
-                      child: Text(
-                          AppString.portfolio,
-                          style: HomeScreen.sidebarTextStyle
-                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CareerHomeScreen()),
+                        );
+                      },
+                      child: Text(AppString.career,
+                          style: HomeScreen.sidebarTextStyle),
+                    ),
+                    SizedBox(
+                      height: AppSize.s50,
+                    ),
+                    GestureDetector(
+                      onTap: () {},
+                      child: Text(AppString.portfolio,
+                          style: HomeScreen.sidebarTextStyle),
                     ),
                   ],
                 ),
               ),
-              SizedBox(width: MediaQuery.of(context).size.width/6,),
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 6,
+              ),
+
               /// txt, button
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(width: MediaQuery.of(context).size.width/70,),
-                  Text(
-                      AppString.homesTxt1,
-                      style: AllScreensConstant.customTextStyle(
-                         // MediaQuery.of(context).size.width/30,
-                        58,
-                          FontWeightManager.bold,
-                          ColorManager.white)
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width / 70,
                   ),
-                  SizedBox(height: AppSize.s20,),
+                  Text(AppString.homesTxt1,
+                      style: AllScreensConstant.customTextStyle(
+                          // MediaQuery.of(context).size.width/30,
+                          45,
+                          FontWeightManager.bold,
+                          ColorManager.white)),
+                  SizedBox(
+                    height: AppSize.s20,
+                  ),
+
                   ///homet xt 2
-                  Text(
-                      AppString.homesTxt2,
+                  Text(AppString.homesTxt2,
                       textAlign: TextAlign.start,
                       style: AllScreensConstant.customTextStyle(
                           //MediaQuery.of(context).size.width/90,
-                        18,
+                          15,
                           FontWeightManager.medium,
-                          ColorManager.lightBlue)
+                          ColorManager.lightBlue)),
+                  const SizedBox(
+                    height: AppSize.s100,
                   ),
-                  const SizedBox(height: AppSize.s100,),
+
                   ///button
                   MaterialButton(
                     color: ColorManager.white,
                     shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                    onPressed: () {},
-                    child:  Padding(
-                      padding: EdgeInsets.symmetric(vertical: AppPadding.p10, horizontal: MediaQuery.of(context).size.width/60),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => WhatWeDoHomeScreen()),
+                      );
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                          vertical: AppPadding.p10,
+                          horizontal: MediaQuery.of(context).size.width / 60),
                       child: Text(
                         AppString.exploreMore,
                         style: RButtonTheme.roundedButtonTextStyle,
@@ -156,41 +186,57 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         Padding(
           padding: const EdgeInsets.only(top: 170),
           child: Container(
-            height: MediaQuery.of(context).size.height/4.2,
+            height: MediaQuery.of(context).size.height / 4.2,
             child: VerticalDivider(
-              width: MediaQuery.of(context).size.width/2.2,
+              width: MediaQuery.of(context).size.width / 2.2,
               color: ColorManager.lightBlue,
               thickness: 4,
             ),
           ),
         ),
-        SizedBox(height: AppSize.s20,),
+        SizedBox(
+          height: AppSize.s20,
+        ),
+
         ///side 3 icons
         Padding(
-          padding:  EdgeInsets.only(top: AppPadding.p650,right: MediaQuery.of(context).size.width/40),
+          padding: EdgeInsets.only(
+              top: AppPadding.p650,
+              right: MediaQuery.of(context).size.width / 40),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Column(
                 //mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Icon(Icons.chevron_right,
+                  Icon(
+                    Icons.chevron_right,
                     color: ColorManager.lightBlue,
-                    size: MediaQuery.of(context).size.width/30,),
-                  SizedBox(height: AppSize.s20,),
-                  Icon(Icons.pause,
-                    color: ColorManager.lightBlue,
-                    size: MediaQuery.of(context).size.width/40, // Original size
+                    size: MediaQuery.of(context).size.width / 30,
                   ),
-                  SizedBox(height: AppSize.s20,),
-                  Icon(Icons.keyboard_arrow_left,
+                  SizedBox(
+                    height: AppSize.s20,
+                  ),
+                  Icon(
+                    Icons.pause,
                     color: ColorManager.lightBlue,
-                    size: MediaQuery.of(context).size.width/30,),
+                    size:
+                        MediaQuery.of(context).size.width / 40, // Original size
+                  ),
+                  SizedBox(
+                    height: AppSize.s20,
+                  ),
+                  Icon(
+                    Icons.keyboard_arrow_left,
+                    color: ColorManager.lightBlue,
+                    size: MediaQuery.of(context).size.width / 30,
+                  ),
                 ],
               ),
             ],
           ),
         ),
+
         /// Binyuga logo
         Container(
           color: Colors.transparent,
@@ -198,7 +244,8 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
           child: Row(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: MediaQuery.of(context).size.height / 40),
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height / 40),
                 child: Image.asset(
                   'images/binyuga_logo.png',
                 ),
@@ -206,15 +253,18 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             ],
           ),
         ),
+
         /// Contact us, search
         Padding(
-          padding: EdgeInsets.only(top: MediaQuery.of(context).size.width / 100),
+          padding:
+              EdgeInsets.only(top: MediaQuery.of(context).size.width / 100),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               /// Contact us
               Padding(
-                padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/1.8),
+                padding: EdgeInsets.only(
+                    left: MediaQuery.of(context).size.width / 1.8),
                 child: Text(
                   AppString.contactUs,
                   style: TextStyle(
@@ -239,14 +289,14 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
               //   ),
               // ),
               Padding(
-                padding: const EdgeInsets.only(right:20),
+                padding: const EdgeInsets.only(right: 20),
                 child: Switch.adaptive(
                     activeColor: Colors.cyanAccent,
                     focusColor: Colors.white,
                     value: _lights,
-                    onChanged: (bool value){
-                      setState((){
-                        _lights=value;
+                    onChanged: (bool value) {
+                      setState(() {
+                        _lights = value;
                       });
                     }),
               ),
@@ -266,13 +316,15 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                       return LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
-                        colors: [Colors.red, Colors.yellow,Colors.blue],
+                        colors: [Colors.red, Colors.yellow, Colors.blue],
                       ).createShader(bounds);
                     },
                     child: Icon(
                       Icons.search,
                       color: Colors.white,
-                      size: 35,   ), ),
+                      size: 35,
+                    ),
+                  ),
                 ),
               )
             ],

@@ -50,10 +50,7 @@ class WWDSectionOne extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => HomePage()),);
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => HomeSectionOne()),);
-                    // Button action
+
                   },
                   child: Text(
                     AppString.letsTalk,
