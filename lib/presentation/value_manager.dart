@@ -19,6 +19,7 @@ class AppPadding {
   static const double p280 = 280.0;
   static const double p430 = 430.0;
   static const double p650 = 650.0;
+  static const double p800 = 800.0;
   static const double p1000 = 1000.0;
 }
 
