@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/what_we_do_screens/wwd_section_one.dart';
+import 'package:website_binyuga_new1/screens/what_we_do_screens/wwd_section_three.dart';
+import 'package:website_binyuga_new1/screens/what_we_do_screens/wwd_section_two.dart';
 
 import '../presentation/color_manager.dart';
 
@@ -25,7 +28,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                             : 1240,
                         height: 970,
                         color: ColorManager.white,
-                        child: Center(child: Text("")),
+                        child: Center(child: WWDSectionOne()),
                       ),
                     ],
                   ),
@@ -36,7 +39,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                             ? MediaQuery.of(context).size.width
                             : 1240,
                         height: 500,
-                        child: Center(child: Text("")),
+                        child: Center(child: WWDSectionTwo()),
                       ),
                     ],
                   ),
@@ -47,7 +50,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                             ? MediaQuery.of(context).size.width
                             : 1536,
                         height: 2000,
-                        child: Center(child: Text("")),
+                        child: Center(child: WWDSectionThree()),
                       ),
                     ],
                   ),

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../presentation/color_manager.dart';
+import 'features_screens/features_section_one.dart';
+import 'features_screens/features_section_three.dart';
+import 'features_screens/features_section_two.dart';
 
 class FeaturesHomeScreen extends StatelessWidget {
   const FeaturesHomeScreen({super.key});
@@ -25,7 +28,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                             : 1240,
                         height: 970,
                         color: ColorManager.white,
-                        child: Center(child: Text("")),
+                        child: Center(child: FeatureSectionOne()),
                       ),
                     ],
                   ),
@@ -36,7 +39,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                             ? MediaQuery.of(context).size.width
                             : 1240,
                         height: 500,
-                        child: Center(child: Text("")),
+                        child: Center(child:FeatureSectionTwo()),
                       ),
                     ],
                   ),
@@ -47,7 +50,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                             ? MediaQuery.of(context).size.width
                             : 1536,
                         height: 2000,
-                        child: Center(child: Text("")),
+                        child: Center(child: FeatureSectionThree()),
                       ),
                     ],
                   ),
