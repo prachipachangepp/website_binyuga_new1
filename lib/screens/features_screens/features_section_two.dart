@@ -24,8 +24,9 @@ class FeatureSectionTwo extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(height: AppSize.s308,),
           Padding(
-            padding: const EdgeInsets.only(left:250),
+            padding: const EdgeInsets.only(left:250,top: 280),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -33,24 +34,7 @@ class FeatureSectionTwo extends StatelessWidget {
                   children: [
                     Text(
                         AppString.dreamIt,
-                        style:  FeatureSubHomeConstant.featuresubHomeTextStyle
-                    ),
-                  ],
-                ),
-                SizedBox(height:AppSize.s10,),
-                Row(
-                  children: [
-                    Text(
-                        AppString.buildIt,
-                        style: FeatureSubHomeConstant.featuresubHomeTextStyle
-                    ),
-                  ],
-                ),
-                SizedBox(  height:AppSize.s10,),
-                Row(
-                  children: [
-                    Text(
-                        AppString.achieveIt,
+                        textAlign: TextAlign.start,
                         style:  FeatureSubHomeConstant.featuresubHomeTextStyle
                     ),
                   ],
@@ -59,12 +43,9 @@ class FeatureSectionTwo extends StatelessWidget {
             ),
           ),
           SizedBox(height:AppSize.s20,),
-
-
-
           /// Base Image
           Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/15,top:200,),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/15,top:300,),
             child: Row(
               children: [
                 Image.network(
@@ -78,7 +59,7 @@ class FeatureSectionTwo extends StatelessWidget {
           ),
           ///rectangle
           Padding(
-            padding: const EdgeInsets.only(left:190, top:200),
+            padding: const EdgeInsets.only(left:190, top:400),
             child: Image.network(
               'images/Rectangle 677.png',
               // height: 1050,
@@ -88,7 +69,7 @@ class FeatureSectionTwo extends StatelessWidget {
           ),
 
           Padding(
-            padding: const EdgeInsets.only(left:20,top: 310,right: 410),
+            padding: const EdgeInsets.only(left:20,top: 500,right: 410),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,

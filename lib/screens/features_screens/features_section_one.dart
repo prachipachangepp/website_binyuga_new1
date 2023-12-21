@@ -66,7 +66,7 @@ class FeatureSectionOne extends StatelessWidget {
                 SizedBox(height: AppSize.s50,),
                 ///button
                 Padding(
-                  padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /4.6),
+                  padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /4.5),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [

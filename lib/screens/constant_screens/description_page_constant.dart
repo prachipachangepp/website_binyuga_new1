@@ -45,14 +45,15 @@ class DescriptionScreenConstant extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 5,),
+          // SizedBox(height: 5,),
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/16,),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/16,top: AppPadding.p20),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ///who we are
                 Padding(
-                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85,bottom:40),
+                  padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/85),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -123,16 +124,16 @@ class DescriptionScreenConstant extends StatelessWidget {
                 SizedBox(width: MediaQuery.of(context).size.width/15,),
                 ///career
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,top:15 ),
+                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Text(
-                      //   AppString.flutter,
-                      //   textAlign: TextAlign.left,
-                      //   style: LastColumnScreen.columnTextStyle(context),
-                      // ),
-                      // SizedBox(height: AppSize.s15, ),
+                      Text(
+                        AppString.flutter,
+                        textAlign: TextAlign.left,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
+                      SizedBox(height: AppSize.s15, ),
                       Text(
                         AppString.reactJs,
                         textAlign: TextAlign.left,
@@ -178,7 +179,7 @@ class DescriptionScreenConstant extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/85,),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                   crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         AppString.tailoredProducts,
@@ -219,15 +220,15 @@ class DescriptionScreenConstant extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Text(
-                      //   AppString.nameRegisterOfficeAddress,
-                      //   style: LastColumnScreen.columnTextStyle(context),
-                      // ),
-                      // SizedBox(height: AppSize.s15,),
-                      // Text(
-                      //   AppString.requestForServices,
-                      //   style: LastColumnScreen.columnTextStyle(context),
-                      // ),
+                      Text(
+                        AppString.nameRegisterOfficeAddress,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
+                      SizedBox(height: AppSize.s15,),
+                      Text(
+                        AppString.requestForServices,
+                        style: LastColumnScreen.columnTextStyle(context),
+                      ),
                       SizedBox(height: AppSize.s15,),
                       Text(
                         AppString.corporateIdentityNumber,
