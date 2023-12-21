@@ -42,7 +42,7 @@ class HomeSectionFive extends StatelessWidget {
                     style: GoogleFonts.inter(
                       textStyle: TextStyle(
                           fontWeight: FontWeightManager.bold,
-                          fontSize: MediaQuery.of(context).size.width / 18,
+                          fontSize: MediaQuery.of(context).size.width / 20,
                           //  letterSpacing: -0.011,
                           color: ColorManager.white),
                     )),
