@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../home_page_screens/home_section_one.dart';
+import '../home_page_screens/home_section_three.dart';
+import '../home_page_screens/home_section_two.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -10,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Responsive Scroll Example'),
+          title: Text('Binyuga website'),
         ),
         body: MyResponsiveWidget(),
       ),
@@ -23,45 +27,78 @@ class MyResponsiveWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        /// screen scrolling accordingly
+        bool isWideScreen = constraints.maxWidth >= 600;
+
         if (constraints.maxWidth < 600) {
-          /// Scroll both horizontally and vertically
           return SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: buildContent(),
+              child: buildContent(context, isWideScreen),
             ),
           );
         } else {
-          ///  Scroll only vertically
           return SingleChildScrollView(
             scrollDirection: Axis.vertical,
-            child: buildContent(),
+            child: buildContent(context, isWideScreen),
           );
         }
       },
     );
   }
 
-  Widget buildContent() {
+  Widget buildContent(BuildContext context, bool isWideScreen) {
     return Container(
-      // Your content goes here
       padding: EdgeInsets.all(16.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: List.generate(
-          20,
-          (index) => Container(
-            height: 100,
-            width: 200,
-            margin: EdgeInsets.all(8.0),
-            color: Colors.blue,
-            child: Center(
-              child: Text('Item $index'),
+      child: Stack(
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: List.generate(
+              20,
+              (index) => Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 970,
+                        color: Colors.white,
+                        child: Center(child: HomeSectionOne()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 500,
+                        color: Colors.white,
+                        child: Center(child: HomeSectionTwo()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 2000,
+                        color: Colors.white,
+                        child: Center(child: HomeSectionThree()),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }
