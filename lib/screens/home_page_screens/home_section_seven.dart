@@ -130,7 +130,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(
-                        right: MediaQuery.of(context).size.width / 20,
+                        right: MediaQuery.of(context).size.width /5,
                       ),
                       child: Container(
                         decoration: BoxDecoration(
