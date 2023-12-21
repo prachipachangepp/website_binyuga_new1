@@ -96,8 +96,7 @@ class HomeSectionFive extends StatelessWidget {
                 // const SizedBox(
                 //   height: AppSize.s20,
                 // ),
-                // Row(
-                //   children: [
+
                 Column(
                   children: [
                     CircleAvatar(
@@ -111,8 +110,7 @@ class HomeSectionFive extends StatelessWidget {
                 // SizedBox(
                 //   width: MediaQuery.of(context).size.width / 2,
                 // ),
-                //   ],
-                // ),
+                //
                 // const SizedBox(
                 //   height: AppSize.s20,
                 // ),
