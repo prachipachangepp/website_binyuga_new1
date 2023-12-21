@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/presentation/color_manager.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/bottom_nav_bar.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_six.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
 
@@ -97,6 +99,28 @@ class _HomePageState extends State<HomePage> {
                             : 1240,
                         height: 1500,
                         child: Center(child: HomeSectionFive()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 900,
+                        child: Center(child: HomeSectionSix()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 200,
+                        child: Center(child: BottomNavBarScreen()),
                       ),
                     ],
                   ),
