@@ -66,7 +66,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 1300,
+                        height: 1000,
                         child: Center(child: DescriptionScreenConstant()),
                       ),
                     ],
@@ -77,7 +77,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 1300,
+                        height: 200,
                         child: Center(child: BottomNavBarScreen()),
                       ),
                     ],

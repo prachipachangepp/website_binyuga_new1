@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
+import '../../main.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -46,6 +47,9 @@ class WWDSectionOne extends StatelessWidget {
                 SizedBox(height: AppSize.s80,),
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),);
                     // Navigator.push(
                     //   context,
                     //   MaterialPageRoute(builder: (context) => HomeSectionOne()),);
