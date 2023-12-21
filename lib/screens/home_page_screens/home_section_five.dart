@@ -73,11 +73,11 @@ class HomeSectionFive extends StatelessWidget {
           ///cirle avtar row 1
           Padding(
             padding: EdgeInsets.only(
-             // left: MediaQuery.of(context).size.width / 20,
+              // left: MediaQuery.of(context).size.width / 20,
               top: AppPadding.p430,
             ),
             child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               // crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Column(
@@ -98,19 +98,19 @@ class HomeSectionFive extends StatelessWidget {
                 // ),
                 // Row(
                 //   children: [
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: ColorManager.white1,
-                          radius: MediaQuery.of(context).size.width / 10,
-                        ),
-                        Text(AppString.johnS,
-                            style: TeamMemberConstant.nameTextStyle),
-                      ],
+                Column(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: ColorManager.white1,
+                      radius: MediaQuery.of(context).size.width / 10,
                     ),
-                    // SizedBox(
-                    //   width: MediaQuery.of(context).size.width / 2,
-                    // ),
+                    Text(AppString.johnS,
+                        style: TeamMemberConstant.nameTextStyle),
+                  ],
+                ),
+                // SizedBox(
+                //   width: MediaQuery.of(context).size.width / 2,
+                // ),
                 //   ],
                 // ),
                 // const SizedBox(
@@ -139,10 +139,10 @@ class HomeSectionFive extends StatelessWidget {
           ///cirle avtar row 2
           Padding(
             padding: EdgeInsets.only(
-                left:  MediaQuery.of(context).size.width / 10,
+                left: MediaQuery.of(context).size.width / 10,
                 top: AppPadding.p800),
             child: Row(
-               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
