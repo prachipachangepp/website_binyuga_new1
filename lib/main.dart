@@ -1,3 +1,91 @@
+import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/color_manager.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Binyuga WebSite',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          bool isWideScreen = constraints.maxWidth > 1200;
+          return SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: SingleChildScrollView(
+              scrollDirection: isWideScreen ? Axis.vertical : Axis.horizontal,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 970,
+                        color: ColorManager.white,
+                        child: Center(child: HomeSectionOne()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 500,
+                        child: Center(child: HomeSectionTwo()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 2000,
+                        child: Center(child: HomeSectionThree()),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+
+
 // import 'package:flutter/material.dart';
 // import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
 // import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
@@ -321,91 +409,3 @@
 //     ],
 //   ),
 // ),
-
-import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/presentation/color_manager.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Binyuga WebSite',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          bool isWideScreen = constraints.maxWidth > 1200;
-
-          return SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: SingleChildScrollView(
-              scrollDirection: isWideScreen ? Axis.vertical : Axis.horizontal,
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        width: isWideScreen
-                            ? MediaQuery.of(context).size.width
-                            : 1240,
-                        height: 970,
-                        color: ColorManager.white,
-                        child: Center(child: HomeSectionOne()),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Container(
-                        width: isWideScreen
-                            ? MediaQuery.of(context).size.width
-                            : 1240,
-                        height: 500,
-                        child: Center(child: HomeSectionTwo()),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Container(
-                        width: isWideScreen
-                            ? MediaQuery.of(context).size.width
-                            : 1536,
-                        height: 2000,
-                        child: Center(child: HomeSectionThree()),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
-    );
-  }
-}
