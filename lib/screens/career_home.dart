@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/career_screens/career_section_three.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/responsive_app_bar.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_six.dart';
 
 import '../presentation/color_manager.dart';
 import 'career_screens/career_section_four.dart';
 import 'career_screens/career_section_one.dart';
 import 'career_screens/career_section_two.dart';
+import 'constant_screens/bottom_nav_bar.dart';
+import 'constant_screens/description_page_constant.dart';
 
 class CareerHomeScreen extends StatelessWidget {
   const CareerHomeScreen({super.key});
@@ -12,6 +16,9 @@ class CareerHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: const PreferredSize(
+        preferredSize: Size.fromHeight(kToolbarHeight),
+          child: ResponsiveAppBar(),),
       body: LayoutBuilder(
         builder: (context, constraints) {
           bool isWideScreen = constraints.maxWidth > 1200;
@@ -66,6 +73,28 @@ class CareerHomeScreen extends StatelessWidget {
           ),
                 ],
               ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 1300,
+                        child: Center(child: DescriptionScreenConstant()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 1300,
+                        child: Center(child: BottomNavBarScreen()),
+                      ),
+                    ],
+                  ),
            ], ),
             ), );
         },
