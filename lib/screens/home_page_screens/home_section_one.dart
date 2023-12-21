@@ -5,6 +5,8 @@ import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+import '../career_home.dart';
+import '../features_home.dart';
 import '../what_we_do_home.dart';
 
 class HomeSectionOne extends StatefulWidget {
@@ -72,9 +74,9 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     SizedBox(height: AppSize.s50,),
                     GestureDetector(
                       onTap: (){
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => FeaturePageScreen()),);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => FeaturesHomeScreen()),);
                       },
                       child: Text(
                           AppString.features,
@@ -84,9 +86,9 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     SizedBox(height: AppSize.s50,),
                     GestureDetector(
                       onTap: (){
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => CareerPageScreen()),);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => CareerHomeScreen()),);
                       },
                       child: Text(
                           AppString.career,
