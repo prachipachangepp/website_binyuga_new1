@@ -51,7 +51,11 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     GestureDetector(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => WhatWeDoHomeScreen()),);
+                      },
                       child: Text(
                           AppString.whoWeAre,
                           style: HomeScreen.sidebarTextStyle
