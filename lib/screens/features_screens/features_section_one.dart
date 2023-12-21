@@ -17,7 +17,7 @@ class FeatureSectionOne extends StatelessWidget {
         children: [
           /// Background Image
           Image.network(
-            'assets/images/what_we_do_home.png',
+            'images/what_we_do_home.png',
             fit: BoxFit.fill,
             height: AppSize.s720,
             width: MediaQuery.of(context).size.width,
