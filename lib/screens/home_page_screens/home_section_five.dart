@@ -73,11 +73,11 @@ class HomeSectionFive extends StatelessWidget {
           ///cirle avtar row 1
           Padding(
             padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 70,
+             // left: MediaQuery.of(context).size.width / 20,
               top: AppPadding.p430,
             ),
             child: Row(
-              //  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               // crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Column(
@@ -89,15 +89,15 @@ class HomeSectionFive extends StatelessWidget {
                     Text(AppString.johnS,
                         style: TeamMemberConstant.nameTextStyle),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 2,
+                      width: MediaQuery.of(context).size.width / 2.5,
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: AppSize.s20,
-                ),
-                Row(
-                  children: [
+                // const SizedBox(
+                //   height: AppSize.s20,
+                // ),
+                // Row(
+                //   children: [
                     Column(
                       children: [
                         CircleAvatar(
@@ -111,25 +111,21 @@ class HomeSectionFive extends StatelessWidget {
                     // SizedBox(
                     //   width: MediaQuery.of(context).size.width / 2,
                     // ),
-                  ],
-                ),
-                const SizedBox(
-                  height: AppSize.s20,
-                ),
-                Row(
+                //   ],
+                // ),
+                // const SizedBox(
+                //   height: AppSize.s20,
+                // ),
+                Column(
                   children: [
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: ColorManager.white1,
-                          radius: MediaQuery.of(context).size.width / 10,
-                        ),
-                        Text(AppString.johnS,
-                            style: TeamMemberConstant.nameTextStyle),
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width / 2,
-                        ),
-                      ],
+                    CircleAvatar(
+                      backgroundColor: ColorManager.white1,
+                      radius: MediaQuery.of(context).size.width / 10,
+                    ),
+                    Text(AppString.johnS,
+                        style: TeamMemberConstant.nameTextStyle),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 2.5,
                     ),
                   ],
                 ),
@@ -143,10 +139,10 @@ class HomeSectionFive extends StatelessWidget {
           ///cirle avtar row 2
           Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 60,
+                left:  MediaQuery.of(context).size.width / 10,
                 top: AppPadding.p800),
             child: Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
@@ -157,13 +153,13 @@ class HomeSectionFive extends StatelessWidget {
                     Text(AppString.johnS,
                         style: TeamMemberConstant.nameTextStyle),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 2,
+                      width: MediaQuery.of(context).size.width / 5,
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: AppSize.s20,
-                ),
+                // const SizedBox(
+                //   height: AppSize.s20,
+                // ),
                 Column(
                   children: [
                     CircleAvatar(
@@ -175,7 +171,7 @@ class HomeSectionFive extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 80,
+                  height: 50,
                 ),
               ],
             ),
