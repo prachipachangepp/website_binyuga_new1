@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -17,7 +18,7 @@ class WWDSectionOne extends StatelessWidget {
         children: [
           /// Background Image
           Image.network(
-            'assets/images/what_we_do_home.png',
+            'images/what_we_do_home.png',
             fit: BoxFit.fill,
             height: AppSize.s720,
             width: MediaQuery.of(context).size.width,
@@ -45,6 +46,9 @@ class WWDSectionOne extends StatelessWidget {
                 SizedBox(height: AppSize.s80,),
                 ElevatedButton(
                   onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => HomeSectionOne()),);
                     // Button action
                   },
                   child: Text(
@@ -63,7 +67,7 @@ class WWDSectionOne extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/2.5,top: MediaQuery.of(context).size.height/7),
             child: Image.network(
-              'assets/images/digital_innovation.png',
+              'images/digital_innovation.png',
               width: AppSize.s870,
               height: 700,
             ),

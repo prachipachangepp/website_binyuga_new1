@@ -5,6 +5,7 @@ import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+import '../what_we_do_home.dart';
 
 class HomeSectionOne extends StatefulWidget {
   const HomeSectionOne({super.key});
@@ -59,9 +60,9 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     SizedBox(height: AppSize.s50,),
                     GestureDetector(
                       onTap: (){
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => WhatWeDoScreen()),);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => WhatWeDoHomeScreen()),);
                       },
                       child: Text(
                           AppString.whatWeDo,
