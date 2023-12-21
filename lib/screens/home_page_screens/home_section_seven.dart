@@ -45,7 +45,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
           width: 1800,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/black_bg.png'),
+              image: AssetImage('images/black_bg. png'),
               fit: BoxFit.cover,
 
             ),
