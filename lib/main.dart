@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1240,
-                        height: 900,
+                        height: 720,
                         child: Center(child: HomeSectionSix()),
                       ),
                     ],
@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1240,
-                        height: 200,
+                        height: 187,
                         child: Center(child: BottomNavBarScreen()),
                       ),
                     ],

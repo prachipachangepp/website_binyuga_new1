@@ -34,7 +34,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                 ),
                 Spacer(),
                 Padding(
-                  padding:  EdgeInsets.only( top:MediaQuery.of(context).size.width/48,right:250),
+                  padding:  EdgeInsets.only( top:MediaQuery.of(context).size.width/48,right:70),
                   child: Image.asset(
                     "images/search.png",
                   ),
