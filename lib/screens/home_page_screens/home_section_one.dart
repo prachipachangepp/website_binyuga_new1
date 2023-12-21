@@ -41,14 +41,14 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             height: AppSize.s870,
             // height: MediaQuery.of(context).size.height/1,
             // width: MediaQuery.of(context).size.width /1.5,
-            width: 780,
+            width: 520,
             //alignment: Alignment.bottomLeft,
           ),
         ),
         Padding(
           padding: EdgeInsets.only(
               top: AppPadding.p150,
-              left: MediaQuery.of(context).size.width / 40),
+              left: MediaQuery.of(context).size.width / 30),
           child: Row(
             children: [
               ///sidebar
