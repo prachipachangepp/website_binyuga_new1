@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/career_screens/career_section_three.dart';
 
 import '../presentation/color_manager.dart';
+import 'career_screens/career_section_four.dart';
+import 'career_screens/career_section_one.dart';
+import 'career_screens/career_section_two.dart';
 
 class CareerHomeScreen extends StatelessWidget {
   const CareerHomeScreen({super.key});
@@ -25,7 +29,7 @@ class CareerHomeScreen extends StatelessWidget {
                             : 1240,
                         height: 970,
                         color: ColorManager.white,
-                        child: Center(child: Text("")),
+                        child: Center(child: CareerSectionOne()),
                       ),
                     ],
                   ),
@@ -36,7 +40,7 @@ class CareerHomeScreen extends StatelessWidget {
                             ? MediaQuery.of(context).size.width
                             : 1240,
                         height: 500,
-                        child: Center(child: Text("")),
+                        child: Center(child: CareerSectionTwo()),
                       ),
                     ],
                   ),
@@ -47,14 +51,23 @@ class CareerHomeScreen extends StatelessWidget {
                             ? MediaQuery.of(context).size.width
                             : 1536,
                         height: 2000,
-                        child: Center(child: Text("")),
+                        child: Center(child: CareerSectionThree()),
                       ),
                     ],
                   ),
+                  Row(
+                      children: [
+                  Container(
+                  width: isWideScreen
+                  ? MediaQuery.of(context).size.width
+                      : 1536,
+                  height: 1300,
+                  child: Center(child: CareerSectionFour()),
+          ),
                 ],
               ),
-            ),
-          );
+           ], ),
+            ), );
         },
       ),
     );

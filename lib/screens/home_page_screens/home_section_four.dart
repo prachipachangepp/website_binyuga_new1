@@ -168,13 +168,14 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: EdgeInsets.only(top:40,right:150),
+                padding: EdgeInsets.only (top: MediaQuery.of(context).size.width / 10,
+      left: MediaQuery.of(context).size.width / 10),
                 child: Text(AppString.aboutUs1,
                     style: AllScreensConstant.customTextStyle(
                         FontSize.s60,
                         FontWeightManager.bold,
                         ColorManager.darkBlue
-                    )
+                    ),
                 ),
               ),
             ],
