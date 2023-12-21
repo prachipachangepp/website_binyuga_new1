@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
+import '../../presentation/value_manager.dart';
 
 class HomeSectionThree extends StatelessWidget {
   const HomeSectionThree({super.key});
@@ -56,7 +57,8 @@ class HomeSectionThree extends StatelessWidget {
           ),
         ),
 
-        Center(
+        Padding(
+          padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width / 5,top: AppPadding.p920),
           child: Text(
             AppString.unionTxt2,
             //textAlign: TextAlign.center,
