@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/presentation/color_manager.dart';
+import 'package:website_binyuga_new1/responsive_new.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
