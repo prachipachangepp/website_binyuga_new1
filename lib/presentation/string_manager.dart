@@ -52,7 +52,7 @@ class AppString {
   static const String tailoredProducts = "Tailored Products";
   static const String costEffectiveness = "Cost Effectiveness";
   static const String intuitiveUserCenterDesign =
-      "Intuitive & user center design";
+      "Intuitive & user center\ndesign";
   static const String problemSolving = "Problem Solving";
   static const String roughToughSoftware = " Rough & Tough Software";
   static const String innovativeProjects = "Innovative Projects";
@@ -66,9 +66,9 @@ class AppString {
   static const String partnerShips = "Partnerships";
   static const String flutter = "Flutter";
   static const String reactJs = "React js";
-  static const String nameRegisterOfficeAddress = "Name & register office\n address";
-  static const String requestForServices = "request For Services";
-  static const String corporateIdentityNumber = "Corporate identity\n number CIN";
+  static const String nameRegisterOfficeAddress = "Name & register office\naddress";
+  static const String requestForServices = "Request for services";
+  static const String corporateIdentityNumber = "Corporate identity\nnumber CIN";
   static const String submitYourResume = "Submit your resume";
   static const String jobSeekers = "Job seekers";
   static const String clients = "Clients";
@@ -141,9 +141,7 @@ class AppString {
   static const String problemSolve = "Problem Solving";
 
   /// FeatureSubHome Page
-  static const String dreamIt = "Dream It";
-  static const String buildIt = "Build It";
-  static const String achieveIt = "Achieve It. ";
+  static const String dreamIt = "Dream It,\nBuild It,\nAchieve It.";
   static const String featureTxt = "We believe in the power of envisioning, creating,\n"
       "nd realizing. It all starts with a dream, an idea, or "
       "\n a vision. "
