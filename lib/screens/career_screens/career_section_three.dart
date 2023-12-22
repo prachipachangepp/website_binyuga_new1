@@ -26,7 +26,7 @@ class CareerSectionThree extends StatelessWidget {
               left: MediaQuery.of(context).size.width / 10,
             ),
             child: Text(
-                'Why Binyuga.Pvt.Ltd,',
+                'Why Binyuga.Pvt.Ltd.',
                 style: AllScreensConstant.customTextStyle(FontSize.s46,
                     FontWeightManager.bold, ColorManager.white)
 
