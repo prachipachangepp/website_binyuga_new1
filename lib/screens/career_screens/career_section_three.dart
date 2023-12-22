@@ -17,7 +17,7 @@ class CareerSectionThree extends StatelessWidget {
           Image.network(
             'images/bckground.png',
             fit: BoxFit.fill,
-            height: 600,
+            height: 750,
             width: MediaQuery.of(context).size.width,
           ),
           Padding(
@@ -45,28 +45,28 @@ class CareerSectionThree extends StatelessWidget {
               children: [
                 Image.network(
                   "images/woman.png",
-                  height: 500,
+                  height: 800,
                   width: MediaQuery.of(context).size.width/3.5,
                   // width:200,
                 ),
-                SizedBox(
-                  width: 25,
-                ),
+
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Image.network(
-                    "images/line.png",
-                    height: 230,
+                  padding: const EdgeInsets.only(top: 100),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height / 3.2,
+                    child: VerticalDivider(
+                      width: MediaQuery.of(context).size.width / 2.2,
+                      color: ColorManager.lightBlue,
+                      thickness: 4,
+                    ),
                   ),
                 ),
-                SizedBox(
-                  width: 25,
-                ),
+
 
                 Padding(
                   padding: EdgeInsets.only(
                     // right: MediaQuery.of(context).size.width / 50,
-                    left: MediaQuery.of(context).size.width / 90,
+                    right: MediaQuery.of(context).size.width / 0.1,
                     top: MediaQuery.of(context).size.height / 80,
                   ),
                   //   bottom:MediaQuery.of(context).size.height/3.5),
