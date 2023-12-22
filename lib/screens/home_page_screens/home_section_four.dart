@@ -169,7 +169,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
             children: [
               Padding(
                 padding: EdgeInsets.only (top: MediaQuery.of(context).size.width / 10,
-      right:150),
+      right: 150),
                 child: Text(AppString.aboutUs1,
                     style: AllScreensConstant.customTextStyle(
                         FontSize.s60,
