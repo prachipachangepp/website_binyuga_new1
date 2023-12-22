@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/value_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../constant_screens/explore_screen_image_btn_constant.dart';
 
@@ -14,6 +15,7 @@ class _WWDSectionThreeState extends State<WWDSectionThree> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: AppSize.s780,
       child: Stack(
         children: [
           Column(

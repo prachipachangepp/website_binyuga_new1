@@ -12,7 +12,7 @@ class DescriptionScreenConstant extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height:AppSize.s1000,
+      height:AppSize.s780,
       color: ColorManager.faintblack,
       child:Column(
         children: [

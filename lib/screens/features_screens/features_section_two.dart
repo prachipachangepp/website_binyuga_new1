@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/color_manager.dart';
 
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
@@ -10,8 +11,8 @@ class FeatureSectionTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: 2200,
-      // width: MediaQuery.of(context).size.width,
+      height: 1300,
+      width: MediaQuery.of(context).size.width,
       child: Stack(
         children: [
           Row(
@@ -24,28 +25,18 @@ class FeatureSectionTwo extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: AppSize.s308,),
+
           Padding(
-            padding: const EdgeInsets.only(left:250,top: 280),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                        AppString.dreamIt,
-                        textAlign: TextAlign.start,
-                        style:  FeatureSubHomeConstant.featuresubHomeTextStyle
-                    ),
-                  ],
-                ),
-              ],
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/2.4,top: 250),
+            child: Text(
+                AppString.dreamIt,
+                style:  FeatureSubHomeConstant.featuresubHomeTextStyle
             ),
           ),
-          SizedBox(height:AppSize.s20,),
+
           /// Base Image
           Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/15,top:300,),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/15,top:430,),
             child: Row(
               children: [
                 Image.network(
@@ -59,7 +50,7 @@ class FeatureSectionTwo extends StatelessWidget {
           ),
           ///rectangle
           Padding(
-            padding: const EdgeInsets.only(left:190, top:400),
+            padding: const EdgeInsets.only(left:190, top:420),
             child: Image.network(
               'images/Rectangle 677.png',
               // height: 1050,
@@ -69,7 +60,7 @@ class FeatureSectionTwo extends StatelessWidget {
           ),
 
           Padding(
-            padding: const EdgeInsets.only(left:20,top: 500,right: 410),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/32,top: 510),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,19 +74,23 @@ class FeatureSectionTwo extends StatelessWidget {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/4.3,top: AppPadding.p430),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/4.3,top: 610),
             child: Text(AppString.featureTxt,
-                style:FeatureLongTxtConstant.featurelongTextStyle
+                style: TextStyle(
+                  fontSize: MediaQuery.of(context).size.width/65,
+                  color: ColorManager.white
+                )
             ),
           ),
           // SizedBox(height: 20,),
           Padding(
-            padding: const EdgeInsets.only(left:500,top:550),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/2.5,top:750),
             child: Row(
               children: [
                 Image.network(
                   'images/inverted_end_white.png',
-                  height:AppSize.s200,
+                  //height:AppSize.s200,
+                  height: MediaQuery.of(context).size.height/5,
                   width: MediaQuery.of(context).size.width/3,
 
                 ),
