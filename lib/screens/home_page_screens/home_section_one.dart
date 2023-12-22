@@ -1,6 +1,7 @@
 ///start page code
 
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -261,12 +262,19 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               /// Contact us
-              Text(
-                AppString.contactUs,
-                style: TextStyle(
-                  color: ColorManager.white,
-                  fontSize: MediaQuery.of(context).size.width / 70,
+              GestureDetector(
+                child: Text(
+                  AppString.contactUs,
+                  style: TextStyle(
+                    color: ColorManager.white,
+                    fontSize: MediaQuery.of(context).size.width / 70,
+                  ),
                 ),
+                onTap: (){ Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => DescriptionScreenConstant()),
+                );},
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
               Padding(
