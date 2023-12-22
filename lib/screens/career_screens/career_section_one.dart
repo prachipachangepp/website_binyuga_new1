@@ -35,7 +35,7 @@ class CareerSectionOne extends StatelessWidget {
           ),
           Padding(
             padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /4,
-              left:MediaQuery.of(context).size.width /5,right:150),
+              left:MediaQuery.of(context).size.width /5,right:MediaQuery.of(context).size.width /5),
             child: Column(
               children: [
                 Text(AppString.moldYour,

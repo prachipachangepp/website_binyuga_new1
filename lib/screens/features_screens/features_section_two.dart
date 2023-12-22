@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/presentation/color_manager.dart';
 
+import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
@@ -21,16 +22,19 @@ class FeatureSectionTwo extends StatelessWidget {
               Image.network(
                 "images/design 1.png",
                 height:AppSize.s380,
-
+                width: MediaQuery.of(context).size.width/1.3,
               ),
             ],
           ),
 
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/2.4,top: 250),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/5,top: 250),
             child: Text(
                 AppString.dreamIt,
-                style:  FeatureSubHomeConstant.featuresubHomeTextStyle
+                style: TextStyle( fontSize: MediaQuery.of(context).size.width / 25,
+                fontWeight: FontWeightManager.extraBold,
+                decoration:TextDecoration.none,
+                color: ColorManager.darkBlue1),
             ),
           ),
 
