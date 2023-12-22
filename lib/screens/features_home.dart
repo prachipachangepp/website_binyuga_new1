@@ -32,7 +32,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1240,
-                        height: 970,
+                        height: 720,
                         color: ColorManager.white,
                         child: Center(child: FeatureSectionOne()),
                       ),
@@ -44,7 +44,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1240,
-                        height: 500,
+                        height: 1300,
                         child: Center(child:FeatureSectionTwo()),
                       ),
                     ],
@@ -55,7 +55,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 2000,
+                        height: 1150,
                         child: Center(child: FeatureSectionThree()),
                       ),
                     ],
@@ -66,7 +66,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 1300,
+                        height: 800,
                         child: Center(child: DescriptionScreenConstant()),
                       ),
                     ],
@@ -77,7 +77,7 @@ class FeaturesHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 1300,
+                        height: 200,
                         child: Center(child: BottomNavBarScreen()),
                       ),
                     ],
