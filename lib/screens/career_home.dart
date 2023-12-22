@@ -34,7 +34,7 @@ class CareerHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1240,
-                        height: 970,
+                        height: 870,
                         color: ColorManager.white,
                         child: Center(child: CareerSectionOne()),
                       ),
@@ -46,7 +46,7 @@ class CareerHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1240,
-                        height: 500,
+                        height: 800,
                         child: Center(child: CareerSectionTwo()),
                       ),
                     ],
@@ -57,7 +57,7 @@ class CareerHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 2000,
+                        height: 900,
                         child: Center(child: CareerSectionThree()),
                       ),
                     ],

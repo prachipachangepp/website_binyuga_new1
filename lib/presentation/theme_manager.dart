@@ -161,7 +161,7 @@ class CareerPageConstant1 {
 /// WhatWeDo SubHome Page
 class WhatWeDoSubPageConstant {
   static double getNewFontSizeWWD(BuildContext context) {
-    return MediaQuery.of(context).size.width / 30;
+    return MediaQuery.of(context).size.width / 28;
   }
   static TextStyle subHomeTextStyle(BuildContext context){
     return GoogleFonts.inter(

@@ -34,21 +34,21 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         ///boy img
         Padding(
           padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 1.85,
+              left: MediaQuery.of(context).size.width / 1.77,
               top: AppPadding.p100),
           child: Image.network(
             "images/boy.png",
             height: AppSize.s870,
             // height: MediaQuery.of(context).size.height/1,
             // width: MediaQuery.of(context).size.width /1.5,
-            width: 780,
+            width: 520,
             //alignment: Alignment.bottomLeft,
           ),
         ),
         Padding(
           padding: EdgeInsets.only(
               top: AppPadding.p150,
-              left: MediaQuery.of(context).size.width / 40),
+              left: MediaQuery.of(context).size.width / 30),
           child: Row(
             children: [
               ///sidebar

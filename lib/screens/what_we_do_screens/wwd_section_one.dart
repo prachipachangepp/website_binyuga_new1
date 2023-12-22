@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
-import '../../main.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -49,9 +48,8 @@ class WWDSectionOne extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HomePage()),);
-
-                  },
+                      MaterialPageRoute(builder: (context) => HomeSectionOne()),);
+                    },
                   child: Text(
                     AppString.letsTalk,
                     style: TextStyle(fontSize: FontSize.s15,

@@ -34,12 +34,13 @@ class CareerSectionOne extends StatelessWidget {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /4,left:MediaQuery.of(context).size.width /5.5,),
+            padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /4,
+              left:MediaQuery.of(context).size.width /5,right:150),
             child: Column(
               children: [
                 Text(AppString.moldYour,
                     style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width/31,
+                        MediaQuery.of(context).size.width/33,
                         FontWeightManager.bold,
                         ColorManager.white)
 
@@ -47,7 +48,7 @@ class CareerSectionOne extends StatelessWidget {
                 SizedBox(height: AppSize.s20,),
 
                 Padding(
-                  padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/75,right:50),
+                  padding: const EdgeInsets.only(right:180),
                   child: MaterialButton(
                     color: ColorManager.white,
                     shape: const RoundedRectangleBorder(

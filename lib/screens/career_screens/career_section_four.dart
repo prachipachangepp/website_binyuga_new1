@@ -26,7 +26,7 @@ class CareerSectionFour extends StatelessWidget {
                   left: MediaQuery.of(context).size.width / 12, top: 400),
               child: const Text(AppString.aboutUs,
                 style: TextStyle(
-                    fontSize: 35,
+                    fontSize: 40,
                     fontFamily: 'inter',
                     decoration: TextDecoration.none,
                     fontWeight: FontWeight.w700,
