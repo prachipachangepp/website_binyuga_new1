@@ -44,7 +44,6 @@ class CareerSectionThree extends StatelessWidget {
               "images/woman.png",
               height: 900,
               width: MediaQuery.of(context).size.width/2.5,
-              // width:200,
             ),
             Container(
               height: MediaQuery.of(context).size.height / 2,
