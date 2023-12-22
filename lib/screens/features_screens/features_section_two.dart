@@ -11,7 +11,7 @@ class FeatureSectionTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 1300,
+      height: 1200,
       width: MediaQuery.of(context).size.width,
       child: Stack(
         children: [
@@ -20,7 +20,7 @@ class FeatureSectionTwo extends StatelessWidget {
             children: [
               Image.network(
                 "images/design 1.png",
-                height:AppSize.s380,
+                 height:AppSize.s380,
 
               ),
             ],
@@ -41,8 +41,8 @@ class FeatureSectionTwo extends StatelessWidget {
               children: [
                 Image.network(
                   "images/Rectangle 682.png",
-                  // height: 935,
-                  height:AppSize.s636,
+                   height: 935,
+                  // height:AppSize.s636,
                   width: MediaQuery.of(context).size.width/1.6,
                 ),
               ],
@@ -53,8 +53,8 @@ class FeatureSectionTwo extends StatelessWidget {
             padding: const EdgeInsets.only(left:190, top:420),
             child: Image.network(
               'images/Rectangle 677.png',
-              // height: 1050,
-              height: AppSize.s780,
+              height: 1050,
+              // height: AppSize.s780,
               width: MediaQuery.of(context).size.width/1.7,
             ),
           ),
@@ -102,3 +102,6 @@ class FeatureSectionTwo extends StatelessWidget {
     );
   }
 }
+
+
+

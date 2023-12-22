@@ -125,7 +125,7 @@ class AppString {
       "\n a vision. "
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
-      "\n solutions and results";
+      "\n solutions and results.";
   static const String sculptYour ="Sculpt Your Path to Success";
   static const String moldYour = "Mold Your Dreams "
       '\ninto Reality';
@@ -147,7 +147,7 @@ class AppString {
       "\n a vision. "
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
-      "\n solutions and results";
+      "\n solutions and results.";
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
@@ -165,7 +165,7 @@ class AppString {
       '\nsupport, and expertise you need to achieve your '
       '\ngoals. Just as a sculptor molds clay into a '
       '\nmasterpiece, we are here to assist you in crafting '
-      '\n your path towards success, ';
+      '\n your path towards success. ';
 
 
 }
