@@ -26,7 +26,7 @@ class DescriptionScreenConstant extends StatelessWidget {
                   "images/binyuga_logo.png",
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               Padding(
                 padding: EdgeInsets.only(
                   right: MediaQuery.of(context).size.width / 90,
@@ -45,7 +45,7 @@ class DescriptionScreenConstant extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 top: AppSize.s70, left: MediaQuery.of(context).size.width / 14),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [DescriptionPageHeadConstant()],
             ),
@@ -69,19 +69,19 @@ class DescriptionScreenConstant extends StatelessWidget {
                         AppString.aboutUs,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.teamProfiles,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(height:AppSize.s15,),
+                      const SizedBox(height:AppSize.s15,),
                       Text(
                         AppString.clientTestimonials,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -106,21 +106,21 @@ class DescriptionScreenConstant extends StatelessWidget {
                         AppString.softwareDevelopment,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.applicationDevelopment,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.webDevelopment,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -128,7 +128,7 @@ class DescriptionScreenConstant extends StatelessWidget {
                         textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -136,7 +136,7 @@ class DescriptionScreenConstant extends StatelessWidget {
                         textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -164,7 +164,7 @@ class DescriptionScreenConstant extends StatelessWidget {
                         textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -172,7 +172,7 @@ class DescriptionScreenConstant extends StatelessWidget {
                         textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -180,35 +180,35 @@ class DescriptionScreenConstant extends StatelessWidget {
                         textAlign: TextAlign.left,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.uiUxDevelopment,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.backendDevelopment,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.fullStackDevelopment,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.softwareTesting,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -234,35 +234,35 @@ class DescriptionScreenConstant extends StatelessWidget {
                         AppString.tailoredProducts,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.costEffectiveness,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.intuitiveUserCenterDesign,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.problemSolving,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.roughToughSoftware,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -288,56 +288,56 @@ class DescriptionScreenConstant extends StatelessWidget {
                         AppString.nameRegisterOfficeAddress,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.requestForServices,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.corporateIdentityNumber,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.submitYourResume,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.jobSeekers,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.clients,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.otherEnquiries,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
                         AppString.emailId,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: AppSize.s15,
                       ),
                       Text(
@@ -350,7 +350,7 @@ class DescriptionScreenConstant extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: AppSize.s200),
+          const SizedBox(height: AppSize.s200),
 
           ///bottom row
           Padding(

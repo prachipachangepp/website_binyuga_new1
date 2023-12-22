@@ -71,7 +71,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -79,7 +79,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -87,7 +87,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -95,7 +95,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(

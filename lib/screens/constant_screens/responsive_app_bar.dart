@@ -30,7 +30,7 @@ class ResponsiveAppBar extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
+                              builder: (context) => const WhatWeDoHomeScreen()),
                         );
                       },
                       child: NavBarItem(title: 'Who we are')),
@@ -40,7 +40,7 @@ class ResponsiveAppBar extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
+                              builder: (context) => const WhatWeDoHomeScreen()),
                         );
                       },
                       child: NavBarItem(title: 'What we do')),
@@ -50,7 +50,7 @@ class ResponsiveAppBar extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => FeaturesHomeScreen()),
+                              builder: (context) => const FeaturesHomeScreen()),
                         );
                       },
                       child: NavBarItem(title: 'Features')),
@@ -60,7 +60,7 @@ class ResponsiveAppBar extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => CareerHomeScreen()),
+                              builder: (context) => const CareerHomeScreen()),
                         );
                       },
                       child: NavBarItem(title: 'Career')),
@@ -70,14 +70,14 @@ class ResponsiveAppBar extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
+                              builder: (context) => const WhatWeDoHomeScreen()),
                         );
                       },
                       child: NavBarItem(title: 'Portfolio')),
                   SizedBox(width: MediaQuery.of(context).size.width / 6.2),
                   NavBarItem(title: 'Contacts'),
                   Padding(
-                    padding: EdgeInsets.only(right: AppPadding.p35),
+                    padding: const EdgeInsets.only(right: AppPadding.p35),
                     child: Image.asset(
                       'images/search.png',
                       width: AppSize.s50,
