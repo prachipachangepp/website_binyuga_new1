@@ -5,6 +5,7 @@ import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+import '../landing_page_home.dart';
 
 class CareerSectionOne extends StatelessWidget {
   const CareerSectionOne({super.key});
@@ -54,7 +55,9 @@ class CareerSectionOne extends StatelessWidget {
                     color: ColorManager.white,
                     shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),);
+                    },
                     child:  Padding(
                       padding:
                       EdgeInsets.symmetric(vertical: AppPadding.p8,

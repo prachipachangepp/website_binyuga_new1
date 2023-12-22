@@ -1,6 +1,7 @@
 ///start page code
 
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -57,7 +58,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => WhatWeDoHomeScreen()),
+                        );
+                      },
                       child: Text(AppString.whoWeAre,
                           style: HomeScreen.sidebarTextStyle),
                     ),
@@ -107,7 +114,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                       height: AppSize.s50,
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => WhatWeDoHomeScreen()),
+                        );
+                      },
                       child: Text(AppString.portfolio,
                           style: HomeScreen.sidebarTextStyle),
                     ),
@@ -150,7 +163,9 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     color: ColorManager.white,
                     shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => CareerHomeScreen()),);
+                    },
                     child: Padding(
                       padding: EdgeInsets.symmetric(
                           vertical: AppPadding.p10,
@@ -247,29 +262,61 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               /// Contact us
-              Text(
-                AppString.contactUs,
-                style: TextStyle(
-                  color: ColorManager.white,
-                  fontSize: MediaQuery.of(context).size.width / 70,
+              GestureDetector(
+                child: Text(
+                  AppString.contactUs,
+                  style: TextStyle(
+                    color: ColorManager.white,
+                    fontSize: MediaQuery.of(context).size.width / 70,
+                  ),
                 ),
+                onTap: (){ Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => DescriptionScreenConstant()),
+                );},
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
-              Image.asset(
-                'images/toggle_bg.png',
-                color: Color(0xff27C9B2),
-                height: MediaQuery.of(context).size.height / 18,
-                width: MediaQuery.of(context).size.width / 18,
-              ),
-              SizedBox(width: MediaQuery.of(context).size.width / 50),
               Padding(
-                padding: EdgeInsets.only(
-                    right: MediaQuery.of(context).size.width / 80),
-                child: Image.asset(
-                  'images/search.png',
-                  width: MediaQuery.of(context).size.width / 25,
-                ),
+                padding: const EdgeInsets.only(right: 20),
+                child: Switch.adaptive(
+                    activeColor: Colors.cyanAccent,
+                    focusColor: Colors.white,
+                    value: _lights,
+                    onChanged: (bool value) {
+                      setState(() {
+                        _lights = value;
+                      });
+                    }),
               ),
+              SizedBox(width: MediaQuery.of(context).size.width / 35),
+              Padding(
+                padding: const EdgeInsets.only(right: AppPadding.p35),
+                child: Container(
+                  height: 40,
+                  width: 40,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(25.0),
+                    ),
+                  ),
+                  child: ShaderMask(
+                    shaderCallback: (Rect bounds) {
+                      return const LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [Colors.red, Colors.yellow, Colors.blue],
+                      ).createShader(bounds);
+                    },
+                    child: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                      size: 35,
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),

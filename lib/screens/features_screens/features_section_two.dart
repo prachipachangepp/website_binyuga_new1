@@ -22,7 +22,7 @@ class FeatureSectionTwo extends StatelessWidget {
               Image.network(
                 "images/design 1.png",
                 height:AppSize.s380,
-                width: MediaQuery.of(context).size.width/2.6,
+                width: MediaQuery.of(context).size.width/3,
               ),
             ],
           ),
@@ -81,7 +81,7 @@ class FeatureSectionTwo extends StatelessWidget {
             padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/4.3,top: 610),
             child: Text(AppString.featureTxt,
                 style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.width/65,
+                  fontSize: MediaQuery.of(context).size.width/50,
                   color: ColorManager.white
                 )
             ),

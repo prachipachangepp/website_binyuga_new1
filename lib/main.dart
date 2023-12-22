@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/career_home.dart';
 import 'package:website_binyuga_new1/screens/landing_page_home.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: CareerHomeScreen(),
     );
   }
 }
