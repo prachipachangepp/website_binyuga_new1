@@ -7,7 +7,7 @@ import '../presentation/color_manager.dart';
 import 'constant_screens/bottom_nav_bar.dart';
 import 'constant_screens/description_page_constant.dart';
 import 'constant_screens/responsive_app_bar.dart';
-
+///Home Screen
 class WhatWeDoHomeScreen extends StatelessWidget {
   const WhatWeDoHomeScreen({super.key});
 
@@ -44,7 +44,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1240,
-                        height: 500,
+                        height:1300,
                         child: Center(child: WWDSectionTwo()),
                       ),
                     ],
@@ -55,7 +55,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 2000,
+                        height: 800,
                         child: Center(child: WWDSectionThree()),
                       ),
                     ],
@@ -66,7 +66,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 1300,
+                        height: 700,
                         child: Center(child: DescriptionScreenConstant()),
                       ),
                     ],
@@ -77,7 +77,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 1300,
+                        height: 187,
                         child: Center(child: BottomNavBarScreen()),
                       ),
                     ],

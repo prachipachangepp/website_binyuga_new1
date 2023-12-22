@@ -27,7 +27,7 @@ class _WWDSectionThreeState extends State<WWDSectionThree> {
                       onPressed: (){}),
                   ImageWithButtonStack(
                       imageUrl: 'images/ad.png',
-                      buttonText:  AppString.appDev,
+                      buttonText:  'Application Development',
                       onPressed: (){}),
                   ImageWithButtonStack(
                       imageUrl:  'images/wd.png',
