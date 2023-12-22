@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
@@ -147,10 +148,14 @@ class CareerSectionFour extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.network(
-                      "images/line2.png",
-                      height:AppSize.s320,
+                    padding: const EdgeInsets.only(top: 100),
+                    child: Container(
+                      height: MediaQuery.of(context).size.height / 3.2,
+                      child: VerticalDivider(
+                        width: MediaQuery.of(context).size.width / 2.2,
+                        color: ColorManager.lightBlue,
+                        thickness: 4,
+                      ),
                     ),
                   ),
 
