@@ -145,7 +145,7 @@ class CareerHomeScreen extends StatelessWidget {
                 child: CareerSectionOne(),
               ),
               Container(
-                height: 900,
+                height: 1200,
                 //  color: Colors.blueGrey,
                 child: CareerSectionTwo(),
               ),
