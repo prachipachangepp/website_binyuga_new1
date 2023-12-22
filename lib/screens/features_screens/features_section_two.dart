@@ -22,7 +22,7 @@ class FeatureSectionTwo extends StatelessWidget {
               Image.network(
                 "images/design 1.png",
                 height:AppSize.s380,
-                width: MediaQuery.of(context).size.width/2.3,
+                width: MediaQuery.of(context).size.width/2.6,
               ),
             ],
           ),
