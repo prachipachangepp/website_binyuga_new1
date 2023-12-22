@@ -41,7 +41,7 @@ class WWDSectionTwo extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top: AppPadding.p280),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top: AppPadding.p250),
             child: Image.network(
               'images/Rectangle 677.png',
               height: AppSize.s780,
