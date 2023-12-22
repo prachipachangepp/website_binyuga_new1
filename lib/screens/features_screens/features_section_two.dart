@@ -10,8 +10,8 @@ class FeatureSectionTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: 2200,
-      // width: MediaQuery.of(context).size.width,
+        height: 2200,
+       width: MediaQuery.of(context).size.width,
       child: Stack(
         children: [
           Row(
@@ -24,8 +24,9 @@ class FeatureSectionTwo extends StatelessWidget {
               ),
             ],
           ),
+
           Padding(
-            padding: const EdgeInsets.only(left:250),
+            padding: const EdgeInsets.only(left:250,),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -37,28 +38,28 @@ class FeatureSectionTwo extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height:AppSize.s10,),
-                Row(
-                  children: [
-                    Text(
-                        AppString.buildIt,
-                        style: FeatureSubHomeConstant.featuresubHomeTextStyle
-                    ),
-                  ],
-                ),
-                SizedBox(  height:AppSize.s10,),
-                Row(
-                  children: [
-                    Text(
-                        AppString.achieveIt,
-                        style:  FeatureSubHomeConstant.featuresubHomeTextStyle
-                    ),
-                  ],
-                ),
+
+                // Row(
+                //   children: [
+                //     Text(
+                //         AppString.buildIt,
+                //         style: FeatureSubHomeConstant.featuresubHomeTextStyle
+                //     ),
+                //   ],
+                // ),
+                // SizedBox(  height:AppSize.s10,),
+                // Row(
+                //   children: [
+                //     Text(
+                //         AppString.achieveIt,
+                //         style:  FeatureSubHomeConstant.featuresubHomeTextStyle
+                //     ),
+                //   ],
+                // ),
               ],
             ),
           ),
-          SizedBox(height:AppSize.s20,),
+          SizedBox(height:AppSize.s250,),
 
 
 
@@ -88,7 +89,7 @@ class FeatureSectionTwo extends StatelessWidget {
           ),
 
           Padding(
-            padding: const EdgeInsets.only(left:20,top: 310,right: 410),
+            padding: const EdgeInsets.only(left:30,top: 310,right: 410),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -109,7 +110,7 @@ class FeatureSectionTwo extends StatelessWidget {
           ),
           // SizedBox(height: 20,),
           Padding(
-            padding: const EdgeInsets.only(left:500,top:550),
+            padding: const EdgeInsets.only(left:530,top:550),
             child: Row(
               children: [
                 Image.network(

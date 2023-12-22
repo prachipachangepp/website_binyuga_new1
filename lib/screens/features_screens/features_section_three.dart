@@ -16,7 +16,7 @@ class FeatureSectionThree extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.network(
                 "images/Frame 14.png",
@@ -29,7 +29,7 @@ class FeatureSectionThree extends StatelessWidget {
               ),
               SizedBox(height:10,),
               Padding(
-                padding: const EdgeInsets.only(right:250),
+                padding: const EdgeInsets.only(right:200),
                 child: Image.network(
                   "images/design 2.png",
                   height: AppSize.s500,

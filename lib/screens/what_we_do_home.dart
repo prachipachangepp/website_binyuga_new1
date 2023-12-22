@@ -22,8 +22,8 @@ class WhatWeDoHomeScreen extends StatelessWidget {
           bool isWideScreen = constraints.maxWidth > 1200;
           return SingleChildScrollView(
             scrollDirection: Axis.vertical,
-            child: SingleChildScrollView(
-              scrollDirection: isWideScreen ? Axis.vertical : Axis.horizontal,
+            // child: SingleChildScrollView(
+            //   scrollDirection: isWideScreen ? Axis.vertical : Axis.horizontal,
               child: Column(
                 children: [
                   Row(
@@ -66,7 +66,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 700,
+                        height: 800,
                         child: Center(child: DescriptionScreenConstant()),
                       ),
                     ],
@@ -84,7 +84,7 @@ class WhatWeDoHomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
+           // ),
           );
         },
       ),

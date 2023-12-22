@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/main.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -65,7 +66,7 @@ class FeatureSectionOne extends StatelessWidget {
                 SizedBox(height: AppSize.s50,),
                 ///button
                 Padding(
-                  padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /4.6),
+                  padding: EdgeInsets.only(right:MediaQuery.of(context).size.width /4.5),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -79,7 +80,7 @@ class FeatureSectionOne extends StatelessWidget {
                                     .circular(
                                     20))),
                         onPressed: () {
-
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),);
                         }, child: Text(
                         'Read More',style:TextStyle(fontWeight: FontWeightManager.semiBold,fontSize: FontSize.s15,
                         letterSpacing: -0.011,
