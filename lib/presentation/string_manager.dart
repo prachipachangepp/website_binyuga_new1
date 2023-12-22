@@ -115,6 +115,10 @@ class AppString {
       ' \ncubilia ullamcorper tempor fermentum '
       ' \ntellus odio.';
 
+   /// WhatWeDoHomeScreen
+  static const String homePageText1 = 'Elevating Success with\nInnovative Tech';
+  static const String homePageText2 =  'Our company harnesses cutting-edge technologies and\nstrategic IT solutions to empower business. We believe that\ninnovation and technology are the driving forces behind\nsuccess in the digital age. ';
+
 
   /// WhatWeDo SubHomePage
   static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness \nProsperity";

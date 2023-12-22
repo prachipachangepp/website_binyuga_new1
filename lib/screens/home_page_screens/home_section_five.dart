@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -179,3 +178,5 @@ class HomeSectionFive extends StatelessWidget {
     );
   }
 }
+
+

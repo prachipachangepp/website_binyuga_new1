@@ -11,14 +11,15 @@ class WWDSectionTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 1200,
+        height: AppSize.s1200,
         width: MediaQuery.of(context).size.width,
         child: Stack(children: [
           ///txt 1
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: AppPadding.p20, left: AppPadding.p30),
+                padding: const EdgeInsets.only(
+                    top: AppPadding.p20, left: AppPadding.p30),
                 child: Text(AppString.trustPropelsBuisnessProsperity,
                     style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
               ),
@@ -27,7 +28,10 @@ class WWDSectionTwo extends StatelessWidget {
 
           /// Base Image
           Padding(
-            padding: EdgeInsets.only(left: AppPadding.p30, top: AppPadding.p250,),
+            padding: EdgeInsets.only(
+              left: AppPadding.p30,
+              top: AppPadding.p250,
+            ),
             child: Row(
               children: [
                 Image.network(
@@ -41,7 +45,9 @@ class WWDSectionTwo extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top: AppPadding.p250),
+            padding: EdgeInsets.only(
+                left: MediaQuery.of(context).size.width / 7.5,
+                top: AppPadding.p250),
             child: Image.network(
               'images/Rectangle 677.png',
               height: AppSize.s780,
@@ -51,44 +57,49 @@ class WWDSectionTwo extends StatelessWidget {
 
           ///inverted comma start
           Padding(
-            padding: const EdgeInsets.only(top: 350,),
+            padding: const EdgeInsets.only(top: AppPadding.p350),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.network(
                   'images/inverted_start.png',
-                  height: 200,
+                  height: AppSize.s200,
                   width: MediaQuery.of(context).size.width / 3,
                 ),
               ],
             ),
           ),
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/5, top: AppPadding.p430),
+            padding: EdgeInsets.only(
+                left: MediaQuery.of(context).size.width / 5,
+                top: AppPadding.p430),
             child: Text(AppString.weAreDedicated,
                 style: AllScreensConstant.customTextStyle(
-                  MediaQuery.of(context).size.width/50,
+                  MediaQuery.of(context).size.width / 50,
                   FontWeightManager.medium,
                   ColorManager.white,
                 )),
           ),
-          // // SizedBox(height: 20,),
+
           Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/3 , top: 530),
+            padding: EdgeInsets.only(
+                left: MediaQuery.of(context).size.width / 3,
+                top: AppPadding.p530),
             child: Row(
               children: [
                 Image.network(
                   'images/inverted_end.png',
-                  height: 200,
+                  height: AppSize.s200,
                   width: MediaQuery.of(context).size.width / 3,
                 ),
               ],
             ),
           ),
+
           ///explore binyuga txt
           Padding(
-            padding:
-            const EdgeInsets.only(top: AppPadding.p1000, right: AppPadding.p58),
+            padding: const EdgeInsets.only(
+                top: AppPadding.p1000, right: AppPadding.p58),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
