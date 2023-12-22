@@ -99,6 +99,7 @@ import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 
+
 class CareerSectionTwo extends StatelessWidget {
   const CareerSectionTwo({super.key});
 
@@ -112,7 +113,7 @@ class CareerSectionTwo extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: AppPadding.p150, left: AppPadding.p30),
+                padding: EdgeInsets.only(top: AppPadding.p30, left: 90),
                 child: Text(AppString.sculptYour,
                     style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
               ),
@@ -121,13 +122,13 @@ class CareerSectionTwo extends StatelessWidget {
 
           /// Base Image
           Padding(
-            padding: EdgeInsets.only(left: AppPadding.p130, top: AppPadding.p250,),
+            padding: EdgeInsets.only(left: 160, top: AppPadding.p70),
             child: Row(
               children: [
                 Image.network(
                   'images/Rectangle 677.png',
                   height: AppSize.s635,
-                  width: MediaQuery.of(context).size.width / 1.8,
+                  width: MediaQuery.of(context).size.width / 1.9,
                 ),
               ],
             ),
@@ -135,18 +136,18 @@ class CareerSectionTwo extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top: AppPadding.p280),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/7.5, top: AppPadding.p58),
             child: Image.network(
               "images/Rectangle 682.png",
 
-              height: AppSize.s780,
-              width: MediaQuery.of(context).size.width / 1.7,
+              height: AppSize.s720,
+              width: MediaQuery.of(context).size.width / 1.9,
             ),
           ),
 
           ///inverted comma start
           Padding(
-            padding: const EdgeInsets.only(top: 350,),
+            padding: const EdgeInsets.only(top: 170,),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -159,7 +160,7 @@ class CareerSectionTwo extends StatelessWidget {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/5, top: AppPadding.p430),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/5, top:280),
             child: Text(AppString.weSee,
                 style: AllScreensConstant.customTextStyle(
                   MediaQuery.of(context).size.width/50,
@@ -170,7 +171,7 @@ class CareerSectionTwo extends StatelessWidget {
           // // SizedBox(height: 20,),
           ///Inverted Comma End
           Padding(
-            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/3 , top: 630),
+            padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/3 , top: 430),
             child: Row(
               children: [
                 Image.network(
