@@ -1,137 +1,137 @@
-// import 'package:flutter/material.dart';
-// import 'package:website_binyuga_new1/presentation/color_manager.dart';
-// import 'package:website_binyuga_new1/screens/constant_screens/bottom_nav_bar.dart';
-// import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
-// import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
-// import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
-// import 'package:website_binyuga_new1/screens/home_page_screens/home_section_six.dart';
-// import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
-// import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
-//
-// void main() {
-//   runApp(MyApp());
-// }
-//
-// class MyApp extends StatelessWidget {
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Binyuga WebSite',
-//       debugShowCheckedModeBanner: false,
-//       theme: ThemeData(
-//         primarySwatch: Colors.blue,
-//         visualDensity: VisualDensity.adaptivePlatformDensity,
-//       ),
-//       home: HomePage(),
-//     );
-//   }
-// }
-//
-// class HomePage extends StatefulWidget {
-//   @override
-//   State<HomePage> createState() => _HomePageState();
-// }
-//
-// class _HomePageState extends State<HomePage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: LayoutBuilder(
-//         builder: (context, constraints) {
-//           bool isWideScreen = constraints.maxWidth > 1200;
-//           return SingleChildScrollView(
-//             scrollDirection: Axis.vertical,
-//             // child: SingleChildScrollView(
-//             //   scrollDirection: isWideScreen ? Axis.vertical : Axis.horizontal,
-//               child: Column(
-//                 children: [
-//                   Row(
-//                     children: [
-//                       Container(
-//                         width: isWideScreen
-//                             ? MediaQuery.of(context).size.width
-//                             : 1240,
-//                         height: 970,
-//                         color: ColorManager.white,
-//                         child: Center(child: HomeSectionOne()),
-//                       ),
-//                     ],
-//                   ),
-//                   Row(
-//                     children: [
-//                       Container(
-//                         width: isWideScreen
-//                             ? MediaQuery.of(context).size.width
-//                             : 1240,
-//                         height: 500,
-//                         child: Center(child: HomeSectionTwo()),
-//                       ),
-//                     ],
-//                   ),
-//                   Row(
-//                     children: [
-//                       Container(
-//                         width: isWideScreen
-//                             ? MediaQuery.of(context).size.width
-//                             : 1536,
-//                         height: 2000,
-//                         child: Center(child: HomeSectionThree()),
-//                       ),
-//                     ],
-//                   ),
-//                   Row(
-//                     children: [
-//                       Container(
-//                         width: isWideScreen
-//                             ? MediaQuery.of(context).size.width
-//                             : 1240,
-//                         height: 780,
-//                         child: Center(child: HomeSectionFour()),
-//                       ),
-//                     ],
-//                   ),
-//                   Row(
-//                     children: [
-//                       Container(
-//                         width: isWideScreen
-//                             ? MediaQuery.of(context).size.width
-//                             : 1240,
-//                         height: 1500,
-//                         child: Center(child: HomeSectionFive()),
-//                       ),
-//                     ],
-//                   ),
-//                   Row(
-//                     children: [
-//                       Container(
-//                         width: isWideScreen
-//                             ? MediaQuery.of(context).size.width
-//                             : 1240,
-//                         height: 720,
-//                         child: Center(child: HomeSectionSix()),
-//                       ),
-//                     ],
-//                   ),
-//                   Row(
-//                     children: [
-//                       Container(
-//                         width: isWideScreen
-//                             ? MediaQuery.of(context).size.width
-//                             : 1240,
-//                         height: 187,
-//                         child: Center(child: BottomNavBarScreen()),
-//                       ),
-//                     ],
-//                   ),
-//           ],
-//           ),);
-//
-//         },
-//       ),
-//     );
-//   }
-// }
+import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/color_manager.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/bottom_nav_bar.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_six.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
+import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Binyuga WebSite',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          bool isWideScreen = constraints.maxWidth > 1200;
+          return SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            // child: SingleChildScrollView(
+            //   scrollDirection: isWideScreen ? Axis.vertical : Axis.horizontal,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 970,
+                        color: ColorManager.white,
+                        child: Center(child: HomeSectionOne()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 500,
+                        child: Center(child: HomeSectionTwo()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1536,
+                        height: 2000,
+                        child: Center(child: HomeSectionThree()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 780,
+                        child: Center(child: HomeSectionFour()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 1500,
+                        child: Center(child: HomeSectionFive()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 720,
+                        child: Center(child: HomeSectionSix()),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: isWideScreen
+                            ? MediaQuery.of(context).size.width
+                            : 1240,
+                        height: 187,
+                        child: Center(child: BottomNavBarScreen()),
+                      ),
+                    ],
+                  ),
+          ],
+          ),);
+
+        },
+      ),
+    );
+  }
+}
 
 
 // import 'package:flutter/material.dart';
@@ -562,257 +562,3 @@
 // }
 
 
-import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/presentation/color_manager.dart';
-import 'package:website_binyuga_new1/screens/constant_screens/bottom_nav_bar.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_six.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
- import '../responsive_screen/responsive_scr.dart';
-// import 'package:sizer/sizer.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Binyuga WebSite',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Responsive(
-        mobile: webBody(),
-        tablet: webBody(),
-        desktop: webBody(),
-      ),
-    );
-  }
-}
-
-Widget webBody() {
-  final headerKey = GlobalKey();
-  final portfolioSectionKey = GlobalKey(debugLabel: "portfolio");
-  final ScrollController _controller = ScrollController();
-
-  void _animateToIndex(int index, double _height) {
-    _controller.animateTo(
-      index * _height,
-      duration: Duration(seconds: 2),
-      curve: Curves.fastOutSlowIn,
-    );
-  }
-
-  Size screenWidth;
-  return LayoutBuilder(builder: (context, constraints) {
-    screenWidth = MediaQuery.of(context).size;
-    List<Widget> body = [
-      // Stack(
-      //   children: [
-      //     // HeaderSection(
-      //     //   screenWidth: screenWidth,
-      //     //   key: headerKey,
-      //     // ),
-      //     Row(
-      //       children: [
-      //         Expanded(flex: 1, child: Container()),
-      //         //th
-      //         Expanded(
-      //             flex: 2,
-      //             child: Container(
-      //               margin: EdgeInsets.symmetric(
-      //                   vertical: MediaQuery.of(context).size.width / 30,
-      //                   horizontal: MediaQuery.of(context).size.width / 40),
-      //               child: Row(
-      //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //                 children: [
-      //                   const SizedBox(
-      //                     width: 10,
-      //                   ),
-      //                   InkWell(
-      //                       child: Text(
-      //                         "About us",
-      //                         style: GoogleFonts.fredoka(
-      //                             color: Colors.black,
-      //                             fontWeight: FontWeight.w500,
-      //                             fontSize:
-      //                             MediaQuery.of(context).size.width / 75),
-      //                       ),
-      //                       // We will jump to the bottom of the list
-      //
-      //                       onTap: () {
-      //                         _animateToIndex(1, screenWidth.height);
-      //                       }),
-      //                   InkWell(
-      //                     onTap: () {
-      //                       _animateToIndex(2, screenWidth.height);
-      //                     },
-      //                     child: Text(
-      //                       "Services",
-      //                       style: GoogleFonts.fredoka(
-      //                           color: Colors.black,
-      //                           fontWeight: FontWeight.w500,
-      //                           fontSize:
-      //                           MediaQuery.of(context).size.width / 75),
-      //                     ),
-      //                   ),
-      //                   InkWell(
-      //                     onTap: () {
-      //                       _animateToIndex(3, screenWidth.height);
-      //                     },
-      //                     child: Text(
-      //                       "Portfolio",
-      //                       style: GoogleFonts.fredoka(
-      //                           color: Colors.black,
-      //                           fontWeight: FontWeight.w500,
-      //                           fontSize:
-      //                           MediaQuery.of(context).size.width / 75),
-      //                     ),
-      //                   ),
-      //                   InkWell(
-      //                     onTap: () {
-      //                       _animateToIndex(4, screenWidth.height);
-      //                     },
-      //                     child: Text(
-      //                       "Workshop & Training",
-      //                       style: GoogleFonts.fredoka(
-      //                           color: Colors.black,
-      //                           fontWeight: FontWeight.w500,
-      //                           fontSize:
-      //                           MediaQuery.of(context).size.width / 75),
-      //                     ),
-      //                   ),
-      //                   MaterialButton(
-      //                       elevation: 4,
-      //                       color: const Color(0xffFFFFFF),
-      //                       padding: EdgeInsets.symmetric(
-      //                           horizontal:
-      //                           MediaQuery.of(context).size.width / 40,
-      //                           vertical:
-      //                           MediaQuery.of(context).size.width / 120),
-      //                       shape: RoundedRectangleBorder(
-      //                           borderRadius: BorderRadius.circular(30)),
-      //                       onPressed: () {
-      //                         _animateToIndex(5, screenWidth.height);
-      //                       },
-      //                       child: ShaderMask(
-      //                         shaderCallback: (Rect bounds) {
-      //                           return const LinearGradient(
-      //                             colors: [
-      //                               Color(0xffAA1056),
-      //                               Color(0xff210B32)
-      //                             ],
-      //                           ).createShader(bounds);
-      //                         },
-      //                         child: Text(
-      //                           "Contact Us",
-      //                           style: TextStyle(
-      //                             fontWeight: FontWeight.w700,
-      //                             fontSize:
-      //                             MediaQuery.of(context).size.width / 75,
-      //                             color:  Colors.black,
-      //                           ),
-      //                         ),
-      //                       )),
-      //                 ],
-      //               ),
-      //             ))
-      //       ],
-      //     ),
-      //   ],
-      // ),
-      //  const AboutUsSection(),
-
-      Stack(
-        children: [
-          Column(
-            children: [
-              Row(
-                children: [
-                  Expanded(
-                      flex: 2,
-                      child: Container(
-                          color: Colors.white,
-                          child: HomeSectionOne())),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                      flex: 1,
-                      child: Container(child: HomeSectionTwo())),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                      flex: 1,
-                      child: Container(child: HomeSectionThree())),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                      flex: 3,
-                      child: Container(child: HomeSectionFour())),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                      flex: 3,
-                      child: Container(child: HomeSectionFive())),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                      flex: 3,
-                      child: Container(child: HomeSectionSix())),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                      flex: 3,
-                      child: Container(child: BottomNavBarScreen())),
-                ],
-              ),
-
-            ],
-          ),
-        ],
-      )
-    ];
-
-    return ListView.builder(
-        shrinkWrap: true,
-        controller: _controller,
-        itemCount: body.length,
-        itemBuilder: (context, index) {
-          return body[index];
-        });
-  });
-}
