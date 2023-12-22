@@ -132,6 +132,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
+
 Widget webBody() {
   final headerKey = GlobalKey();
   final portfolioSectionKey = GlobalKey(debugLabel: "portfolio");
