@@ -18,7 +18,7 @@ class CareerSectionTwo extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 50, left: 30),
+                padding: const EdgeInsets.only(top: 350, left: 30),
                 child: Text(AppString.sculptYour,
                     style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
               ),
