@@ -114,8 +114,8 @@ import 'constant_screens/description_page_constant.dart';
 import 'constant_screens/responsive_app_bar.dart';
 
 
-class CareerPageScreen extends StatelessWidget {
-  const CareerPageScreen({super.key});
+class CareerHomeScreen extends StatelessWidget {
+  const CareerHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

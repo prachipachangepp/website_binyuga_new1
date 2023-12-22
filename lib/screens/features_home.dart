@@ -99,6 +99,7 @@ import 'package:website_binyuga_new1/screens/features_screens/features_section_t
 import 'package:website_binyuga_new1/screens/features_screens/features_section_two.dart';
 
 import 'constant_screens/bottom_nav_bar.dart';
+import 'constant_screens/responsive_app_bar.dart';
 
 class FeaturesHomeScreen extends StatefulWidget {
   const FeaturesHomeScreen({super.key});
@@ -112,6 +113,10 @@ class _FeaturesHomeScreenState extends State<FeaturesHomeScreen> {
   Widget build(BuildContext context) {
     Size screenWidth;
     return Scaffold(
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(kToolbarHeight),
+          child: ResponsiveAppBar(),
+        ),
       body: LayoutBuilder(builder: (context, constraints) {
         screenWidth = MediaQuery.of(context).size;
         List<Widget> body = [
