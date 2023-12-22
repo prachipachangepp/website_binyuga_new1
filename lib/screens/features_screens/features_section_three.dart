@@ -18,18 +18,21 @@ class FeatureSectionThree extends StatelessWidget {
           Column(
              mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Image.network(
-                "images/Frame 14.png",
-                height: AppSize.s636,
-                width: MediaQuery
-                    .of(context)
-                    .size
-                    .width / 1.5,
-                // width:200,
+              Padding(
+                padding: const EdgeInsets.only(right: 210),
+                child: Image.network(
+                  "images/Frame 14.png",
+                  height: AppSize.s636,
+                  width: MediaQuery
+                      .of(context)
+                      .size
+                      .width / 1.5,
+                  // width:200,
+                ),
               ),
               SizedBox(height:10,),
               Padding(
-                padding: const EdgeInsets.only(right:200),
+                padding: const EdgeInsets.only(right:210),
                 child: Image.network(
                   "images/design 2.png",
                   height: AppSize.s500,
