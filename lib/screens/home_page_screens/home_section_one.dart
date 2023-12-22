@@ -104,7 +104,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => CareerHomeScreen()),
+                              builder: (context) => CareerPageScreen()),
                         );
                       },
                       child: Text(AppString.career,

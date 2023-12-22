@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
-import '../../main.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+import '../landing_page_home.dart';
 
 class WWDSectionOne extends StatelessWidget {
   const  WWDSectionOne({super.key});

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/main.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
-import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+import '../landing_page_home.dart';
 
 class FeatureSectionOne extends StatelessWidget {
   const FeatureSectionOne({super.key});
@@ -80,9 +79,7 @@ class FeatureSectionOne extends StatelessWidget {
                                     .circular(
                                     20))),
                         onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => HomePage()),);
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),);
                         }, child: Text(
                         'Read More',style:TextStyle(fontWeight: FontWeightManager.semiBold,fontSize: FontSize.s15,
                         letterSpacing: -0.011,
