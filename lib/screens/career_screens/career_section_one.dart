@@ -37,6 +37,7 @@ class CareerSectionOne extends StatelessWidget {
             padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height /4,
               left:MediaQuery.of(context).size.width /5,right:150),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(AppString.moldYour,
                     style: AllScreensConstant.customTextStyle(
@@ -48,7 +49,7 @@ class CareerSectionOne extends StatelessWidget {
                 SizedBox(height: AppSize.s20,),
 
                 Padding(
-                  padding: const EdgeInsets.only(right:180),
+                  padding:  EdgeInsets.only(left:MediaQuery.of(context).size.width/150),
                   child: MaterialButton(
                     color: ColorManager.white,
                     shape: const RoundedRectangleBorder(

@@ -51,14 +51,14 @@ class CareerSectionFour extends StatelessWidget {
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
                             ),
-                            child: const Padding(
+                            child:  Padding(
                               padding: EdgeInsets.only(top: 25,),
                               child: Text(
                                 'OUR EMPLOYEE',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   // decoration: TextDecoration.none,
-                                  fontSize: 13,
+                                  fontSize: MediaQuery.of(context).size.width/100,
                                   color: Colors.white,
                                 ),
                               ),
@@ -74,14 +74,14 @@ class CareerSectionFour extends StatelessWidget {
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
                             ),
-                            child: const Padding(
+                            child:  Padding(
                               padding: EdgeInsets.only(top: 25, ),
                               child: Text(
                                 'NATIONALITIES',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'inter',
-                                  fontSize: 13,
+                                  fontSize:  MediaQuery.of(context).size.width/100,
                                   color: Colors.white,
                                 ),
                               ),
@@ -97,14 +97,14 @@ class CareerSectionFour extends StatelessWidget {
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
                             ),
-                            child: const Padding(
+                            child:  Padding(
                               padding: EdgeInsets.only(top: 25,),
                               child: Text(
                                 'DIVERSITY',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'inter',
-                                  fontSize: 13,
+                                  fontSize: MediaQuery.of(context).size.width/100,
                                   color: Colors.white,
                                 ),
                               ),
@@ -120,14 +120,14 @@ class CareerSectionFour extends StatelessWidget {
                               color: Colors.blueGrey[700],
                               borderRadius: BorderRadius.all(Radius.circular(15)),
                             ),
-                            child: const Padding(
+                            child:  Padding(
                               padding: EdgeInsets.only(top: 25,),
                               child: Text(
                                 'DEVELOPMENT',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'inter',
-                                  fontSize: 13,
+                                  fontSize: MediaQuery.of(context).size.width/100,
                                   color: Colors.white,
                                 ),
                               ),

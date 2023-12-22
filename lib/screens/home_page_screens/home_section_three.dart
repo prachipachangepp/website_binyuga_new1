@@ -96,7 +96,7 @@ class HomeSectionThree extends StatelessWidget {
                   ),
 
                   Padding(
-                      padding: EdgeInsets.only(top: 1150,right: MediaQuery.of(context).size.width / 50,left: MediaQuery.of(context).size.width / 2.5),
+                      padding: EdgeInsets.only(top: 1180,right: MediaQuery.of(context).size.width / 50,left: MediaQuery.of(context).size.width / 2.5),
                       child: Image.network(
                           "images/rectangle.png",
                           height: 855,

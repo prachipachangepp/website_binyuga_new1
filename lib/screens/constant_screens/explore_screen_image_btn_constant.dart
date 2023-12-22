@@ -48,7 +48,7 @@ class ImageWithButtonStack extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   backgroundColor: Colors.blue,
-                  fontSize: 20,
+                  fontSize: MediaQuery.of(context).size.width/90,
                   color: Colors.white,
                   fontFamily: 'inter',
                   fontWeight: FontWeight.w800,
