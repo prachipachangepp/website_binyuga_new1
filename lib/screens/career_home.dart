@@ -15,37 +15,37 @@ class CareerHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: ResponsiveAppBar(),
       ),
       body: ListView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         children: [
           Column(
             children: [
               Container(
                 height: AppSize.s900,
                 color: Colors.purple,
-                child: CareerSectionOne(),
+                child: const CareerSectionOne(),
               ),
               Container(
                 height:  AppSize.s1200,
-                child: CareerSectionTwo(),
+                child: const CareerSectionTwo(),
               ),
 
               Container(
                 height: AppSize.s1000,
-                child: CareerSectionThree(),
+                child: const CareerSectionThree(),
               ),
 
               Container(
                 height: AppSize.s1300,
-                child: CareerSectionFour(),
+                child: const CareerSectionFour(),
               ),
               Container(
                 height:  AppSize.s800,
-                child: DescriptionScreenConstant(),
+                child: const DescriptionScreenConstant(),
               ),
               Container(
                 height:  AppSize.s187,
