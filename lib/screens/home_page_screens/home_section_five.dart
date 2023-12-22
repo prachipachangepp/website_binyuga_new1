@@ -35,13 +35,14 @@ class HomeSectionFive extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.width / 10,
-                  left: MediaQuery.of(context).size.width / 30,
+                  left: MediaQuery.of(context).size.width / 17,
                 ),
                 child: Text(AppString.ourTeamMembers,
+                    textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       textStyle: TextStyle(
                           fontWeight: FontWeightManager.bold,
-                          fontSize: MediaQuery.of(context).size.width / 20,
+                          fontSize: MediaQuery.of(context).size.width / 27,
                           //  letterSpacing: -0.011,
                           color: ColorManager.white),
                     )),

@@ -1,3 +1,4 @@
+
 // import 'package:flutter/material.dart';
 //
 // import '../../../presentation/color_manager.dart';
@@ -23,35 +24,40 @@
 //             mainAxisAlignment: MainAxisAlignment.end,
 //             children: [
 //               Padding(
-//                 padding: EdgeInsets.only(top:40,right: 300),
+//                 padding: EdgeInsets.only (top: MediaQuery.of(context).size.width / 10,
+//       right:150),
 //                 child: Text(AppString.aboutUs1,
 //                     style: AllScreensConstant.customTextStyle(
 //                         FontSize.s60,
 //                         FontWeightManager.bold,
 //                         ColorManager.darkBlue
-//                     )
+//                     ),
 //                 ),
 //               ),
 //             ],
 //           ),
 //           SizedBox(height: 30,),
-//           Text(
-//               AppString.everyYear,
-//               textAlign: TextAlign.center,
-//               style:AllScreensConstant.customTextStyle(
-//                   MediaQuery.of(context).size.width/38,
-//                   FontWeightManager.bold,
-//                   ColorManager.black)
+//           Padding(
+//             padding: const EdgeInsets.only(right:100),
+//             child: Text(
+//                 AppString.everyYear,
+//                 textAlign: TextAlign.center,
+//                 style:AllScreensConstant.customTextStyle(
+//                     MediaQuery.of(context).size.width/38,
+//                     FontWeightManager.bold,
+//                     ColorManager.black)
 //
+//             ),
 //           ),
 //           SizedBox(height: 30,),
 //           Row(
 //             mainAxisAlignment: MainAxisAlignment.center,
 //             children: [
 //               Padding(
-//                 padding: EdgeInsets.only(top:30,left: 30),
+//                 padding: EdgeInsets.only(top:30,right:200),
 //                 child: Column(
 //                   crossAxisAlignment: CrossAxisAlignment.center,
+//
 //                   children: [
 //                     Text(
 //                       'OOO',
@@ -73,12 +79,12 @@
 //                   ],
 //                 ),
 //               ),
-//               SizedBox(width: 50,),
+//               SizedBox(width: 10,),
 //               Padding(
-//
-//                 padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top:30),
+//                 padding: EdgeInsets.only(right:150,top:30),
 //                 child: Column(
 //                   crossAxisAlignment: CrossAxisAlignment.center,
+//
 //                   children: [
 //                     Text(
 //                       'OO',
@@ -106,9 +112,9 @@
 //                   ],
 //                 ),
 //               ),
-//               SizedBox(width: 50,),
+//               SizedBox(width: 10,),
 //               Padding(
-//                 padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/100,top: 30),
+//                 padding: EdgeInsets.only(left:100,top: 30),
 //                 child: Column(
 //                   crossAxisAlignment: CrossAxisAlignment.center,
 //                   children: [
@@ -143,7 +149,10 @@
 //     );
 //   }
 // }
+
+
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
@@ -168,40 +177,37 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: EdgeInsets.only (top: MediaQuery.of(context).size.width / 10,
-      right:150),
+                padding: EdgeInsets.only(top:40,right: 170),
                 child: Text(AppString.aboutUs1,
-                    style: AllScreensConstant.customTextStyle(
-                        FontSize.s60,
-                        FontWeightManager.bold,
-                        ColorManager.darkBlue
-                    ),
+                  style: GoogleFonts.inter(
+                      textStyle: TextStyle(
+                          fontWeight: FontWeightManager.bold,
+                          fontSize: MediaQuery.of(context).size.width / 25,
+                          //  letterSpacing: -0.011,
+                          color: ColorManager.darkBlue),
+
                 ),
               ),
-            ],
+    ),],
           ),
           SizedBox(height: 30,),
-          Padding(
-            padding: const EdgeInsets.only(right:100),
-            child: Text(
-                AppString.everyYear,
-                textAlign: TextAlign.center,
-                style:AllScreensConstant.customTextStyle(
-                    MediaQuery.of(context).size.width/38,
-                    FontWeightManager.bold,
-                    ColorManager.black)
+          Text(
+              AppString.everyYear,
+              textAlign: TextAlign.center,
+              style:AllScreensConstant.customTextStyle(
+                  MediaQuery.of(context).size.width/38,
+                  FontWeightManager.bold,
+                  ColorManager.black)
 
-            ),
           ),
           SizedBox(height: 30,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.only(top:30,right:200),
+                padding: EdgeInsets.only(top:30,left: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
-
                   children: [
                     Text(
                       'OOO',
@@ -223,12 +229,12 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
                   ],
                 ),
               ),
-              SizedBox(width: 10,),
+              SizedBox(width: 50,),
               Padding(
-                padding: EdgeInsets.only(right:150,top:30),
+
+                padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top:30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
-
                   children: [
                     Text(
                       'OO',
@@ -256,9 +262,9 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
                   ],
                 ),
               ),
-              SizedBox(width: 10,),
+              SizedBox(width: 50,),
               Padding(
-                padding: EdgeInsets.only(left:100,top: 30),
+                padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/100,top: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -293,5 +299,3 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
     );
   }
 }
-
-

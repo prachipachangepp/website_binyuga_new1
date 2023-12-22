@@ -1,4 +1,5 @@
 ///start page code
+
 import 'package:flutter/material.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
@@ -27,28 +28,26 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
           'images/team_member_bg.png',
           fit: BoxFit.fill,
           height: MediaQuery.of(context).size.height / 0.85,
-          //width: MediaQuery.of(context).size.width/0.9,
-          width: 1600,
+          width: MediaQuery.of(context).size.width,
         ),
 
         ///boy img
         Padding(
           padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 1.77,
+              left: MediaQuery.of(context).size.width / 2,
               top: AppPadding.p100),
           child: Image.network(
             "images/boy.png",
             height: AppSize.s870,
             // height: MediaQuery.of(context).size.height/1,
-            // width: MediaQuery.of(context).size.width /1.5,
-            width: 520,
+            width: MediaQuery.of(context).size.width / 1.8,
             //alignment: Alignment.bottomLeft,
           ),
         ),
         Padding(
           padding: EdgeInsets.only(
               top: AppPadding.p150,
-              left: MediaQuery.of(context).size.width / 30),
+              left: MediaQuery.of(context).size.width / 40),
           child: Row(
             children: [
               ///sidebar
@@ -58,13 +57,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
-                        );
-                      },
+                      onTap: () {},
                       child: Text(AppString.whoWeAre,
                           style: HomeScreen.sidebarTextStyle),
                     ),
@@ -134,8 +127,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   ),
                   Text(AppString.homesTxt1,
                       style: AllScreensConstant.customTextStyle(
-                          // MediaQuery.of(context).size.width/30,
-                          45,
+                          MediaQuery.of(context).size.width / 30,
                           FontWeightManager.bold,
                           ColorManager.white)),
                   SizedBox(
@@ -146,8 +138,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   Text(AppString.homesTxt2,
                       textAlign: TextAlign.start,
                       style: AllScreensConstant.customTextStyle(
-                          //MediaQuery.of(context).size.width/90,
-                          15,
+                          MediaQuery.of(context).size.width / 90,
                           FontWeightManager.medium,
                           ColorManager.lightBlue)),
                   const SizedBox(
@@ -159,13 +150,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     color: ColorManager.white,
                     shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => WhatWeDoHomeScreen()),
-                      );
-                    },
+                    onPressed: () {},
                     child: Padding(
                       padding: EdgeInsets.symmetric(
                           vertical: AppPadding.p10,
@@ -262,71 +247,29 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               /// Contact us
-              Padding(
-                padding: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width / 1.8),
-                child: Text(
-                  AppString.contactUs,
-                  style: TextStyle(
-                    color: ColorManager.white,
-                    fontSize: MediaQuery.of(context).size.width / 70,
-                  ),
+              Text(
+                AppString.contactUs,
+                style: TextStyle(
+                  color: ColorManager.white,
+                  fontSize: MediaQuery.of(context).size.width / 70,
                 ),
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
-              // Image.asset(
-              //   'images/toggle_bg.png',
-              //   color:Color(0xff27C9B2),
-              //   height: MediaQuery.of(context).size.height / 18,
-              //   width: MediaQuery.of(context).size.width / 18,
-              // ),
-              // SizedBox(width: MediaQuery.of(context).size.width / 50),
-              // Padding(
-              //   padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
-              //   child: Image.asset(
-              //     'images/search.png',
-              //     width: MediaQuery.of(context).size.width / 25,
-              //   ),
-              // ),
-              Padding(
-                padding: const EdgeInsets.only(right: 20),
-                child: Switch.adaptive(
-                    activeColor: Colors.cyanAccent,
-                    focusColor: Colors.white,
-                    value: _lights,
-                    onChanged: (bool value) {
-                      setState(() {
-                        _lights = value;
-                      });
-                    }),
+              Image.asset(
+                'images/toggle_bg.png',
+                color: Color(0xff27C9B2),
+                height: MediaQuery.of(context).size.height / 18,
+                width: MediaQuery.of(context).size.width / 18,
               ),
+              SizedBox(width: MediaQuery.of(context).size.width / 50),
               Padding(
-                padding: const EdgeInsets.only(right: AppPadding.p35),
-                child: Container(
-                  height: 40,
-                  width: 40,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(25.0),
-                    ),
-                  ),
-                  child: ShaderMask(
-                    shaderCallback: (Rect bounds) {
-                      return LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [Colors.red, Colors.yellow, Colors.blue],
-                      ).createShader(bounds);
-                    },
-                    child: Icon(
-                      Icons.search,
-                      color: Colors.white,
-                      size: 35,
-                    ),
-                  ),
+                padding: EdgeInsets.only(
+                    right: MediaQuery.of(context).size.width / 80),
+                child: Image.asset(
+                  'images/search.png',
+                  width: MediaQuery.of(context).size.width / 25,
                 ),
-              )
+              ),
             ],
           ),
         ),
