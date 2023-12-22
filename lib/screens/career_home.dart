@@ -79,7 +79,7 @@ class CareerHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 1300,
+                        height: 800,
                         child: Center(child: DescriptionScreenConstant()),
                       ),
                     ],
@@ -90,7 +90,7 @@ class CareerHomeScreen extends StatelessWidget {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1536,
-                        height: 1300,
+                        height: 187,
                         child: Center(child: BottomNavBarScreen()),
                       ),
                     ],
