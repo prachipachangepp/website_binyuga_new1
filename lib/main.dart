@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                         width: isWideScreen
                             ? MediaQuery.of(context).size.width
                             : 1240,
-                        height: 720,
+                        height: 800,
                         child: Center(child: HomeSectionSix()),
                       ),
                     ],

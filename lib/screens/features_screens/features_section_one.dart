@@ -78,7 +78,9 @@ class FeatureSectionOne extends StatelessWidget {
                                 BorderRadius
                                     .circular(
                                     20))),
-                        onPressed: () {}, child: Text(
+                        onPressed: () {
+
+                        }, child: Text(
                         'Read More',style:TextStyle(fontWeight: FontWeightManager.semiBold,fontSize: FontSize.s15,
                         letterSpacing: -0.011,
                         color: ColorManager.black,),
