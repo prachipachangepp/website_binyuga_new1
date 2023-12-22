@@ -310,7 +310,7 @@ Widget webBody() {
               Row(
                 children: [
                   Expanded(
-                      flex: 3,
+                      flex: 1,
                       child: Container(child: HomeSectionSix())),
                 ],
               ),

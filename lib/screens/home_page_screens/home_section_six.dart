@@ -20,7 +20,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
     return Container(
       color: ColorManager.nevyBlue,
       // height:AppSize.s1000,
-      height: 1000,
+      height: 800,
       child:Center(
         child: Column(
           children: [

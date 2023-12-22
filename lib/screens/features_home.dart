@@ -136,7 +136,7 @@ class _FeaturesHomeScreenState extends State<FeaturesHomeScreen> {
                   Row(
                     children: [
                       Expanded(
-                          flex: 1,
+                          flex: 2,
                           child: Container(child: FeatureSectionTwo())),
                     ],
                   ),
