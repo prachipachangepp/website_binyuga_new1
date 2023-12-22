@@ -28,10 +28,10 @@ class FeatureSectionTwo extends StatelessWidget {
           ),
 
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/5,top: 250),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/3,top: 200),
             child: Text(
                 AppString.dreamIt,
-                style: TextStyle( fontSize: MediaQuery.of(context).size.width / 25,
+                style: TextStyle( fontSize: MediaQuery.of(context).size.width / 30,
                 fontWeight: FontWeightManager.extraBold,
                 decoration:TextDecoration.none,
                 color: ColorManager.darkBlue1),
