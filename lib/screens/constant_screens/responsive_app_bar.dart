@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/career_home.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+import '../features_home.dart';
+import '../what_we_do_home.dart';
 
 class ResponsiveAppBar extends StatelessWidget {
   const ResponsiveAppBar({super.key});
@@ -21,15 +24,55 @@ class ResponsiveAppBar extends StatelessWidget {
             ? Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            NavBarItem(title: 'Who we are'),
+            GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WhatWeDoHomeScreen()),
+                  );
+                },
+                child: NavBarItem(title: 'Who we are')),
             SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'What we do'),
+            GestureDetector(
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WhatWeDoHomeScreen()),
+                );
+              },
+                child: NavBarItem(title: 'What we do')),
             SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'Features'),
+            GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => FeaturesHomeScreen()),
+                  );
+                },
+                child: NavBarItem(title: 'Features')),
             SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'Career'),
+            GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CareerHomeScreen()),
+                  );
+                },
+                child: NavBarItem(title: 'Career')),
             SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'Portfolio'),
+            GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WhatWeDoHomeScreen()),
+                  );
+                },
+                child: NavBarItem(title: 'Portfolio')),
             SizedBox(width: MediaQuery.of(context).size.width/6.2),
             NavBarItem(title: 'Contacts'),
 
