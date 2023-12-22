@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/presentation/color_manager.dart';
 
+import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
@@ -11,7 +12,7 @@ class FeatureSectionTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 1200,
+      height: 1300,
       width: MediaQuery.of(context).size.width,
       child: Stack(
         children: [
@@ -20,17 +21,20 @@ class FeatureSectionTwo extends StatelessWidget {
             children: [
               Image.network(
                 "images/design 1.png",
-                 height:AppSize.s380,
-
+                height:AppSize.s380,
+                width: MediaQuery.of(context).size.width/2.6,
               ),
             ],
           ),
 
           Padding(
-            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/2.4,top: 250),
+            padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width/5,top: 250),
             child: Text(
                 AppString.dreamIt,
-                style:  FeatureSubHomeConstant.featuresubHomeTextStyle
+                style: TextStyle( fontSize: MediaQuery.of(context).size.width / 25,
+                fontWeight: FontWeightManager.extraBold,
+                decoration:TextDecoration.none,
+                color: ColorManager.darkBlue1),
             ),
           ),
 
@@ -41,8 +45,8 @@ class FeatureSectionTwo extends StatelessWidget {
               children: [
                 Image.network(
                   "images/Rectangle 682.png",
-                   height: 935,
-                  // height:AppSize.s636,
+                  // height: 935,
+                  height:AppSize.s636,
                   width: MediaQuery.of(context).size.width/1.6,
                 ),
               ],
@@ -53,8 +57,8 @@ class FeatureSectionTwo extends StatelessWidget {
             padding: const EdgeInsets.only(left:190, top:420),
             child: Image.network(
               'images/Rectangle 677.png',
-              height: 1050,
-              // height: AppSize.s780,
+              // height: 1050,
+              height: AppSize.s780,
               width: MediaQuery.of(context).size.width/1.7,
             ),
           ),
@@ -102,6 +106,3 @@ class FeatureSectionTwo extends StatelessWidget {
     );
   }
 }
-
-
-
