@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:website_binyuga_new1/presentation/value_manager.dart';
 
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
@@ -37,11 +38,8 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // Container(
-        //   color: Colors.red,
-        // ),
         Container(
-          height: 187,
+          height: AppSize.s187,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/black_bg.png'),
@@ -73,7 +71,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -81,7 +79,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -89,7 +87,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -97,7 +95,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -110,7 +108,6 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 20,
                     ),
-
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
@@ -136,7 +133,6 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                             color: ColorManager.white,
                             border: Border.all(color: Colors.white, width: 2),
                             borderRadius: BorderRadius.circular(2)),
-                        //padding: EdgeInsets.all(3),
                         width: MediaQuery.of(context).size.width / 6.5,
                         height: 30,
                         child: DropdownButton(
@@ -145,9 +141,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           hint: Text(
                             countries[0],
                             style: TextStyle(
-                                color: ColorManager.black,
-                                //  fontWeight: FontWeight.bold,
-                                fontSize: 11),
+                                color: ColorManager.black, fontSize: 11),
                           ),
                           value: selectedCountry,
                           underline: const SizedBox(),
