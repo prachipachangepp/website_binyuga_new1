@@ -135,7 +135,7 @@ class CareerSectionFour extends StatelessWidget {
                               padding: EdgeInsets.only(
                                 top: AppPadding.p25,
                               ),
-                              child: Text(AppString.developTxt,
+                              child: Text(AppString.devlopTxt,
                                 textAlign: TextAlign.center,
                                   style: AllScreensConstant.customTextStyle(
                                       MediaQuery.of(context).size.width / 100,

@@ -115,6 +115,14 @@ class AppString {
       ' \ncubilia ullamcorper tempor fermentum '
       ' \ntellus odio.';
 
+  static const String ourTxt = 'OUR EMPLOYEE';
+  static const String nationTxt ='NATIONALITIES';
+  static const String diverTxt = 'DIVERSITY';
+  static const String devlopTxt ='DEVELOPMENT';
+
+
+
+
    /// WhatWeDoHomeScreen
   static const String homePageText1 = 'Elevating Success with\nInnovative Tech';
   static const String homePageText2 =  'Our company harnesses cutting-edge technologies and\nstrategic IT solutions to empower business. We believe that\ninnovation and technology are the driving forces behind\nsuccess in the digital age. ';
