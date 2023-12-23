@@ -40,9 +40,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
           child: Image.network(
             "images/boy.png",
             height: AppSize.s870,
-            // height: MediaQuery.of(context).size.height/1,
             width: MediaQuery.of(context).size.width / 1.8,
-            //alignment: Alignment.bottomLeft,
           ),
         ),
         Padding(
@@ -53,7 +51,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             children: [
               ///sidebar
               Padding(
-                padding: EdgeInsets.only(top: AppPadding.p150),
+                padding: const EdgeInsets.only(top: AppPadding.p150),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -62,13 +60,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
+                              builder: (context) => const WhatWeDoHomeScreen()),
                         );
                       },
                       child: Text(AppString.whoWeAre,
                           style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppSize.s50,
                     ),
                     GestureDetector(
@@ -76,13 +74,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
+                              builder: (context) => const WhatWeDoHomeScreen()),
                         );
                       },
                       child: Text(AppString.whatWeDo,
                           style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppSize.s50,
                     ),
                     GestureDetector(
@@ -90,13 +88,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => FeaturesHomeScreen()),
+                              builder: (context) => const FeaturesHomeScreen()),
                         );
                       },
                       child: Text(AppString.features,
                           style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppSize.s50,
                     ),
                     GestureDetector(
@@ -104,13 +102,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => CareerHomeScreen()),
+                              builder: (context) => const CareerHomeScreen()),
                         );
                       },
                       child: Text(AppString.career,
                           style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppSize.s50,
                     ),
                     GestureDetector(
@@ -118,7 +116,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
+                              builder: (context) => const WhatWeDoHomeScreen()),
                         );
                       },
                       child: Text(AppString.portfolio,
@@ -143,7 +141,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                           MediaQuery.of(context).size.width / 30,
                           FontWeightManager.bold,
                           ColorManager.white)),
-                  SizedBox(
+                  const SizedBox(
                     height: AppSize.s20,
                   ),
 
@@ -164,7 +162,11 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30.0))),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => CareerHomeScreen()),);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const CareerHomeScreen()),
+                      );
                     },
                     child: Padding(
                       padding: EdgeInsets.symmetric(
@@ -194,7 +196,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: AppSize.s20,
         ),
 
@@ -207,14 +209,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Column(
-                //mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Icon(
                     Icons.chevron_right,
                     color: ColorManager.lightBlue,
                     size: MediaQuery.of(context).size.width / 30,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: AppSize.s20,
                   ),
                   Icon(
@@ -223,7 +224,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     size:
                         MediaQuery.of(context).size.width / 40, // Original size
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: AppSize.s20,
                   ),
                   Icon(
@@ -270,11 +271,14 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     fontSize: MediaQuery.of(context).size.width / 70,
                   ),
                 ),
-                onTap: (){ Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => DescriptionScreenConstant()),
-                );},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const DescriptionScreenConstant()),
+                  );
+                },
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
               Padding(
@@ -295,7 +299,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                 child: Container(
                   height: 40,
                   width: 40,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.all(
                       Radius.circular(25.0),
@@ -309,7 +313,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         colors: [Colors.red, Colors.yellow, Colors.blue],
                       ).createShader(bounds);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.search,
                       color: Colors.white,
                       size: 35,

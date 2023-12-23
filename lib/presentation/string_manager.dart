@@ -115,6 +115,11 @@ class AppString {
       ' \ncubilia ullamcorper tempor fermentum '
       ' \ntellus odio.';
 
+  static const String ourTxt = 'OUR EMPLOYEE';
+  static const String nationTxt = 'NATIONALITIES';
+  static const String diverTxt = 'DIVERSITY';
+  static const String developTxt = 'DEVELOPMENT';
+
 
   /// WhatWeDo SubHomePage
   static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness \nProsperity";

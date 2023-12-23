@@ -80,7 +80,7 @@ class FeatureSectionOne extends StatelessWidget {
                                     .circular(
                                     20))),
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),);
+                       //   Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),);
                         }, child: Text(
                         'Read More',style:TextStyle(fontWeight: FontWeightManager.semiBold,fontSize: FontSize.s15,
                         letterSpacing: -0.011,

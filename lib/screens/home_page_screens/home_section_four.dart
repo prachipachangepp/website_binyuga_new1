@@ -158,6 +158,7 @@ import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
+import '../../presentation/value_manager.dart';
 
 class HomeSectionFour extends StatefulWidget {
   const HomeSectionFour({super.key});
@@ -177,20 +178,19 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: EdgeInsets.only(top:40,right: 170),
+                padding: EdgeInsets.only(top: AppPadding.p40,right: 170),
                 child: Text(AppString.aboutUs1,
                   style: GoogleFonts.inter(
                       textStyle: TextStyle(
                           fontWeight: FontWeightManager.bold,
                           fontSize: MediaQuery.of(context).size.width / 25,
-                          //  letterSpacing: -0.011,
                           color: ColorManager.darkBlue),
 
                 ),
               ),
     ),],
           ),
-          SizedBox(height: 30,),
+          SizedBox(height: AppSize.s30),
           Text(
               AppString.everyYear,
               textAlign: TextAlign.center,
@@ -200,7 +200,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
                   ColorManager.black)
 
           ),
-          SizedBox(height: 30,),
+          SizedBox(height: AppSize.s30),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

@@ -35,14 +35,14 @@ class HomeSectionFive extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.width / 10,
-                  left: MediaQuery.of(context).size.width / 17,
+                  left: MediaQuery.of(context).size.width / 5,
                 ),
                 child: Text(AppString.ourTeamMembers,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       textStyle: TextStyle(
                           fontWeight: FontWeightManager.bold,
-                          fontSize: MediaQuery.of(context).size.width / 27,
+                          fontSize: MediaQuery.of(context).size.width / 29,
                           //  letterSpacing: -0.011,
                           color: ColorManager.white),
                     )),
@@ -53,13 +53,13 @@ class HomeSectionFive extends StatelessWidget {
 
               ///txt 2
               Padding(
-                padding: const EdgeInsets.only(top: 50, left: 80),
+                padding:  EdgeInsets.only(top: 50, left: MediaQuery.of(context).size.width / 5,),
                 child: Text(AppString.teamTxt,
-                    //  textAlign: TextAlign.center,
+                    textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       textStyle: TextStyle(
                           fontWeight: FontWeightManager.medium,
-                          fontSize: MediaQuery.of(context).size.width / 33,
+                          fontSize: MediaQuery.of(context).size.width / 45,
                           color: ColorManager.blueShade),
                     )),
               ),
@@ -93,9 +93,7 @@ class HomeSectionFive extends StatelessWidget {
                     ),
                   ],
                 ),
-                // const SizedBox(
-                //   height: AppSize.s20,
-                // ),
+
 
                 Column(
                   children: [
@@ -107,13 +105,7 @@ class HomeSectionFive extends StatelessWidget {
                         style: TeamMemberConstant.nameTextStyle),
                   ],
                 ),
-                // SizedBox(
-                //   width: MediaQuery.of(context).size.width / 2,
-                // ),
-                //
-                // const SizedBox(
-                //   height: AppSize.s20,
-                // ),
+
                 Column(
                   children: [
                     CircleAvatar(
