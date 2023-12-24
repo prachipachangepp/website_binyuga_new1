@@ -67,7 +67,7 @@ class CareerSectionOne extends StatelessWidget {
                           vertical: AppPadding.p8,
                           horizontal: MediaQuery.of(context).size.width / 50),
                       child: Text(
-                        'Apply Now',
+                       AppString.applyTxt,
                         style: RButtonTheme.roundedButtonTextStyle,
                       ),
                     ),

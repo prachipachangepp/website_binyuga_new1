@@ -120,6 +120,8 @@ class AppString {
   static const String diverTxt = 'DIVERSITY';
   static const String devlopTxt ='DEVELOPMENT';
 
+  static const String applyTxt = 'Apply Now';
+
 
 
 
@@ -178,6 +180,8 @@ class AppString {
       '\ngoals. Just as a sculptor molds clay into a '
       '\nmasterpiece, we are here to assist you in crafting '
       '\n your path towards success. ';
+
+  static const String  readTxt = 'Read More';
 
 
 }

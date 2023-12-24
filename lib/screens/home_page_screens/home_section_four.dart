@@ -205,7 +205,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.only(top:30,left: 30),
+                padding: EdgeInsets.only(top: AppPadding.p30,left: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -232,7 +232,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
               SizedBox(width: 50,),
               Padding(
 
-                padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top:30),
+                padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top: AppPadding.p30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -276,7 +276,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
                           fontFamily: FontConstants.fontFamily1,
                           color: ColorManager.skyBlue),
                     ),
-                    SizedBox(height: 8.0),
+                    SizedBox(height: AppSize.s8),
                     Text(
                         AppString.trainingDays,
                         textAlign: TextAlign.center,
@@ -291,7 +291,7 @@ class _HomeSectionFourState extends State<HomeSectionFour> {
               ),
             ],
           ),
-          SizedBox(height: 80.0,),
+          SizedBox(height: AppSize.s80),
 
         ],
       ),

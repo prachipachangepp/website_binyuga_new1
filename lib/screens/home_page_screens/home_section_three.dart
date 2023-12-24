@@ -72,7 +72,7 @@ class HomeSectionThree extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 1200.0, left: 10),
+            padding: EdgeInsets.only(top: AppPadding.p1200, left: 10),
             child: Row(
               children: [
                 Padding(
@@ -102,7 +102,7 @@ class HomeSectionThree extends StatelessWidget {
 
           Padding(
             padding: EdgeInsets.only(
-                top: 1180,
+                top: AppPadding.p1180,
                 right: MediaQuery.of(context).size.width / 50,
                 left: MediaQuery.of(context).size.width / 2.5),
             child: Image.network(

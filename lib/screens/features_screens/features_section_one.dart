@@ -88,7 +88,7 @@ class FeatureSectionOne extends StatelessWidget {
                           );
                         },
                         child: Text(
-                          'Read More',
+                          AppString.readTxt,
                           style: TextStyle(
                             fontWeight: FontWeightManager.semiBold,
                             fontSize: FontSize.s15,
