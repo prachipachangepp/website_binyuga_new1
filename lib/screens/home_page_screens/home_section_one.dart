@@ -355,7 +355,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                 _toggleSearchBar();
               },
               child: Container(
-                color: Colors.transparent,
+              //  color: Colors.transparent,
               ),
             ),
           ),
@@ -366,11 +366,12 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
               width: _isSearchBarVisible ? 180 : 0,
               height: 40,
               child: TextField(
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
                 cursorColor: Colors.grey,
                 decoration: InputDecoration(
                   hintText: 'Search...',
                   hintStyle: TextStyle(color: ColorManager.black),
+                //  border:InputBorder.none,
                   filled: true,
                   fillColor: Colors.white,
                   border: OutlineInputBorder(

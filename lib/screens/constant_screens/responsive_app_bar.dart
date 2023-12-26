@@ -16,6 +16,7 @@ class ResponsiveAppBar extends StatelessWidget {
     return AppBar(
       ///Remove Arrow Buttom
       automaticallyImplyLeading: false,
+     // backgroundColor: Colors.white,
       title: Image.asset(
         'images/binyuga_logo.png',
         height: AppSize.s160,

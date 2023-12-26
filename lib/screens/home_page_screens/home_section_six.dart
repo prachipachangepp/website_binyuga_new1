@@ -54,7 +54,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: 150),
+                        bottom: 137),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -95,7 +95,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: 150),
+                        bottom: 160),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -153,7 +153,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: AppPadding.p150),
+                        bottom:180),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -223,7 +223,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: AppPadding.p150),
+                        bottom: 170),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
