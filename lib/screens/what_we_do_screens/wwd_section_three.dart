@@ -35,7 +35,7 @@ class _WWDSectionThreeState extends State<WWDSectionThree> {
                       onPressed: () {})
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: AppSize.s50,
               ),
               Row(

@@ -19,7 +19,7 @@ class _WhatWeDoHomeScreenState extends State<WhatWeDoHomeScreen> {
   Widget build(BuildContext context) {
     Size screenWidth;
     return Scaffold(
-        appBar: PreferredSize(
+        appBar: const PreferredSize(
           preferredSize: Size.fromHeight(kToolbarHeight),
           child: ResponsiveAppBar(),
         ),
@@ -71,7 +71,6 @@ class _WhatWeDoHomeScreenState extends State<WhatWeDoHomeScreen> {
               ],
             )
           ];
-
           return ListView.builder(
               shrinkWrap: true,
               // controller: _controller,

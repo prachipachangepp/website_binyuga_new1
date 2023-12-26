@@ -58,7 +58,7 @@ class CareerSectionTwo extends StatelessWidget {
 
           ///inverted comma start
           Padding(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               top: AppPadding.p170,
             ),
             child: Row(

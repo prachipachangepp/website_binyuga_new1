@@ -13,7 +13,7 @@ class HomeSectionFive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 1400,
+      height: AppSize.s1400,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -23,7 +23,7 @@ class HomeSectionFive extends StatelessWidget {
               Image.network(
                 'images/team_member_bg.png',
                 fit: BoxFit.fill,
-                height: 600,
+                height: AppSize.s600,
                 width: MediaQuery.of(context).size.width,
               ),
             ],
@@ -40,20 +40,17 @@ class HomeSectionFive extends StatelessWidget {
                 child: Text(AppString.ourTeamMembers,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
-                      textStyle: TextStyle(
-                          fontWeight: FontWeightManager.bold,
-                          fontSize: MediaQuery.of(context).size.width / 29,
-                          //  letterSpacing: -0.011,
-                          color: ColorManager.white),
+                      textStyle: AllScreensConstant.customTextStyle(
+                          MediaQuery.of(context).size.width / 29,
+                          FontWeightManager.bold,
+                          ColorManager.white),
                     )),
               ),
-              SizedBox(
-                height: 10,
-              ),
+              const SizedBox(height: AppSize.s10,),
 
               ///txt 2
               Padding(
-                padding:  EdgeInsets.only(top: 50, left: MediaQuery.of(context).size.width / 5,),
+                padding:  EdgeInsets.only(top: AppSize.s50, left: MediaQuery.of(context).size.width / 5,),
                 child: Text(AppString.teamTxt,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
@@ -65,20 +62,15 @@ class HomeSectionFive extends StatelessWidget {
               ),
             ],
           ),
-
-          SizedBox(
-            height: AppSize.s20,
-          ),
+          const SizedBox(height: AppSize.s20,),
 
           ///cirle avtar row 1
           Padding(
-            padding: EdgeInsets.only(
-              // left: MediaQuery.of(context).size.width / 20,
+            padding: const EdgeInsets.only(
               top: AppPadding.p430,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              // crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Column(
                   children: [
@@ -122,9 +114,7 @@ class HomeSectionFive extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(
-            height: AppSize.s10,
-          ),
+          const SizedBox(height: AppSize.s10,),
 
           ///cirle avtar row 2
           Padding(
@@ -160,8 +150,7 @@ class HomeSectionFive extends StatelessWidget {
                         style: TeamMemberConstant.nameTextStyle),
                   ],
                 ),
-                const SizedBox(
-                  height: 50,
+                const SizedBox(height: AppSize.s50,
                 ),
               ],
             ),

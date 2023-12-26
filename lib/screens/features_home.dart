@@ -18,7 +18,7 @@ class _FeaturesHomeScreenState extends State<FeaturesHomeScreen> {
   Widget build(BuildContext context) {
     Size screenWidth;
     return Scaffold(
-        appBar: PreferredSize(
+        appBar: const PreferredSize(
           preferredSize: Size.fromHeight(kToolbarHeight),
           child: ResponsiveAppBar(),
         ),
@@ -72,7 +72,6 @@ class _FeaturesHomeScreenState extends State<FeaturesHomeScreen> {
               ],
             )
           ];
-
           return ListView.builder(
               shrinkWrap: true,
               itemCount: body.length,

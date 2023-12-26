@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
+import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
 
 class FeatureSectionTwo extends StatelessWidget {
@@ -33,11 +34,10 @@ class FeatureSectionTwo extends StatelessWidget {
                 top: AppPadding.p200),
             child: Text(
               AppString.dreamIt,
-              style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.width / 30,
-                  fontWeight: FontWeightManager.extraBold,
-                  decoration: TextDecoration.none,
-                  color: ColorManager.darkBlue1),
+              style: AllScreensConstant.customTextStyle(
+                  MediaQuery.of(context).size.width / 30,
+                  FontWeightManager.extraBold,
+                  ColorManager.darkBlue1),
             ),
           ),
 

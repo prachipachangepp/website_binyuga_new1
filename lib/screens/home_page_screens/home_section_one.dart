@@ -186,8 +186,8 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
 
         ///divider
         Padding(
-          padding: const EdgeInsets.only(top: 170),
-          child: Container(
+          padding: const EdgeInsets.only(top: AppPadding.p170),
+          child: SizedBox(
             height: MediaQuery.of(context).size.height / 4.2,
             child: VerticalDivider(
               width: MediaQuery.of(context).size.width / 2.2,
@@ -282,10 +282,10 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
               Padding(
-                padding: const EdgeInsets.only(right: 20),
+                padding: const EdgeInsets.only(right: AppPadding.p20),
                 child: Switch.adaptive(
                     activeColor: Colors.cyanAccent,
-                    focusColor: Colors.white,
+                    focusColor: ColorManager.white,
                     value: _lights,
                     onChanged: (bool value) {
                       setState(() {
@@ -297,11 +297,11 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
               Padding(
                 padding: const EdgeInsets.only(right: AppPadding.p35),
                 child: Container(
-                  height: 40,
-                  width: 40,
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(
+                  height: AppSize.s40,
+                  width: AppSize.s40,
+                  decoration:  BoxDecoration(
+                    color: ColorManager.white,
+                    borderRadius: const BorderRadius.all(
                       Radius.circular(25.0),
                     ),
                   ),
@@ -316,7 +316,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     child: const Icon(
                       Icons.search,
                       color: Colors.white,
-                      size: 35,
+                      size: AppSize.s35,
                     ),
                   ),
                 ),

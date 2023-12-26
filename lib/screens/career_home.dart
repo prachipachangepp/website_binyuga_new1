@@ -33,7 +33,6 @@ class CareerHomeScreen extends StatelessWidget {
                 height:  AppSize.s1200,
                 child: const CareerSectionTwo(),
               ),
-
               Container(
                 height: AppSize.s1000,
                 child: const CareerSectionThree(),
