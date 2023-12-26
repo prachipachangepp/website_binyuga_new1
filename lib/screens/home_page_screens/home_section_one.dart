@@ -370,12 +370,12 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                 cursorColor: Colors.grey,
                 decoration: InputDecoration(
                   hintText: 'Search...',
-                  hintStyle: TextStyle(color: Colors.white54),
+                  hintStyle: TextStyle(color: ColorManager.black),
                   filled: true,
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20.0),
-                    borderSide: BorderSide(color: Colors.white),
+                    borderSide: BorderSide(color: ColorManager.black),
                   ),
                   contentPadding:
                       const EdgeInsets.symmetric(vertical: 10.0, horizontal: 9),
