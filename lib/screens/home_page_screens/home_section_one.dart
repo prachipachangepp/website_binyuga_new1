@@ -10,6 +10,7 @@ import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
 import '../career_home.dart';
 import '../features_home.dart';
+import '../landing_page_home.dart';
 import '../what_we_do_home.dart';
 
 class HomeSectionOne extends StatefulWidget {
@@ -320,7 +321,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                              const SearchScreen1(title: '',)),
+                              const SearchScreen1(title: '')),
                         );
                       },
                       child: const Icon(
