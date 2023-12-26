@@ -142,7 +142,7 @@ class NavBarItem extends StatelessWidget {
       child: Text(
         title,
         style: AllScreensConstant.customTextStyle(
-            MediaQuery.of(context).size.width / 90,
+            MediaQuery.of(context).size.width / 85,
             FontWeightManager.medium,
             ColorManager.black),
       ),

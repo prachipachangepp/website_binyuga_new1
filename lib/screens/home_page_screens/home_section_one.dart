@@ -48,13 +48,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         ),
         Padding(
           padding: EdgeInsets.only(
-              top: AppPadding.p150,
+              top: AppPadding.p100,
               left: MediaQuery.of(context).size.width / 40),
           child: Row(
             children: [
               ///sidebar
               Padding(
-                padding: const EdgeInsets.only(top: AppPadding.p150),
+                padding: const EdgeInsets.only(top: AppPadding.p70),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -366,12 +366,12 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
               width: _isSearchBarVisible ? 180 : 0,
               height: 40,
               child: TextField(
-                style: TextStyle(color: Colors.black),
-                cursorColor: Colors.grey,
+                style: TextStyle(color: ColorManager.black),
+                cursorColor: Colors.white,
                 decoration: InputDecoration(
                   hintText: 'Search...',
                   hintStyle: TextStyle(color: ColorManager.black),
-                  filled: true,
+                  filled:true,
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20.0),
