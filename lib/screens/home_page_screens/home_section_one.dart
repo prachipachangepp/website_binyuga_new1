@@ -1,6 +1,7 @@
 ///start page code
 
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/Search_Screen/search_screen1.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
@@ -313,10 +314,20 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         colors: [Colors.red, Colors.yellow, Colors.blue],
                       ).createShader(bounds);
                     },
-                    child: const Icon(
-                      Icons.search,
-                      color: Colors.white,
-                      size: 35,
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                              const SearchScreen1(title: '',)),
+                        );
+                      },
+                      child: const Icon(
+                        Icons.search,
+                        color: Colors.white,
+                        size: 35,
+                      ),
                     ),
                   ),
                 ),

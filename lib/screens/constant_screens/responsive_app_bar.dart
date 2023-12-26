@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/career_home.dart';
+import '../../Search_Screen/search_screen1.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/theme_manager.dart';
@@ -9,12 +10,12 @@ import '../what_we_do_home.dart';
 
 class ResponsiveAppBar extends StatelessWidget {
   const ResponsiveAppBar({super.key});
-
+  /// APPBAR
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      /// APPBAR
-      backgroundColor: Colors.white,
+      ///Remove Arrow Buttom
+      automaticallyImplyLeading: false,
       title: Image.asset(
         'images/binyuga_logo.png',
         height: AppSize.s160,
@@ -76,12 +77,49 @@ class ResponsiveAppBar extends StatelessWidget {
                       child: NavBarItem(title: 'Portfolio')),
                   SizedBox(width: MediaQuery.of(context).size.width / 6.2),
                   NavBarItem(title: 'Contacts'),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(right: AppPadding.p35),
+                  //   child: Image.asset(
+                  //     'images/search.png',
+                  //     width: AppSize.s50,
+                  //     height: AppSize.s50,
+                  //   ),
+                  // )
                   Padding(
                     padding: const EdgeInsets.only(right: AppPadding.p35),
-                    child: Image.asset(
-                      'images/search.png',
-                      width: AppSize.s50,
-                      height: AppSize.s50,
+                    child: Container(
+                      height: 40,
+                      width: 40,
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(25.0),
+                        ),
+                      ),
+                      child: ShaderMask(
+                        shaderCallback: (Rect bounds) {
+                          return const LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [Colors.red, Colors.yellow, Colors.blue],
+                          ).createShader(bounds);
+                        },
+                        child: GestureDetector(
+                          onTap: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const SearchScreen1(title: '',)),
+                            );
+                          },
+                          child: const Icon(
+                            Icons.search,
+                            color: Colors.white,
+                            size: 35,
+                          ),
+                        ),
+                      ),
                     ),
                   )
                 ],
