@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
+
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -20,6 +21,8 @@ class HomeSectionOne extends StatefulWidget {
 
 class _HomeSectionOneState extends State<HomeSectionOne> {
   bool _lights = false;
+  bool _isSearchBarVisible = false;
+  GlobalKey _searchKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -281,6 +284,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                 },
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
+
               Padding(
                 padding: const EdgeInsets.only(right: AppPadding.p20),
                 child: Switch.adaptive(
@@ -294,37 +298,102 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     }),
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 35),
+
+              ///Animated Search Bar
+              _isSearchBarVisible
+                  ? _buildAnimatedSearchBar()
+                  : SizedBox.shrink(),
               Padding(
                 padding: const EdgeInsets.only(right: AppPadding.p35),
-                child: Container(
-                  height: AppSize.s40,
-                  width: AppSize.s40,
-                  decoration:  BoxDecoration(
-                    color: ColorManager.white,
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(25.0),
+                child: GestureDetector(
+                  onTap: () {
+                    _toggleSearchBar();
+                  },
+                  child: Container(
+                    height: AppSize.s40,
+                    width: AppSize.s40,
+                    decoration: BoxDecoration(
+                      color: ColorManager.white,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(25.0),
+                      ),
                     ),
-                  ),
-                  child: ShaderMask(
-                    shaderCallback: (Rect bounds) {
-                      return const LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [Colors.red, Colors.yellow, Colors.blue],
-                      ).createShader(bounds);
-                    },
-                    child: const Icon(
-                      Icons.search,
-                      color: Colors.white,
-                      size: AppSize.s35,
+                    child: ShaderMask(
+                      shaderCallback: (Rect bounds) {
+                        return const LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [Colors.red, Colors.yellow, Colors.blue],
+                        ).createShader(bounds);
+                      },
+                      child: const Icon(
+                        Icons.search,
+                        color: Colors.white,
+                        size: AppSize.s35,
+                      ),
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
       ],
     );
+  }
+
+  Widget _buildAnimatedSearchBar() {
+    return GestureDetector(
+      onTap: () {
+        _toggleSearchBar();
+      },
+      child: Stack(
+        children: [
+          Positioned.fill(
+            child: GestureDetector(
+              onTap: () {
+                _toggleSearchBar();
+              },
+              child: Container(
+                color: Colors.transparent,
+              ),
+            ),
+          ),
+          Center(
+            child: AnimatedContainer(
+              key: _searchKey,
+              duration: Duration(milliseconds: 300),
+              width: _isSearchBarVisible ? 180 : 0,
+              height: 40,
+              child: TextField(
+                style: TextStyle(color: Colors.black),
+                cursorColor: Colors.grey,
+                decoration: InputDecoration(
+                  hintText: 'Search...',
+                  hintStyle: TextStyle(color: Colors.white54),
+                  filled: true,
+                  fillColor: Colors.white,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                    borderSide: BorderSide(color: Colors.white),
+                  ),
+                  contentPadding:
+                      const EdgeInsets.symmetric(vertical: 10.0, horizontal: 9),
+                ),
+                cursorWidth: 1.7,
+                cursorRadius: Radius.circular(5),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  ///
+  void _toggleSearchBar() {
+    setState(() {
+      _isSearchBarVisible = !_isSearchBarVisible;
+    });
   }
 }
