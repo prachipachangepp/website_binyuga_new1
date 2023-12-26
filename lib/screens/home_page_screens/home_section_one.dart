@@ -54,7 +54,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             children: [
               ///sidebar
               Padding(
-                padding: const EdgeInsets.only(top: AppPadding.p150),
+                padding: const EdgeInsets.only(top: AppPadding.p50),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
