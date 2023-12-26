@@ -153,7 +153,7 @@ class CareerSectionFour extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(
-                  top: 25, right: MediaQuery.of(context).size.width / 20),
+                  top: AppPadding.p25, right: MediaQuery.of(context).size.width / 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -165,7 +165,7 @@ class CareerSectionFour extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: 20,
+                    width: AppSize.s20,
                   ),
                   Padding(
                     padding: EdgeInsets.only(
