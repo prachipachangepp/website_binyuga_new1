@@ -72,44 +72,50 @@ class HomeSectionFive extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Column(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 10,
-                    ),
-                    Text(AppString.johnS,
-                        style: TeamMemberConstant.nameTextStyle),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 2.5,
-                    ),
-                  ],
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: ColorManager.white1,
+                        radius: MediaQuery.of(context).size.width / 10,
+                      ),
+                      Text(AppString.johnS,
+                          style: TeamMemberConstant.nameTextStyle),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width / 2.5,
+                      ),
+                    ],
+                  ),
                 ),
 
 
-                Column(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 10,
-                    ),
-                    Text(AppString.johnS,
-                        style: TeamMemberConstant.nameTextStyle),
-                  ],
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: ColorManager.white1,
+                        radius: MediaQuery.of(context).size.width / 10,
+                      ),
+                      Text(AppString.johnS,
+                          style: TeamMemberConstant.nameTextStyle),
+                    ],
+                  ),
                 ),
 
-                Column(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 10,
-                    ),
-                    Text(AppString.johnS,
-                        style: TeamMemberConstant.nameTextStyle),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 2.5,
-                    ),
-                  ],
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: ColorManager.white1,
+                        radius: MediaQuery.of(context).size.width / 10,
+                      ),
+                      Text(AppString.johnS,
+                          style: TeamMemberConstant.nameTextStyle),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width / 2.5,
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -124,31 +130,35 @@ class HomeSectionFive extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Column(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 10,
-                    ),
-                    Text(AppString.johnS,
-                        style: TeamMemberConstant.nameTextStyle),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 5,
-                    ),
-                  ],
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: ColorManager.white1,
+                        radius: MediaQuery.of(context).size.width / 10,
+                      ),
+                      Text(AppString.johnS,
+                          style: TeamMemberConstant.nameTextStyle),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width / 5,
+                      ),
+                    ],
+                  ),
                 ),
                 // const SizedBox(
                 //   height: AppSize.s20,
                 // ),
-                Column(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: ColorManager.white1,
-                      radius: MediaQuery.of(context).size.width / 10,
-                    ),
-                    Text(AppString.johnS,
-                        style: TeamMemberConstant.nameTextStyle),
-                  ],
+                Expanded(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: ColorManager.white1,
+                        radius: MediaQuery.of(context).size.width / 10,
+                      ),
+                      Text(AppString.johnS,
+                          style: TeamMemberConstant.nameTextStyle),
+                    ],
+                  ),
                 ),
                 const SizedBox(height: AppSize.s50,
                 ),
