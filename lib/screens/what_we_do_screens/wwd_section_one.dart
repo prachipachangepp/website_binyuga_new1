@@ -26,7 +26,7 @@ class WWDSectionOne extends StatelessWidget {
 
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p30, left: AppPadding.p70),
+            padding: const EdgeInsets.only(top: AppPadding.p30, left: AppPadding.p35),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

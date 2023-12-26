@@ -35,7 +35,7 @@ class FeatureSectionOne extends StatelessWidget {
                   children: [
                     Text(
                       AppString.featureScreenText1,
-                      textAlign: TextAlign.end,
+                    //  textAlign: TextAlign.end,
                       style: AllScreensConstant.customTextStyle(
                           MediaQuery.of(context).size.width / 40,
                           FontWeightManager.bold,
@@ -50,9 +50,9 @@ class FeatureSectionOne extends StatelessWidget {
                 ///txt 2
                 Padding(
                   padding: EdgeInsets.only(
-                      right: MediaQuery.of(context).size.width / 11),
+                      right: MediaQuery.of(context).size.width / 4),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                  //  mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Text(
                         AppString.featureScreenText2,
@@ -72,9 +72,9 @@ class FeatureSectionOne extends StatelessWidget {
                 ///button
                 Padding(
                   padding: EdgeInsets.only(
-                      right: MediaQuery.of(context).size.width / 4.6),
+                      right: MediaQuery.of(context).size.width / 4),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                  //  mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
