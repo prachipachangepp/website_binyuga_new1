@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'color_manager.dart';
 import 'font_manager.dart';
 
@@ -108,7 +107,6 @@ class UnionTxtScreen2 {
   static double getNewFont2Size(BuildContext context) {
     return MediaQuery.of(context).size.width / 42;
   }
-
   static TextStyle union2TextStyle(BuildContext context) {
     return GoogleFonts.inter(
         //textStyle: TextStyle(
@@ -141,27 +139,34 @@ class TeamMemberConstant {
       //)
       );
 }
+/// Bottom NavBar
 
+class BottomBarConstant {
+  static TextStyle emailTextStyle= GoogleFonts.inter(
+  //textStyle: TextStyle(
+color: ColorManager.white,
+fontSize: 18);
+}
 /// Career page binyuga
-
 class CareerPageConstant {
-  static TextStyle careerTextStyle = GoogleFonts.inter(
-//textStyle: TextStyle(
-      fontSize: FontSize.s15,
-     // fontWeight: FontWeightManager.medium,
+
+static double getNewFontSizeCareer(BuildContext context) {
+return MediaQuery.of(context).size.width / 55;
+}
+  static TextStyle careerTextStyle (BuildContext context){
+    return GoogleFonts.inter(
+      fontWeight: FontWeightManager.medium,
+      fontSize: getNewFontSizeCareer(context),
       decoration:TextDecoration.none,
       color: ColorManager.white);
+  }
 }
-class CareerPageConstant1 {
-  static TextStyle careerTextStyle1 = GoogleFonts.inter(
-      fontSize: FontSize.s15,
-      color: Colors.white);
-}
+
 
 /// WhatWeDo SubHome Page
 class WhatWeDoSubPageConstant {
   static double getNewFontSizeWWD(BuildContext context) {
-    return MediaQuery.of(context).size.width / 30;
+    return MediaQuery.of(context).size.width / 28;
   }
   static TextStyle subHomeTextStyle(BuildContext context){
     return GoogleFonts.inter(
@@ -180,7 +185,6 @@ class WhatWeDoExploreConstant {
     fontSize:  FontSize.s20,
     color: ColorManager.white,
     fontWeight: FontWeightManager.extraBold,
-
   );
 
 }

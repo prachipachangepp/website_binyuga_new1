@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
+import '../../presentation/theme_manager.dart';
+import '../../presentation/value_manager.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});
@@ -37,17 +38,12 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // Container(
-        //   color: Colors.red,
-        // ),
         Container(
-          height: 200,
-          width: 1800,
+          height: AppSize.s187,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/black_bg. png'),
+              image: AssetImage('images/black_bg.png'),
               fit: BoxFit.cover,
-
             ),
           ),
           child: Padding(
@@ -75,7 +71,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -83,7 +79,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -91,7 +87,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -99,7 +95,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           color: ColorManager.white,
                           size: 20,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Icon(
@@ -117,11 +113,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                       child: Row(
                         children: [
                           Text('www.career@binyuga.com',
-                              style: TextStyle(
-                                color: ColorManager.white,
-                                fontFamily: FontConstants.fontFamily1,
-                                fontSize: 18,
-                              )),
+                              style: BottomBarConstant.emailTextStyle),
                         ],
                       ),
                     ),
@@ -130,25 +122,22 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(
-                        right: MediaQuery.of(context).size.width /5,
+                        right: MediaQuery.of(context).size.width / 20,
                       ),
                       child: Container(
                         decoration: BoxDecoration(
                             color: ColorManager.white,
                             border: Border.all(color: Colors.white, width: 2),
                             borderRadius: BorderRadius.circular(2)),
-                        //padding: EdgeInsets.all(3),
                         width: MediaQuery.of(context).size.width / 6.5,
-                        height: 30,
+                        height: AppSize.s30,
                         child: DropdownButton(
                           focusColor: ColorManager.white,
                           alignment: Alignment.center,
                           hint: Text(
                             countries[0],
                             style: TextStyle(
-                                color: ColorManager.black,
-                                //  fontWeight: FontWeight.bold,
-                                fontSize: 11),
+                                color: ColorManager.black, fontSize: 11),
                           ),
                           value: selectedCountry,
                           underline: const SizedBox(),

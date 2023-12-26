@@ -115,6 +115,20 @@ class AppString {
       ' \ncubilia ullamcorper tempor fermentum '
       ' \ntellus odio.';
 
+  static const String ourTxt = 'OUR EMPLOYEE';
+  static const String nationTxt ='NATIONALITIES';
+  static const String diverTxt = 'DIVERSITY';
+  static const String devlopTxt ='DEVELOPMENT';
+
+  static const String applyTxt = 'Apply Now';
+
+
+
+
+   /// WhatWeDoHomeScreen
+  static const String homePageText1 = 'Elevating Success with\nInnovative Tech';
+  static const String homePageText2 =  'Our company harnesses cutting-edge technologies and\nstrategic IT solutions to empower business. We believe that\ninnovation and technology are the driving forces behind\nsuccess in the digital age. ';
+
 
   /// WhatWeDo SubHomePage
   static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness \nProsperity";
@@ -125,7 +139,7 @@ class AppString {
       "\n a vision. "
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
-      "\n solutions and results";
+      "\n solutions and results.";
   static const String sculptYour ="Sculpt Your Path to Success";
   static const String moldYour = "Mold Your Dreams "
       '\ninto Reality';
@@ -147,7 +161,7 @@ class AppString {
       "\n a vision. "
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
-      "\n solutions and results";
+      "\n solutions and results.";
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
@@ -165,7 +179,9 @@ class AppString {
       '\nsupport, and expertise you need to achieve your '
       '\ngoals. Just as a sculptor molds clay into a '
       '\nmasterpiece, we are here to assist you in crafting '
-      '\n your path towards success, ';
+      '\n your path towards success. ';
+
+  static const String  readTxt = 'Read More';
 
 
 }

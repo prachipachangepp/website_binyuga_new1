@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/career_home.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
+import '../features_home.dart';
+import '../what_we_do_home.dart';
 
 class ResponsiveAppBar extends StatelessWidget {
   const ResponsiveAppBar({super.key});
@@ -10,6 +13,7 @@ class ResponsiveAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      /// APPBAR
       backgroundColor: Colors.white,
       title: Image.asset(
         'images/binyuga_logo.png',
@@ -19,30 +23,69 @@ class ResponsiveAppBar extends StatelessWidget {
       actions: [
         MediaQuery.of(context).size.width > 600
             ? Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            NavBarItem(title: 'Who we are'),
-            SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'What we do'),
-            SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'Features'),
-            SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'Career'),
-            SizedBox(width: MediaQuery.of(context).size.width/55),
-            NavBarItem(title: 'Portfolio'),
-            SizedBox(width: MediaQuery.of(context).size.width/6.2),
-            NavBarItem(title: 'Contacts'),
-
-            Padding(
-              padding:  EdgeInsets.only(right: AppPadding.p35),
-              child: Image.asset(
-                'images/search.png',
-                width: AppSize.s50,
-                height: AppSize.s50,
-              ),
-            )
-              ],
-        )
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const WhatWeDoHomeScreen()),
+                        );
+                      },
+                      child: NavBarItem(title: 'Who we are')),
+                  SizedBox(width: MediaQuery.of(context).size.width / 55),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const WhatWeDoHomeScreen()),
+                        );
+                      },
+                      child: NavBarItem(title: 'What we do')),
+                  SizedBox(width: MediaQuery.of(context).size.width / 55),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const FeaturesHomeScreen()),
+                        );
+                      },
+                      child: NavBarItem(title: 'Features')),
+                  SizedBox(width: MediaQuery.of(context).size.width / 55),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CareerHomeScreen()),
+                        );
+                      },
+                      child: NavBarItem(title: 'Career')),
+                  SizedBox(width: MediaQuery.of(context).size.width / 55),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const WhatWeDoHomeScreen()),
+                        );
+                      },
+                      child: NavBarItem(title: 'Portfolio')),
+                  SizedBox(width: MediaQuery.of(context).size.width / 6.2),
+                  NavBarItem(title: 'Contacts'),
+                  Padding(
+                    padding: const EdgeInsets.only(right: AppPadding.p35),
+                    child: Image.asset(
+                      'images/search.png',
+                      width: AppSize.s50,
+                      height: AppSize.s50,
+                    ),
+                  )
+                ],
+              )
             : Container(),
       ],
     );
@@ -60,8 +103,10 @@ class NavBarItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: Text(
         title,
-        style: AllScreensConstant.customTextStyle(MediaQuery.of(context).size.width/90,
-            FontWeightManager.medium, ColorManager.black),
+        style: AllScreensConstant.customTextStyle(
+            MediaQuery.of(context).size.width / 90,
+            FontWeightManager.medium,
+            ColorManager.black),
       ),
     );
   }

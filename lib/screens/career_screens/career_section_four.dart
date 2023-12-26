@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
+import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
 import '../../presentation/theme_manager.dart';
@@ -18,118 +19,128 @@ class CareerSectionFour extends StatelessWidget {
             Image.network(
               'images/background1.png',
               fit: BoxFit.fill,
-              height: 720,
+              height: AppSize.s720,
               width: MediaQuery.of(context).size.width,
             ),
             Padding(
               padding: EdgeInsets.only(
-                  left: MediaQuery.of(context).size.width / 12, top: 400),
-              child: const Text(AppString.aboutUs,
-                style: TextStyle(
-                    fontSize: 35,
-                    fontFamily: 'inter',
-                    decoration: TextDecoration.none,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white),
+                  left: MediaQuery.of(context).size.width / 12,
+                  top: AppPadding.p400),
+              child: Text(
+                AppString.aboutUs,
+                style: GoogleFonts.inter(
+                  textStyle: TextStyle(
+                    fontWeight: FontWeightManager.bold,
+                    fontSize: MediaQuery.of(context).size.width / 25,
+                    color: ColorManager.white,
+                  ),
+                ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 500),
+              padding: EdgeInsets.only(top: AppPadding.p530),
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/15,
-                      right:  MediaQuery.of(context).size.width/15,),
+                    padding: EdgeInsets.only(
+                      left: MediaQuery.of(context).size.width / 15,
+                      right: MediaQuery.of(context).size.width / 15,
+                    ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Expanded(
                           child: Container(
-                            height: 300,
+                            height: AppSize.s300,
                             //width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
-                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(15)),
                             ),
-                            child: const Padding(
-                              padding: EdgeInsets.only(top: 25,),
-                              child: Text(
-                                'OUR EMPLOYEE',
+                            child: Padding(
+                              padding: EdgeInsets.only(
+                                top: AppPadding.p25,
+                              ),
+                              child: Text(AppString.ourTxt,
                                 textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  // decoration: TextDecoration.none,
-                                  fontSize: 13,
-                                  color: Colors.white,
-                                ),
+                                  style: AllScreensConstant.customTextStyle(
+                                      MediaQuery.of(context).size.width / 100,
+                                      FontWeightManager.regular,
+                                      ColorManager.white)
+
                               ),
                             ),
                           ),
                         ),
-                        SizedBox(width:MediaQuery.of(context).size.width / 20,),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 20,
+                        ),
                         Expanded(
                           child: Container(
-                            height: 300,
+                            height: AppSize.s300,
                             // width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
-                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(15)),
                             ),
-                            child: const Padding(
-                              padding: EdgeInsets.only(top: 25, ),
-                              child: Text(
-                                'NATIONALITIES',
+                            child: Padding(
+                              padding: EdgeInsets.only(
+                                top: AppPadding.p25,
+                              ),
+                              child: Text(AppString.nationTxt,
                                 textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontFamily: 'inter',
-                                  fontSize: 13,
-                                  color: Colors.white,
-                                ),
+                                  style: AllScreensConstant.customTextStyle(
+                                      MediaQuery.of(context).size.width / 100,
+                                      FontWeightManager.regular,
+                                      ColorManager.white)
                               ),
                             ),
                           ),
                         ),
-                        SizedBox(width: MediaQuery.of(context).size.width / 20,),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 20,
+                        ),
                         Expanded(
                           child: Container(
-                            height: 300,
+                            height: AppSize.s300,
                             //  width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
-                              borderRadius: BorderRadius.all(Radius.circular(15)),
-                            ),
-                            child: const Padding(
-                              padding: EdgeInsets.only(top: 25,),
-                              child: Text(
-                                'DIVERSITY',
+                              borderRadius: BorderRadius.all(Radius.circular(15)),),
+                            child: Padding(
+                              padding: EdgeInsets.only(top: AppPadding.p25,),
+                              child: Text(AppString.diverTxt,
                                 textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontFamily: 'inter',
-                                  fontSize: 13,
-                                  color: Colors.white,
-                                ),
+                                  style: AllScreensConstant.customTextStyle(
+                                      MediaQuery.of(context).size.width / 100,
+                                      FontWeightManager.regular,
+                                      ColorManager.white)
                               ),
                             ),
                           ),
                         ),
-                        SizedBox(width: MediaQuery.of(context).size.width / 20,),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width / 20,
+                        ),
                         Expanded(
                           child: Container(
-                            height: 300,
+                            height: AppSize.s300,
                             // width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
-                              borderRadius: BorderRadius.all(Radius.circular(15)),
-                            ),
-                            child: const Padding(
-                              padding: EdgeInsets.only(top: 25,),
-                              child: Text(
-                                'DEVELOPMENT',
+                              borderRadius: BorderRadius.all(Radius.circular(15)),),
+                            child: Padding(
+                              padding: EdgeInsets.only(
+                                top: AppPadding.p25,
+                              ),
+                              child: Text(AppString.devlopTxt,
                                 textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontFamily: 'inter',
-                                  fontSize: 13,
-                                  color: Colors.white,
-                                ),
+                                  style: AllScreensConstant.customTextStyle(
+                                      MediaQuery.of(context).size.width / 100,
+                                      FontWeightManager.regular,
+                                      ColorManager.white)
                               ),
                             ),
                           ),
@@ -142,7 +153,7 @@ class CareerSectionFour extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(
-                  top: 25, right: MediaQuery.of(context).size.width / 20),
+                  top: AppPadding.p25, right: MediaQuery.of(context).size.width / 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -150,25 +161,20 @@ class CareerSectionFour extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Image.network(
                       "images/line2.png",
-                      height:AppSize.s320,
+                      height: AppSize.s320,
                     ),
                   ),
-
                   SizedBox(
-                    width: 20,
+                    width: AppSize.s20,
                   ),
-                  // Padding(
-                  //   padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/50,
-                  //       top:20,
-                  //      right:MediaQuery.of(context).size.width/2.5),
                   Padding(
                     padding: EdgeInsets.only(
-                      // right: MediaQuery.of(context).size.width / 50,
                       left: MediaQuery.of(context).size.width / 90,
                       top: MediaQuery.of(context).size.height / 20,
                     ),
-                    child: Text(AppString.loremTxt,
-                      style: CareerPageConstant.careerTextStyle,
+                    child: Text(
+                      AppString.loremTxt,
+                      style: CareerPageConstant.careerTextStyle(context),
                     ),
                   ),
                 ],

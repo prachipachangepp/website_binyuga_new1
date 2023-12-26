@@ -1,5 +1,7 @@
 ///start page code
+
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -27,33 +29,29 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
           'images/team_member_bg.png',
           fit: BoxFit.fill,
           height: MediaQuery.of(context).size.height / 0.85,
-          //width: MediaQuery.of(context).size.width/0.9,
-          width: 1600,
+          width: MediaQuery.of(context).size.width,
         ),
 
         ///boy img
         Padding(
           padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 1.85,
+              left: MediaQuery.of(context).size.width / 2,
               top: AppPadding.p100),
           child: Image.network(
             "images/boy.png",
             height: AppSize.s870,
-            // height: MediaQuery.of(context).size.height/1,
-            // width: MediaQuery.of(context).size.width /1.5,
-            width: 520,
-            //alignment: Alignment.bottomLeft,
+            width: MediaQuery.of(context).size.width / 1.8,
           ),
         ),
         Padding(
           padding: EdgeInsets.only(
               top: AppPadding.p150,
-              left: MediaQuery.of(context).size.width / 30),
+              left: MediaQuery.of(context).size.width / 40),
           child: Row(
             children: [
               ///sidebar
               Padding(
-                padding: EdgeInsets.only(top: AppPadding.p150),
+                padding: const EdgeInsets.only(top: AppPadding.p150),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -62,13 +60,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
+                              builder: (context) => const WhatWeDoHomeScreen()),
                         );
                       },
                       child: Text(AppString.whoWeAre,
                           style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppSize.s50,
                     ),
                     GestureDetector(
@@ -76,13 +74,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => WhatWeDoHomeScreen()),
+                              builder: (context) => const WhatWeDoHomeScreen()),
                         );
                       },
                       child: Text(AppString.whatWeDo,
                           style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppSize.s50,
                     ),
                     GestureDetector(
@@ -90,13 +88,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => FeaturesHomeScreen()),
+                              builder: (context) => const FeaturesHomeScreen()),
                         );
                       },
                       child: Text(AppString.features,
                           style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppSize.s50,
                     ),
                     GestureDetector(
@@ -104,17 +102,23 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => CareerHomeScreen()),
+                              builder: (context) => const CareerHomeScreen()),
                         );
                       },
                       child: Text(AppString.career,
                           style: HomeScreen.sidebarTextStyle),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: AppSize.s50,
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const WhatWeDoHomeScreen()),
+                        );
+                      },
                       child: Text(AppString.portfolio,
                           style: HomeScreen.sidebarTextStyle),
                     ),
@@ -134,11 +138,10 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   ),
                   Text(AppString.homesTxt1,
                       style: AllScreensConstant.customTextStyle(
-                          // MediaQuery.of(context).size.width/30,
-                          45,
+                          MediaQuery.of(context).size.width / 30,
                           FontWeightManager.bold,
                           ColorManager.white)),
-                  SizedBox(
+                  const SizedBox(
                     height: AppSize.s20,
                   ),
 
@@ -146,8 +149,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   Text(AppString.homesTxt2,
                       textAlign: TextAlign.start,
                       style: AllScreensConstant.customTextStyle(
-                          //MediaQuery.of(context).size.width/90,
-                          15,
+                          MediaQuery.of(context).size.width / 90,
                           FontWeightManager.medium,
                           ColorManager.lightBlue)),
                   const SizedBox(
@@ -163,7 +165,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => WhatWeDoHomeScreen()),
+                            builder: (context) => const CareerHomeScreen()),
                       );
                     },
                     child: Padding(
@@ -194,7 +196,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: AppSize.s20,
         ),
 
@@ -207,14 +209,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Column(
-                //mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Icon(
                     Icons.chevron_right,
                     color: ColorManager.lightBlue,
                     size: MediaQuery.of(context).size.width / 30,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: AppSize.s20,
                   ),
                   Icon(
@@ -223,7 +224,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     size:
                         MediaQuery.of(context).size.width / 40, // Original size
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: AppSize.s20,
                   ),
                   Icon(
@@ -262,9 +263,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               /// Contact us
-              Padding(
-                padding: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width / 1.8),
+              GestureDetector(
                 child: Text(
                   AppString.contactUs,
                   style: TextStyle(
@@ -272,22 +271,16 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     fontSize: MediaQuery.of(context).size.width / 70,
                   ),
                 ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const DescriptionScreenConstant()),
+                  );
+                },
               ),
               SizedBox(width: MediaQuery.of(context).size.width / 22),
-              // Image.asset(
-              //   'images/toggle_bg.png',
-              //   color:Color(0xff27C9B2),
-              //   height: MediaQuery.of(context).size.height / 18,
-              //   width: MediaQuery.of(context).size.width / 18,
-              // ),
-              // SizedBox(width: MediaQuery.of(context).size.width / 50),
-              // Padding(
-              //   padding: EdgeInsets.only(right: MediaQuery.of(context).size.width / 80),
-              //   child: Image.asset(
-              //     'images/search.png',
-              //     width: MediaQuery.of(context).size.width / 25,
-              //   ),
-              // ),
               Padding(
                 padding: const EdgeInsets.only(right: 20),
                 child: Switch.adaptive(
@@ -300,12 +293,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                       });
                     }),
               ),
+              SizedBox(width: MediaQuery.of(context).size.width / 35),
               Padding(
                 padding: const EdgeInsets.only(right: AppPadding.p35),
                 child: Container(
                   height: 40,
                   width: 40,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.all(
                       Radius.circular(25.0),
@@ -313,13 +307,13 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   ),
                   child: ShaderMask(
                     shaderCallback: (Rect bounds) {
-                      return LinearGradient(
+                      return const LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [Colors.red, Colors.yellow, Colors.blue],
                       ).createShader(bounds);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.search,
                       color: Colors.white,
                       size: 35,
