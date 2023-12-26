@@ -94,7 +94,6 @@ Widget webBody() {
         ],
       )
     ];
-
     return ListView.builder(
         shrinkWrap: true,
         controller: _controller,

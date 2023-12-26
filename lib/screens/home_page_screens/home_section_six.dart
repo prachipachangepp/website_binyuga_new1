@@ -100,7 +100,7 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 60),
+                          padding: const EdgeInsets.only(top: AppPadding.p60),
                           child: Text(AppString.whatWeDo,
                               style:
                                   LastDescriptionScreen.rowTextStyle(context)),
@@ -153,12 +153,12 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: 150),
+                        bottom: AppPadding.p150),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 120),
+                          padding: const EdgeInsets.only(top: AppPadding.p120),
                           child: Text(AppString.careerC,
                               style:
                                   LastDescriptionScreen.rowTextStyle(context)),
@@ -223,12 +223,12 @@ class _HomeSectionSixState extends State<HomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: 150),
+                        bottom: AppPadding.p150),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 100),
+                          padding: const EdgeInsets.only(top: AppPadding.p100),
                           child: Text(AppString.featuresF,
                               style:
                                   LastDescriptionScreen.rowTextStyle(context)),

@@ -69,39 +69,39 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                         Icon(
                           FontAwesomeIcons.facebook,
                           color: ColorManager.white,
-                          size: 20,
+                          size:AppSize.s20,
                         ),
                         const SizedBox(
-                          width: 20,
+                          width: AppSize.s20,
                         ),
                         Icon(
                           FontAwesomeIcons.youtube,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                         const SizedBox(
-                          width: 20,
+                          width: AppSize.s20,
                         ),
                         Icon(
                           FontAwesomeIcons.twitter,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                         const SizedBox(
-                          width: 20,
+                          width: AppSize.s20,
                         ),
                         Icon(
                           FontAwesomeIcons.instagram,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                         const SizedBox(
-                          width: 20,
+                          width: AppSize.s20,
                         ),
                         Icon(
                           FontAwesomeIcons.linkedin,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                       ],
                     ),
@@ -109,7 +109,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                       width: MediaQuery.of(context).size.width / 20,
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(AppPadding.p8),
                       child: Row(
                         children: [
                           Text('www.career@binyuga.com',
@@ -137,14 +137,15 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           hint: Text(
                             countries[0],
                             style: TextStyle(
-                                color: ColorManager.black, fontSize: 11),
+                                color: ColorManager.black,
+                                fontSize: AppSize.s10),
                           ),
                           value: selectedCountry,
                           underline: const SizedBox(),
                           isExpanded: true,
                           icon: const Icon(
                             Icons.arrow_drop_down,
-                            size: 20,
+                            size: AppSize.s20,
                           ),
                           onChanged: (String? newValue) {
                             setState(() {
@@ -157,11 +158,10 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                               child: Center(
                                   child: Text(
                                 country,
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeightManager.bold,
-                                  color: ColorManager.black,
-                                ),
+                                style: AllScreensConstant.customTextStyle(
+                                    AppSize.s15,
+                                    FontWeightManager.bold,
+                                    ColorManager.black),
                               )),
                             );
                           }).toList(),

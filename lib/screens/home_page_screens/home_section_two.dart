@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
+import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
 
 class HomeSectionTwo extends StatelessWidget {
@@ -17,15 +18,13 @@ class HomeSectionTwo extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 200),
+                  padding: const EdgeInsets.only(left: AppPadding.p200),
                   child: Text(AppString.ourApproach,
-                      style: GoogleFonts.inter(
-                        textStyle: TextStyle(
-                            fontWeight: FontWeightManager.bold,
-                            fontSize: MediaQuery.of(context).size.width / 25,
-                            letterSpacing: -0.011,
-                            color: ColorManager.darkBlue),
-                      )),
+                      style: AllScreensConstant.customTextStyle(
+                          MediaQuery.of(context).size.width / 25,
+                          FontWeightManager.bold,
+                          ColorManager.darkBlue),
+                  ),
                 ),
               ],
             ),
@@ -50,12 +49,10 @@ class HomeSectionTwo extends StatelessWidget {
                       AppString.approachTxt,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.inter(
-                          textStyle: TextStyle(
-                        fontWeight: FontWeightManager.bold,
-                        fontSize: MediaQuery.of(context).size.width / 50,
-                        letterSpacing: -0.011,
-                        color: ColorManager.black,
-                      )),
+                          textStyle: AllScreensConstant.customTextStyle(
+                              MediaQuery.of(context).size.width / 50,
+                              FontWeightManager.bold,
+                              ColorManager.black,),),
                     ),
                   ),
                 ),

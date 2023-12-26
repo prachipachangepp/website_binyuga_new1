@@ -25,7 +25,7 @@ class HomeSectionThree extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
               left: MediaQuery.of(context).size.width / 20,
-              top: 15,
+              top: AppPadding.p15,
             ),
             child: Row(
               children: [
@@ -38,7 +38,7 @@ class HomeSectionThree extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 50,
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15),
+                  padding: const EdgeInsets.only(left: AppPadding.p15),
                   child: Text(
                     AppString.unionTxt1,
                     style: UnionTxtScreen1.union1TextStyle(context),
@@ -47,12 +47,11 @@ class HomeSectionThree extends StatelessWidget {
               ],
             ),
           ),
-
           Padding(
             padding: EdgeInsets.only(
               left: MediaQuery.of(context).size.width / 30,
               right: MediaQuery.of(context).size.width / 40,
-              bottom: 280,
+              bottom: AppPadding.p280,
             ),
             child: Row(
               children: [
@@ -64,7 +63,6 @@ class HomeSectionThree extends StatelessWidget {
               ],
             ),
           ),
-
           Center(
             child: Text(
               AppString.unionTxt2,
@@ -72,11 +70,11 @@ class HomeSectionThree extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: AppPadding.p1200, left: 10),
+            padding: const EdgeInsets.only(top: AppPadding.p1200, left: AppPadding.p10),
             child: Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 15),
+                  padding: const EdgeInsets.only(left: AppPadding.p15),
                   child: Text(
                     AppString.unionTxt3,
                     style: UnionTxtScreen1.union1TextStyle(context),
@@ -99,7 +97,6 @@ class HomeSectionThree extends StatelessWidget {
               ],
             ),
           ),
-
           Padding(
             padding: EdgeInsets.only(
                 top: AppPadding.p1180,

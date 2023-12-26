@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/value_manager.dart';
 
+import '../../presentation/string_manager.dart';
 import '../home_page_screens/home_section_one.dart';
 import '../home_page_screens/home_section_three.dart';
 import '../home_page_screens/home_section_two.dart';
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Binyuga website'),
+          title: const Text(AppString.binyugaWebsite),
         ),
         body: MyResponsiveWidget(),
       ),
@@ -49,7 +51,7 @@ class MyResponsiveWidget extends StatelessWidget {
 
   Widget buildContent(BuildContext context, bool isWideScreen) {
     return Container(
-      padding: EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(AppPadding.p16),
       child: Stack(
         children: [
           Column(

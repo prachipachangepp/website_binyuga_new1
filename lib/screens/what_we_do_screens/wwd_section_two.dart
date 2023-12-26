@@ -28,7 +28,7 @@ class WWDSectionTwo extends StatelessWidget {
 
           /// Base Image
           Padding(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: AppPadding.p30,
               top: AppPadding.p250,
             ),

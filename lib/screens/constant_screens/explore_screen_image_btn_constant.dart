@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/color_manager.dart';
 import 'package:website_binyuga_new1/presentation/value_manager.dart';
 
 class ImageWithButtonStack extends StatelessWidget {
@@ -36,11 +37,11 @@ class ImageWithButtonStack extends StatelessWidget {
             child: TextButton(
               onPressed: onPressed,
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.blue),
+                backgroundColor: MaterialStateProperty.all(ColorManager.skyBlue1),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.zero,
-                    side: BorderSide(color: Colors.blue),
+                    side: BorderSide(color: ColorManager.skyBlue1),
                   ),
                 ),
               ),
@@ -48,9 +49,9 @@ class ImageWithButtonStack extends StatelessWidget {
                 buttonText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: ColorManager.skyBlue1,
                   fontSize: MediaQuery.of(context).size.width/90,
-                  color: Colors.white,
+                  color: ColorManager.white,
                   fontFamily: 'inter',
                   fontWeight: FontWeight.w800,
                 ),

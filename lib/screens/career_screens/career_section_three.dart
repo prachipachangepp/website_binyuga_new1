@@ -45,7 +45,7 @@ class CareerSectionThree extends StatelessWidget {
                 height: AppSize.s855,
                 width: MediaQuery.of(context).size.width / 2.5,
               ),
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height / 2,
                 child: VerticalDivider(
                   width: MediaQuery.of(context).size.width / 12,
