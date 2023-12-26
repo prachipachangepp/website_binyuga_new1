@@ -76,7 +76,9 @@ class DescriptionScreenConstant extends StatelessWidget {
                         AppString.teamProfiles,
                         style: LastColumnScreen.columnTextStyle(context),
                       ),
-                      const SizedBox(height:AppSize.s15,),
+                      const SizedBox(
+                        height: AppSize.s15,
+                      ),
                       Text(
                         AppString.clientTestimonials,
                         style: LastColumnScreen.columnTextStyle(context),

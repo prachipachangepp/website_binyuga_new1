@@ -12,7 +12,7 @@ class CareerSectionFour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: ColorManager.white,
       child: SingleChildScrollView(
         child: Stack(
           children: [
@@ -38,7 +38,7 @@ class CareerSectionFour extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: AppPadding.p530),
+              padding: const EdgeInsets.only(top: AppPadding.p530),
               child: Column(
                 children: [
                   Padding(
@@ -56,15 +56,16 @@ class CareerSectionFour extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(15)),
+                                  const BorderRadius.all(Radius.circular(15)),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.only(
+                              padding: const EdgeInsets.only(
                                 top: AppPadding.p25,
                               ),
                               child: Text(AppString.ourTxt,
                                 textAlign: TextAlign.center,
-                                  style: AllScreensConstant.customTextStyle(
+                                  style:
+                                  AllScreensConstant.customTextStyle(
                                       MediaQuery.of(context).size.width / 100,
                                       FontWeightManager.regular,
                                       ColorManager.white)
@@ -83,10 +84,10 @@ class CareerSectionFour extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(15)),
+                                  const BorderRadius.all(Radius.circular(15)),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.only(
+                              padding: const EdgeInsets.only(
                                 top: AppPadding.p25,
                               ),
                               child: Text(AppString.nationTxt,
@@ -108,9 +109,9 @@ class CareerSectionFour extends StatelessWidget {
                             //  width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
-                              borderRadius: BorderRadius.all(Radius.circular(15)),),
+                              borderRadius: const BorderRadius.all(Radius.circular(15)),),
                             child: Padding(
-                              padding: EdgeInsets.only(top: AppPadding.p25,),
+                              padding: const EdgeInsets.only(top: AppPadding.p25,),
                               child: Text(AppString.diverTxt,
                                 textAlign: TextAlign.center,
                                   style: AllScreensConstant.customTextStyle(
@@ -130,9 +131,9 @@ class CareerSectionFour extends StatelessWidget {
                             // width: 180,
                             decoration: BoxDecoration(
                               color: Colors.blueGrey[700],
-                              borderRadius: BorderRadius.all(Radius.circular(15)),),
+                              borderRadius: const BorderRadius.all(Radius.circular(15)),),
                             child: Padding(
-                              padding: EdgeInsets.only(
+                              padding: const EdgeInsets.only(
                                 top: AppPadding.p25,
                               ),
                               child: Text(AppString.devlopTxt,
@@ -153,19 +154,19 @@ class CareerSectionFour extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(
-                  top: 25, right: MediaQuery.of(context).size.width / 20),
+                  top: AppPadding.p25, right: MediaQuery.of(context).size.width / 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(AppPadding.p8),
                     child: Image.network(
                       "images/line2.png",
                       height: AppSize.s320,
                     ),
                   ),
-                  SizedBox(
-                    width: 20,
+                  const SizedBox(
+                    width: AppSize.s20,
                   ),
                   Padding(
                     padding: EdgeInsets.only(

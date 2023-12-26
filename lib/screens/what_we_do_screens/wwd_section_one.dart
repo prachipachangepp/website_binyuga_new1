@@ -26,7 +26,7 @@ class WWDSectionOne extends StatelessWidget {
 
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p30, left: 70),
+            padding: const EdgeInsets.only(top: AppPadding.p30, left: AppPadding.p70),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -55,11 +55,10 @@ class WWDSectionOne extends StatelessWidget {
                   },
                   child: Text(
                     AppString.letsTalk,
-                    style: TextStyle(
-                        fontSize: FontSize.s15,
-                        letterSpacing: -0.011,
-                        color: ColorManager.black,
-                        fontFamily: FontConstants.fontFamily1),
+                    style: AllScreensConstant.customTextStyle(
+                        FontSize.s15,
+                        FontWeightManager.medium,
+                        ColorManager.black),
                   ),
                 ),
               ],

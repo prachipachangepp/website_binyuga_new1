@@ -1,8 +1,5 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'color_manager.dart';
 import 'font_manager.dart';
 
@@ -110,7 +107,6 @@ class UnionTxtScreen2 {
   static double getNewFont2Size(BuildContext context) {
     return MediaQuery.of(context).size.width / 42;
   }
-
   static TextStyle union2TextStyle(BuildContext context) {
     return GoogleFonts.inter(
         //textStyle: TextStyle(
@@ -157,7 +153,6 @@ class CareerPageConstant {
 static double getNewFontSizeCareer(BuildContext context) {
 return MediaQuery.of(context).size.width / 55;
 }
-
   static TextStyle careerTextStyle (BuildContext context){
     return GoogleFonts.inter(
       fontWeight: FontWeightManager.medium,
@@ -190,7 +185,6 @@ class WhatWeDoExploreConstant {
     fontSize:  FontSize.s20,
     color: ColorManager.white,
     fontWeight: FontWeightManager.extraBold,
-
   );
 
 }

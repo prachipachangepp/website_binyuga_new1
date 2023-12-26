@@ -12,7 +12,7 @@ class CareerSectionOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: ColorManager.white,
       child: Stack(
         children: [
           Image.network(

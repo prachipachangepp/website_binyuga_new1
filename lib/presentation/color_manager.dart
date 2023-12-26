@@ -15,10 +15,6 @@ class ColorManager{
   static Color blueShade = Color(0xff83CAFF);
   static Color white1    = Color(0xffDFDFDF);
   static Color darkBlue1  =  Color(0xff214188);
-
-
-
-
 }
 
 extension HexColor on Color {

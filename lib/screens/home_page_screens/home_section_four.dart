@@ -1,156 +1,3 @@
-
-// import 'package:flutter/material.dart';
-//
-// import '../../../presentation/color_manager.dart';
-// import '../../../presentation/font_manager.dart';
-// import '../../../presentation/string_manager.dart';
-// import '../../../presentation/theme_manager.dart';
-//
-// class HomeSectionFour extends StatefulWidget {
-//   const HomeSectionFour({super.key});
-//
-//   @override
-//   State<HomeSectionFour> createState() => _HomeSectionFourState();
-// }
-//
-// class _HomeSectionFourState extends State<HomeSectionFour> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       child: Column(
-//         children: [
-//           ///txt about us
-//           Row(
-//             mainAxisAlignment: MainAxisAlignment.end,
-//             children: [
-//               Padding(
-//                 padding: EdgeInsets.only (top: MediaQuery.of(context).size.width / 10,
-//       right:150),
-//                 child: Text(AppString.aboutUs1,
-//                     style: AllScreensConstant.customTextStyle(
-//                         FontSize.s60,
-//                         FontWeightManager.bold,
-//                         ColorManager.darkBlue
-//                     ),
-//                 ),
-//               ),
-//             ],
-//           ),
-//           SizedBox(height: 30,),
-//           Padding(
-//             padding: const EdgeInsets.only(right:100),
-//             child: Text(
-//                 AppString.everyYear,
-//                 textAlign: TextAlign.center,
-//                 style:AllScreensConstant.customTextStyle(
-//                     MediaQuery.of(context).size.width/38,
-//                     FontWeightManager.bold,
-//                     ColorManager.black)
-//
-//             ),
-//           ),
-//           SizedBox(height: 30,),
-//           Row(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: [
-//               Padding(
-//                 padding: EdgeInsets.only(top:30,right:200),
-//                 child: Column(
-//                   crossAxisAlignment: CrossAxisAlignment.center,
-//
-//                   children: [
-//                     Text(
-//                       'OOO',
-//                       textAlign: TextAlign.center,
-//                       style: TextStyle(
-//                           fontSize: MediaQuery.of(context).size.width/10,
-//                           fontFamily: FontConstants.fontFamily1,
-//                           color: ColorManager.skyBlue),
-//                     ),
-//                     SizedBox(height: 8,),
-//                     Text(
-//                         AppString.successfullyProject,
-//                         textAlign: TextAlign.center,
-//                         style:AllScreensConstant.customTextStyle(
-//                             MediaQuery.of(context).size.width/58,
-//                             FontWeightManager.medium,
-//                             ColorManager.black)
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//               SizedBox(width: 10,),
-//               Padding(
-//                 padding: EdgeInsets.only(right:150,top:30),
-//                 child: Column(
-//                   crossAxisAlignment: CrossAxisAlignment.center,
-//
-//                   children: [
-//                     Text(
-//                       'OO',
-//                       textAlign: TextAlign.center,
-//                       style: TextStyle(
-//                         fontSize: MediaQuery.of(context).size.width/10,
-//                         fontFamily: FontConstants.fontFamily1,
-//                         color: ColorManager.skyBlue,
-//                       ),
-//                     ),
-//                     SizedBox(height: 5.0),
-//                     Padding(
-//                       padding: EdgeInsets.only(bottom:30),
-//                       child: Text(
-//                           AppString.revenueGrowth,
-//                           textAlign: TextAlign.center,
-//                           style:AllScreensConstant.customTextStyle(
-//                               MediaQuery.of(context).size.width/58,
-//                               FontWeightManager.medium,
-//                               ColorManager.black)
-//
-//
-//                       ),
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//               SizedBox(width: 10,),
-//               Padding(
-//                 padding: EdgeInsets.only(left:100,top: 30),
-//                 child: Column(
-//                   crossAxisAlignment: CrossAxisAlignment.center,
-//                   children: [
-//                     Text(
-//                       'OOO',
-//                       textAlign: TextAlign.center,
-//                       style: TextStyle(
-//                           fontSize: MediaQuery.of(context).size.width/10,
-//                           fontFamily: FontConstants.fontFamily1,
-//                           color: ColorManager.skyBlue),
-//                     ),
-//                     SizedBox(height: 8.0),
-//                     Text(
-//                         AppString.trainingDays,
-//                         textAlign: TextAlign.center,
-//                         style:AllScreensConstant.customTextStyle(
-//                             MediaQuery.of(context).size.width/58,
-//                             FontWeightManager.medium,
-//                             ColorManager.black)
-//
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//             ],
-//           ),
-//           SizedBox(height: 80.0,),
-//
-//         ],
-//       ),
-//
-//     );
-//   }
-// }
-
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -170,132 +17,124 @@ class HomeSectionFour extends StatefulWidget {
 class _HomeSectionFourState extends State<HomeSectionFour> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          ///txt about us
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(top: AppPadding.p40,right: 170),
-                child: Text(AppString.aboutUs1,
-                  style: GoogleFonts.inter(
-                      textStyle: TextStyle(
-                          fontWeight: FontWeightManager.bold,
-                          fontSize: MediaQuery.of(context).size.width / 25,
-                          color: ColorManager.darkBlue),
-
-                ),
-              ),
+    return Column(
+      children: [
+        ///txt about us
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: AppPadding.p40,right: AppPadding.p170),
+              child: Text(AppString.aboutUs1,
+                style: GoogleFonts.inter(
+                    textStyle: AllScreensConstant.customTextStyle(
+                        MediaQuery.of(context).size.width / 25,
+                        FontWeightManager.bold,
+                        ColorManager.darkBlue),
+                  ),
+            ),
     ),],
-          ),
-          SizedBox(height: AppSize.s30),
-          Text(
-              AppString.everyYear,
-              textAlign: TextAlign.center,
-              style:AllScreensConstant.customTextStyle(
-                  MediaQuery.of(context).size.width/38,
-                  FontWeightManager.bold,
-                  ColorManager.black)
-
-          ),
-          SizedBox(height: AppSize.s30),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(top: AppPadding.p30,left: 30),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'OOO',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width/10,
-                          fontFamily: FontConstants.fontFamily1,
-                          color: ColorManager.skyBlue),
-                    ),
-                    SizedBox(height: 8,),
-                    Text(
-                        AppString.successfullyProject,
-                        textAlign: TextAlign.center,
-                        style:AllScreensConstant.customTextStyle(
-                            MediaQuery.of(context).size.width/58,
-                            FontWeightManager.medium,
-                            ColorManager.black)
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(width: 50,),
-              Padding(
-
-                padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top: AppPadding.p30),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'OO',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
+        ),
+        const SizedBox(height: AppSize.s30),
+        Text(
+            AppString.everyYear,
+            textAlign: TextAlign.center,
+            style:AllScreensConstant.customTextStyle(
+                MediaQuery.of(context).size.width/38,
+                FontWeightManager.bold,
+                ColorManager.black)
+        ),
+        const SizedBox(height: AppSize.s30),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: AppPadding.p30,left: 30),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    'OOO',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
                         fontSize: MediaQuery.of(context).size.width/10,
                         fontFamily: FontConstants.fontFamily1,
-                        color: ColorManager.skyBlue,
-                      ),
-                    ),
-                    SizedBox(height: 5.0),
-                    Padding(
-                      padding: EdgeInsets.only(bottom:30),
-                      child: Text(
-                          AppString.revenueGrowth,
-                          textAlign: TextAlign.center,
-                          style:AllScreensConstant.customTextStyle(
-                              MediaQuery.of(context).size.width/58,
-                              FontWeightManager.medium,
-                              ColorManager.black)
-
-
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(width: 50,),
-              Padding(
-                padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/100,top: 30),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'OOO',
+                        color: ColorManager.skyBlue),
+                  ),
+                  const SizedBox(height: AppPadding.p8,),
+                  Text(
+                      AppString.successfullyProject,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width/10,
-                          fontFamily: FontConstants.fontFamily1,
-                          color: ColorManager.skyBlue),
+                      style:AllScreensConstant.customTextStyle(
+                          MediaQuery.of(context).size.width/58,
+                          FontWeightManager.medium,
+                          ColorManager.black)
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: AppSize.s50,),
+            Padding(
+
+              padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top: AppPadding.p30),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    'OO',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: MediaQuery.of(context).size.width/10,
+                      fontFamily: FontConstants.fontFamily1,
+                      color: ColorManager.skyBlue,
                     ),
-                    SizedBox(height: AppSize.s8),
-                    Text(
-                        AppString.trainingDays,
+                  ),
+                  const SizedBox(height: AppSize.s5),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom:AppPadding.p30),
+                    child: Text(
+                        AppString.revenueGrowth,
                         textAlign: TextAlign.center,
                         style:AllScreensConstant.customTextStyle(
                             MediaQuery.of(context).size.width/58,
                             FontWeightManager.medium,
                             ColorManager.black)
-
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
-          ),
-          SizedBox(height: AppSize.s80),
+            ),
+            const SizedBox(width: AppSize.s50,),
+            Padding(
+              padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/100,top: AppPadding.p30),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    'OOO',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: MediaQuery.of(context).size.width/10,
+                        fontFamily: FontConstants.fontFamily1,
+                        color: ColorManager.skyBlue),
+                  ),
+                  const SizedBox(height: AppSize.s8),
+                  Text(
+                      AppString.trainingDays,
+                      textAlign: TextAlign.center,
+                      style:AllScreensConstant.customTextStyle(
+                          MediaQuery.of(context).size.width/58,
+                          FontWeightManager.medium,
+                          ColorManager.black)
 
-        ],
-      ),
-
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: AppSize.s80),
+      ],
     );
   }
 }

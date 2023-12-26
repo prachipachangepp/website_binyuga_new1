@@ -23,9 +23,7 @@ class AppString {
 
   /// About Us screen
   static const String aboutUs1 = "About Us";
-  static const String everyYear =
-      "\nEvery year, we advance along our path of growth.";
-
+  static const String everyYear = "\nEvery year, we advance along our path of growth.";
   static const String successfullyProject = "Successfully\ncompleted projects";
   static const String revenueGrowth = "Revenue Growth";
   static const String trainingDays = "Training Days conducted\nfor interns";
@@ -51,8 +49,7 @@ class AppString {
   static const String featuresF = "Features";
   static const String tailoredProducts = "Tailored Products";
   static const String costEffectiveness = "Cost Effectiveness";
-  static const String intuitiveUserCenterDesign =
-      "Intuitive & user center\ndesign";
+  static const String intuitiveUserCenterDesign = "Intuitive & user center\ndesign";
   static const String problemSolving = "Problem Solving";
   static const String roughToughSoftware = " Rough & Tough Software";
   static const String innovativeProjects = "Innovative Projects";
@@ -60,8 +57,7 @@ class AppString {
   static const String cookiePolicy = "Cookie Policy";
   static const String disclaimer = "Disclaimer";
   static const String securityPolicy = "Security Policy";
-  static const String californiaNoticeAtCollection =
-      "California Notice At Collection";
+  static const String californiaNoticeAtCollection = "California Notice At Collection";
   static const String customizeCookies = "Customize Cookies";
   static const String partnerShips = "Partnerships";
   static const String flutter = "Flutter";
@@ -98,13 +94,10 @@ class AppString {
 
   ///Bottom Navbar screen
   static const String email = "www.career@binyuga.com";
-
-
   static const String letsTalk = "Let’s Talk";
 
 
   ///Career Binyuga Page
-
   static const String loremTxt = 'Lorem ipsum dolor sit amet consectetur '
       ' \nadipiscing elit, mollis quam proin '
       ' \nmolestie a enim, arcu potenti rutrum '
@@ -119,11 +112,7 @@ class AppString {
   static const String nationTxt ='NATIONALITIES';
   static const String diverTxt = 'DIVERSITY';
   static const String devlopTxt ='DEVELOPMENT';
-
   static const String applyTxt = 'Apply Now';
-
-
-
 
    /// WhatWeDoHomeScreen
   static const String homePageText1 = 'Elevating Success with\nInnovative Tech';
@@ -141,8 +130,7 @@ class AppString {
       "\n that dream to life, translating it into tangible"
       "\n solutions and results.";
   static const String sculptYour ="Sculpt Your Path to Success";
-  static const String moldYour = "Mold Your Dreams "
-      '\ninto Reality';
+  static const String moldYour = "Mold Your Dreams\ninto Reality";
   static const String exploreBinyuga ="Explore\nBinyuga.Pvt.Ltd.";
   static const String weAreDedicated ="We're dedicated to more than just\ntechnology transformation; our goal is\nto bring about meaningful change that\nresonates with our clients and the\ncommunities they impact.";
 
@@ -151,7 +139,7 @@ class AppString {
   static const String appDev = "Application Development";
   static const String webDev = "Web Development";
   static const String uiDes= "UI/UX Designing";
-  static const String careerMentor= "Career Menitoring";
+  static const String careerMentor= "Career Monitoring";
   static const String problemSolve = "Problem Solving";
 
   /// FeatureSubHome Page
@@ -165,8 +153,7 @@ class AppString {
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
-  static const String  featureScreenText1= "Turning Dreams into Features, and"
-                          "\nFeatures into Reality";
+  static const String  featureScreenText1= "Turning Dreams into Features, and\nFeatures into Reality";
   static const String featureScreenText2 =  'We specialize in crafting customized solutions to meet'
       '\nyour unique needs, ensuring that our products align '
       '\nperfectly with your goals.Our services are designed'
@@ -180,8 +167,8 @@ class AppString {
       '\ngoals. Just as a sculptor molds clay into a '
       '\nmasterpiece, we are here to assist you in crafting '
       '\n your path towards success. ';
-
   static const String  readTxt = 'Read More';
+  static const String  binyugaWebsite = 'Binyuga Website';
 
 
 }

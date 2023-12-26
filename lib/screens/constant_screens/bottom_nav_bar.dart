@@ -4,6 +4,7 @@ import 'package:website_binyuga_new1/presentation/value_manager.dart';
 
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
+import '../../presentation/theme_manager.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});
@@ -69,39 +70,39 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                         Icon(
                           FontAwesomeIcons.facebook,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                         const SizedBox(
-                          width: 20,
+                          width: AppSize.s20,
                         ),
                         Icon(
                           FontAwesomeIcons.youtube,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                         const SizedBox(
-                          width: 20,
+                          width: AppSize.s20,
                         ),
                         Icon(
                           FontAwesomeIcons.twitter,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                         const SizedBox(
-                          width: 20,
+                          width: AppSize.s20,
                         ),
                         Icon(
                           FontAwesomeIcons.instagram,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                         const SizedBox(
-                          width: 20,
+                          width: AppSize.s20,
                         ),
                         Icon(
                           FontAwesomeIcons.linkedin,
                           color: ColorManager.white,
-                          size: 20,
+                          size: AppSize.s20,
                         ),
                       ],
                     ),
@@ -113,11 +114,11 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                       child: Row(
                         children: [
                           Text('www.career@binyuga.com',
-                              style: TextStyle(
-                                color: ColorManager.white,
-                                fontFamily: FontConstants.fontFamily1,
-                                fontSize: 18,
-                              )),
+                              style: AllScreensConstant.customTextStyle(
+                                  FontSize.s17,
+                                  FontWeightManager.regular,
+                                  ColorManager.white)
+                             ),
                         ],
                       ),
                     ),
@@ -134,7 +135,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                             border: Border.all(color: Colors.white, width: 2),
                             borderRadius: BorderRadius.circular(2)),
                         width: MediaQuery.of(context).size.width / 6.5,
-                        height: 30,
+                        height: AppSize.s30,
                         child: DropdownButton(
                           focusColor: ColorManager.white,
                           alignment: Alignment.center,
@@ -148,7 +149,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                           isExpanded: true,
                           icon: const Icon(
                             Icons.arrow_drop_down,
-                            size: 20,
+                            size: AppSize.s20,
                           ),
                           onChanged: (String? newValue) {
                             setState(() {
@@ -162,7 +163,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
                                   child: Text(
                                 country,
                                 style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: AppSize.s15,
                                   fontWeight: FontWeightManager.bold,
                                   color: ColorManager.black,
                                 ),
