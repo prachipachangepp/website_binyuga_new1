@@ -15,8 +15,8 @@ class AppString {
   static const String homesTxt2 = "Whether its custom software solution, a user-friendly\napp, or a captivating website, we are commited to\ndelievering innovative and tailored digital products that not"
       "\nonly meet but exceed your expectations.";
   static const String exploreMore = "Explore more";
-  static const String whatWeAre = "What We Are";
-  static const String whatWeDo = "What We Do";
+  static const String whatWeAre = "What we are";
+  static const String whatWeDo = "What we do";
   static const String features = "Features";
   static const String career = "Career";
 
