@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
-import '../../presentation/color_manager.dart';
-import '../../presentation/font_manager.dart';
-import '../../presentation/string_manager.dart';
-import '../../presentation/theme_manager.dart';
-import '../../presentation/value_manager.dart';
+import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
+import '../../../presentation/string_manager.dart';
+import '../../../presentation/theme_manager.dart';
+import '../../../presentation/value_manager.dart';
+import '../landing_page_home.dart';
 import '../career_home.dart';
 import '../features_home.dart';
-import '../landing_page_home.dart';
 import '../what_we_do_home.dart';
 
 class HomeSectionOne extends StatefulWidget {

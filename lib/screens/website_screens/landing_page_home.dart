@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_five.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_four.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_one.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_six.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_three.dart';
-import 'package:website_binyuga_new1/screens/home_page_screens/home_section_two.dart';
-import '../responsive_screen/responsive_scr.dart';
-import 'constant_screens/bottom_nav_bar.dart';
+import '../../responsive_screen/responsive_scr.dart';
+import '../constant_screens/bottom_nav_bar.dart';
+import 'home_page_screens/home_section_five.dart';
+import 'home_page_screens/home_section_four.dart';
+import 'home_page_screens/home_section_one.dart';
+import 'home_page_screens/home_section_six.dart';
+import 'home_page_screens/home_section_three.dart';
+import 'home_page_screens/home_section_two.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
