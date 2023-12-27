@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
+
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';
@@ -48,13 +49,14 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         ),
         Padding(
           padding: EdgeInsets.only(
-              top: AppPadding.p150,
-              left: MediaQuery.of(context).size.width / 40),
+              top: MediaQuery.of(context).size.height / 5,
+              left: MediaQuery.of(context).size.width / 60),
           child: Row(
             children: [
               ///sidebar
               Padding(
-                padding: const EdgeInsets.only(top: AppPadding.p50),
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height / 60),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -173,7 +175,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     },
                     child: Padding(
                       padding: EdgeInsets.symmetric(
-                          vertical: AppPadding.p10,
+                          vertical: MediaQuery.of(context).size.height / 55,
                           horizontal: MediaQuery.of(context).size.width / 60),
                       child: Text(
                         AppString.exploreMore,
@@ -241,8 +243,8 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                     child: Icon(
                       Icons.pause,
                       color: ColorManager.lightBlue,
-                      size:
-                          MediaQuery.of(context).size.width / 40, // Original size
+                      size: MediaQuery.of(context).size.width /
+                          40, // Original size
                     ),
                   ),
                   const SizedBox(
@@ -287,8 +289,9 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
 
         /// Contact us, search
         Padding(
-          padding:
-              EdgeInsets.only(top: MediaQuery.of(context).size.width / 100,),
+          padding: EdgeInsets.only(
+            top: MediaQuery.of(context).size.width / 100,
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -310,10 +313,10 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   );
                 },
               ),
-              SizedBox(width: MediaQuery.of(context).size.width /25),
+              SizedBox(width: MediaQuery.of(context).size.width / 25),
 
               Padding(
-                padding: const EdgeInsets.only(right:AppPadding.p10 ),
+                padding: const EdgeInsets.only(right: AppPadding.p10),
                 child: Switch.adaptive(
                     activeColor: Colors.cyanAccent,
                     focusColor: ColorManager.white,
@@ -382,8 +385,8 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                 _toggleSearchBar();
               },
               child: Container(
-              //  color: Colors.transparent,
-              ),
+                  //  color: Colors.transparent,
+                  ),
             ),
           ),
           Center(
@@ -398,7 +401,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                 decoration: InputDecoration(
                   hintText: 'Search...',
                   hintStyle: TextStyle(color: ColorManager.black),
-                //  border:InputBorder.none,
+                  //  border:InputBorder.none,
                   filled: true,
                   fillColor: Colors.white,
                   border: OutlineInputBorder(

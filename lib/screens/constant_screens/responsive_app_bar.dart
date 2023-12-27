@@ -7,6 +7,7 @@ import '../../presentation/value_manager.dart';
 import '../features_home.dart';
 import '../what_we_do_home.dart';
 
+
 class ResponsiveAppBar extends StatefulWidget {
   const ResponsiveAppBar({super.key});
 
