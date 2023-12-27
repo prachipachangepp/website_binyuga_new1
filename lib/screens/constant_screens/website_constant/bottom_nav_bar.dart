@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:website_binyuga_new1/presentation/value_manager.dart';
 
-import '../../presentation/color_manager.dart';
-import '../../presentation/font_manager.dart';
-import '../../presentation/theme_manager.dart';
+import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
+import '../../../presentation/theme_manager.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});

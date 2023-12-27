@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../presentation/value_manager.dart';
-import '../constant_screens/bottom_nav_bar.dart';
-import '../constant_screens/description_page_constant.dart';
-import '../constant_screens/responsive_app_bar.dart';
+import '../constant_screens/website_constant/bottom_nav_bar.dart';
+import '../constant_screens/website_constant/description_page_constant.dart';
+import '../constant_screens/website_constant/responsive_app_bar.dart';
 import 'career_screens/career_section_four.dart';
 import 'career_screens/career_section_one.dart';
 import 'career_screens/career_section_three.dart';
