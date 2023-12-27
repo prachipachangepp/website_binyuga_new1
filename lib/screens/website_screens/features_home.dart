@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
-import 'package:website_binyuga_new1/screens/features_screens/features_section_one.dart';
-import 'package:website_binyuga_new1/screens/features_screens/features_section_three.dart';
-import 'package:website_binyuga_new1/screens/features_screens/features_section_two.dart';
-import 'constant_screens/bottom_nav_bar.dart';
-import 'constant_screens/responsive_app_bar.dart';
+import '../constant_screens/bottom_nav_bar.dart';
+import '../constant_screens/responsive_app_bar.dart';
+import 'features_screens/features_section_one.dart';
+import 'features_screens/features_section_three.dart';
+import 'features_screens/features_section_two.dart';
 
 class FeaturesHomeScreen extends StatefulWidget {
   const FeaturesHomeScreen({super.key});

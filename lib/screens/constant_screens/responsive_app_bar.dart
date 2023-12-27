@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/screens/career_home.dart';
+import 'package:website_binyuga_new1/screens/website_screens/career_home.dart';
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
-import '../features_home.dart';
-import '../what_we_do_home.dart';
+import '../website_screens/features_home.dart';
+import '../website_screens/what_we_do_home.dart';
 
 class ResponsiveAppBar extends StatefulWidget {
   const ResponsiveAppBar({super.key});
