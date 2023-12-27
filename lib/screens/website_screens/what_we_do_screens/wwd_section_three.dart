@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/presentation/value_manager.dart';
-
-import '../../constant_screens/explore_screen_image_btn_constant.dart';
+import '../../constant_screens/website_constant/explore_screen_image_btn_constant.dart';
 
 class WWDSectionThree extends StatefulWidget {
   const WWDSectionThree({super.key});

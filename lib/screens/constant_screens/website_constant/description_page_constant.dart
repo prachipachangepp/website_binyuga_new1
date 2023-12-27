@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../presentation/color_manager.dart';
-import '../../presentation/string_manager.dart';
-import '../../presentation/theme_manager.dart';
-import '../../presentation/value_manager.dart';
+import '../../../presentation/color_manager.dart';
+import '../../../presentation/string_manager.dart';
+import '../../../presentation/theme_manager.dart';
+import '../../../presentation/value_manager.dart';
 import 'description_bottom_row.dart';
 
 class DescriptionScreenConstant extends StatefulWidget {
