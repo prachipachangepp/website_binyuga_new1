@@ -3,7 +3,7 @@ import '../../../presentation/color_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
-import '../../constant_screens/description_bottom_row.dart';
+import '../../constant_screens/website_constant/description_bottom_row.dart';
 
 class HomeSectionSix extends StatefulWidget {
   const HomeSectionSix({super.key});

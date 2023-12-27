@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/website_screens/what_we_do_screens/wwd_section_one.dart';
 import 'package:website_binyuga_new1/screens/website_screens/what_we_do_screens/wwd_section_three.dart';
 import 'package:website_binyuga_new1/screens/website_screens/what_we_do_screens/wwd_section_two.dart';
-import '../constant_screens/bottom_nav_bar.dart';
-import '../constant_screens/description_page_constant.dart';
-import '../constant_screens/responsive_app_bar.dart';
+import '../constant_screens/website_constant/bottom_nav_bar.dart';
+import '../constant_screens/website_constant/description_page_constant.dart';
+import '../constant_screens/website_constant/responsive_app_bar.dart';
 
 class WhatWeDoHomeScreen extends StatefulWidget {
   const WhatWeDoHomeScreen({super.key});

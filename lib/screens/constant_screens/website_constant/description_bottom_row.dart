@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../presentation/string_manager.dart';
-import '../../presentation/theme_manager.dart';
+import '../../../presentation/string_manager.dart';
+import '../../../presentation/theme_manager.dart';
 
 class DescriptionBottomRowConstant extends StatelessWidget {
   const DescriptionBottomRowConstant({super.key});
