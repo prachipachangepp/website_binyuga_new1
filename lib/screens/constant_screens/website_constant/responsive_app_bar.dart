@@ -4,6 +4,7 @@ import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
+import '../../mobile_screens/career_page_mobile.dart';
 import '../../website_screens/features_home.dart';
 import '../../website_screens/what_we_do_home.dart';
 
@@ -68,7 +69,7 @@ class _ResponsiveAppBarState extends State<ResponsiveAppBar> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const CareerHomeScreen()),
+                              builder: (context) => const MobileCareerHomeScreen()),
                         );
                       },
                       child: NavBarItem(title: 'Career')),
