@@ -11,15 +11,19 @@ import '../../website_screens/career_home.dart';
 import '../../website_screens/features_home.dart';
 import '../../website_screens/landing_page_home.dart';
 import '../../website_screens/what_we_do_home.dart';
+import '../career_page_mobile.dart';
+import '../feature_page_mobile.dart';
+import '../wwd_page_mobile.dart';
 
-class HomeSectionOne extends StatefulWidget {
-  const HomeSectionOne({super.key});
+
+class MobileHomeSectionOne extends StatefulWidget {
+  const MobileHomeSectionOne({super.key});
 
   @override
-  State<HomeSectionOne> createState() => _HomeSectionOneState();
+  State<MobileHomeSectionOne> createState() => _MobileHomeSectionOneState();
 }
 
-class _HomeSectionOneState extends State<HomeSectionOne> {
+class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
   bool _lights = false;
   bool _isSearchBarVisible = false;
   GlobalKey _searchKey = GlobalKey();
@@ -28,22 +32,22 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
     return Stack(
       children: [
         /// Base Image
-        Image.network(
+        Image.asset(
           'images/team_member_bg.png',
           fit: BoxFit.fill,
-          height: MediaQuery.of(context).size.height / 0.85,
+          height: MediaQuery.of(context).size.height / 1.4,
           width: MediaQuery.of(context).size.width,
         ),
 
         ///boy img
         Padding(
           padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 2,
-              top: AppPadding.p100),
-          child: Image.network(
+              left: MediaQuery.of(context).size.width / 1.9,
+              top: AppPadding.p300),
+          child: Image.asset(
             "images/boy.png",
-            height: 200,
-            width:200,
+            height: AppSize.s380,
+            width: MediaQuery.of(context).size.width / 1.8,
           ),
         ),
         Padding(
@@ -77,7 +81,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const WhatWeDoHomeScreen()),
+                              builder: (context) => const MobileWhatWeDoHomeScreen()),
                         );
                       },
                       child: Text(AppString.whatWeDo,
@@ -91,7 +95,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const FeaturesHomeScreen()),
+                              builder: (context) => const MobileFeaturesHomeScreen()),
                         );
                       },
                       child: Text(AppString.features,
@@ -105,7 +109,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const CareerHomeScreen()),
+                              builder: (context) => const MobileCareerHomeScreen()),
                         );
                       },
                       child: Text(AppString.career,
@@ -160,27 +164,30 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   ),
 
                   ///button
-                  MaterialButton(
-                    color: ColorManager.white,
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const CareerHomeScreen()),
-                      );
-                    },
-                    child: Padding(
-                      padding: EdgeInsets.symmetric(
-                          vertical: AppPadding.p10,
-                          horizontal: MediaQuery.of(context).size.width / 60),
-                      child: Text(
-                        AppString.exploreMore,
-                        style: RButtonTheme.roundedButtonTextStyle,
-                      ),
-                    ),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(top: 30),
+                  //   child: MaterialButton(
+                  //     color: ColorManager.white,
+                  //     shape: const RoundedRectangleBorder(
+                  //         borderRadius: BorderRadius.all(Radius.circular(30.0))),
+                  //     onPressed: () {
+                  //       Navigator.push(
+                  //         context,
+                  //         MaterialPageRoute(
+                  //             builder: (context) => const CareerHomeScreen()),
+                  //       );
+                  //     },
+                  //     child: Padding(
+                  //       padding: EdgeInsets.symmetric(
+                  //           vertical: AppPadding.p10,
+                  //           horizontal: MediaQuery.of(context).size.width / 60),
+                  //       child: Text(
+                  //         AppString.exploreMore,
+                  //         style: RButtonTheme.roundedButtonTextStyle,
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               ),
             ],
@@ -189,11 +196,11 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
 
         ///divider
         Padding(
-          padding: const EdgeInsets.only(top: AppPadding.p170),
+          padding: const EdgeInsets.only(top: AppPadding.p200),
           child: SizedBox(
             height: MediaQuery.of(context).size.height / 4.2,
             child: VerticalDivider(
-              width: MediaQuery.of(context).size.width / 2.2,
+              width: MediaQuery.of(context).size.width / 1.6,
               color: ColorManager.lightBlue,
               thickness: 4,
             ),
@@ -288,7 +295,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         /// Contact us, search
         Padding(
           padding:
-          EdgeInsets.only(top: MediaQuery.of(context).size.width / 100,),
+          EdgeInsets.only(top: 25,),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
