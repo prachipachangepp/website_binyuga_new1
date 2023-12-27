@@ -153,7 +153,7 @@ class AppString {
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
-  static const String  featureScreenText1= "Turning Dreams into Features, and\nFeatures into Reality";
+  static const String  featureScreenText1= "Turning Dreams into Features, \nand Features into Reality";
   static const String featureScreenText2 =  'We specialize in crafting customized solutions to meet'
       '\nyour unique needs, ensuring that our products align '
       '\nperfectly with your goals.Our services are designed'
