@@ -23,7 +23,6 @@ class _ResponsiveAppBarState extends State<ResponsiveAppBar> {
       ///Remove Arrow Buttom
        automaticallyImplyLeading: false,
       /// APPBAR
-      backgroundColor: Colors.white,
       title: Image.asset(
         'images/binyuga_logo.png',
         height: AppSize.s160,

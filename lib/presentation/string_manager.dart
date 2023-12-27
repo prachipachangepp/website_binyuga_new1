@@ -130,7 +130,7 @@ class AppString {
       "\n that dream to life, translating it into tangible"
       "\n solutions and results.";
   static const String sculptYour ="Sculpt Your Path to Success";
-  static const String moldYour = "Mold Your Dreams\ninto Reality";
+  static const String moldYour = "Mold Your Dreams\nInto Reality";
   static const String exploreBinyuga ="Explore\nBinyuga.Pvt.Ltd.";
   static const String weAreDedicated ="We're dedicated to more than just\ntechnology transformation; our goal is\nto bring about meaningful change that\nresonates with our clients and the\ncommunities they impact.";
 
