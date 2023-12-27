@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/description_page_constant.dart';
-
 import '../../presentation/color_manager.dart';
 import '../../presentation/font_manager.dart';
 import '../../presentation/string_manager.dart';

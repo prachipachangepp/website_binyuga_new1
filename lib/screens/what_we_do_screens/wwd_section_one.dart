@@ -8,7 +8,6 @@ import '../landing_page_home.dart';
 
 class WWDSectionOne extends StatelessWidget {
   const WWDSectionOne({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Container(
