@@ -10,6 +10,7 @@ import '../../presentation/theme_manager.dart';
 import '../../presentation/value_manager.dart';
 import '../career_home.dart';
 import '../features_home.dart';
+import '../landing_page_home.dart';
 import '../what_we_do_home.dart';
 
 class HomeSectionOne extends StatefulWidget {
@@ -213,27 +214,54 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
             children: [
               Column(
                 children: [
-                  Icon(
-                    Icons.chevron_right,
-                    color: ColorManager.lightBlue,
-                    size: MediaQuery.of(context).size.width / 30,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const CareerHomeScreen()),
+                      );
+                    },
+                    child: Icon(
+                      Icons.chevron_right,
+                      color: ColorManager.lightBlue,
+                      size: MediaQuery.of(context).size.width / 30,
+                    ),
                   ),
                   const SizedBox(
                     height: AppSize.s20,
                   ),
-                  Icon(
-                    Icons.pause,
-                    color: ColorManager.lightBlue,
-                    size:
-                        MediaQuery.of(context).size.width / 40, // Original size
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()),
+                      );
+                    },
+                    child: Icon(
+                      Icons.pause,
+                      color: ColorManager.lightBlue,
+                      size:
+                          MediaQuery.of(context).size.width / 40, // Original size
+                    ),
                   ),
                   const SizedBox(
                     height: AppSize.s20,
                   ),
-                  Icon(
-                    Icons.keyboard_arrow_left,
-                    color: ColorManager.lightBlue,
-                    size: MediaQuery.of(context).size.width / 30,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const FeaturesHomeScreen()),
+                      );
+                    },
+                    child: Icon(
+                      Icons.keyboard_arrow_left,
+                      color: ColorManager.lightBlue,
+                      size: MediaQuery.of(context).size.width / 30,
+                    ),
                   ),
                 ],
               ),
@@ -261,7 +289,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         /// Contact us, search
         Padding(
           padding:
-              EdgeInsets.only(top: MediaQuery.of(context).size.width / 100),
+              EdgeInsets.only(top: MediaQuery.of(context).size.width / 100,),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -283,10 +311,10 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                   );
                 },
               ),
-              SizedBox(width: MediaQuery.of(context).size.width / 22),
+              SizedBox(width: MediaQuery.of(context).size.width /25),
 
               Padding(
-                padding: const EdgeInsets.only(right: AppPadding.p20),
+                padding: const EdgeInsets.only(right:AppPadding.p10 ),
                 child: Switch.adaptive(
                     activeColor: Colors.cyanAccent,
                     focusColor: ColorManager.white,
@@ -297,14 +325,14 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                       });
                     }),
               ),
-              SizedBox(width: MediaQuery.of(context).size.width / 35),
+              SizedBox(width: MediaQuery.of(context).size.width / 150),
 
               ///Animated Search Bar
               _isSearchBarVisible
                   ? _buildAnimatedSearchBar()
                   : SizedBox.shrink(),
               Padding(
-                padding: const EdgeInsets.only(right: AppPadding.p35),
+                padding: const EdgeInsets.only(right: AppPadding.p20),
                 child: GestureDetector(
                   onTap: () {
                     _toggleSearchBar();
