@@ -27,7 +27,7 @@ class FeatureSectionOne extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 top: AppPadding.p100,
-                left: MediaQuery.of(context).size.width / 1.9),
+                left: MediaQuery.of(context).size.width / 2.0),
             child: Column(
               children: [
                 ///head txt 1
