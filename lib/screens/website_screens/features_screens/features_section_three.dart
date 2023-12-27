@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../presentation/value_manager.dart';
+
+import '../../../presentation/value_manager.dart';
 
 class FeatureSectionThree extends StatelessWidget {
   const FeatureSectionThree({super.key});

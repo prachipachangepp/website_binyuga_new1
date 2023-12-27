@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../presentation/color_manager.dart';
-import '../../presentation/font_manager.dart';
-import '../../presentation/string_manager.dart';
-import '../../presentation/theme_manager.dart';
-import '../../presentation/value_manager.dart';
+
+import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
+import '../../../presentation/string_manager.dart';
+import '../../../presentation/theme_manager.dart';
+import '../../../presentation/value_manager.dart';
+
 
 class CareerSectionFour extends StatelessWidget {
   const CareerSectionFour({super.key});
