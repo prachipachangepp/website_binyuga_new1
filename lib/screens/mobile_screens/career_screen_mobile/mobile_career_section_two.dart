@@ -85,7 +85,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
 
           ///Inverted Comma End
           Padding(
-            padding: const EdgeInsets.only(left:120,top:190),
+            padding: const EdgeInsets.only(left:260,top:190,),
             child: Image.asset(
               'images/inverted2.png',
               height: 100,
