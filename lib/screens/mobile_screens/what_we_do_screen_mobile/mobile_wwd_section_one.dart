@@ -63,7 +63,6 @@ class MobileWWDSectionOne extends StatelessWidget {
               ],
             ),
           ),
-
           ///Image on the right side
           Padding(
             padding: EdgeInsets.only(
