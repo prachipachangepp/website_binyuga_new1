@@ -166,7 +166,7 @@ return MediaQuery.of(context).size.width / 55;
 /// WhatWeDo SubHome Page
 class WhatWeDoSubPageConstant {
   static double getNewFontSizeWWD(BuildContext context) {
-    return MediaQuery.of(context).size.width / 28;
+    return MediaQuery.of(context).size.width / 15;
   }
   static TextStyle subHomeTextStyle(BuildContext context){
     return GoogleFonts.inter(

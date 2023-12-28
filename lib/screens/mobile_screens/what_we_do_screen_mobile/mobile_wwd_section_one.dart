@@ -11,21 +11,24 @@ class MobileWWDSectionOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s870,
+      height:400,
       color: ColorManager.white,
       child: Stack(
         children: [
           /// Background Image
-          Image.asset(
-            "images/wwd_bg.png",
-            fit: BoxFit.fill,
-            height: AppSize.s500,
-            width: MediaQuery.of(context).size.width,
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: Image.asset(
+              'images/what_we_do_home.png',
+              fit: BoxFit.fill,
+              height: MediaQuery.of(context).size.width / 0.1,
+              width: MediaQuery.of(context).size.width,
+            ),
           ),
 
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p10, left: AppPadding.p15),
+            padding: const EdgeInsets.only(top: AppPadding.p100, left: AppPadding.p35),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -39,38 +42,42 @@ class MobileWWDSectionOne extends StatelessWidget {
                 ),
                 Text(
                   AppString.homePageText2,
-                  style: AllScreensConstant.customTextStyle(FontSize.s10,
+                  style: AllScreensConstant.customTextStyle(FontSize.s5,
                       FontWeightManager.medium, ColorManager.lightBlue),
                 ),
                 const SizedBox(
                   height: AppSize.s80,
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const HomePage()),
-                    );
-                  },
-                  child: Text(
-                    AppString.letsTalk,
-                    style: AllScreensConstant.customTextStyle(
-                        FontSize.s15,
-                        FontWeightManager.medium,
-                        ColorManager.black),
+                Padding(
+                  padding:  EdgeInsets.only(top: MediaQuery.of(context).size.height /50),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const HomePage()),
+                      );
+                    },
+                    child: Text(
+                      AppString.letsTalk,
+                      style: AllScreensConstant.customTextStyle(
+                          FontSize.s15,
+                          FontWeightManager.medium,
+                          ColorManager.black),
+                    ),
                   ),
                 ),
               ],
             ),
           ),
+
           ///Image on the right side
           Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 4,
+                left: MediaQuery.of(context).size.width / 2.5,
                 top: MediaQuery.of(context).size.height / 7),
             child: Image.asset(
               'images/digital_innovation.png',
-              width: AppSize.s200,
+              width: AppSize.s870,
               height: AppPadding.p700,
             ),
           ),
