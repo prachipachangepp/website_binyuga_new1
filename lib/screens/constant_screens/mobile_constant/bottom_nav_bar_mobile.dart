@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:website_binyuga_new1/presentation/value_manager.dart';
-
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/theme_manager.dart';
@@ -51,7 +50,7 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
           child: Padding(
             padding: EdgeInsets.only(
                 top: 30,
-                //bottom: 20
+
               ),
             child: Container(
               color: Colors.transparent,
@@ -61,63 +60,59 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
                 fit: BoxFit.fitWidth,
                 child: Row(
                   children: [
-                    Image.asset(
-                      'images/binyuga_logo.png',
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 15,
-                    ),
-                    Row(
-                      children: [
-                        Icon(
-                          FontAwesomeIcons.facebook,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                        const SizedBox(
-                          width: AppSize.s20,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.youtube,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                        const SizedBox(
-                          width: AppSize.s20,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.twitter,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                        const SizedBox(
-                          width: AppSize.s20,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.instagram,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                        const SizedBox(
-                          width: AppSize.s20,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.linkedin,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                      ],
+                    Center(
+                      child: Row(
+                        children: [
+                          Icon(
+                            FontAwesomeIcons.facebook,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                          const SizedBox(
+                            width: AppSize.s20,
+                          ),
+                          Icon(
+                            FontAwesomeIcons.youtube,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                          const SizedBox(
+                            width: AppSize.s20,
+                          ),
+                          Icon(
+                            FontAwesomeIcons.twitter,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                          const SizedBox(
+                            width: AppSize.s20,
+                          ),
+                          Icon(
+                            FontAwesomeIcons.instagram,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                          const SizedBox(
+                            width: AppSize.s20,
+                          ),
+                          Icon(
+                            FontAwesomeIcons.linkedin,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                        ],
+                      ),
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 20,
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.only(left:10,top: 5),
                       child: Row(
                         children: [
                           Text('www.career@binyuga.com',
                               style: AllScreensConstant.customTextStyle(
-                                  FontSize.s17,
+                                  FontSize.s12,
                                   FontWeightManager.regular,
                                   ColorManager.white)
                              ),
@@ -135,8 +130,8 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
                         decoration: BoxDecoration(
                             color: ColorManager.white,
                             border: Border.all(color: Colors.white, width: 2),
-                            borderRadius: BorderRadius.circular(2)),
-                        width: MediaQuery.of(context).size.width / 6.5,
+                            borderRadius: BorderRadius.circular(10)),
+                        width: MediaQuery.of(context).size.width / 2.7,
                         height: AppSize.s30,
                         child: DropdownButton(
                           focusColor: ColorManager.white,
@@ -165,7 +160,7 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
                                   child: Text(
                                 country,
                                 style: TextStyle(
-                                  fontSize: AppSize.s15,
+                                  fontSize: AppSize.s10,
                                   fontWeight: FontWeightManager.bold,
                                   color: ColorManager.black,
                                 ),

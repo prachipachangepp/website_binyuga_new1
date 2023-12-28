@@ -12,7 +12,7 @@ class MobileHomeSectionFive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 600,
+      height: 470,
       color: ColorManager.white,
       child: Stack(
         children: [
