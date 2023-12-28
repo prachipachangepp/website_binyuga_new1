@@ -21,28 +21,31 @@ class MobileCareerSectionThree extends StatelessWidget {
         ),
 
         ///txt
-        Text('Why Binyuga.Pvt.Ltd.',
-            style: TextStyle(fontSize:17,
-              fontWeight: FontWeightManager.bold,
-              color: ColorManager.white,)),
+        Padding(
+          padding: const EdgeInsets.only(left: 20.0,top: 40),
+          child: Text('Why Binyuga.Pvt.Ltd.',
+              style: TextStyle(fontSize:19,
+                fontWeight: FontWeightManager.bold,
+                color: ColorManager.white,)),
+        ),
 
         Padding(
           padding:
-          EdgeInsets.only(left: MediaQuery.of(context).size.width / 10),
+          EdgeInsets.only(left: MediaQuery.of(context).size.width / 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset(
                 "images/woman.png",
-                height: 255,
+                height: 355,
                 width: MediaQuery.of(context).size.width / 2.5,
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height / 2,
+                height: 100,
                 child: VerticalDivider(
                   width: MediaQuery.of(context).size.width / 12,
                   color: ColorManager.lightBlue,
-                  thickness: 4,
+                  thickness: 2,
                 ),
               ),
               Text(
