@@ -21,7 +21,7 @@ class MobileCareerSectionFour extends StatelessWidget {
             Image.asset(
               'images/background1.png',
               fit: BoxFit.fill,
-              height: AppSize.s720,
+              height: 220,
               width: MediaQuery.of(context).size.width,
             ),
             Padding(
@@ -40,7 +40,7 @@ class MobileCareerSectionFour extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: AppPadding.p530),
+              padding: const EdgeInsets.only(top: 130),
               child: Column(
                 children: [
                   Padding(
@@ -160,13 +160,13 @@ class MobileCareerSectionFour extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(AppPadding.p8),
-                    child: Image.asset(
-                      "images/Line2.png",
-                      height: AppSize.s100,
-                    ),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(AppPadding.p8),
+                  //   child: Image.asset(
+                  //     "images/Line2.png",
+                  //     height: AppSize.s100,
+                  //   ),
+                  // ),
                   const SizedBox(
                     width: AppSize.s20,
                   ),
