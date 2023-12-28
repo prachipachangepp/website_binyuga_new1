@@ -19,35 +19,32 @@ class MobileCareerSectionOne extends StatelessWidget {
           Image.asset(
             'images/bckground.png',
             fit: BoxFit.fill,
-            height: AppSize.s700,
-            width: MediaQuery.of(context).size.width,
+            height: 270,
+            width: 400,
           ),
           Padding(
-            padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 2,
-              top: MediaQuery.of(context).size.height / 30,
-            ),
+            padding: const EdgeInsets.only(right:40,top:60,bottom:70,left:200),
             child: Image.asset(
-              "images/girl_img.png",
-              height: AppSize.s870,
-              width: MediaQuery.of(context).size.width / 2.3,
+              "images/image 98.png",
+              height: 350,
+              width: 400,
             ),
           ),
           Padding(
             padding: EdgeInsets.only(
-                top: MediaQuery.of(context).size.height / 4,
-                left: MediaQuery.of(context).size.width / 5,
-                right: MediaQuery.of(context).size.width / 5),
+                top: 70,
+                left: 40,),
+               // right: MediaQuery.of(context).size.width / 5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(AppString.moldYour,
                     style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width / 33,
+                        MediaQuery.of(context).size.width / 20,
                         FontWeightManager.bold,
                         ColorManager.white)),
                 const SizedBox(
-                  height: AppSize.s20,
+                  height: 15,
                 ),
                 Padding(
                   padding: EdgeInsets.only(
@@ -65,8 +62,8 @@ class MobileCareerSectionOne extends StatelessWidget {
                     },
                     child: Padding(
                       padding: EdgeInsets.symmetric(
-                          vertical: AppPadding.p8,
-                          horizontal: MediaQuery.of(context).size.width / 50),
+                          vertical: 8,
+                          horizontal: 10),
                       child: Text(
                         AppString.applyTxt,
                         style: RButtonTheme.roundedButtonTextStyle,
