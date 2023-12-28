@@ -26,16 +26,16 @@ class MobileCareerHomeScreen extends StatelessWidget {
           Column(
             children: [
               Container(
-                height: AppSize.s900,
+                height: 300,
                 color: Colors.purple,
                 child: const MobileCareerSectionOne(),
               ),
               Container(
-                height:  AppSize.s900,
+                height:  300,
                 child: const MobileCareerSectionTwo(),
               ),
               Container(
-                height: AppSize.s1000,
+                height: 350,
                 child: const MobileCareerSectionThree(),
               ),
 

@@ -154,7 +154,7 @@ class MobileHomeSectionFive extends StatelessWidget {
                         height: AppSize.s20 ,
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left:MediaQuery.of(context).size.width /5 ),
+                        padding: EdgeInsets.only(left:50 ),
                         child: Text(AppString.johnS,
                             style: TeamMemberConstant.nameTextStyle),
                       ),

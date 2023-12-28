@@ -16,48 +16,43 @@ class MobileCareerSectionThree extends StatelessWidget {
         Image.asset(
           'images/background.png',
           fit: BoxFit.fill,
-          height: AppSize.s750,
-          width: MediaQuery.of(context).size.width,
+          height: 300,
+          width:400,
         ),
 
         ///txt
         Padding(
-          padding: EdgeInsets.only(
-            top: AppPadding.p100,
-            left: MediaQuery.of(context).size.width / 10,
-          ),
+          padding: const EdgeInsets.only(left:20,top:40),
           child: Text('Why Binyuga.Pvt.Ltd.',
-              style: AllScreensConstant.customTextStyle(
-                  MediaQuery.of(context).size.width / 33,
-                  FontWeightManager.bold,
-                  ColorManager.white)),
+              style: TextStyle(fontSize:19,
+                fontWeight: FontWeightManager.bold,
+                color: ColorManager.white,)),
         ),
 
-        Padding(
-          padding:
-          EdgeInsets.only(left: MediaQuery.of(context).size.width / 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Image.asset(
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left:20),
+              child: Image.asset(
                 "images/woman.png",
-                height: AppSize.s855,
+                height: 355,
                 width: MediaQuery.of(context).size.width / 2.5,
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height / 2,
-                child: VerticalDivider(
-                  width: MediaQuery.of(context).size.width / 12,
-                  color: ColorManager.lightBlue,
-                  thickness: 4,
-                ),
+            ),
+            SizedBox(
+              height:  100,
+              child: VerticalDivider(
+                width: MediaQuery.of(context).size.width / 12,
+                color: ColorManager.lightBlue,
+                thickness: 2,
               ),
-              Text(
-                AppString.loremTxt,
-                style: CareerPageConstant.careerTextStyle(context),
-              ),
-            ],
-          ),
+            ),
+            Text(
+              AppString.loremTxt,
+              style: CareerPageConstant.careerTextStyle(context),
+            ),
+          ],
         ),
       ],
     );
