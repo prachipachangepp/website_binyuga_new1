@@ -17,7 +17,6 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
   @override
   Widget build(BuildContext context) {
     return Container(
-
       color: ColorManager.nevyBlue,
       child: Center(
         child: Column(

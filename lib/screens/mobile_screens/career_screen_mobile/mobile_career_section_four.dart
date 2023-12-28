@@ -160,13 +160,14 @@ class MobileCareerSectionFour extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(AppPadding.p8),
-                    child: Image.asset(
-                      "images/Line2.png",
-                      height: AppSize.s100,
-                    ),
-                  ),
+                  ///add divider
+                  // Padding(
+                  //   padding: const EdgeInsets.all(AppPadding.p8),
+                  //   child: Image.asset(
+                  //     "images/Line2.png",
+                  //     height: AppSize.s100,
+                  //   ),
+                  // ),
                   const SizedBox(
                     width: AppSize.s20,
                   ),

@@ -14,7 +14,7 @@ class MobileCareerSectionThree extends StatelessWidget {
       children: [
         ///bg image
         Image.asset(
-          'images/bckground.png',
+          'images/background.png',
           fit: BoxFit.fill,
           height: AppSize.s750,
           width: MediaQuery.of(context).size.width,

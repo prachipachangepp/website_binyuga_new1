@@ -12,7 +12,7 @@ class BottomNavBarScreen extends StatefulWidget {
   @override
   State<BottomNavBarScreen> createState() => _BottomNavBarScreenState();
 }
-
+///
 class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   String selectedCountry = 'Select Country/regions';
   List<String> countries = [

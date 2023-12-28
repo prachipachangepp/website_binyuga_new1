@@ -64,7 +64,7 @@ class MobileFeatureSectionTwo extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 190, top: AppPadding.p420),
             child: Image.asset(
-              'images/Rectangle 677.png',
+              'images/rectangle.png',
               height: AppSize.s780,
               width: MediaQuery.of(context).size.width / 1.7,
             ),
