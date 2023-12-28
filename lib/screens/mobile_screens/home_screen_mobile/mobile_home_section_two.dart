@@ -39,7 +39,7 @@ class MobileHomeSectionTwo extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: AppSize.s20),
+            const SizedBox(height: AppSize.s10),
             Center(
               child: Row(
                 children: [

@@ -141,9 +141,9 @@ Widget mobileBody() {
               Row(
                 children: [
                   Expanded(
-                    flex: 1,
+                    flex: 2,
                     child: Container(
-                      color: Colors.white,
+                      //color: Colors.red,
                       //height: 200,
                       width: MediaQuery.of(context).size.width,
                       child: MobileHomeSectionTwo(),
@@ -189,7 +189,7 @@ Widget mobileBody() {
                   Expanded(
                     flex: 1,
                     child: Container(
-                      height: MediaQuery.of(context).size.width/0.5,
+                     // height: MediaQuery.of(context).size.width/0.6,
                       width: MediaQuery.of(context).size.width, color: Colors.red,
                       child: MobileHomeSectionSix(),),
                   ),
