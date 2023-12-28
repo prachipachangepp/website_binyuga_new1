@@ -13,6 +13,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 400,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -28,7 +29,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 top: AppPadding.p100,
-                left: MediaQuery.of(context).size.width / 2.0),
+                left:100 ),
             child: Column(
               children: [
                 ///head txt 1
@@ -38,7 +39,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
                       AppString.featureScreenText1,
                       //  textAlign: TextAlign.end,
                       style: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 40,
+                          MediaQuery.of(context).size.width / 28,
                           FontWeightManager.bold,
                           ColorManager.white),
                     ),
@@ -51,7 +52,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
                 ///txt 2
                 Padding(
                   padding: EdgeInsets.only(
-                      right: MediaQuery.of(context).size.width / 4),
+                      left:100),
                   child: Row(
                     //  mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -59,7 +60,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
                         AppString.featureScreenText2,
                         textAlign: TextAlign.start,
                         style: AllScreensConstant.customTextStyle(
-                            MediaQuery.of(context).size.width / 120,
+                            MediaQuery.of(context).size.width /90,
                             FontWeightManager.medium,
                             ColorManager.lightBlue),
                       ),
