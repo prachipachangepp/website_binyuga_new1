@@ -28,46 +28,50 @@ class MobileHomeSectionTwo extends StatelessWidget {
                 ),
               ],
             ),
-            // Row(
-            //   children: [
-            //     Padding(
-            //       padding: EdgeInsets.only(
-            //           left: MediaQuery.of(context).size.width / 30),
-            //       child: Image.asset("images/inverted_start.png",
-            //           width: MediaQuery.of(context).size.width / 20),
-            //     ),
-            //   ],
-            // ),
-            const SizedBox(height: AppSize.s20),
             Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                      left: 13),
-                  child: Text(
-                    "Is driven by innovation and guided by user-friendly designs."
-                        " We also have \na strong commitment to nurturing and educating emerging,"
-                        "forward-\nthinking talent in the field.",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.inter(
-                      textStyle: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width / 36,
-                       FontWeightManager.bold,
-                        ColorManager.black,),),
+                      left: 20,top:20),
+                  child: Image.asset("images/inverted_start.png",
+                      width: MediaQuery.of(context).size.width / 20
                   ),
                 ),
               ],
             ),
             const SizedBox(height: AppSize.s20),
-            // Padding(
-            //   padding:
-            //   EdgeInsets.only(left: MediaQuery.of(context).size.width / 3),
-            //   child: Image.asset(
-            //     "images/inverted_end.png",
-            //     width: MediaQuery.of(context).size.width / 20,
-            //   ),
-            // ),
+            Center(
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                        left:30),
+                    child: Center(
+                      child: Text(
+                        "Is driven by innovation and guided by user-friendly designs."
+                            " We also have \na strong commitment to nurturing and educating emerging,"
+                            "forward-\nthinking talent in the field.",
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.inter(
+                          textStyle: AllScreensConstant.customTextStyle(
+                            MediaQuery.of(context).size.width / 45,
+                           FontWeightManager.bold,
+                            ColorManager.black,),),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Padding(
+              padding:
+              EdgeInsets.only(left:190,bottom: 10),
+              child: Image.asset(
+                "images/inverted_end.png",
+                width: MediaQuery.of(context).size.width / 20,
+              ),
+            ),
             const SizedBox(height: 30),
           ],
         ),

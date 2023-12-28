@@ -45,23 +45,23 @@ class _MobileHomeSectionFourState extends State<MobileHomeSectionFour> {
                 FontWeightManager.bold,
                 ColorManager.black)
         ),
-        const SizedBox(height: AppSize.s30),
+        // const SizedBox(height: AppSize.s30),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: AppPadding.p30,left: 30),
+              padding: const EdgeInsets.only(top: AppPadding.p30,left: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Text(
-                  //   'OOO',
-                  //   textAlign: TextAlign.center,
-                  //   style: TextStyle(
-                  //       fontSize: MediaQuery.of(context).size.width/10,
-                  //       fontFamily: FontConstants.fontFamily1,
-                  //       color: ColorManager.skyBlue),
-                  // ),
+                  Text(
+                    'OOO',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: MediaQuery.of(context).size.width/10,
+                        fontFamily: FontConstants.fontFamily1,
+                        color: ColorManager.skyBlue),
+                  ),
                   const SizedBox(height: AppPadding.p8,),
                   Text(
                       AppString.successfullyProject,
@@ -74,25 +74,28 @@ class _MobileHomeSectionFourState extends State<MobileHomeSectionFour> {
                 ],
               ),
             ),
-            const SizedBox(width: AppSize.s50,),
+            const SizedBox(width: AppSize.s30,),
             Padding(
 
               padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/100,top: AppPadding.p30),
               child: Column(
              //   crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Text(
-                  //   'OO',
-                  //   textAlign: TextAlign.center,
-                  //   style: TextStyle(
-                  //     fontSize: MediaQuery.of(context).size.width/10,
-                  //     fontFamily: FontConstants.fontFamily1,
-                  //     color: ColorManager.skyBlue,
-                  //   ),
-                  // ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 30),
+                    child: Text(
+                      'OO',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: MediaQuery.of(context).size.width/10,
+                        fontFamily: FontConstants.fontFamily1,
+                        color: ColorManager.skyBlue,
+                      ),
+                    ),
+                  ),
                   const SizedBox(height: AppSize.s5),
                   Padding(
-                    padding: const EdgeInsets.only(bottom:24,top:20),
+                    padding: const EdgeInsets.only(bottom: 40),
                     child: Text(
                         AppString.revenueGrowth,
                         textAlign: TextAlign.center,
@@ -105,20 +108,20 @@ class _MobileHomeSectionFourState extends State<MobileHomeSectionFour> {
                 ],
               ),
             ),
-            const SizedBox(width: AppSize.s50,),
+            const SizedBox(width: AppSize.s30,),
             Padding(
               padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/100,top: AppPadding.p30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Text(
-                  //   'OOO',
-                  //   textAlign: TextAlign.center,
-                  //   style: TextStyle(
-                  //       fontSize: MediaQuery.of(context).size.width/10,
-                  //       fontFamily: FontConstants.fontFamily1,
-                  //       color: ColorManager.skyBlue),
-                  // ),
+                  Text(
+                    'OOO',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: MediaQuery.of(context).size.width/10,
+                        fontFamily: FontConstants.fontFamily1,
+                        color: ColorManager.skyBlue),
+                  ),
                   const SizedBox(height: AppSize.s8),
                   Text(
                       AppString.trainingDays,
@@ -134,7 +137,7 @@ class _MobileHomeSectionFourState extends State<MobileHomeSectionFour> {
             ),
           ],
         ),
-        const SizedBox(height: AppSize.s80),
+        const SizedBox(height: AppSize.s20),
       ],
     );
   }
