@@ -16,22 +16,15 @@ class MobileCareerSectionThree extends StatelessWidget {
         Image.asset(
           'images/background.png',
           fit: BoxFit.fill,
-          height: AppSize.s750,
-          width: MediaQuery.of(context).size.width,
+          height: 300,
+          width:400,
         ),
 
         ///txt
-        Padding(
-          padding: EdgeInsets.only(
-            top: AppPadding.p100,
-            left: MediaQuery.of(context).size.width / 10,
-          ),
-          child: Text('Why Binyuga.Pvt.Ltd.',
-              style: AllScreensConstant.customTextStyle(
-                  MediaQuery.of(context).size.width / 33,
-                  FontWeightManager.bold,
-                  ColorManager.white)),
-        ),
+        Text('Why Binyuga.Pvt.Ltd.',
+            style: TextStyle(fontSize:17,
+              fontWeight: FontWeightManager.bold,
+              color: ColorManager.white,)),
 
         Padding(
           padding:
@@ -41,7 +34,7 @@ class MobileCareerSectionThree extends StatelessWidget {
             children: [
               Image.asset(
                 "images/woman.png",
-                height: AppSize.s855,
+                height: 255,
                 width: MediaQuery.of(context).size.width / 2.5,
               ),
               SizedBox(
