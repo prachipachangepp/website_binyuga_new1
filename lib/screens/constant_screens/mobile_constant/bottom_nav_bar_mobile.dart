@@ -38,9 +38,10 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
-          height: AppSize.s130,
+          height: AppSize.s100,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/black_bg.png'),
@@ -49,8 +50,9 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
           ),
           child: Padding(
             padding: EdgeInsets.only(
-                top: MediaQuery.of(context).size.height / 12,
-                bottom: MediaQuery.of(context).size.height / 12),
+                top: 30,
+                //bottom: 20
+              ),
             child: Container(
               color: Colors.transparent,
               width: MediaQuery.of(context).size.width,

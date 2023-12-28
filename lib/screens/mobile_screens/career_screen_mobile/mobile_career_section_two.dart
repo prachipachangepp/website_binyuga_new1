@@ -50,7 +50,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
             padding: EdgeInsets.only(top:60,right:40,),
 
             child: Image.asset(
-              'images/Rectangle 677.png',
+              'images/rectangle.png',
               height: 190,
               width: 450,
             ),
@@ -60,7 +60,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left:20,top:50),
             child: Image.asset(
-              'images/inverted1.png',
+              'images/inverted_start_white.png',
               height: 100,
               width: 50,
             ),
@@ -87,7 +87,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left:260,top:190,),
             child: Image.asset(
-              'images/inverted2.png',
+              'images/inverted_end_white.png',
               height: 100,
               width: 50,
             ),

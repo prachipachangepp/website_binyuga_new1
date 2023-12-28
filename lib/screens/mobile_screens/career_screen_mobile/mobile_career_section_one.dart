@@ -25,7 +25,7 @@ class MobileCareerSectionOne extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right:40,top:60,bottom:70,left:200),
             child: Image.asset(
-              "images/image 98.png",
+              "images/girl_img.png",
               height: 350,
               width: 400,
             ),
