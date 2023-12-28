@@ -35,19 +35,20 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
         Image.asset(
           'images/team_member_bg.png',
           fit: BoxFit.fill,
-          height: MediaQuery.of(context).size.height / 1.4,
+          height: MediaQuery.of(context).size.height / 1.6,
           width: MediaQuery.of(context).size.width,
         ),
 
         ///boy img
         Padding(
           padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 1.9,
-              top: AppPadding.p300),
+            left: 200,top:50
+             ),
           child: Image.asset(
             "images/boy.png",
-            height: AppSize.s380,
-            width: MediaQuery.of(context).size.width / 1.8,
+            height: MediaQuery.of(context).size.height / 1.5,
+            // height: AppSize.s500,
+            width: MediaQuery.of(context).size.width / 2.5,
           ),
         ),
         Padding(
@@ -74,7 +75,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                           style: HomeScreen.sidebarTextStyle),
                     ),
                     const SizedBox(
-                      height: AppSize.s50,
+                      height: AppSize.s30,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -88,7 +89,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                           style: HomeScreen.sidebarTextStyle),
                     ),
                     const SizedBox(
-                      height: AppSize.s50,
+                      height: AppSize.s30,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -102,7 +103,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                           style: HomeScreen.sidebarTextStyle),
                     ),
                     const SizedBox(
-                      height: AppSize.s50,
+                      height: AppSize.s30,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -116,7 +117,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                           style: HomeScreen.sidebarTextStyle),
                     ),
                     const SizedBox(
-                      height: AppSize.s50,
+                      height: AppSize.s30,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -133,21 +134,22 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 ),
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 6,
+                width: MediaQuery.of(context).size.width / 15,
               ),
 
               /// txt, button
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width / 70,
+
+                  Padding(
+                    padding: const EdgeInsets.only(top:AppPadding.p25),
+                    child: Text(AppString.homesTxt1,
+                        style: AllScreensConstant.customTextStyle(
+                            MediaQuery.of(context).size.width / 40,
+                            FontWeightManager.bold,
+                            ColorManager.white)),
                   ),
-                  Text(AppString.homesTxt1,
-                      style: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 30,
-                          FontWeightManager.bold,
-                          ColorManager.white)),
                   const SizedBox(
                     height: AppSize.s20,
                   ),
@@ -156,7 +158,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                   Text(AppString.homesTxt2,
                       textAlign: TextAlign.start,
                       style: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 90,
+                          MediaQuery.of(context).size.width / 100,
                           FontWeightManager.medium,
                           ColorManager.lightBlue)),
                   const SizedBox(
@@ -196,13 +198,13 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
         ///divider
         Padding(
-          padding: const EdgeInsets.only(top: AppPadding.p200),
+          padding: const EdgeInsets.only(top: AppPadding.p205),
           child: SizedBox(
-            height: MediaQuery.of(context).size.height / 4.2,
+            height: MediaQuery.of(context).size.height / 10,
             child: VerticalDivider(
-              width: MediaQuery.of(context).size.width / 1.6,
+              width: MediaQuery.of(context).size.width / 1.7,
               color: ColorManager.lightBlue,
-              thickness: 4,
+              thickness: 3,
             ),
           ),
         ),
