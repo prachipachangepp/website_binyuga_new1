@@ -22,39 +22,49 @@ class _WWDSectionThreeState extends State<WWDSectionThree> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ImageWithButtonStack(
-                      imageUrl: 'images/sd.png',
+                      imageUrl: "images/sd.png",
                       buttonText: 'Software Development',
                       onPressed: () {}),
                   ImageWithButtonStack(
                       imageUrl: 'images/ad.png',
                       buttonText: 'Application Development',
                       onPressed: () {}),
-                  ImageWithButtonStack(
-                      imageUrl: 'images/wd.png',
-                      buttonText: 'Web Development',
-                      onPressed: () {})
+
                 ],
               ),
-              const SizedBox(
-                height: AppSize.s50,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ImageWithButtonStack(
-                      imageUrl: 'images/ui.png',
-                      buttonText: 'Ui/UX Designing',
-                      onPressed: () {}),
-                  ImageWithButtonStack(
-                      imageUrl: 'images/cm.png',
-                      buttonText: 'Career Mentoring',
-                      onPressed: () {}),
-                  ImageWithButtonStack(
-                      imageUrl: 'images/ps.png',
-                      buttonText: 'Problem Solving',
-                      onPressed: () {})
-                ],
-              ),
+              // const SizedBox(
+              //   height: AppSize.s50,
+              // ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //   children: [
+              //     ImageWithButtonStack(
+              //         imageUrl: 'images/wd.png',
+              //         buttonText: 'Web Development',
+              //         onPressed: () {}),
+              //     ImageWithButtonStack(
+              //         imageUrl: 'images/ui.png',
+              //         buttonText: 'Ui/UX Designing',
+              //         onPressed: () {}),
+              //
+              //   ],
+              // ),
+              // const SizedBox(
+              //   height: AppSize.s50,
+              // ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.start,
+              //   children: [
+              //     ImageWithButtonStack(
+              //         imageUrl: 'images/cm.png',
+              //         buttonText: 'Career Mentoring',
+              //         onPressed: () {}),
+              //     ImageWithButtonStack(
+              //         imageUrl: 'images/ps.png',
+              //         buttonText: 'Problem Solving',
+              //         onPressed: () {})
+              //   ],
+              // ),
             ],
           )
         ],

@@ -6,14 +6,14 @@ import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/theme_manager.dart';
 
-class BottomNavBarScreen extends StatefulWidget {
-  const BottomNavBarScreen({super.key});
+class BottomNavBarScreenMobile extends StatefulWidget {
+  const BottomNavBarScreenMobile({super.key});
 
   @override
-  State<BottomNavBarScreen> createState() => _BottomNavBarScreenState();
+  State<BottomNavBarScreenMobile> createState() => _BottomNavBarScreenMobileState();
 }
-///
-class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
+
+class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
   String selectedCountry = 'Select Country/regions';
   List<String> countries = [
     'Select Country/regions',
@@ -40,7 +40,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
     return Column(
       children: [
         Container(
-          height: AppSize.s187,
+          height: AppSize.s130,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/black_bg.png'),

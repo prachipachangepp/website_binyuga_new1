@@ -40,22 +40,21 @@ class MobileHomeSectionTwo extends StatelessWidget {
             // ),
             const SizedBox(height: AppSize.s20),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
                   padding: EdgeInsets.only(
                       left: 13),
-                  child: Center(
-                    child: Text(
-                      "Is driven by innovation and guided by user-friendly designs."
-                          " We also have \na strong commitment to nurturing and educating emerging,"
-                          "forward-\nthinking talent in the field.",
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.inter(
-                        textStyle: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 36,
-                         FontWeightManager.bold,
-                          ColorManager.black,),),
-                    ),
+                  child: Text(
+                    "Is driven by innovation and guided by user-friendly designs."
+                        " We also have \na strong commitment to nurturing and educating emerging,"
+                        "forward-\nthinking talent in the field.",
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.inter(
+                      textStyle: AllScreensConstant.customTextStyle(
+                        MediaQuery.of(context).size.width / 36,
+                       FontWeightManager.bold,
+                        ColorManager.black,),),
                   ),
                 ),
               ],

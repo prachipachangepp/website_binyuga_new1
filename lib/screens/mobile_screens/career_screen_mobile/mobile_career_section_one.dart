@@ -17,7 +17,7 @@ class MobileCareerSectionOne extends StatelessWidget {
       child: Stack(
         children: [
           Image.asset(
-            'images/bckground.png',
+            'images/background.png',
             fit: BoxFit.fill,
             height: AppSize.s700,
             width: MediaQuery.of(context).size.width,

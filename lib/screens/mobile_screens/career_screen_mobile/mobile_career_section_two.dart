@@ -52,7 +52,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
               top: AppPadding.p200,
             ),
             child: Image.asset(
-              'images/Rectangle 677.png',
+              'images/rectangle.png',
               height: 530,
               width: MediaQuery.of(context).size.width / 1.5,
             ),

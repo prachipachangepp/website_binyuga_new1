@@ -17,7 +17,7 @@ class MobileWWDSectionOne extends StatelessWidget {
         children: [
           /// Background Image
           Image.asset(
-            'images/what_we_do_home.png',
+            "images/wwd_bg.png",
             fit: BoxFit.fill,
             height: AppSize.s720,
             width: MediaQuery.of(context).size.width,

@@ -14,7 +14,7 @@ class CareerSectionThree extends StatelessWidget {
       children: [
         ///bg image
         Image.network(
-          'images/bckground.png',
+          'images/background.png',
           fit: BoxFit.fill,
           height: AppSize.s750,
           width: MediaQuery.of(context).size.width,

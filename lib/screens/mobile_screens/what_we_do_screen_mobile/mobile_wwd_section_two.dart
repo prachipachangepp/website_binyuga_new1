@@ -49,7 +49,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
                 left: MediaQuery.of(context).size.width / 7.5,
                 top: AppPadding.p250),
             child: Image.asset(
-              'images/Rectangle 677.png',
+              'images/rectangle.png',
               height: AppSize.s780,
               width: MediaQuery.of(context).size.width / 1.7,
             ),
