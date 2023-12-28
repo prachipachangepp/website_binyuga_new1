@@ -44,7 +44,7 @@ class AllScreensConstant {
 /// last DescriptionScreen
 class LastDescriptionScreen {
   static double getHeadingFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width / 80;
+    return MediaQuery.of(context).size.width / 40;
   }
 
   static TextStyle rowTextStyle(BuildContext context) {
@@ -59,7 +59,7 @@ class LastDescriptionScreen {
 
 class LastColumnScreen {
   static double getFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width / 110;
+    return MediaQuery.of(context).size.width /90;
   }
 
   static TextStyle columnTextStyle(BuildContext context) {
@@ -166,7 +166,7 @@ return MediaQuery.of(context).size.width / 55;
 /// WhatWeDo SubHome Page
 class WhatWeDoSubPageConstant {
   static double getNewFontSizeWWD(BuildContext context) {
-    return MediaQuery.of(context).size.width / 28;
+    return MediaQuery.of(context).size.width / 15;
   }
   static TextStyle subHomeTextStyle(BuildContext context){
     return GoogleFonts.inter(

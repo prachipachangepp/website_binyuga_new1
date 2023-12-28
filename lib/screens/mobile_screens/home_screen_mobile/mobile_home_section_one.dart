@@ -198,11 +198,11 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
         ///divider
         Padding(
-          padding: const EdgeInsets.only(top: AppPadding.p205),
+          padding: const EdgeInsets.only(top: AppPadding.p190),
           child: SizedBox(
             height: MediaQuery.of(context).size.height / 10,
             child: VerticalDivider(
-              width: MediaQuery.of(context).size.width / 1.7,
+              width: MediaQuery.of(context).size.width / 2.5,
               color: ColorManager.lightBlue,
               thickness: 3,
             ),
@@ -285,9 +285,11 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height / 40),
+                    top: MediaQuery.of(context).size.height / 30),
                 child: Image.asset(
+
                   'images/binyuga_logo.png',
+                  width: 150,
                 ),
               ),
             ],
@@ -307,7 +309,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                   AppString.contactUs,
                   style: TextStyle(
                     color: ColorManager.white,
-                    fontSize: MediaQuery.of(context).size.width / 70,
+                    fontSize: MediaQuery.of(context).size.width / 40,
                   ),
                 ),
                 onTap: () {
@@ -346,8 +348,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                     _toggleSearchBar();
                   },
                   child: Container(
-                    height: AppSize.s40,
-                    width: AppSize.s40,
+                    height:  MediaQuery.of(context).size.width /10,
+                    width: MediaQuery.of(context).size.width / 9,
                     decoration: BoxDecoration(
                       color: ColorManager.white,
                       borderRadius: const BorderRadius.all(

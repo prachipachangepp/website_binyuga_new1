@@ -23,18 +23,19 @@ class MobileHomeSectionFive extends StatelessWidget {
                 'images/team_member_bg.png',
                 fit: BoxFit.fill,
                 height: 212,
-                width: 360,
+                width: MediaQuery.of(context).size.width,
               ),
             ],
           ),
 
           ///txt 1
           Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.width / 10,
-                  left: 12,
+                  left: 50,
                 ),
                 child: Text(AppString.ourTeamMembers,
                     textAlign: TextAlign.center,
@@ -51,7 +52,7 @@ class MobileHomeSectionFive extends StatelessWidget {
 
               ///txt 2
               Padding(
-                padding:  EdgeInsets.only(top: 15, left:  30,),
+                padding:  EdgeInsets.only(top: 15, left:  40,),
                 child: Text(AppString.teamTxt,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(

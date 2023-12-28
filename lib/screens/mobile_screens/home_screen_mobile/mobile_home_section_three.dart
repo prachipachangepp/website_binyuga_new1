@@ -92,7 +92,7 @@ class MobileHomeSectionThree extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(top:220,left:155),
+            padding: const EdgeInsets.only(top:220,left:170),
             child: Image.asset(
               "images/rectangle.png",
               height: 145,
