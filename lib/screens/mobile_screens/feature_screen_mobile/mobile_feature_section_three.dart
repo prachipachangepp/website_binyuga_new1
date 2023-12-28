@@ -14,18 +14,18 @@ class MobileFeatureSectionThree extends StatelessWidget {
         Image.asset(
           "images/Frame 14.png",
           height: AppSize.s636,
-          width: MediaQuery.of(context).size.width / 1.6,
+          width: MediaQuery.of(context).size.width / 1.2,
         ),
-        const SizedBox(
-          height: AppSize.s10,
-        ),
-
-        /// Design Image 2
-        Image.asset(
-          "images/design 2.png",
-          height: AppSize.s500,
-          width: MediaQuery.of(context).size.width / 2.35,
-        ),
+        // const SizedBox(
+        //   height: AppSize.s10,
+        // ),
+        //
+        // /// Design Image 2
+        // Image.asset(
+        //   "images/design 2.png",
+        //   height: AppSize.s500,
+        //   width: MediaQuery.of(context).size.width / 2.35,
+        // ),
       ],
     );
   }
