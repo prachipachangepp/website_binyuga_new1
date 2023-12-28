@@ -215,7 +215,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
         ///side 3 icons
         Padding(
           padding: EdgeInsets.only(
-              top: AppPadding.p650,
+              top: AppPadding.p350,
               right: MediaQuery.of(context).size.width / 40),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
