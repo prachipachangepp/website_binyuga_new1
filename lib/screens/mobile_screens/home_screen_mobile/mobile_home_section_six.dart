@@ -17,6 +17,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       color: ColorManager.nevyBlue,
       child: Center(
         child: Column(
@@ -25,7 +26,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.width / 48,
+                    top: 20,
                   ),
                   child: Image.asset(
                     "images/binyuga_logo.png",
@@ -37,7 +38,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
                     ? _buildAnimatedSearchBar()
                     : SizedBox.shrink(),
                 Padding(
-                  padding: const EdgeInsets.only(right: AppPadding.p35),
+                  padding: const EdgeInsets.only(right: AppPadding.p35,top:20),
                   child: GestureDetector(
                     onTap: () {
                       _toggleSearchBar();
@@ -75,7 +76,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
             ),
             Padding(
               padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 10,
+                left: MediaQuery.of(context).size.width / 15,
               ),
               child: Row(
                 children: [
@@ -83,7 +84,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: 137),
+                        bottom: 130),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -252,7 +253,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: 170),
+                        bottom: 175),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -314,7 +315,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
             ///bottom row
             Padding(
                 padding: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width / 10, bottom: 30),
+                    left:  30, bottom: 180),
                 child: const DescriptionBottomRowConstant()),
           ],
         ),

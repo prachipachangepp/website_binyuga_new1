@@ -202,7 +202,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
           child: SizedBox(
             height: MediaQuery.of(context).size.height / 10,
             child: VerticalDivider(
-              width: MediaQuery.of(context).size.width / 1.7,
+              width: MediaQuery.of(context).size.width / 1.9,
               color: ColorManager.lightBlue,
               thickness: 3,
             ),

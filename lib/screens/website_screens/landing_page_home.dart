@@ -143,7 +143,7 @@ Widget mobileBody() {
                   Expanded(
                     flex: 1,
                     child: Container(
-                      color: Colors.yellow,
+                      color: Colors.white,
                       //height: 200,
                       width: MediaQuery.of(context).size.width,
                       child: MobileHomeSectionTwo(),
@@ -168,7 +168,7 @@ Widget mobileBody() {
                     flex: 1,
                     child: Container(
                       //height: 200,
-                      width: MediaQuery.of(context).size.width, color: Colors.red,
+                      width: MediaQuery.of(context).size.width, color: Colors.white,
                       child: MobileHomeSectionFour(),),
                   ),
                 ],
