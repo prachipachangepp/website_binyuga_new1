@@ -45,6 +45,7 @@ class ImageWithButtonStack extends StatelessWidget {
                   ),
                 ),
               ),
+
               child: Text(
                 buttonText,
                 textAlign: TextAlign.center,
