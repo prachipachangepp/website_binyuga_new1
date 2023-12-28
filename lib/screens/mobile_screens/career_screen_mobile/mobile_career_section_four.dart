@@ -40,7 +40,7 @@ class MobileCareerSectionFour extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 130),
+              padding: const EdgeInsets.only(top: 80),
               child: Column(
                 children: [
                   Padding(
@@ -51,103 +51,95 @@ class MobileCareerSectionFour extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Expanded(
-                          child: Container(
-                            height: AppSize.s300,
-                            //width: 180,
-                            decoration: BoxDecoration(
-                              color: Colors.blueGrey[700],
-                              borderRadius:
-                              const BorderRadius.all(Radius.circular(15)),
+                        Container(
+                          height: 70,
+                          width: 60,
+                          decoration: BoxDecoration(
+                            color: Colors.blueGrey[700],
+                            borderRadius:
+                            const BorderRadius.all(Radius.circular(15)),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                              top: AppPadding.p25,
                             ),
-                            child: Padding(
-                              padding: const EdgeInsets.only(
-                                top: AppPadding.p25,
-                              ),
-                              child: Text(AppString.ourTxt,
-                                  textAlign: TextAlign.center,
-                                  style:
-                                  AllScreensConstant.customTextStyle(
-                                      MediaQuery.of(context).size.width / 100,
-                                      FontWeightManager.regular,
-                                      ColorManager.white)
+                            child: Text(AppString.ourTxt,
+                                textAlign: TextAlign.center,
+                                style:
+                                AllScreensConstant.customTextStyle(
+                                    MediaQuery.of(context).size.width / 100,
+                                    FontWeightManager.regular,
+                                    ColorManager.white)
 
-                              ),
                             ),
                           ),
                         ),
                         SizedBox(
                           width: MediaQuery.of(context).size.width / 20,
                         ),
-                        Expanded(
-                          child: Container(
-                            height: AppSize.s300,
-                            // width: 180,
-                            decoration: BoxDecoration(
-                              color: Colors.blueGrey[700],
-                              borderRadius:
-                              const BorderRadius.all(Radius.circular(15)),
+                        Container(
+                          height: 70,
+                          width: 60,
+                          decoration: BoxDecoration(
+                            color: Colors.blueGrey[700],
+                            borderRadius:
+                            const BorderRadius.all(Radius.circular(15)),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                              top: AppPadding.p25,
                             ),
-                            child: Padding(
-                              padding: const EdgeInsets.only(
-                                top: AppPadding.p25,
-                              ),
-                              child: Text(AppString.nationTxt,
-                                  textAlign: TextAlign.center,
-                                  style: AllScreensConstant.customTextStyle(
-                                      MediaQuery.of(context).size.width / 100,
-                                      FontWeightManager.regular,
-                                      ColorManager.white)
-                              ),
+                            child: Text(AppString.nationTxt,
+                                textAlign: TextAlign.center,
+                                style: AllScreensConstant.customTextStyle(
+                                    MediaQuery.of(context).size.width / 100,
+                                    FontWeightManager.regular,
+                                    ColorManager.white)
                             ),
                           ),
                         ),
                         SizedBox(
                           width: MediaQuery.of(context).size.width / 20,
                         ),
-                        Expanded(
-                          child: Container(
-                            height: AppSize.s300,
-                            //  width: 180,
-                            decoration: BoxDecoration(
-                              color: Colors.blueGrey[700],
-                              borderRadius: const BorderRadius.all(Radius.circular(15)),),
-                            child: Padding(
-                              padding: const EdgeInsets.only(top: AppPadding.p25,),
-                              child: Text(AppString.diverTxt,
-                                  textAlign: TextAlign.center,
-                                  style: AllScreensConstant.customTextStyle(
-                                      MediaQuery.of(context).size.width / 100,
-                                      FontWeightManager.regular,
-                                      ColorManager.white)
-                              ),
-                            ),
-                          ),
-                        ),
+                        // Container(
+                        //   height: AppSize.s300,
+                        //   //  width: 180,
+                        //   decoration: BoxDecoration(
+                        //     color: Colors.blueGrey[700],
+                        //     borderRadius: const BorderRadius.all(Radius.circular(15)),),
+                        //   child: Padding(
+                        //     padding: const EdgeInsets.only(top: AppPadding.p25,),
+                        //     child: Text(AppString.diverTxt,
+                        //         textAlign: TextAlign.center,
+                        //         style: AllScreensConstant.customTextStyle(
+                        //             MediaQuery.of(context).size.width / 100,
+                        //             FontWeightManager.regular,
+                        //             ColorManager.white)
+                        //     ),
+                        //   ),
+                        // ),
                         SizedBox(
                           width: MediaQuery.of(context).size.width / 20,
                         ),
-                        Expanded(
-                          child: Container(
-                            height: AppSize.s300,
-                            // width: 180,
-                            decoration: BoxDecoration(
-                              color: Colors.blueGrey[700],
-                              borderRadius: const BorderRadius.all(Radius.circular(15)),),
-                            child: Padding(
-                              padding: const EdgeInsets.only(
-                                top: AppPadding.p25,
-                              ),
-                              child: Text(AppString.devlopTxt,
-                                  textAlign: TextAlign.center,
-                                  style: AllScreensConstant.customTextStyle(
-                                      MediaQuery.of(context).size.width / 100,
-                                      FontWeightManager.regular,
-                                      ColorManager.white)
-                              ),
-                            ),
-                          ),
-                        ),
+                        // Container(
+                        //   height: AppSize.s300,
+                        //   // width: 180,
+                        //   decoration: BoxDecoration(
+                        //     color: Colors.blueGrey[700],
+                        //     borderRadius: const BorderRadius.all(Radius.circular(15)),),
+                        //   child: Padding(
+                        //     padding: const EdgeInsets.only(
+                        //       top: AppPadding.p25,
+                        //     ),
+                        //     child: Text(AppString.devlopTxt,
+                        //         textAlign: TextAlign.center,
+                        //         style: AllScreensConstant.customTextStyle(
+                        //             MediaQuery.of(context).size.width / 100,
+                        //             FontWeightManager.regular,
+                        //             ColorManager.white)
+                        //     ),
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),
