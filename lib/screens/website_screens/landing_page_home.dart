@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import '../../responsive_screen/responsive_scr.dart';
 import '../constant_screens/website_constant/bottom_nav_bar.dart';
+import '../mobile_screens/home_screen_mobile/mobile_home_section_five.dart';
+import '../mobile_screens/home_screen_mobile/mobile_home_section_four.dart';
 import '../mobile_screens/home_screen_mobile/mobile_home_section_one.dart';
-import 'home_page_screens/home_section_five.dart';
-import 'home_page_screens/home_section_four.dart';
-import 'home_page_screens/home_section_one.dart';
-import 'home_page_screens/home_section_six.dart';
-import 'home_page_screens/home_section_three.dart';
-import 'home_page_screens/home_section_two.dart';
+import '../mobile_screens/home_screen_mobile/mobile_home_section_six.dart';
+import '../mobile_screens/home_screen_mobile/mobile_home_section_three.dart';
+import '../mobile_screens/home_screen_mobile/mobile_home_section_two.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
       body: Responsive(
         mobile: webBody(),
         tablet: webBody(),
-        desktop: webBody(),
+        website: webBody(),
       ),
     );
   }
@@ -60,28 +60,28 @@ Widget webBody() {
               ),
               Row(
                 children: [
-                  Expanded(flex: 1, child: Container(child: HomeSectionTwo())),
+                  Expanded(flex: 1, child: Container(child: MobileHomeSectionTwo())),
                 ],
               ),
               Row(
                 children: [
                   Expanded(
-                      flex: 1, child: Container(child: HomeSectionThree())),
+                      flex: 1, child: Container(child: MobileHomeSectionThree())),
                 ],
               ),
               Row(
                 children: [
-                  Expanded(flex: 3, child: Container(child: HomeSectionFour())),
+                  Expanded(flex: 1, child: Container(child: MobileHomeSectionFour())),
                 ],
               ),
               Row(
                 children: [
-                  Expanded(flex: 3, child: Container(child: HomeSectionFive())),
+                  Expanded(flex: 1, child: Container(child: MobileHomeSectionFive())),
                 ],
               ),
               Row(
                 children: [
-                  Expanded(flex: 1, child: Container(child: HomeSectionSix())),
+                  Expanded(flex: 1, child: Container(child: MobileHomeSectionSix())),
                 ],
               ),
               Row(
