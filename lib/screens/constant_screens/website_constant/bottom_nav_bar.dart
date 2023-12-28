@@ -57,123 +57,126 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
               child: FittedBox(
                 alignment: Alignment.topCenter,
                 fit: BoxFit.fitWidth,
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'images/binyuga_logo.png',
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 15,
-                    ),
-                    Row(
-                      children: [
-                        Icon(
-                          FontAwesomeIcons.facebook,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                        const SizedBox(
-                          width: AppSize.s20,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.youtube,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                        const SizedBox(
-                          width: AppSize.s20,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.twitter,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                        const SizedBox(
-                          width: AppSize.s20,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.instagram,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                        const SizedBox(
-                          width: AppSize.s20,
-                        ),
-                        Icon(
-                          FontAwesomeIcons.linkedin,
-                          color: ColorManager.white,
-                          size: AppSize.s20,
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 20,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
+                child: Padding(
+                  padding: const EdgeInsets.only(top:30),
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        'images/binyuga_logo.png',
+                      ),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width / 30,
+                      ),
+                      Row(
                         children: [
-                          Text('www.career@binyuga.com',
-                              style: AllScreensConstant.customTextStyle(
-                                  FontSize.s17,
-                                  FontWeightManager.regular,
-                                  ColorManager.white)
-                             ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 9,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                        right: MediaQuery.of(context).size.width / 20,
-                      ),
-                      child: Container(
-                        decoration: BoxDecoration(
+                          Icon(
+                            FontAwesomeIcons.facebook,
                             color: ColorManager.white,
-                            border: Border.all(color: Colors.white, width: 2),
-                            borderRadius: BorderRadius.circular(2)),
-                        width: MediaQuery.of(context).size.width / 6.5,
-                        height: AppSize.s30,
-                        child: DropdownButton(
-                          focusColor: ColorManager.white,
-                          alignment: Alignment.center,
-                          hint: Text(
-                            countries[0],
-                            style: TextStyle(
-                                color: ColorManager.black, fontSize: 11),
-                          ),
-                          value: selectedCountry,
-                          underline: const SizedBox(),
-                          isExpanded: true,
-                          icon: const Icon(
-                            Icons.arrow_drop_down,
                             size: AppSize.s20,
                           ),
-                          onChanged: (String? newValue) {
-                            setState(() {
-                              selectedCountry = newValue!;
-                            });
-                          },
-                          items: countries.map((country) {
-                            return DropdownMenuItem(
-                              value: country,
-                              child: Center(
-                                  child: Text(
-                                country,
-                                style: TextStyle(
-                                  fontSize: AppSize.s15,
-                                  fontWeight: FontWeightManager.bold,
-                                  color: ColorManager.black,
-                                ),
-                              )),
-                            );
-                          }).toList(),
+                          const SizedBox(
+                            width: AppSize.s20,
+                          ),
+                          Icon(
+                            FontAwesomeIcons.youtube,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                          const SizedBox(
+                            width: AppSize.s20,
+                          ),
+                          Icon(
+                            FontAwesomeIcons.twitter,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                          const SizedBox(
+                            width: AppSize.s20,
+                          ),
+                          Icon(
+                            FontAwesomeIcons.instagram,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                          const SizedBox(
+                            width: AppSize.s20,
+                          ),
+                          Icon(
+                            FontAwesomeIcons.linkedin,
+                            color: ColorManager.white,
+                            size: AppSize.s20,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width / 20,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Text('www.career@binyuga.com',
+                                style: AllScreensConstant.customTextStyle(
+                                    FontSize.s10,
+                                    FontWeightManager.regular,
+                                    ColorManager.white)
+                               ),
+                          ],
                         ),
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width / 9,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          right: MediaQuery.of(context).size.width / 20,
+                        ),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: ColorManager.white,
+                              border: Border.all(color: Colors.white, width: 2),
+                              borderRadius: BorderRadius.circular(2)),
+                          width: MediaQuery.of(context).size.width / 6.1,
+                          height: AppSize.s30,
+                          child: DropdownButton(
+                            focusColor: ColorManager.white,
+                            alignment: Alignment.center,
+                            hint: Text(
+                              countries[0],
+                              style: TextStyle(
+                                  color: ColorManager.black, fontSize: 11),
+                            ),
+                            value: selectedCountry,
+                            underline: const SizedBox(),
+                            isExpanded: true,
+                            icon: const Icon(
+                              Icons.arrow_drop_down,
+                              size: AppSize.s20,
+                            ),
+                            onChanged: (String? newValue) {
+                              setState(() {
+                                selectedCountry = newValue!;
+                              });
+                            },
+                            items: countries.map((country) {
+                              return DropdownMenuItem(
+                                value: country,
+                                child: Center(
+                                    child: Text(
+                                  country,
+                                  style: TextStyle(
+                                    fontSize: AppSize.s15,
+                                    fontWeight: FontWeightManager.bold,
+                                    color: ColorManager.black,
+                                  ),
+                                )),
+                              );
+                            }).toList(),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
