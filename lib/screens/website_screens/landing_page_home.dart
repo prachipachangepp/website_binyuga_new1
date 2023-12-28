@@ -179,7 +179,7 @@ Widget mobileBody() {
                   Expanded(
                     flex: 1,
                     child: Container(
-                      //height: 200,
+
                       width: MediaQuery.of(context).size.width, color: Colors.red,
                       child: MobileHomeSectionFive(),),
                   ),
