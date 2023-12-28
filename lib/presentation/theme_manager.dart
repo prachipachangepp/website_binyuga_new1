@@ -9,7 +9,7 @@ class HomeScreen {
       //textStyle: TextStyle(
       fontWeight: FontWeightManager.medium,
       decoration:TextDecoration.none,
-      fontSize: FontSize.s15,
+      fontSize: FontSize.s8,
       letterSpacing: -0.011,
       color: ColorManager.white
       //)

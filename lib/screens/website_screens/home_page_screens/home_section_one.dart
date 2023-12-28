@@ -7,6 +7,7 @@ import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
 import '../../constant_screens/website_constant/description_page_constant.dart';
+import '../../mobile_screens/feature_page_mobile.dart';
 import '../landing_page_home.dart';
 import '../career_home.dart';
 import '../features_home.dart';
@@ -28,7 +29,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
     return Stack(
       children: [
         /// Base Image
-        Image.network(
+        Image.asset(
           'images/team_member_bg.png',
           fit: BoxFit.fill,
           height: MediaQuery.of(context).size.height / 0.85,
@@ -38,9 +39,9 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         ///boy img
         Padding(
           padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 2,
-              top: AppPadding.p100),
-          child: Image.network(
+              left: MediaQuery.of(context).size.width / 2.5,
+              top: AppPadding.p10),
+          child: Image.asset(
             "images/boy.png",
             height: AppSize.s870,
             width: MediaQuery.of(context).size.width / 1.8,
@@ -189,11 +190,11 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
 
         ///divider
         Padding(
-          padding: const EdgeInsets.only(top: AppPadding.p170),
+          padding: const EdgeInsets.only(top: AppPadding.p200),
           child: SizedBox(
             height: MediaQuery.of(context).size.height / 4.2,
             child: VerticalDivider(
-              width: MediaQuery.of(context).size.width / 2.2,
+              width: MediaQuery.of(context).size.width / 1.6,
               color: ColorManager.lightBlue,
               thickness: 4,
             ),
@@ -253,7 +254,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const FeaturesHomeScreen()),
+                            builder: (context) => const MobileFeaturesHomeScreen()),
                       );
                     },
                     child: Icon(
@@ -288,7 +289,7 @@ class _HomeSectionOneState extends State<HomeSectionOne> {
         /// Contact us, search
         Padding(
           padding:
-              EdgeInsets.only(top: MediaQuery.of(context).size.width / 100,),
+              EdgeInsets.only(top: 25,),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
