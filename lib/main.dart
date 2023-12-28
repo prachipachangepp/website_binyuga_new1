@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/screens/website_screens/landing_page_home.dart';
+//import 'package:website_binyuga_new1/screens/mobile_screens/home_page_mobile.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomePage(),
+      home:  HomePage(),
     );
   }
 }

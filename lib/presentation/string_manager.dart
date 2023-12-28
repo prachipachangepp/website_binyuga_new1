@@ -74,7 +74,9 @@ class AppString {
 
   /// Approach screen
   static const String ourApproach = "Our Approach";
-  static const String approachTxt = "Is driven by innovation and guided by user-friendly designs. We also\nhave a strong commitment to nurturing and educating emerging,\nforward-thinking talent in the field.";
+  static const String approachTxt = "Is driven by innovation and guided by user-friendly designs."
+      " We also\nhave a strong commitment to nurturing and educating emerging,"
+      "\nforward-thinking talent in the field.";
 
   /// Team Member screen
   static const String ourTeamMembers = "Our Team Members";
