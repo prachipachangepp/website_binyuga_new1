@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/bottom_nav_bar_mobile.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/description_page_constant_mobile.dart';
 import '../../presentation/value_manager.dart';
 import '../constant_screens/website_constant/bottom_nav_bar.dart';
 import '../constant_screens/website_constant/description_page_constant.dart';
@@ -45,11 +47,18 @@ class MobileCareerHomeScreen extends StatelessWidget {
               ),
               Container(
                 height:  AppSize.s800,
-                child: const DescriptionScreenConstant(),
+                child: const DescriptionScreenConstantMobile(),
               ),
-              Container(
-                height:  AppSize.s187,
-                child: const BottomNavBarScreen(),
+              Row(
+                children:[
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      height: 100,
+                      width: MediaQuery.of(context).size.width,
+                    child: const BottomNavBarScreenMobile(),
+                  ),
+                ),]
               )
             ],
           ),

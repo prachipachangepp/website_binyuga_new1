@@ -58,7 +58,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
           ),
           Padding(
             padding: EdgeInsets.only(
-                top: AppPadding.p150,
+                top: AppPadding.p200,
                 left: MediaQuery.of(context).size.width / 40),
             child: Row(
               children: [

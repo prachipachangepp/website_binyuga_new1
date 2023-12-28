@@ -11,7 +11,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: AppSize.s1200,
+        height: AppSize.s636,
         width: MediaQuery.of(context).size.width,
         child: Stack(children: [
           ///txt 1
@@ -47,7 +47,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 left: 70,
-                bottom: 0),
+                bottom: 50),
             child: Image.asset(
               'images/rectangle.png',
               height: 680,
