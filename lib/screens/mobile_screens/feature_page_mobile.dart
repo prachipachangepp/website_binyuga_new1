@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/bottom_nav_bar_mobile.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/description_page_constant_mobile.dart';
 import '../constant_screens/website_constant/bottom_nav_bar.dart';
 import '../constant_screens/website_constant/description_page_constant.dart';
 import '../constant_screens/website_constant/responsive_app_bar.dart';
@@ -44,7 +46,9 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                       children: [
                         Expanded(
                             flex: 2,
-                            child: Container(child: MobileFeatureSectionTwo())),
+                            child: Container(
+                              height: 700,
+                                child: MobileFeatureSectionTwo())),
                       ],
                     ),
                     Row(
@@ -59,14 +63,16 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                         Expanded(
                             flex: 3,
                             child:
-                            Container(child: DescriptionScreenConstant())),
+                            Container(child: DescriptionScreenConstantMobile())),
                       ],
                     ),
                     Row(
                       children: [
                         Expanded(
-                            flex: 3,
-                            child: Container(child: BottomNavBarScreen())),
+                            flex: 2,
+                            child: Container(
+                                height: 100,
+                                width: MediaQuery.of(context).size.width,child: BottomNavBarScreenMobile())),
                       ],
                     ),
                   ],

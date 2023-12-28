@@ -22,23 +22,19 @@ class MobileCareerSectionTwo extends StatelessWidget {
                   top: 10,
                   left: MediaQuery.of(context).size.width / 20,
                 ),
-                child: Text(
-                  AppString.sculptYour,
-                  style: TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeightManager.extraBold,
-                      color: ColorManager.darkBlue1),
-                ),
+                child: Text(AppString.sculptYour,
+                    style: TextStyle(fontSize:26,fontWeight: FontWeightManager.extraBold,
+
+                        color: ColorManager.darkBlue1),),
               ),
             ],
           ),
 
           /// Base Image
-
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 30, top: 10),
+                padding: const EdgeInsets.only(left:30,top:10),
                 child: Image.asset(
                   "images/Rectangle 682.png",
                   height: 310,
@@ -50,30 +46,29 @@ class MobileCareerSectionTwo extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding: EdgeInsets.only(
-              top: 60,
-              right: 40,
-            ),
+            padding: EdgeInsets.only(top:50,right:60,),
+
             child: Image.asset(
-              'images/Rectangle 677.png',
-              height: 190,
+              'images/rectangle.png',
+              height: 180,
               width: 450,
             ),
           ),
 
           ///inverted comma start
           Padding(
-            padding: const EdgeInsets.only(left: 25, top: 10),
+            padding: const EdgeInsets.only(left:35,top:1),
             child: Image.asset(
               'images/inverted_start_white.png',
               height: 200,
-              width: MediaQuery.of(context).size.width / 20,
+              width:  MediaQuery.of(context).size.width / 20,
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 50, top: 105),
-            child: Text(
-                'We see every journey to success as a work of '
+            padding: EdgeInsets.only(
+                left: 60,
+                top: 105),
+            child: Text('We see every journey to success as a work of '
                 '\nart,where each decision and effort shapes the'
                 '\nway forward. Our mission is to help you carve'
                 '\nout your unique route to achievement, providing'
@@ -81,23 +76,19 @@ class MobileCareerSectionTwo extends StatelessWidget {
                 '\nachieve your goals. Just as a sculptor molds'
                 '\nclay into a masterpiece, we are here to assist'
                 '\nyou in crafting your path towards success.',
-                style: TextStyle(
-                  fontSize: 12.5,
+                style: TextStyle(fontSize:12,
                   fontWeight: FontWeightManager.medium,
-                  color: ColorManager.white,
+                 color: ColorManager.white,
                 )),
           ),
 
           ///Inverted Comma End
           Padding(
-            padding: const EdgeInsets.only(
-              left: 260,
-              top: 190,
-            ),
+            padding: const EdgeInsets.only(left:260,top:120,),
             child: Image.asset(
               'images/inverted_end_white.png',
               height: 200,
-              width: MediaQuery.of(context).size.width / 20,
+              width:  MediaQuery.of(context).size.width / 20,
             ),
           ),
         ]));

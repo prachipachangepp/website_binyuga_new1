@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/bottom_nav_bar_mobile.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/description_page_constant_mobile.dart';
 import 'package:website_binyuga_new1/screens/mobile_screens/what_we_do_screen_mobile/mobile_wwd_section_one.dart';
 import 'package:website_binyuga_new1/screens/mobile_screens/what_we_do_screen_mobile/mobile_wwd_section_three.dart';
 import 'package:website_binyuga_new1/screens/mobile_screens/what_we_do_screen_mobile/mobile_wwd_section_two.dart';
@@ -58,14 +60,17 @@ class _MobileWhatWeDoHomeScreenState extends State<MobileWhatWeDoHomeScreen> {
                         Expanded(
                             flex: 2,
                             child:
-                            Container(child: DescriptionScreenConstant())),
+                            Container(child: DescriptionScreenConstantMobile())),
                       ],
                     ),
                     Row(
                       children: [
                         Expanded(
-                            flex: 3,
-                            child: Container(child: BottomNavBarScreen())),
+                            flex: 2,
+                            child: Container(
+                                height: 100,
+                                width: MediaQuery.of(context).size.width, color: Colors.red,
+                                child: BottomNavBarScreenMobile())),
                       ],
                     ),
                   ],

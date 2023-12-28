@@ -31,7 +31,7 @@ class ImageWithButtonStack extends StatelessWidget {
           // Rectangle Button
           Positioned(
               top: (270 - 35) ,
-            left: MediaQuery.of(context).size.width / 25,
+            left: MediaQuery.of(context).size.width / 40,
             right: MediaQuery.of(context).size.width / 25,
             //left: MediaQuery.of(context).size.width / 20 + (buttonWidth / 2),
             child: TextButton(
@@ -45,6 +45,7 @@ class ImageWithButtonStack extends StatelessWidget {
                   ),
                 ),
               ),
+
               child: Text(
                 buttonText,
                 textAlign: TextAlign.center,

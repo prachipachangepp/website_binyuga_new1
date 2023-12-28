@@ -21,7 +21,7 @@ class MobileCareerSectionFour extends StatelessWidget {
             Image.asset(
               'images/background1.png',
               fit: BoxFit.fill,
-              height: 220,
+              height: AppSize.s720,
               width: MediaQuery.of(context).size.width,
             ),
             Padding(
@@ -40,7 +40,7 @@ class MobileCareerSectionFour extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 80),
+              padding: const EdgeInsets.only(top: AppPadding.p530),
               child: Column(
                 children: [
                   Padding(
@@ -51,95 +51,103 @@ class MobileCareerSectionFour extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Container(
-                          height: 70,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            color: Colors.blueGrey[700],
-                            borderRadius:
-                            const BorderRadius.all(Radius.circular(15)),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.only(
-                              top: AppPadding.p25,
+                        Expanded(
+                          child: Container(
+                            height: AppSize.s300,
+                            //width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[700],
+                              borderRadius:
+                              const BorderRadius.all(Radius.circular(15)),
                             ),
-                            child: Text(AppString.ourTxt,
-                                textAlign: TextAlign.center,
-                                style:
-                                AllScreensConstant.customTextStyle(
-                                    MediaQuery.of(context).size.width / 100,
-                                    FontWeightManager.regular,
-                                    ColorManager.white)
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                top: AppPadding.p25,
+                              ),
+                              child: Text(AppString.ourTxt,
+                                  textAlign: TextAlign.center,
+                                  style:
+                                  AllScreensConstant.customTextStyle(
+                                      MediaQuery.of(context).size.width / 100,
+                                      FontWeightManager.regular,
+                                      ColorManager.white)
 
+                              ),
                             ),
                           ),
                         ),
                         SizedBox(
                           width: MediaQuery.of(context).size.width / 20,
                         ),
-                        Container(
-                          height: 70,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            color: Colors.blueGrey[700],
-                            borderRadius:
-                            const BorderRadius.all(Radius.circular(15)),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.only(
-                              top: AppPadding.p25,
+                        Expanded(
+                          child: Container(
+                            height: AppSize.s300,
+                            // width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[700],
+                              borderRadius:
+                              const BorderRadius.all(Radius.circular(15)),
                             ),
-                            child: Text(AppString.nationTxt,
-                                textAlign: TextAlign.center,
-                                style: AllScreensConstant.customTextStyle(
-                                    MediaQuery.of(context).size.width / 100,
-                                    FontWeightManager.regular,
-                                    ColorManager.white)
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                top: AppPadding.p25,
+                              ),
+                              child: Text(AppString.nationTxt,
+                                  textAlign: TextAlign.center,
+                                  style: AllScreensConstant.customTextStyle(
+                                      MediaQuery.of(context).size.width / 100,
+                                      FontWeightManager.regular,
+                                      ColorManager.white)
+                              ),
                             ),
                           ),
                         ),
                         SizedBox(
                           width: MediaQuery.of(context).size.width / 20,
                         ),
-                        // Container(
-                        //   height: AppSize.s300,
-                        //   //  width: 180,
-                        //   decoration: BoxDecoration(
-                        //     color: Colors.blueGrey[700],
-                        //     borderRadius: const BorderRadius.all(Radius.circular(15)),),
-                        //   child: Padding(
-                        //     padding: const EdgeInsets.only(top: AppPadding.p25,),
-                        //     child: Text(AppString.diverTxt,
-                        //         textAlign: TextAlign.center,
-                        //         style: AllScreensConstant.customTextStyle(
-                        //             MediaQuery.of(context).size.width / 100,
-                        //             FontWeightManager.regular,
-                        //             ColorManager.white)
-                        //     ),
-                        //   ),
-                        // ),
+                        Expanded(
+                          child: Container(
+                            height: AppSize.s300,
+                            //  width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[700],
+                              borderRadius: const BorderRadius.all(Radius.circular(15)),),
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: AppPadding.p25,),
+                              child: Text(AppString.diverTxt,
+                                  textAlign: TextAlign.center,
+                                  style: AllScreensConstant.customTextStyle(
+                                      MediaQuery.of(context).size.width / 100,
+                                      FontWeightManager.regular,
+                                      ColorManager.white)
+                              ),
+                            ),
+                          ),
+                        ),
                         SizedBox(
                           width: MediaQuery.of(context).size.width / 20,
                         ),
-                        // Container(
-                        //   height: AppSize.s300,
-                        //   // width: 180,
-                        //   decoration: BoxDecoration(
-                        //     color: Colors.blueGrey[700],
-                        //     borderRadius: const BorderRadius.all(Radius.circular(15)),),
-                        //   child: Padding(
-                        //     padding: const EdgeInsets.only(
-                        //       top: AppPadding.p25,
-                        //     ),
-                        //     child: Text(AppString.devlopTxt,
-                        //         textAlign: TextAlign.center,
-                        //         style: AllScreensConstant.customTextStyle(
-                        //             MediaQuery.of(context).size.width / 100,
-                        //             FontWeightManager.regular,
-                        //             ColorManager.white)
-                        //     ),
-                        //   ),
-                        // ),
+                        Expanded(
+                          child: Container(
+                            height: AppSize.s300,
+                            // width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[700],
+                              borderRadius: const BorderRadius.all(Radius.circular(15)),),
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                top: AppPadding.p25,
+                              ),
+                              child: Text(AppString.devlopTxt,
+                                  textAlign: TextAlign.center,
+                                  style: AllScreensConstant.customTextStyle(
+                                      MediaQuery.of(context).size.width / 100,
+                                      FontWeightManager.regular,
+                                      ColorManager.white)
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -152,6 +160,7 @@ class MobileCareerSectionFour extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+                  ///add divider
                   // Padding(
                   //   padding: const EdgeInsets.all(AppPadding.p8),
                   //   child: Image.asset(

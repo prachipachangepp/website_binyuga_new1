@@ -16,7 +16,7 @@ class CareerSectionOne extends StatelessWidget {
       child: Stack(
         children: [
           Image.network(
-            'images/bckground.png',
+            'images/background.png',
             fit: BoxFit.fill,
             height: AppSize.s700,
             width: MediaQuery.of(context).size.width,

@@ -17,7 +17,6 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
   @override
   Widget build(BuildContext context) {
     return Container(
-
       color: ColorManager.nevyBlue,
       child: Center(
         child: Column(
@@ -25,7 +24,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
             Row(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     top: 20,
                   ),
                   child: Image.asset(
@@ -71,9 +70,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
                 ),
               ],
             ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height / 100,
-            ),
+
             Padding(
               padding: EdgeInsets.only(
                 left: MediaQuery.of(context).size.width / 15,
@@ -84,7 +81,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: 130),
+                        bottom: 350),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -125,7 +122,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
                   Padding(
                     padding: EdgeInsets.only(
                         left: MediaQuery.of(context).size.width / 85,
-                        bottom: 160),
+                        bottom: 320),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -315,7 +312,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
             ///bottom row
             Padding(
                 padding: EdgeInsets.only(
-                    left:  30, bottom: 180),
+                    left:  30,),
                 child: const DescriptionBottomRowConstant()),
           ],
         ),
