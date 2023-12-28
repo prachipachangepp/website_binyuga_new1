@@ -18,20 +18,20 @@ class ImageWithButtonStack extends StatelessWidget {
   Widget build(BuildContext context) {
     //final double buttonWidth = MediaQuery.of(context).size.width / 4;
     return Container(
-      height: AppSize.s50,
+      height: AppSize.s270,
       child: Stack(
         children: [
           // Image
           Image.network(
             imageUrl,
-            width: MediaQuery.of(context).size.width / 50,
-            height: AppSize.s50,
+            width: MediaQuery.of(context).size.width / 4,
+            height: AppSize.s250,
             fit: BoxFit.cover,
           ),
           // Rectangle Button
           Positioned(
               top: (270 - 35) ,
-            left: MediaQuery.of(context).size.width / 25,
+            left: MediaQuery.of(context).size.width / 40,
             right: MediaQuery.of(context).size.width / 25,
             //left: MediaQuery.of(context).size.width / 20 + (buttonWidth / 2),
             child: TextButton(

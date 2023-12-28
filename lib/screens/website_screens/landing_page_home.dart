@@ -200,7 +200,7 @@ Widget mobileBody() {
                   Expanded(
                     flex: 2,
                     child: Container(
-                      //height: 200,
+                      height: 400,
                       width: MediaQuery.of(context).size.width, color: Colors.white,
                       child: BottomNavBarScreen(),),
                   ),

@@ -13,6 +13,7 @@ class _MobileWWDSectionThreeState extends State<MobileWWDSectionThree> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.red,
       height: AppSize.s780,
       child: Stack(
         children: [
@@ -22,39 +23,44 @@ class _MobileWWDSectionThreeState extends State<MobileWWDSectionThree> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ImageWithButtonStack(
-                      imageUrl: 'images/sd.png',
+                      imageUrl: 'images/rectangle.png',
                       buttonText: 'Software Development',
                       onPressed: () {}),
                   ImageWithButtonStack(
-                      imageUrl: 'images/ad.png',
+                      imageUrl: 'images/rectangle.png',
                       buttonText: 'Application Development',
                       onPressed: () {}),
-                  ImageWithButtonStack(
-                      imageUrl: 'images/wd.png',
-                      buttonText: 'Web Development',
-                      onPressed: () {})
                 ],
               ),
               const SizedBox(
                 height: AppSize.s50,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ImageWithButtonStack(
-                      imageUrl: 'images/ui.png',
-                      buttonText: 'Ui/UX Designing',
-                      onPressed: () {}),
-                  ImageWithButtonStack(
-                      imageUrl: 'images/cm.png',
-                      buttonText: 'Career Mentoring',
-                      onPressed: () {}),
-                  ImageWithButtonStack(
-                      imageUrl: 'images/ps.png',
-                      buttonText: 'Problem Solving',
-                      onPressed: () {})
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //   children: [
+              //     ImageWithButtonStack(
+              //         imageUrl: 'images/wd.png',
+              //         buttonText: 'Web Development',
+              //         onPressed: () {}),
+              //     ImageWithButtonStack(
+              //         imageUrl: 'images/ui.png',
+              //         buttonText: 'Ui/UX Designing',
+              //         onPressed: () {}),
+              //
+              //   ],
+              // ),
+              // Row(
+              //   children: [
+              //     ImageWithButtonStack(
+              //         imageUrl: 'images/cm.png',
+              //         buttonText: 'Career Mentoring',
+              //         onPressed: () {}),
+              //     ImageWithButtonStack(
+              //         imageUrl: 'images/ps.png',
+              //         buttonText: 'Problem Solving',
+              //         onPressed: () {})
+              //   ],
+              // )
             ],
           )
         ],
