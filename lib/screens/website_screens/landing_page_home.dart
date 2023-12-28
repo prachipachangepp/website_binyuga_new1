@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/bottom_nav_bar_mobile.dart';
 import '../../responsive_screen/responsive_scr.dart';
 import '../constant_screens/website_constant/bottom_nav_bar.dart';
 import '../mobile_screens/home_screen_mobile/mobile_home_section_five.dart';
@@ -88,7 +87,7 @@ Widget webBody() {
               Row(
                 children: [
                   Expanded(
-                      flex: 3, child: Container(child: BottomNavBarScreenMobile())),
+                      flex: 3, child: Container(child: BottomNavBarScreen())),
                 ],
               ),
             ],
@@ -144,7 +143,7 @@ Widget mobileBody() {
                   Expanded(
                     flex: 1,
                     child: Container(
-                     // color: Colors.yellow,
+                      color: Colors.yellow,
                       //height: 200,
                       width: MediaQuery.of(context).size.width,
                       child: MobileHomeSectionTwo(),
@@ -169,8 +168,7 @@ Widget mobileBody() {
                     flex: 1,
                     child: Container(
                       //height: 200,
-                      width: MediaQuery.of(context).size.width,
-                      //color: Colors.red,
+                      width: MediaQuery.of(context).size.width, color: Colors.red,
                       child: MobileHomeSectionFour(),),
                   ),
                 ],
