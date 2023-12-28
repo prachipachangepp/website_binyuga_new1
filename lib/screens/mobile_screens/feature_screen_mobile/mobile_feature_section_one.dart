@@ -52,7 +52,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
                 ///txt 2
                 Padding(
                   padding: EdgeInsets.only(
-                      left:100),
+                      left:20),
                   child: Row(
                     //  mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -60,7 +60,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
                         AppString.featureScreenText2,
                         textAlign: TextAlign.start,
                         style: AllScreensConstant.customTextStyle(
-                            MediaQuery.of(context).size.width /90,
+                            MediaQuery.of(context).size.width /55,
                             FontWeightManager.medium,
                             ColorManager.lightBlue),
                       ),
@@ -78,24 +78,27 @@ class MobileFeatureSectionOne extends StatelessWidget {
                   child: Row(
                     //  mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: ColorManager.white,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20))),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => const HomePage()),
-                          );
-                        },
-                        child: Text(
-                          AppString.readTxt,
-                          style: TextStyle(
-                            fontWeight: FontWeightManager.semiBold,
-                            fontSize: FontSize.s15,
-                            letterSpacing: -0.011,
-                            color: ColorManager.black,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 30),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: ColorManager.white,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20))),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const HomePage()),
+                            );
+                          },
+                          child: Text(
+                            AppString.readTxt,
+                            style: TextStyle(
+                              fontWeight: FontWeightManager.semiBold,
+                              fontSize: FontSize.s15,
+                              letterSpacing: -0.011,
+                              color: ColorManager.black,
+                            ),
                           ),
                         ),
                       ),

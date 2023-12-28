@@ -13,31 +13,31 @@ class MobileFeatureSectionTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s1300,
+      height: AppSize.s700,
       width: MediaQuery.of(context).size.width,
       child: Stack(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              /// Design Image
-              Image.asset(
-                "images/design 1.png",
-                height: AppSize.s380,
-                width: MediaQuery.of(context).size.width / 3,
-              ),
-            ],
-          ),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.end,
+          //   children: [
+          //     /// Design Image
+          //     Image.asset(
+          //       "images/design 1.png",
+          //       height: AppSize.s380,
+          //       width: MediaQuery.of(context).size.width / 3,
+          //     ),
+          //   ],
+          // ),
 
           /// 3 Texts in 1 String
           Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 3,
-                top: AppPadding.p200),
+                left: 30,
+                top: AppPadding.p100),
             child: Text(
               AppString.dreamIt,
               style: AllScreensConstant.customTextStyle(
-                  MediaQuery.of(context).size.width / 30,
+                  MediaQuery.of(context).size.width / 10,
                   FontWeightManager.extraBold,
                   ColorManager.darkBlue1),
             ),
@@ -47,14 +47,14 @@ class MobileFeatureSectionTwo extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
               left: MediaQuery.of(context).size.width / 15,
-              top: AppPadding.p430,
+              top: 60,
             ),
             child: Row(
               children: [
                 Image.asset(
                   "images/Rectangle 682.png",
-                  height: AppSize.s636,
-                  width: MediaQuery.of(context).size.width / 1.6,
+                  height: 636,
+                  width: MediaQuery.of(context).size.width / 1.2,
                 ),
               ],
             ),
@@ -62,19 +62,19 @@ class MobileFeatureSectionTwo extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding: const EdgeInsets.only(left: 190, top: AppPadding.p420),
+            padding: const EdgeInsets.only(left: 50, top:100),
             child: Image.asset(
               'images/rectangle.png',
-              height: AppSize.s780,
-              width: MediaQuery.of(context).size.width / 1.7,
+              height: 650,
+              width: MediaQuery.of(context).size.width / 1.2,
             ),
           ),
 
           /// Comma 1
           Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 32,
-                top: AppPadding.p510),
+                left: 60,
+                top: 250),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -82,7 +82,7 @@ class MobileFeatureSectionTwo extends StatelessWidget {
                 Image.asset(
                   'images/inverted_start_white.png',
                   height: AppSize.s200,
-                  width: MediaQuery.of(context).size.width / 3,
+                  width: MediaQuery.of(context).size.width /20,
                 ),
               ],
             ),
@@ -90,24 +90,24 @@ class MobileFeatureSectionTwo extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 left: MediaQuery.of(context).size.width / 4.3,
-                top: AppPadding.p610),
+                top: 350),
             child: Text(AppString.featureTxt,
                 style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.width / 50,
+                    fontSize: MediaQuery.of(context).size.width / 35,
                     color: ColorManager.white)),
           ),
 
           /// Comma 2
           Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 2.5,
-                top: AppPadding.p780),
+                left:230,
+                top: 365),
             child: Row(
               children: [
                 Image.asset(
                   'images/inverted_end_white.png',
                   height: MediaQuery.of(context).size.height / 5,
-                  width: MediaQuery.of(context).size.width / 3,
+                  width: MediaQuery.of(context).size.width / 20,
                 ),
               ],
             ),

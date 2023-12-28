@@ -11,7 +11,7 @@ class MobileWWDSectionOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s870,
+      height: 780,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -25,7 +25,7 @@ class MobileWWDSectionOne extends StatelessWidget {
 
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p10, left: AppPadding.p15),
+            padding: const EdgeInsets.only(top: AppPadding.p100, left: AppPadding.p15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

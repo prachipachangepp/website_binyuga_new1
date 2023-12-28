@@ -44,7 +44,9 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                       children: [
                         Expanded(
                             flex: 2,
-                            child: Container(child: MobileFeatureSectionTwo())),
+                            child: Container(
+                              height: 700,
+                                child: MobileFeatureSectionTwo())),
                       ],
                     ),
                     Row(
