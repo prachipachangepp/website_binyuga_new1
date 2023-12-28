@@ -19,7 +19,7 @@ class HomeSectionFive extends StatelessWidget {
           ///background image
           Row(
             children: [
-              Image.network(
+              Image.asset(
                 'images/team_member_bg.png',
                 fit: BoxFit.fill,
                 height: AppSize.s600,

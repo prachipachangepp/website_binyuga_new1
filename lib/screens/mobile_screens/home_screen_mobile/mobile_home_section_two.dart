@@ -18,40 +18,42 @@ class MobileHomeSectionTwo extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: AppPadding.p200),
+                  padding: const EdgeInsets.only(left: 30),
                   child: Text(AppString.ourApproach,
                     style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width / 25,
+                        MediaQuery.of(context).size.width / 12,
                         FontWeightManager.bold,
                         ColorManager.darkBlue),
                   ),
                 ),
               ],
             ),
-            Row(
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(
-                      left: MediaQuery.of(context).size.width / 30),
-                  child: Image.asset("images/inverted_start.png",
-                      width: MediaQuery.of(context).size.width / 20),
-                ),
-              ],
-            ),
+            // Row(
+            //   children: [
+            //     Padding(
+            //       padding: EdgeInsets.only(
+            //           left: MediaQuery.of(context).size.width / 30),
+            //       child: Image.asset("images/inverted_start.png",
+            //           width: MediaQuery.of(context).size.width / 20),
+            //     ),
+            //   ],
+            // ),
             const SizedBox(height: AppSize.s20),
             Row(
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                      left: MediaQuery.of(context).size.width / 9),
+                      left: 13),
                   child: Center(
                     child: Text(
-                      AppString.approachTxt,
+                      "Is driven by innovation and guided by user-friendly designs."
+                          " We also have \na strong commitment to nurturing and educating emerging,"
+                          "forward-\nthinking talent in the field.",
                       textAlign: TextAlign.center,
                       style: GoogleFonts.inter(
                         textStyle: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 50,
-                          FontWeightManager.bold,
+                          MediaQuery.of(context).size.width / 36,
+                         FontWeightManager.bold,
                           ColorManager.black,),),
                     ),
                   ),
@@ -59,15 +61,15 @@ class MobileHomeSectionTwo extends StatelessWidget {
               ],
             ),
             const SizedBox(height: AppSize.s20),
-            Padding(
-              padding:
-              EdgeInsets.only(left: MediaQuery.of(context).size.width / 3),
-              child: Image.asset(
-                "images/inverted_end.png",
-                width: MediaQuery.of(context).size.width / 20,
-              ),
-            ),
-            const SizedBox(height: AppSize.s40),
+            // Padding(
+            //   padding:
+            //   EdgeInsets.only(left: MediaQuery.of(context).size.width / 3),
+            //   child: Image.asset(
+            //     "images/inverted_end.png",
+            //     width: MediaQuery.of(context).size.width / 20,
+            //   ),
+            // ),
+            const SizedBox(height: 30),
           ],
         ),
       ]),

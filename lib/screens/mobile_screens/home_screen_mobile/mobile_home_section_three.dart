@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../presentation/color_manager.dart';
+import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
@@ -10,103 +11,93 @@ class MobileHomeSectionThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s2200,
-      width: MediaQuery.of(context).size.width,
+     height: 400,
+    //  width: 400,
       color: ColorManager.white,
       child: Stack(
         children: [
           /// Base Image
-          Image.network(
+          Image.asset(
             'images/union.png',
             fit: BoxFit.fill,
-            height: AppSize.s2200,
-            width: MediaQuery.of(context).size.width,
+            height: 400,
+            width:470,
           ),
           Padding(
-            padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 20,
-              top: AppPadding.p15,
-            ),
+            padding: const EdgeInsets.only(bottom:100,top:20,left:15),
             child: Row(
               children: [
-                Image.network(
+                Image.asset(
                   "images/union_1.png",
-                  height: AppSize.s700,
-                  width: MediaQuery.of(context).size.width / 2,
+                  height: 126,
+                  width: 180,
                 ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 50,
-                ),
+
+
                 Padding(
-                  padding: const EdgeInsets.only(left: AppPadding.p15),
+                  padding: const EdgeInsets.only(left:20),
                   child: Text(
                     AppString.unionTxt1,
-                    style: UnionTxtScreen1.union1TextStyle(context),
+                    style: TextStyle(
+                      // fontWeight: FontWeightManager.medium,
+                        fontSize: 7,
+                        color: ColorManager.white),
                   ),
                 ),
               ],
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 30,
-              right: MediaQuery.of(context).size.width / 40,
-              bottom: AppPadding.p280,
-            ),
-            child: Row(
-              children: [
-                Image.network(
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top:10,left:5),
+                child: Image.asset(
                   "images/rectangle.png",
-                  height: AppSize.s730,
-                  width: MediaQuery.of(context).size.width / 1.9,
+                  height: 145,
+                  width: 200,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-          Center(
+          Padding(
+            padding: const EdgeInsets.only(top:185,left:75),
             child: Text(
               AppString.unionTxt2,
               style: UnionTxtScreen2.union2TextStyle(context),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p1200, left: AppPadding.p10),
-            child: Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: AppPadding.p15),
-                  child: Text(
-                    AppString.unionTxt3,
-                    style: UnionTxtScreen1.union1TextStyle(context),
-                  ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left:10,top:230),
+                child: Text(
+                  AppString.unionTxt3,
+                  style: TextStyle(
+                     // fontWeight: FontWeightManager.medium,
+                      fontSize: 7,
+                      color: ColorManager.white),
                 ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 50,
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 50,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top:230,left:12),
+                child: Image.asset(
+                  "images/union_2.png",
+                  height: 126,
+                  width: 180,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                      right: MediaQuery.of(context).size.width / 61,
-                      left: MediaQuery.of(context).size.width / 57,
-                      top: MediaQuery.of(context).size.width / 27),
-                  child: Image.network(
-                    "images/union_2.png",
-                    height: AppSize.s700,
-                    width: MediaQuery.of(context).size.width / 1.9,
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
           Padding(
-            padding: EdgeInsets.only(
-                top: AppPadding.p1180,
-                right: MediaQuery.of(context).size.width / 50,
-                left: MediaQuery.of(context).size.width / 2.5),
-            child: Image.network(
+            padding: const EdgeInsets.only(top:220,left:155),
+            child: Image.asset(
               "images/rectangle.png",
-              height: AppSize.s855,
-              width: MediaQuery.of(context).size.width / 1.8,
-            ),
+              height: 145,
+              width: 200,
+                      ),
           ),
         ],
       ),

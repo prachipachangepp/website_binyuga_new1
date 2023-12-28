@@ -12,18 +12,18 @@ class MobileHomeSectionFive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s1300,
+      height: 600,
       color: ColorManager.white,
       child: Stack(
         children: [
           ///background image
           Row(
             children: [
-              Image.network(
+              Image.asset(
                 'images/team_member_bg.png',
                 fit: BoxFit.fill,
-                height: AppSize.s600,
-                width: MediaQuery.of(context).size.width,
+                height: 212,
+                width: 360,
               ),
             ],
           ),
@@ -34,28 +34,30 @@ class MobileHomeSectionFive extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(
                   top: MediaQuery.of(context).size.width / 10,
-                  left: MediaQuery.of(context).size.width / 5,
+                  left: 12,
                 ),
                 child: Text(AppString.ourTeamMembers,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       textStyle: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 29,
+                          MediaQuery.of(context).size.width / 14,
                           FontWeightManager.bold,
+
+
                           ColorManager.white),
                     )),
               ),
-              const SizedBox(height: AppSize.s10,),
+              const SizedBox(height: 10,),
 
               ///txt 2
               Padding(
-                padding:  EdgeInsets.only(top: AppSize.s50, left: MediaQuery.of(context).size.width / 5,),
+                padding:  EdgeInsets.only(top: 15, left:  30,),
                 child: Text(AppString.teamTxt,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       textStyle: TextStyle(
                           fontWeight: FontWeightManager.medium,
-                          fontSize: MediaQuery.of(context).size.width / 45,
+                          fontSize: MediaQuery.of(context).size.width / 35,
                           color: ColorManager.blueShade),
                     )),
               ),
@@ -66,7 +68,7 @@ class MobileHomeSectionFive extends StatelessWidget {
           ///cirle avtar row 1
           Padding(
             padding: EdgeInsets.only(
-              top:MediaQuery.of(context).size.width / 3,
+              top:165,
               // top: AppPadding.p430,
 
             ),
@@ -81,7 +83,7 @@ class MobileHomeSectionFive extends StatelessWidget {
                         radius: MediaQuery.of(context).size.width / 10,
                       ),
                       SizedBox(
-                        height: AppSize.s20 ,
+                        height: 10 ,
                       ),
                       Text(AppString.johnS,
                           style: TeamMemberConstant.nameTextStyle),
@@ -101,7 +103,7 @@ class MobileHomeSectionFive extends StatelessWidget {
                         radius: MediaQuery.of(context).size.width / 10,
                       ),
                       SizedBox(
-                        height: AppSize.s20 ,
+                        height: 10 ,
                       ),
                       Text(AppString.johnS,
                           style: TeamMemberConstant.nameTextStyle),
@@ -117,7 +119,7 @@ class MobileHomeSectionFive extends StatelessWidget {
                         radius: MediaQuery.of(context).size.width / 10,
                       ),
                       SizedBox(
-                        height: AppSize.s20 ,
+                        height: 10 ,
                       ),
                       Text(AppString.johnS,
                           style: TeamMemberConstant.nameTextStyle),
@@ -134,16 +136,14 @@ class MobileHomeSectionFive extends StatelessWidget {
 
           ///cirle avtar row 2
           Padding(
-            padding: EdgeInsets.only(
-                right: MediaQuery.of(context).size.width / 12,
-                top: AppPadding.p800),
+            padding: const EdgeInsets.only(top:310),
             child: Row(
               children: [
                 Expanded(
                   child: Column(
                     children: [
                       Padding(
-                        padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width /5),
+                        padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width /6),
                         child: CircleAvatar(
                           backgroundColor: ColorManager.white1,
                           radius: MediaQuery.of(context).size.width / 10,
@@ -158,7 +158,7 @@ class MobileHomeSectionFive extends StatelessWidget {
                             style: TeamMemberConstant.nameTextStyle),
                       ),
                       SizedBox(
-                        width: MediaQuery.of(context).size.width /20,
+                        width: MediaQuery.of(context).size.width /30,
                       ),
                     ],
                   ),
@@ -169,19 +169,25 @@ class MobileHomeSectionFive extends StatelessWidget {
                 Expanded(
                   child: Column(
                     children: [
-                      CircleAvatar(
-                        backgroundColor: ColorManager.white1,
-                        radius: MediaQuery.of(context).size.width / 10,
+                      Padding(
+                        padding: const EdgeInsets.only(right:75),
+                        child: CircleAvatar(
+                          backgroundColor: ColorManager.white1,
+                          radius: MediaQuery.of(context).size.width / 10,
+                        ),
                       ),
                       SizedBox(
                         height: AppSize.s20 ,
                       ),
-                      Text(AppString.johnS,
-                          style: TeamMemberConstant.nameTextStyle),
+                      Padding(
+                        padding: const EdgeInsets.only(right:75),
+                        child: Text(AppString.johnS,
+                            style: TeamMemberConstant.nameTextStyle),
+                      ),
                     ],
                   ),
                 ),
-                const SizedBox(height: AppSize.s50,
+                const SizedBox(height: 20,
                 ),
               ],
             ),
