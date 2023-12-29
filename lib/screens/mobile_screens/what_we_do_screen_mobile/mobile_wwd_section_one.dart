@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -25,7 +26,28 @@ class MobileWWDSectionOne extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
             ),
           ),
-
+           ///Drawer
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left:15,top:20),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  MyDrawer()),
+                    );
+                  },
+                  child: Icon(
+                    Icons.dehaze_rounded,
+                    color: ColorManager.white,
+                    size: MediaQuery.of(context).size.width / 15,
+                  ),
+                ),
+              ),
+            ],
+          ),
           /// Content Column
           Padding(
             padding: const EdgeInsets.only(top: AppPadding.p70, left: AppPadding.p15),
@@ -43,7 +65,7 @@ class MobileWWDSectionOne extends StatelessWidget {
                 Text(
                   AppString.homePageText2,
                   style: AllScreensConstant.customTextStyle(
-                      8,
+                      7,
                       FontWeightManager.medium, ColorManager.lightBlue),
                 ),
                 const SizedBox(

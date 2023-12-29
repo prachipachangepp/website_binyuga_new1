@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/presentation/string_manager.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/description_bottom_row_mobile.dart';
 import 'package:website_binyuga_new1/screens/mobile_screens/career_page_mobile.dart';
 import 'package:website_binyuga_new1/screens/mobile_screens/feature_page_mobile.dart';
+import 'package:website_binyuga_new1/screens/mobile_screens/wwd_page_mobile.dart';
 
 
 class MyDrawer extends StatelessWidget {
@@ -53,7 +55,7 @@ class MyDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => MobileFeaturesHomeScreen()));
+                        builder: (context) => MobileWhatWeDoHomeScreen()));
               },
             ),
             ListTile(
@@ -85,7 +87,7 @@ class MyDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => MobileFeaturesHomeScreen()));
+                        builder: (context) => MobileCareerHomeScreen()));
               },
             ),
             ListTile(
@@ -117,7 +119,7 @@ class MyDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => MobileFeaturesHomeScreen()));
+                        builder: (context) => DescriptionBottomRowConstantMobile()));
               },
             ),
             // Add more items as needed

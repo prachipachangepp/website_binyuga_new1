@@ -26,7 +26,7 @@ class _DescriptionScreenConstantMobileState
       child: Row(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 30, top: AppPadding.p100, right: 30),
+            padding: EdgeInsets.only(left: 30, top: AppPadding.p100, ),
             child: Row(
               //mainAxisAlignment: MainAxisAlignment.center,
               children: [

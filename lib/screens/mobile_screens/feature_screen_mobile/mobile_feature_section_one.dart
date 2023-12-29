@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -24,7 +25,28 @@ class MobileFeatureSectionOne extends StatelessWidget {
             height: AppSize.s720,
             width: MediaQuery.of(context).size.width,
           ),
-
+          ///Drawer
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left:15,top:20),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  MyDrawer()),
+                    );
+                  },
+                  child: Icon(
+                    Icons.dehaze_rounded,
+                    color: ColorManager.white,
+                    size: MediaQuery.of(context).size.width / 15,
+                  ),
+                ),
+              ),
+            ],
+          ),
           /// Content Column
           Padding(
             padding: EdgeInsets.only(
@@ -40,7 +62,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
                       AppString.featureScreenText1,
                       //  textAlign: TextAlign.end,
                       style: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 22,
+                          MediaQuery.of(context).size.width / 25,
                           FontWeightManager.bold,
                           ColorManager.white),
                     ),
