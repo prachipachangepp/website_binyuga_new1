@@ -3,6 +3,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -12,11 +13,6 @@ import '../../constant_screens/website_constant/description_page_constant.dart';
 import '../../website_screens/career_home.dart';
 import '../../website_screens/features_home.dart';
 import '../../website_screens/landing_page_home.dart';
-import '../../website_screens/what_we_do_home.dart';
-import '../career_page_mobile.dart';
-import '../feature_page_mobile.dart';
-import '../wwd_page_mobile.dart';
-
 
 class MobileHomeSectionOne extends StatefulWidget {
   const MobileHomeSectionOne({super.key});
@@ -46,109 +42,127 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
           ///boy img
           Padding(
-            padding: EdgeInsets.only(
-              left: 170,top: 120
-               ),
+            padding: EdgeInsets.only(left: 170, top: 120),
             child: Image.asset(
               "images/boy.png",
-            //  height: MediaQuery.of(context).size.height / 1.3,
-               height: AppSize.s490,
+              //  height: MediaQuery.of(context).size.height / 1.3,
+              height: AppSize.s490,
               width: MediaQuery.of(context).size.width / 2.2,
             ),
           ),
           Padding(
             padding: EdgeInsets.only(
-                top: AppPadding.p200,
-                left: MediaQuery.of(context).size.width / 40),
-            child: Row(
+                top: AppPadding.p100,
+                right: MediaQuery.of(context).size.width /6),
+            child: Column(
               children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  MyDrawer()),
+                    );
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.only(top:10),
+                    child: Icon(
+                      Icons.dehaze_rounded,
+                      color: ColorManager.white,
+                      size: MediaQuery.of(context).size.width / 15,
+                    ),
+                  ),
+                ),
+
                 ///sidebar
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const WhatWeDoHomeScreen()),
-                        );
-                      },
-                      child: Text(AppString.whoWeAre,
-                          style: HomeScreen.sidebarTextStyle),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s15,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const MobileWhatWeDoHomeScreen()),
-                        );
-                      },
-                      child: Text(AppString.whatWeDo,
-                          style: HomeScreen.sidebarTextStyle),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s15,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const MobileFeaturesHomeScreen()),
-                        );
-                      },
-                      child: Text(AppString.features,
-                          style: HomeScreen.sidebarTextStyle),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s15,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const MobileCareerHomeScreen()),
-                        );
-                      },
-                      child: Text(AppString.career,
-                          style: HomeScreen.sidebarTextStyle),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s15,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const WhatWeDoHomeScreen()),
-                        );
-                      },
-                      child: Text(AppString.portfolio,
-                          style: HomeScreen.sidebarTextStyle),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 10,
-                ),
+                // Column(
+                //   crossAxisAlignment: CrossAxisAlignment.start,
+                //   children: [
+                //     GestureDetector(
+                //       onTap: () {
+                //         Navigator.push(
+                //           context,
+                //           MaterialPageRoute(
+                //               builder: (context) => const WhatWeDoHomeScreen()),
+                //         );
+                //       },
+                //       child: Text(AppString.whoWeAre,
+                //           style: HomeScreen.sidebarTextStyle),
+                //     ),
+                //     const SizedBox(
+                //       height: AppSize.s15,
+                //     ),
+                //     GestureDetector(
+                //       onTap: () {
+                //         Navigator.push(
+                //           context,
+                //           MaterialPageRoute(
+                //               builder: (context) =>
+                //                   const MobileWhatWeDoHomeScreen()),
+                //         );
+                //       },
+                //       child: Text(AppString.whatWeDo,
+                //           style: HomeScreen.sidebarTextStyle),
+                //     ),
+                //     const SizedBox(
+                //       height: AppSize.s15,
+                //     ),
+                //     GestureDetector(
+                //       onTap: () {
+                //         Navigator.push(
+                //           context,
+                //           MaterialPageRoute(
+                //               builder: (context) =>
+                //                   const MobileFeaturesHomeScreen()),
+                //         );
+                //       },
+                //       child: Text(AppString.features,
+                //           style: HomeScreen.sidebarTextStyle),
+                //     ),
+                //     const SizedBox(
+                //       height: AppSize.s15,
+                //     ),
+                //     GestureDetector(
+                //       onTap: () {
+                //         Navigator.push(
+                //           context,
+                //           MaterialPageRoute(
+                //               builder: (context) =>
+                //                   const MobileCareerHomeScreen()),
+                //         );
+                //       },
+                //       child: Text(AppString.career,
+                //           style: HomeScreen.sidebarTextStyle),
+                //     ),
+                //     const SizedBox(
+                //       height: AppSize.s15,
+                //     ),
+                //     GestureDetector(
+                //       onTap: () {
+                //         Navigator.push(
+                //           context,
+                //           MaterialPageRoute(
+                //               builder: (context) => const WhatWeDoHomeScreen()),
+                //         );
+                //       },
+                //       child: Text(AppString.portfolio,
+                //           style: HomeScreen.sidebarTextStyle),
+                //     ),
+                //   ],
+                // ),
+                // SizedBox(
+                //   width: MediaQuery.of(context).size.width / 10,
+                // ),
 
                 /// txt, button
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
                     Padding(
-                      padding: const EdgeInsets.only(top:AppPadding.p25),
+                      padding: const EdgeInsets.only(top: AppPadding.p25,left:80),
                       child: Text(AppString.homesTxt1,
                           style: AllScreensConstant.customTextStyle(
-                              MediaQuery.of(context).size.width / 35,
+                              MediaQuery.of(context).size.width / 30,
                               FontWeightManager.bold,
                               ColorManager.white)),
                     ),
@@ -157,41 +171,48 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                     ),
 
                     ///hometxt 2
-                    Text(AppString.homesTxt2,
-                        textAlign: TextAlign.start,
-                        style: AllScreensConstant.customTextStyle(
-                            MediaQuery.of(context).size.width / 80,
-                            FontWeightManager.medium,
-                            ColorManager.lightBlue)),
+                    Padding(
+                      padding: const EdgeInsets.only(left:80),
+                      child: Text(AppString.homesTxt2,
+                          textAlign: TextAlign.start,
+                          style: AllScreensConstant.customTextStyle(
+                              MediaQuery.of(context).size.width / 80,
+                              FontWeightManager.medium,
+                              ColorManager.lightBlue)),
+                    ),
                     const SizedBox(
                       height: AppSize.s10,
                     ),
 
                     ///button
-                    MaterialButton(
-                      color: ColorManager.white,
-                      shape: const RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const CareerHomeScreen()),
-                        );
-                      },
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                           // vertical: AppPadding.p2,
-                            horizontal: MediaQuery.of(context).size.width / 100),
-                        child: Text(
-                          AppString.exploreMore,
-                          //style: RButtonTheme.roundedButtonTextStyle,
-                          style: TextStyle(
-      fontWeight: FontWeightManager.semiBold,
-      fontSize: FontSize.s13,
-      letterSpacing: -0.011,
-      color: ColorManager.black
-      ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 80),
+                      child: MaterialButton(
+                        color: ColorManager.white,
+                        shape: const RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(30.0))),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CareerHomeScreen()),
+                          );
+                        },
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              // vertical: AppPadding.p2,
+                              horizontal:
+                                  MediaQuery.of(context).size.width / 100),
+                          child: Text(
+                            AppString.exploreMore,
+                            //style: RButtonTheme.roundedButtonTextStyle,
+                            style: TextStyle(
+                                fontWeight: FontWeightManager.semiBold,
+                                fontSize: FontSize.s13,
+                                letterSpacing: -0.011,
+                                color: ColorManager.black),
+                          ),
                         ),
                       ),
                     ),
@@ -203,11 +224,11 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
           ///divider
           Padding(
-            padding: const EdgeInsets.only(top: 180),
+            padding: const EdgeInsets.only(top: 165),
             child: SizedBox(
-              height: MediaQuery.of(context).size.height / 15,
+              height: MediaQuery.of(context).size.height / 10,
               child: VerticalDivider(
-                width: MediaQuery.of(context).size.width / 2.5,
+                width: MediaQuery.of(context).size.width / 2.8,
                 color: ColorManager.lightBlue,
                 thickness: 2,
               ),
@@ -255,8 +276,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                       child: Icon(
                         Icons.pause,
                         color: ColorManager.lightBlue,
-                        size:
-                        MediaQuery.of(context).size.width / 40, // Original size
+                        size: MediaQuery.of(context).size.width /
+                            40, // Original size
                       ),
                     ),
                     const SizedBox(
@@ -292,7 +313,6 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                   padding: EdgeInsets.only(
                       top: MediaQuery.of(context).size.height / 30),
                   child: Image.asset(
-
                     'images/binyuga_logo.png',
                     width: 120,
                   ),
@@ -303,8 +323,9 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
           /// Contact us, search
           Padding(
-            padding:
-            EdgeInsets.only(top: 25,),
+            padding: EdgeInsets.only(
+              top: 25,
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -322,14 +343,14 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                          const DescriptionScreenConstant()),
+                              const DescriptionScreenConstant()),
                     );
                   },
                 ),
-                SizedBox(width: MediaQuery.of(context).size.width /25),
+                SizedBox(width: MediaQuery.of(context).size.width / 25),
 
                 Padding(
-                  padding: const EdgeInsets.only(right:AppPadding.p10 ),
+                  padding: const EdgeInsets.only(right: AppPadding.p10),
                   child: Switch.adaptive(
                       activeColor: Colors.cyanAccent,
                       focusColor: ColorManager.white,
@@ -353,7 +374,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                       _toggleSearchBar();
                     },
                     child: Container(
-                      height:  MediaQuery.of(context).size.width /12,
+                      height: MediaQuery.of(context).size.width / 12,
                       width: MediaQuery.of(context).size.width / 13,
                       decoration: BoxDecoration(
                         color: ColorManager.white,
@@ -400,8 +421,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 _toggleSearchBar();
               },
               child: Container(
-                //  color: Colors.transparent,
-              ),
+                  //  color: Colors.transparent,
+                  ),
             ),
           ),
           Center(
@@ -424,7 +445,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                     borderSide: BorderSide(color: ColorManager.black),
                   ),
                   contentPadding:
-                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 9),
+                      const EdgeInsets.symmetric(vertical: 10.0, horizontal: 9),
                 ),
                 cursorWidth: 1.7,
                 cursorRadius: Radius.circular(5),

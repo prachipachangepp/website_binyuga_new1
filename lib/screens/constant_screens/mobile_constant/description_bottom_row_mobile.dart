@@ -12,7 +12,7 @@ class DescriptionBottomRowConstantMobile extends StatelessWidget {
       children: [
         Text(AppString.privacyNotice,
             style: BottomRowScreen.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 15),
+        SizedBox(width: MediaQuery.of(context).size.width /15),
         Text(AppString.cookiePolicy,
             style: BottomRowScreen.bottomRowTextStyle(context)),
         SizedBox(width: MediaQuery.of(context).size.width / 15),
