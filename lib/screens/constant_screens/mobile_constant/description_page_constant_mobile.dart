@@ -23,228 +23,175 @@ class _DescriptionScreenConstantMobileState
     return Container(
       height: 300,
       color: ColorManager.nevyBlue,
-      child: Row(
-        children: [
-          Padding(
-            padding: EdgeInsets.only(left: 30, top: AppPadding.p100, ),
-            child: Row(
-              //mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ///who we are
-                Column(
-                   mainAxisAlignment: MainAxisAlignment.start,
+      child: Padding(
+        padding: EdgeInsets.only(left: 30, top: AppPadding.p100, right: 30),
+        child: Column(
+          //mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    AppString.whoWeAre,
+                    style: LastDescriptionScreen.rowTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.aboutUs,
+                    style: LastColumnScreen.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.teamProfiles,
+                    style: LastColumnScreen.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.clientTestimonials,
+                    style: LastColumnScreen.columnTextStyle(context),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 20,
+              ),
+              ///what we do
+              Padding(
+                padding: EdgeInsets.only(
+                    left: MediaQuery.of(context).size.width / 85),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      AppString.whoWeAre,
+                      AppString.whatWeDo,
                       style: LastDescriptionScreen.rowTextStyle(context),
                     ),
                     const SizedBox(
                       height: AppSize.s5,
                     ),
                     Text(
-                      AppString.aboutUs,
+                      AppString.softwareDevelopment,
                       style: LastColumnScreen.columnTextStyle(context),
                     ),
                     const SizedBox(
                       height: AppSize.s5,
                     ),
                     Text(
-                      AppString.teamProfiles,
+                      AppString.webDevelopment,
                       style: LastColumnScreen.columnTextStyle(context),
                     ),
                     const SizedBox(
                       height: AppSize.s5,
                     ),
                     Text(
-                      AppString.clientTestimonials,
+                      AppString.uiUxDesigning,
+                      textAlign: TextAlign.left,
+                      style: LastColumnScreen.columnTextStyle(context),
+                    ),
+                    const SizedBox(
+                      height: AppSize.s5,
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 15,
+              ),
+              ///career
+              Padding(
+                padding: EdgeInsets.only(
+                  left: MediaQuery.of(context).size.width / 85,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      AppString.career,
+                      style: LastDescriptionScreen.rowTextStyle(context),
+
+                    ),
+                    const SizedBox(
+                      height: AppSize.s5,
+                    ),
+                    Text(
+                      AppString.fullStackDevelopment,
+                      style: LastColumnScreen.columnTextStyle(context),
+                    ),
+                    const SizedBox(
+                      height: AppSize.s5,
+                    ),
+                    Text(
+                      AppString.softwareTesting,
+                      style: LastColumnScreen.columnTextStyle(context),
+                    ),
+                    const SizedBox(
+                      height: AppSize.s5,
+                    ),
+                    Text(
+                      AppString.programmingLanguage,
                       style: LastColumnScreen.columnTextStyle(context),
                     ),
                   ],
                 ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 20,
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 15,
+              ),
+              ///features
+              Padding(
+                padding: EdgeInsets.only(
+                  left: MediaQuery.of(context).size.width / 85,
                 ),
-            
-                ///what we do
-                Padding(
-                  padding: EdgeInsets.only(
-                      left: MediaQuery.of(context).size.width / 85),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        AppString.whatWeDo,
-                        style: LastDescriptionScreen.rowTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.softwareDevelopment,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.webDevelopment,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.uiUxDesigning,
-                        textAlign: TextAlign.left,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 15,
-                ),
-            
-                ///career
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width / 85,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        AppString.career,
-                        style: LastDescriptionScreen.rowTextStyle(context),
-            
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.fullStackDevelopment,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.softwareTesting,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.programmingLanguage,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 15,
-                ),
-            
-                ///features
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width / 85,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
                     Text(
-                    AppString.features,
+                      AppString.features,
                       style: LastDescriptionScreen.rowTextStyle(context),
                     ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.tailoredProducts,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.costEffectiveness,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                      Text(
-                        AppString.problemSolving,
-                        style: LastColumnScreen.columnTextStyle(context),
-                      ),
-                      const SizedBox(
-                        height: AppSize.s5,
-                      ),
-                    ],
-                  ),
+                    const SizedBox(
+                      height: AppSize.s5,
+                    ),
+                    Text(
+                      AppString.tailoredProducts,
+                      style: LastColumnScreen.columnTextStyle(context),
+                    ),
+                    const SizedBox(
+                      height: AppSize.s5,
+                    ),
+                    Text(
+                      AppString.costEffectiveness,
+                      style: LastColumnScreen.columnTextStyle(context),
+                    ),
+                    const SizedBox(
+                      height: AppSize.s5,
+                    ),
+                    Text(
+                      AppString.problemSolving,
+                      style: LastColumnScreen.columnTextStyle(context),
+                    ),
+                    const SizedBox(
+                      height: AppSize.s5,
+                    ),
+                  ],
                 ),
-            
-            
-                // const SizedBox(height: 50),
-            
-                ///bottom row
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 30),
-                  child: Expanded(child: const DescriptionBottomRowConstantMobile()),
-                ),
-              ],
-            ),
+              ),
+            ],),
+            Row(children: [
+              DescriptionBottomRowConstantMobile()
+            ],),
+            ///who we are
 
-            // Widget _buildAnimatedSearchBar() {
-            //   return GestureDetector(
-            //     onTap: () {
-            //       _toggleSearchBar();
-            //     },
-            //     child: Stack(
-            //       children: [
-            //         Positioned.fill(
-            //           child: GestureDetector(
-            //             onTap: () {
-            //               _toggleSearchBar();
-            //             },
-            //             child: Container(
-            //               color: Colors.transparent,
-            //             ),
-            //           ),
-            //         ),
-            // Center(
-            //   child: AnimatedContainer(
-            //     key: _searchKey,
-            //     duration: Duration(milliseconds: 300),
-            //     width: _isSearchBarVisible ? 180 : 0,
-            //     height: 40,
-            //     child: TextField(
-            //       style: TextStyle(color: Colors.black),
-            //       cursorColor: Colors.grey,
-            //       decoration: InputDecoration(
-            //         hintText: 'Search...',
-            //         hintStyle: TextStyle(color: ColorManager.black),
-            //         filled: true,
-            //         fillColor: Colors.white,
-            //         border: OutlineInputBorder(
-            //           borderRadius: BorderRadius.circular(20.0),
-            //           borderSide: BorderSide(color: ColorManager.black),
-            //         ),
-            //         contentPadding:
-            //         const EdgeInsets.symmetric(vertical: 10.0, horizontal: 9),
-            //       ),
-            //       cursorWidth: 1.7,
-            //       cursorRadius: Radius.circular(5),
-            //     ),
-            //   ),
-            // ),
-          ),
-        ],
+          ],
+        ),
+
       ),
     );
   }

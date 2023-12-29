@@ -35,7 +35,6 @@ class DescriptionBottomRowConstantMobile extends StatelessWidget {
 
 class DescriptionPageHeadConstantMobile extends StatelessWidget {
   const DescriptionPageHeadConstantMobile({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Row(
