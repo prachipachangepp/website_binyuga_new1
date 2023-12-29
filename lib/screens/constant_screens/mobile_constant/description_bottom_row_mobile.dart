@@ -12,27 +12,28 @@ class DescriptionBottomRowConstantMobile extends StatelessWidget {
       children: [
         Text(AppString.privacyNotice,
             style: BottomRowScreen.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 25),
+        SizedBox(width: MediaQuery.of(context).size.width / 15),
         Text(AppString.cookiePolicy,
             style: BottomRowScreen.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 25),
+        SizedBox(width: MediaQuery.of(context).size.width / 15),
         Text(AppString.disclaimer,
             style: BottomRowScreen.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 25),
+        SizedBox(width: MediaQuery.of(context).size.width / 15),
         Text(AppString.securityPolicy,
             style: BottomRowScreen.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 25),
+        SizedBox(width: MediaQuery.of(context).size.width / 15),
         Text(AppString.californiaNoticeAtCollection,
             style: BottomRowScreen.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 25),
+        SizedBox(width: MediaQuery.of(context).size.width / 15),
         Text(AppString.customizeCookies,
             style: BottomRowScreen.bottomRowTextStyle(context)),
+        SizedBox(width: MediaQuery.of(context).size.width / 15),
       ],
     );
   }
 }
 
-class DescriptionPageHeadConstantMobile extends StatelessWidget{
+class DescriptionPageHeadConstantMobile extends StatelessWidget {
   const DescriptionPageHeadConstantMobile({super.key});
 
   @override
@@ -40,7 +41,7 @@ class DescriptionPageHeadConstantMobile extends StatelessWidget{
     return Row(
       children: [
         Text(AppString.whatWeAre,
-            style:LastDescriptionScreen.rowTextStyle(context)),
+            style: LastDescriptionScreen.rowTextStyle(context)),
         SizedBox(width: MediaQuery.of(context).size.width / 16),
         Text(AppString.whatWeDo,
             style: LastDescriptionScreen.rowTextStyle(context)),
@@ -51,9 +52,9 @@ class DescriptionPageHeadConstantMobile extends StatelessWidget{
         Text(AppString.features,
             style: LastDescriptionScreen.rowTextStyle(context)),
         SizedBox(width: MediaQuery.of(context).size.width / 10),
-        Text(AppString.contact,
-            style: LastDescriptionScreen.rowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width /10),
+        // Text(AppString.contact,
+        //     style: LastDescriptionScreen.rowTextStyle(context)),
+        // SizedBox(width: MediaQuery.of(context).size.width /10),
       ],
     );
   }
