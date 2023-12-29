@@ -18,11 +18,14 @@ class MobileHomeSectionTwo extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(AppString.ourApproach,
-                  style: AllScreensConstant.customTextStyle(
-                      MediaQuery.of(context).size.width / 12,
-                      FontWeightManager.bold,
-                      ColorManager.darkBlue),
+                Padding(
+                  padding: const EdgeInsets.only(top:90),
+                  child: Text(AppString.ourApproach,
+                    style: AllScreensConstant.customTextStyle(
+                        MediaQuery.of(context).size.width / 12,
+                        FontWeightManager.bold,
+                        ColorManager.darkBlue),
+                  ),
                 ),
               ],
             ),
@@ -43,7 +46,7 @@ class MobileHomeSectionTwo extends StatelessWidget {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(
-                        left:30),
+                        left:30,top:5),
                     child: Center(
                       child: Text(
                         "Is driven by innovation and guided by user-friendly designs."
