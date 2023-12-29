@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../presentation/value_manager.dart';
+import '../constant_screens/mobile_constant/description_page_constant_mobile.dart';
 import '../constant_screens/website_constant/bottom_nav_bar.dart';
 import '../constant_screens/website_constant/description_page_constant.dart';
 import '../constant_screens/website_constant/responsive_app_bar.dart';
@@ -43,8 +44,8 @@ class CareerHomeScreen extends StatelessWidget {
                 child: const CareerSectionFour(),
               ),
               Container(
-                height:  AppSize.s800,
-                child: const DescriptionScreenConstant(),
+                height:  AppSize.s300,
+                child: const DescriptionScreenConstantMobile(),
               ),
               Container(
                 height:  AppSize.s187,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../constant_screens/mobile_constant/description_page_constant_mobile.dart';
 import '../constant_screens/website_constant/bottom_nav_bar.dart';
 import '../constant_screens/website_constant/description_page_constant.dart';
 import '../constant_screens/website_constant/responsive_app_bar.dart';
@@ -57,7 +58,7 @@ class _FeaturesHomeScreenState extends State<FeaturesHomeScreen> {
                         Expanded(
                             flex: 3,
                             child:
-                                Container(child: DescriptionScreenConstant())),
+                                Container(child: DescriptionScreenConstantMobile(),)),
                       ],
                     ),
                     Row(
