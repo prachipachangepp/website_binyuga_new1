@@ -74,7 +74,7 @@ class LastDescriptionScreenHeadMobile {
 
 class LastColumnScreen {
   static double getFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width /70;
+    return MediaQuery.of(context).size.width /60;
   }
 
   static TextStyle columnTextStyle(BuildContext context) {
@@ -248,3 +248,20 @@ class FeatureLongTxtConstant {
       decoration:TextDecoration.none,
       color: ColorManager.white);
 }
+
+
+// class AppConstants {
+//   // Image paths
+//   static const String imagePath1 = 'images/sd.png';
+//   static const String imagePath2 = 'images/ps.png';
+//   static const String imagePath3 = 'images/ui.png';
+//   static const String imagePath4 = 'images/wd.png';
+//   static const String imagePath5 = 'images/cm.png';
+//   static const String imagePath6 = 'images/ad.png';
+//
+//
+//
+//   // Texts
+//   static const String welcomeText = 'Welcome';
+//   static const String buttonText = 'Click me';
+// }
