@@ -28,50 +28,50 @@ class MobileHomeSectionFive extends StatelessWidget {
             ],
           ),
 
-          ///txt 1
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.width / 10,
-                  left: 50,
+          ///txt 1,2
+          Padding(
+            padding: const EdgeInsets.only(top: 40),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(AppString.ourTeamMembers,
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.inter(
+                          textStyle: AllScreensConstant.customTextStyle(
+                              MediaQuery.of(context).size.width / 14,
+                              FontWeightManager.bold,
+
+
+                              ColorManager.white),
+                        )),
+                  ],
                 ),
-                child: Text(AppString.ourTeamMembers,
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.inter(
-                      textStyle: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 14,
-                          FontWeightManager.bold,
-
-
-                          ColorManager.white),
-                    )),
-              ),
-              const SizedBox(height: 10,),
-
-              ///txt 2
-              Padding(
-                padding:  EdgeInsets.only(top: 15, left:  40,),
-                child: Text(AppString.teamTxt,
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.inter(
-                      textStyle: TextStyle(
-                          fontWeight: FontWeightManager.medium,
-                          fontSize: MediaQuery.of(context).size.width / 35,
-                          color: ColorManager.blueShade),
-                    )),
-              ),
-            ],
+                const SizedBox(height: 30,),
+                ///txt 2
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(AppString.teamTxt,
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.inter(
+                          textStyle: TextStyle(
+                              fontWeight: FontWeightManager.medium,
+                              fontSize: MediaQuery.of(context).size.width / 35,
+                              color: ColorManager.blueShade),
+                        )),
+                  ],
+                ),
+              ],
+            ),
           ),
           const SizedBox(height: AppSize.s20,),
 
           ///cirle avtar row 1
           Padding(
             padding: EdgeInsets.only(
-              top:165,
-              // top: AppPadding.p430,
-
+              top:155,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

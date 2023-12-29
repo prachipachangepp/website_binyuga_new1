@@ -47,7 +47,7 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                         Expanded(
                             flex: 2,
                             child: Container(
-                              height: 700,
+                              height: 500,
                                 child: MobileFeatureSectionTwo())),
                       ],
                     ),
@@ -55,7 +55,10 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                       children: [
                         Expanded(
                             flex: 1,
-                            child: Container(child: MobileFeatureSectionThree())),
+                            child: Container(
+                              height: 400,
+                                //color:Colors.grey,
+                                child: MobileFeatureSectionThree())),
                       ],
                     ),
                     Row(

@@ -18,14 +18,11 @@ class MobileHomeSectionTwo extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(top:90),
-                  child: Text(AppString.ourApproach,
-                    style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width / 12,
-                        FontWeightManager.bold,
-                        ColorManager.darkBlue),
-                  ),
+                Text(AppString.ourApproach,
+                  style: AllScreensConstant.customTextStyle(
+                      MediaQuery.of(context).size.width / 12,
+                      FontWeightManager.bold,
+                      ColorManager.darkBlue),
                 ),
               ],
             ),
@@ -33,47 +30,44 @@ class MobileHomeSectionTwo extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                      left: 15,top:40),
+                      left: 40,top:10),
                   child: Image.asset("images/inverted_start.png",
-                      width: MediaQuery.of(context).size.width / 28
+                      width: MediaQuery.of(context).size.width / 20
                   ),
                 ),
               ],
             ),
-           // const SizedBox(height: AppSize.s10),
-            Center(
-              child: Row(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                        left:30,top:5),
-                    child: Center(
-                      child: Text(
-                        "Is driven by innovation and guided by user-friendly designs."
-                            " We also have \na strong commitment to nurturing and educating emerging,"
-                            "forward-\nthinking talent in the field.",
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.inter(
-                          textStyle: AllScreensConstant.customTextStyle(
-                            MediaQuery.of(context).size.width / 38,
-                           FontWeightManager.bold,
-                            ColorManager.black,),),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+            //const SizedBox(height: AppSize.s10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Is driven by innovation and guided by user-friendly designs.\n"
+                      " We also have a strong commitment to nurturing and educating\nemerging,"
+                      "forward-thinking talent in the field.",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.inter(
+                    textStyle: AllScreensConstant.customTextStyle(
+                      MediaQuery.of(context).size.width / 35,
+                     FontWeightManager.bold,
+                      ColorManager.black,),),
+                ),
+              ],
             ),
 
-            Padding(
-              padding:
-              EdgeInsets.only(left:170,bottom: 30),
-              child: Image.asset(
-                "images/inverted_end.png",
-                width: MediaQuery.of(context).size.width / 28,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Padding(
+                  padding:
+                  EdgeInsets.only(right:70,bottom: 25),
+                  child: Image.asset(
+                    "images/inverted_end.png",
+                    width: MediaQuery.of(context).size.width / 20,
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 30),
           ],
         ),
       ]),
