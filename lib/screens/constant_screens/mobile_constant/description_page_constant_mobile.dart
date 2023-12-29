@@ -64,7 +64,7 @@ class _DescriptionScreenConstantMobileState
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 20,
                 ),
-
+            
                 ///what we do
                 Padding(
                   padding: EdgeInsets.only(
@@ -107,7 +107,7 @@ class _DescriptionScreenConstantMobileState
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 15,
                 ),
-
+            
                 ///career
                 Padding(
                   padding: EdgeInsets.only(
@@ -119,7 +119,7 @@ class _DescriptionScreenConstantMobileState
                       Text(
                         AppString.career,
                         style: LastDescriptionScreen.rowTextStyle(context),
-
+            
                       ),
                       const SizedBox(
                         height: AppSize.s5,
@@ -148,7 +148,7 @@ class _DescriptionScreenConstantMobileState
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 15,
                 ),
-
+            
                 ///features
                 Padding(
                   padding: EdgeInsets.only(
@@ -188,16 +188,14 @@ class _DescriptionScreenConstantMobileState
                     ],
                   ),
                 ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 15,
-                ),
-
-                const SizedBox(height: 50),
-
+            
+            
+                // const SizedBox(height: 50),
+            
                 ///bottom row
                 Padding(
-                  padding:  EdgeInsets.only(left: MediaQuery.of(context).size.width /50,),
-                  child: const DescriptionBottomRowConstantMobile(),
+                  padding: const EdgeInsets.only(bottom: 30),
+                  child: Expanded(child: const DescriptionBottomRowConstantMobile()),
                 ),
               ],
             ),

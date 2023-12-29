@@ -74,7 +74,7 @@ class LastColumnScreen {
 
 class BottomRowScreen {
   static double getNewFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width / 120;
+    return MediaQuery.of(context).size.width / 80;
   }
 
   static TextStyle bottomRowTextStyle(BuildContext context) {
