@@ -146,21 +146,28 @@ class AppString {
 
   /// FeatureSubHome Page
   static const String dreamIt = "Dream It,\nBuild It,\nAchieve It.";
+  static const String dreamItM = "Dream It, Build It, Achieve It.";
   static const String featureTxt = "We believe in the power of envisioning, creating,\n"
       "nd realizing. It all starts with a dream, an idea, or "
       "\n a vision. "
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
       "\n solutions and results.";
+  static const String featureTxtM = "We believe in the power of envisioning,\ncreating,"
+      "nd realizing. It all starts with\na dream, an idea, or "
+      "a vision.\n"
+      "We then roll up our sleeves to build and\nbring  "
+      "that dream to life, translating it\ninto tangible"
+      "solutions and results.";
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
-  static const String  featureScreenText1= "Turning Dreams into Features,and Features \ninto Reality";
+  static const String  featureScreenText1= "Turning Dreams into Features,and Features\ninto Reality";
   static const String featureScreenText2 =  'We specialize in crafting customized solutions to meet'
-      'your unique needs, \nensuring that our products align '
-      'perfectly with your goals.Our services are \ndesigned'
-      'offer the best value for your investment,optimizing'
-      'your budget\n without compromising quality.';
+      'your\nunique needs,ensuring that our products align '
+      'perfectly\nwith your goals.Our services are designed'
+      'offer the best\nvalue for your investment,optimizing'
+      'your budget without\ncompromising quality.';
   static const String  weSee ="We see every journey to success as a work of art, "
       '\nwhere each decision and effort shapes the way '
       '\nforward. Our mission is to help you carve out your '

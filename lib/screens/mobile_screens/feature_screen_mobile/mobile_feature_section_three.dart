@@ -7,25 +7,14 @@ class MobileFeatureSectionThree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        /// Frame Image
         Image.asset(
-          "images/Frame 14.png",
-          height: AppSize.s636,
-          width: MediaQuery.of(context).size.width / 1.2,
+          "images/trailored.png",
+          height: AppSize.s320,
+          width: MediaQuery.of(context).size.width / 1.3,
         ),
-        // const SizedBox(
-        //   height: AppSize.s10,
-        // ),
-        //
-        // /// Design Image 2
-        // Image.asset(
-        //   "images/design 2.png",
-        //   height: AppSize.s500,
-        //   width: MediaQuery.of(context).size.width / 2.35,
-        // ),
       ],
     );
   }

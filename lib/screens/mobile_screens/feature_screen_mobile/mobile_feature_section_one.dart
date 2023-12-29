@@ -28,9 +28,10 @@ class MobileFeatureSectionOne extends StatelessWidget {
           /// Content Column
           Padding(
             padding: EdgeInsets.only(
-                top: AppPadding.p100,
-                left:100 ),
+                top: AppPadding.p80,
+                left:40 ),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 ///head txt 1
                 Row(
@@ -39,71 +40,63 @@ class MobileFeatureSectionOne extends StatelessWidget {
                       AppString.featureScreenText1,
                       //  textAlign: TextAlign.end,
                       style: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width / 28,
+                          MediaQuery.of(context).size.width / 22,
                           FontWeightManager.bold,
                           ColorManager.white),
                     ),
                   ],
                 ),
                 const SizedBox(
-                  height: AppSize.s20,
+                  height: AppSize.s10,
                 ),
 
                 ///txt 2
-                Padding(
-                  padding: EdgeInsets.only(
-                      left:20),
-                  child: Row(
-                    //  mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        AppString.featureScreenText2,
-                        textAlign: TextAlign.start,
-                        style: AllScreensConstant.customTextStyle(
-                            MediaQuery.of(context).size.width /55,
-                            FontWeightManager.medium,
-                            ColorManager.lightBlue),
-                      ),
-                    ],
-                  ),
+                Row(
+                  //  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      AppString.featureScreenText2,
+                      textAlign: TextAlign.start,
+                      style: AllScreensConstant.customTextStyle(
+                          MediaQuery.of(context).size.width /35,
+                          FontWeightManager.medium,
+                          ColorManager.lightBlue),
+                    ),
+                  ],
                 ),
                 const SizedBox(
-                  height: AppSize.s50,
+                  height: AppSize.s30,
                 ),
 
                 ///button
-                Padding(
-                  padding: EdgeInsets.only(
-                      right: MediaQuery.of(context).size.width / 4),
-                  child: Row(
-                    //  mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 30),
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: ColorManager.white,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20))),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => const HomePage()),
-                            );
-                          },
-                          child: Text(
-                            AppString.readTxt,
-                            style: TextStyle(
-                              fontWeight: FontWeightManager.semiBold,
-                              fontSize: FontSize.s15,
-                              letterSpacing: -0.011,
-                              color: ColorManager.black,
-                            ),
+                Row(
+                  //  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20.0),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: ColorManager.white,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20))),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const HomePage()),
+                          );
+                        },
+                        child: Text(
+                          AppString.readTxt,
+                          style: TextStyle(
+                            fontWeight: FontWeightManager.semiBold,
+                            fontSize: FontSize.s15,
+                            letterSpacing: -0.011,
+                            color: ColorManager.black,
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ],
             ),

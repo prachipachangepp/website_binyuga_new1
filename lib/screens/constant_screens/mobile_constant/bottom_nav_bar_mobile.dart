@@ -50,7 +50,6 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
           child: Padding(
             padding: EdgeInsets.only(
                 top: 30,
-
               ),
             child: Container(
               color: Colors.transparent,

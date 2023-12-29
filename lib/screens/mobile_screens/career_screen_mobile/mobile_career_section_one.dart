@@ -20,56 +20,61 @@ class MobileCareerSectionOne extends StatelessWidget {
             'images/background.png',
             fit: BoxFit.fill,
             height: 270,
-            width: 400,
+            width: MediaQuery.of(context).size.width,
           ),
+          ///girl image
           Padding(
-            padding: const EdgeInsets.only(right:40,top:60,bottom:70,left:200),
+            padding: const EdgeInsets.only(top:80,left:140),
             child: Image.asset(
               "images/girl_img.png",
-              height: 350,
-              width: 400,
+              height: 300,
+              width: 200,
             ),
           ),
           Padding(
             padding: EdgeInsets.only(
-                top: 70,
-                left: 40,),
+                top: 40,
+                left: 20,),
                // right: MediaQuery.of(context).size.width / 5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(AppString.moldYour,
-                    style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width / 20,
-                        FontWeightManager.bold,
-                        ColorManager.white)),
+                Row(
+                  children: [
+                    Text(AppString.moldYour,
+                        style: AllScreensConstant.customTextStyle(
+                            MediaQuery.of(context).size.width / 20,
+                            FontWeightManager.bold,
+                            ColorManager.white)),
+                  ],
+                ),
                 const SizedBox(
                   height: 15,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                      left: MediaQuery.of(context).size.width / 150),
-                  child: MaterialButton(
-                    color: ColorManager.white,
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const HomePage()),
-                      );
-                    },
-                    child: Padding(
-                      padding: EdgeInsets.symmetric(
-                          vertical: 8,
-                          horizontal: 10),
-                      child: Text(
-                        AppString.applyTxt,
-                        style: RButtonTheme.roundedButtonTextStyle,
+                Row(
+                  children: [
+                    MaterialButton(
+                      color: ColorManager.white,
+                      shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(30.0))),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomePage()),
+                        );
+                      },
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 8,
+                            horizontal: 10),
+                        child: Text(
+                          AppString.applyTxt,
+                          style: RButtonTheme.roundedButtonTextStyle,
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
               ],
             ),
