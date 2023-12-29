@@ -37,7 +37,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
                 child: Image.asset(
                   "images/Rectangle 682.png",
                   height: AppSize.s636,
-                  width: MediaQuery.of(context).size.width / 1.1,
+                  width: MediaQuery.of(context).size.width / 1.15,
                 ),
               ),
             ],
@@ -83,7 +83,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
 
           ///Inverted Comma End
           Padding(
-            padding: const EdgeInsets.only(left:300,top:200,),
+            padding: const EdgeInsets.only(left:255,top:180,),
             child: Image.asset(
               'images/inverted_end_white.png',
               height: 200,
