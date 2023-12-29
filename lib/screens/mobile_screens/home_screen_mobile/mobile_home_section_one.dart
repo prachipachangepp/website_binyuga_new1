@@ -51,172 +51,80 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             ),
           ),
           Padding(
+            padding: const EdgeInsets.only(top: 70.0,left: 10),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>  MyDrawer()),
+                );
+              },
+              child: Padding(
+                padding: const EdgeInsets.only(top:10),
+                child: Icon(
+                  Icons.dehaze_rounded,
+                  color: ColorManager.white,
+                  size: MediaQuery.of(context).size.width / 15,
+                ),
+              ),
+            ),
+          ),
+          Padding(
             padding: EdgeInsets.only(
-                top: AppPadding.p100,
-                right: MediaQuery.of(context).size.width /6),
+                top: AppPadding.p80,
+                left: MediaQuery.of(context).size.width /5.5),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                GestureDetector(
-                  onTap: () {
+                Text(AppString.homesTxt1,
+                    style: AllScreensConstant.customTextStyle(
+                        MediaQuery.of(context).size.width / 20,
+                        FontWeightManager.bold,
+                        ColorManager.white)),
+                const SizedBox(
+                  height: AppSize.s10,
+                ),
+
+                ///hometxt 2
+                Text(AppString.homesTxt2,
+                    textAlign: TextAlign.start,
+                    style: AllScreensConstant.customTextStyle(
+                        MediaQuery.of(context).size.width / 40,
+                        FontWeightManager.medium,
+                        ColorManager.lightBlue)),
+                const SizedBox(
+                  height: AppSize.s10,
+                ),
+
+                ///button
+                MaterialButton(
+                  color: ColorManager.white,
+                  shape: const RoundedRectangleBorder(
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(30.0))),
+                  onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) =>  MyDrawer()),
+                          builder: (context) => const CareerHomeScreen()),
                     );
                   },
                   child: Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: Icon(
-                      Icons.dehaze_rounded,
-                      color: ColorManager.white,
-                      size: MediaQuery.of(context).size.width / 15,
+                    padding: EdgeInsets.symmetric(
+                        // vertical: AppPadding.p2,
+                        horizontal:
+                            MediaQuery.of(context).size.width / 100),
+                    child: Text(
+                      AppString.exploreMore,
+                      //style: RButtonTheme.roundedButtonTextStyle,
+                      style: TextStyle(
+                          fontWeight: FontWeightManager.semiBold,
+                          fontSize: FontSize.s13,
+                          letterSpacing: -0.011,
+                          color: ColorManager.black),
                     ),
                   ),
-                ),
-
-                ///sidebar
-                // Column(
-                //   crossAxisAlignment: CrossAxisAlignment.start,
-                //   children: [
-                //     GestureDetector(
-                //       onTap: () {
-                //         Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //               builder: (context) => const WhatWeDoHomeScreen()),
-                //         );
-                //       },
-                //       child: Text(AppString.whoWeAre,
-                //           style: HomeScreen.sidebarTextStyle),
-                //     ),
-                //     const SizedBox(
-                //       height: AppSize.s15,
-                //     ),
-                //     GestureDetector(
-                //       onTap: () {
-                //         Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //               builder: (context) =>
-                //                   const MobileWhatWeDoHomeScreen()),
-                //         );
-                //       },
-                //       child: Text(AppString.whatWeDo,
-                //           style: HomeScreen.sidebarTextStyle),
-                //     ),
-                //     const SizedBox(
-                //       height: AppSize.s15,
-                //     ),
-                //     GestureDetector(
-                //       onTap: () {
-                //         Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //               builder: (context) =>
-                //                   const MobileFeaturesHomeScreen()),
-                //         );
-                //       },
-                //       child: Text(AppString.features,
-                //           style: HomeScreen.sidebarTextStyle),
-                //     ),
-                //     const SizedBox(
-                //       height: AppSize.s15,
-                //     ),
-                //     GestureDetector(
-                //       onTap: () {
-                //         Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //               builder: (context) =>
-                //                   const MobileCareerHomeScreen()),
-                //         );
-                //       },
-                //       child: Text(AppString.career,
-                //           style: HomeScreen.sidebarTextStyle),
-                //     ),
-                //     const SizedBox(
-                //       height: AppSize.s15,
-                //     ),
-                //     GestureDetector(
-                //       onTap: () {
-                //         Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //               builder: (context) => const WhatWeDoHomeScreen()),
-                //         );
-                //       },
-                //       child: Text(AppString.portfolio,
-                //           style: HomeScreen.sidebarTextStyle),
-                //     ),
-                //   ],
-                // ),
-                // SizedBox(
-                //   width: MediaQuery.of(context).size.width / 10,
-                // ),
-
-                /// txt, button
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: AppPadding.p25,left:80),
-                      child: Text(AppString.homesTxt1,
-                          style: AllScreensConstant.customTextStyle(
-                              MediaQuery.of(context).size.width / 30,
-                              FontWeightManager.bold,
-                              ColorManager.white)),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s10,
-                    ),
-
-                    ///hometxt 2
-                    Padding(
-                      padding: const EdgeInsets.only(left:80),
-                      child: Text(AppString.homesTxt2,
-                          textAlign: TextAlign.start,
-                          style: AllScreensConstant.customTextStyle(
-                              MediaQuery.of(context).size.width / 80,
-                              FontWeightManager.medium,
-                              ColorManager.lightBlue)),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s10,
-                    ),
-
-                    ///button
-                    Padding(
-                      padding: const EdgeInsets.only(left: 80),
-                      child: MaterialButton(
-                        color: ColorManager.white,
-                        shape: const RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(30.0))),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const CareerHomeScreen()),
-                          );
-                        },
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                              // vertical: AppPadding.p2,
-                              horizontal:
-                                  MediaQuery.of(context).size.width / 100),
-                          child: Text(
-                            AppString.exploreMore,
-                            //style: RButtonTheme.roundedButtonTextStyle,
-                            style: TextStyle(
-                                fontWeight: FontWeightManager.semiBold,
-                                fontSize: FontSize.s13,
-                                letterSpacing: -0.011,
-                                color: ColorManager.black),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
                 ),
               ],
             ),
@@ -224,11 +132,11 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
           ///divider
           Padding(
-            padding: const EdgeInsets.only(top: 165),
+            padding: const EdgeInsets.only(top: 90),
             child: SizedBox(
               height: MediaQuery.of(context).size.height / 10,
               child: VerticalDivider(
-                width: MediaQuery.of(context).size.width / 2.8,
+                width: MediaQuery.of(context).size.width / 3.2,
                 color: ColorManager.lightBlue,
                 thickness: 2,
               ),
@@ -321,146 +229,9 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             ),
           ),
 
-          /// Contact us, search
-          Padding(
-            padding: EdgeInsets.only(
-              top: 25,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                /// Contact us
-                GestureDetector(
-                  child: Text(
-                    AppString.contactUs,
-                    style: TextStyle(
-                      color: ColorManager.white,
-                      fontSize: MediaQuery.of(context).size.width / 28,
-                    ),
-                  ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              const DescriptionScreenConstant()),
-                    );
-                  },
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width / 25),
-
-                Padding(
-                  padding: const EdgeInsets.only(right: AppPadding.p10),
-                  child: Switch.adaptive(
-                      activeColor: Colors.cyanAccent,
-                      focusColor: ColorManager.white,
-                      value: _lights,
-                      onChanged: (bool value) {
-                        setState(() {
-                          _lights = value;
-                        });
-                      }),
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width / 150),
-
-                ///Animated Search Bar
-                _isSearchBarVisible
-                    ? _buildAnimatedSearchBar()
-                    : SizedBox.shrink(),
-                Padding(
-                  padding: const EdgeInsets.only(right: AppPadding.p20),
-                  child: GestureDetector(
-                    onTap: () {
-                      _toggleSearchBar();
-                    },
-                    child: Container(
-                      height: MediaQuery.of(context).size.width / 12,
-                      width: MediaQuery.of(context).size.width / 13,
-                      decoration: BoxDecoration(
-                        color: ColorManager.white,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(25.0),
-                        ),
-                      ),
-                      child: ShaderMask(
-                        shaderCallback: (Rect bounds) {
-                          return const LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [Colors.red, Colors.yellow, Colors.blue],
-                          ).createShader(bounds);
-                        },
-                        child: const Icon(
-                          Icons.search,
-                          color: Colors.white,
-                          size: AppSize.s20,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
         ],
       ),
     );
   }
 
-  ///search bar
-  Widget _buildAnimatedSearchBar() {
-    return GestureDetector(
-      onTap: () {
-        _toggleSearchBar();
-      },
-      child: Stack(
-        children: [
-          Positioned.fill(
-            child: GestureDetector(
-              onTap: () {
-                _toggleSearchBar();
-              },
-              child: Container(
-                  //  color: Colors.transparent,
-                  ),
-            ),
-          ),
-          Center(
-            child: AnimatedContainer(
-              key: _searchKey,
-              duration: Duration(milliseconds: 300),
-              width: _isSearchBarVisible ? 50 : 0,
-              height: 30,
-              child: TextField(
-                style: const TextStyle(color: Colors.black),
-                cursorColor: Colors.grey,
-                decoration: InputDecoration(
-                  hintText: 'Search...',
-                  hintStyle: TextStyle(color: ColorManager.black),
-                  //  border:InputBorder.none,
-                  filled: true,
-                  fillColor: Colors.white,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                    borderSide: BorderSide(color: ColorManager.black),
-                  ),
-                  contentPadding:
-                      const EdgeInsets.symmetric(vertical: 10.0, horizontal: 9),
-                ),
-                cursorWidth: 1.7,
-                cursorRadius: Radius.circular(5),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  ///
-  void _toggleSearchBar() {
-    setState(() {
-      _isSearchBarVisible = !_isSearchBarVisible;
-    });
-  }
 }

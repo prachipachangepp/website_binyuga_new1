@@ -22,40 +22,42 @@ class _DescriptionScreenConstantMobileState
   Widget build(BuildContext context) {
     return Container(
       height: 300,
-      color: ColorManager.nevyBlue,
+      color: ColorManager.purple,
       child: Padding(
-        padding: EdgeInsets.only(left: 30, top: AppPadding.p100, right: 30),
+        padding: EdgeInsets.only(top: AppPadding.p100,),
         child: Column(
           //mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
                     AppString.whoWeAre,
-                    style: LastDescriptionScreen.rowTextStyle(context),
+                    style: LastDescriptionScreenHeadMobile.rowTextStyle(context),
                   ),
                   const SizedBox(
                     height: AppSize.s5,
                   ),
                   Text(
                     AppString.aboutUs,
-                    style: LastColumnScreen.columnTextStyle(context),
+                    style: LastColumnScreenMobile.columnTextStyle(context),
                   ),
                   const SizedBox(
                     height: AppSize.s5,
                   ),
                   Text(
                     AppString.teamProfiles,
-                    style: LastColumnScreen.columnTextStyle(context),
+                    style: LastColumnScreenMobile.columnTextStyle(context),
                   ),
                   const SizedBox(
                     height: AppSize.s5,
                   ),
                   Text(
                     AppString.clientTestimonials,
-                    style: LastColumnScreen.columnTextStyle(context),
+                    style: LastColumnScreenMobile.columnTextStyle(context),
                   ),
                 ],
               ),
@@ -63,135 +65,120 @@ class _DescriptionScreenConstantMobileState
                 width: MediaQuery.of(context).size.width / 20,
               ),
               ///what we do
-              Padding(
-                padding: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width / 85),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      AppString.whatWeDo,
-                      style: LastDescriptionScreen.rowTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.softwareDevelopment,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.webDevelopment,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.uiUxDesigning,
-                      textAlign: TextAlign.left,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                  ],
-                ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    AppString.whatWeDo,
+                    style: LastDescriptionScreenHeadMobile.rowTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.softwareDevelopment,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.webDevelopment,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.uiUxDesigning,
+                    textAlign: TextAlign.left,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                ],
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width / 15,
               ),
               ///career
-              Padding(
-                padding: EdgeInsets.only(
-                  left: MediaQuery.of(context).size.width / 85,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      AppString.career,
-                      style: LastDescriptionScreen.rowTextStyle(context),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    AppString.career,
+                    style: LastDescriptionScreenHeadMobile.rowTextStyle(context),
 
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.fullStackDevelopment,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.softwareTesting,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.programmingLanguage,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                  ],
-                ),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.fullStackDevelopment,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.softwareTesting,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.programmingLanguage,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                ],
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width / 15,
               ),
               ///features
-              Padding(
-                padding: EdgeInsets.only(
-                  left: MediaQuery.of(context).size.width / 85,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      AppString.features,
-                      style: LastDescriptionScreen.rowTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.tailoredProducts,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.costEffectiveness,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                    Text(
-                      AppString.problemSolving,
-                      style: LastColumnScreen.columnTextStyle(context),
-                    ),
-                    const SizedBox(
-                      height: AppSize.s5,
-                    ),
-                  ],
-                ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    AppString.features,
+                    style: LastDescriptionScreenHeadMobile.rowTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.tailoredProducts,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.costEffectiveness,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                  const SizedBox(
+                    height: AppSize.s5,
+                  ),
+                  Text(
+                    AppString.problemSolving,
+                    style: LastColumnScreenMobile.columnTextStyle(context),
+                  ),
+                ],
               ),
             ],),
-            Row(children: [
+            const SizedBox(
+              height: AppSize.s100,
+            ),
+            Row(
+              mainAxisAlignment:MainAxisAlignment.center,
+              children: [
               DescriptionBottomRowConstantMobile()
             ],),
-            ///who we are
-
           ],
         ),
-
       ),
     );
   }

@@ -19,6 +19,7 @@ class AppString {
   static const String whatWeDo = "What we do";
   static const String features = "Features";
   static const String career = "Career";
+  static const String mobileHOmetxt2 = "Whether it's a custom software\nsolution, a user-friendly app, or a\ncaptivating website, wmeet but\nexceed your expectations.";
 
 
   /// About Us screen
