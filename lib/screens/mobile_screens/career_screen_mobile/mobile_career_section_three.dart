@@ -24,7 +24,7 @@ class MobileCareerSectionThree extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left:20,top:40),
           child: Text('Why Binyuga.Pvt.Ltd.',
-              style: TextStyle(fontSize:19,
+              style: TextStyle(fontSize:MediaQuery.of(context).size.width/10,
                 fontWeight: FontWeightManager.bold,
                 color: ColorManager.white,)),
         ),
@@ -41,16 +41,19 @@ class MobileCareerSectionThree extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height:  100,
+              height:  130,
               child: VerticalDivider(
-                width: MediaQuery.of(context).size.width / 12,
+                width: MediaQuery.of(context).size.width / 11.5,
                 color: ColorManager.lightBlue,
                 thickness: 2,
               ),
             ),
             Text(
               AppString.loremTxt,
-              style: CareerPageConstant.careerTextStyle(context),
+              style: TextStyle(fontSize:MediaQuery.of(context).size.width/40,
+                fontWeight: FontWeightManager.medium,
+                color: ColorManager.white,
+              )
             ),
           ],
         ),

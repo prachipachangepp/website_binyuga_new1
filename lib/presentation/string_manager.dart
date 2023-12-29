@@ -109,6 +109,15 @@ class AppString {
       ' \nlobortis sagittis scelerisque malesuada, '
       ' \ncubilia ullamcorper tempor fermentum '
       ' \ntellus odio.';
+  static const String loremTxtM = 'Lorem ipsum dolor sit amet consectetur'
+      'adipiscing elit\n,mollis quam proin'
+      'molestie a enim, arcu potenti rutrum\n'
+      'risus torquent vel.Ut facilisis'
+      'condimentum vitae nam\ncurae nec'
+      'curabitur, gravida convallis natoque'
+      'lobortis\nsagittis scelerisque malesuada,'
+      'cubilia ullamcorper\ntempor fermentum'
+      'tellus odio.';
 
   static const String ourTxt = 'OUR EMPLOYEE';
   static const String nationTxt ='NATIONALITIES';

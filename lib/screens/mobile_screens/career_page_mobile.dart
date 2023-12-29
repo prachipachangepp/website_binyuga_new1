@@ -42,7 +42,7 @@ class MobileCareerHomeScreen extends StatelessWidget {
               ),
 
               Container(
-                height: AppSize.s1300,
+                height: AppSize.s900,
                 child: const MobileCareerSectionFour(),
               ),
               Container(
