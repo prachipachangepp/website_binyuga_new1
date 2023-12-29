@@ -4,11 +4,6 @@ import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/de
 import 'package:website_binyuga_new1/screens/mobile_screens/what_we_do_screen_mobile/mobile_wwd_section_one.dart';
 import 'package:website_binyuga_new1/screens/mobile_screens/what_we_do_screen_mobile/mobile_wwd_section_three.dart';
 import 'package:website_binyuga_new1/screens/mobile_screens/what_we_do_screen_mobile/mobile_wwd_section_two.dart';
-import 'package:website_binyuga_new1/screens/website_screens/what_we_do_screens/wwd_section_one.dart';
-import 'package:website_binyuga_new1/screens/website_screens/what_we_do_screens/wwd_section_three.dart';
-import 'package:website_binyuga_new1/screens/website_screens/what_we_do_screens/wwd_section_two.dart';
-import '../constant_screens/website_constant/bottom_nav_bar.dart';
-import '../constant_screens/website_constant/description_page_constant.dart';
 import '../constant_screens/website_constant/responsive_app_bar.dart';
 
 class MobileWhatWeDoHomeScreen extends StatefulWidget {
@@ -37,9 +32,10 @@ class _MobileWhatWeDoHomeScreenState extends State<MobileWhatWeDoHomeScreen> {
                     Row(
                       children: [
                         Expanded(
-                            flex: 2,
+                            flex: 1,
                             child: Container(
-                                color: Colors.white, child: MobileWWDSectionOne())),
+                              height: 400,
+                                color: Colors.red, child: MobileWWDSectionOne())),
                       ],
                     ),
                     Row(

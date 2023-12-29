@@ -11,7 +11,7 @@ class MobileWWDSectionOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height:400,
+      height:300,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -21,14 +21,14 @@ class MobileWWDSectionOne extends StatelessWidget {
             child: Image.asset(
               'images/what_we_do_home.png',
               fit: BoxFit.fill,
-              height: MediaQuery.of(context).size.width / 0.1,
+              height: 300,
               width: MediaQuery.of(context).size.width,
             ),
           ),
 
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p100, left: AppPadding.p35),
+            padding: const EdgeInsets.only(top: AppPadding.p70, left: AppPadding.p15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -42,11 +42,12 @@ class MobileWWDSectionOne extends StatelessWidget {
                 ),
                 Text(
                   AppString.homePageText2,
-                  style: AllScreensConstant.customTextStyle(FontSize.s5,
+                  style: AllScreensConstant.customTextStyle(
+                      8,
                       FontWeightManager.medium, ColorManager.lightBlue),
                 ),
                 const SizedBox(
-                  height: AppSize.s80,
+                  height: AppSize.s10,
                 ),
                 Padding(
                   padding:  EdgeInsets.only(top: MediaQuery.of(context).size.height /50),
@@ -73,12 +74,12 @@ class MobileWWDSectionOne extends StatelessWidget {
           ///Image on the right side
           Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 2.5,
-                top: MediaQuery.of(context).size.height / 7),
+                left: MediaQuery.of(context).size.width / 2.45,
+                top: 100),
             child: Image.asset(
               'images/digital_innovation.png',
-              width: AppSize.s870,
-              height: AppPadding.p700,
+              width: MediaQuery.of(context).size.width/1.8,
+              height: 400,
             ),
           ),
         ],
