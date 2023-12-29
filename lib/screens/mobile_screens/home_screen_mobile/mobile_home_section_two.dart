@@ -16,9 +16,10 @@ class MobileHomeSectionTwo extends StatelessWidget {
         Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 30),
+                  padding: const EdgeInsets.only(top:90),
                   child: Text(AppString.ourApproach,
                     style: AllScreensConstant.customTextStyle(
                         MediaQuery.of(context).size.width / 12,
@@ -32,20 +33,20 @@ class MobileHomeSectionTwo extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                      left: 20,top:20),
+                      left: 15,top:40),
                   child: Image.asset("images/inverted_start.png",
-                      width: MediaQuery.of(context).size.width / 20
+                      width: MediaQuery.of(context).size.width / 28
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: AppSize.s10),
+           // const SizedBox(height: AppSize.s10),
             Center(
               child: Row(
                 children: [
                   Padding(
                     padding: EdgeInsets.only(
-                        left:30),
+                        left:30,top:5),
                     child: Center(
                       child: Text(
                         "Is driven by innovation and guided by user-friendly designs."
@@ -54,7 +55,7 @@ class MobileHomeSectionTwo extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: GoogleFonts.inter(
                           textStyle: AllScreensConstant.customTextStyle(
-                            MediaQuery.of(context).size.width / 45,
+                            MediaQuery.of(context).size.width / 38,
                            FontWeightManager.bold,
                             ColorManager.black,),),
                       ),
@@ -66,10 +67,10 @@ class MobileHomeSectionTwo extends StatelessWidget {
 
             Padding(
               padding:
-              EdgeInsets.only(left:190,bottom: 10),
+              EdgeInsets.only(left:170,bottom: 30),
               child: Image.asset(
                 "images/inverted_end.png",
-                width: MediaQuery.of(context).size.width / 20,
+                width: MediaQuery.of(context).size.width / 28,
               ),
             ),
             const SizedBox(height: 30),
