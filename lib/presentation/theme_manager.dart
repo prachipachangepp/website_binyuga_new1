@@ -57,9 +57,39 @@ class LastDescriptionScreen {
   }
 }
 
+class LastDescriptionScreenHeadMobile {
+  static double getHeadingFontSize(BuildContext context) {
+    return MediaQuery.of(context).size.width /30;
+  }
+
+  static TextStyle rowTextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+      //textStyle: TextStyle(
+        fontWeight: FontWeightManager.extraBold,
+        fontSize: getHeadingFontSize(context),
+        letterSpacing: -0.011,
+        color: ColorManager.white);
+  }
+}
+
 class LastColumnScreen {
   static double getFontSize(BuildContext context) {
     return MediaQuery.of(context).size.width /70;
+  }
+
+  static TextStyle columnTextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+      fontWeight: FontWeightManager.regular,
+      fontSize: getFontSize(context),
+      letterSpacing: -0.011,
+      color: ColorManager.white,
+    );
+  }
+}
+///mobilr
+class LastColumnScreenMobile {
+  static double getFontSize(BuildContext context) {
+    return MediaQuery.of(context).size.width /60;
   }
 
   static TextStyle columnTextStyle(BuildContext context) {
@@ -80,6 +110,20 @@ class BottomRowScreen {
   static TextStyle bottomRowTextStyle(BuildContext context) {
     return GoogleFonts.inter(
         fontWeight: FontWeightManager.regular,
+        fontSize: getNewFontSize(context),
+        letterSpacing: -0.011,
+        color: ColorManager.white);
+  }
+}
+
+class BottomRowScreenMobile {
+  static double getNewFontSize(BuildContext context) {
+    return MediaQuery.of(context).size.width / 60;
+  }
+
+  static TextStyle bottomRowTextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+        fontWeight: FontWeightManager.medium,
         fontSize: getNewFontSize(context),
         letterSpacing: -0.011,
         color: ColorManager.white);
