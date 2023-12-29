@@ -17,6 +17,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 300,
       color: ColorManager.nevyBlue,
       child: Center(
         child: Column(
@@ -73,7 +74,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
 
             Padding(
               padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 15,
+                right: 200,
               ),
               child: Row(
                 children: [

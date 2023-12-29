@@ -44,7 +44,7 @@ class AllScreensConstant {
 /// last DescriptionScreen
 class LastDescriptionScreen {
   static double getHeadingFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width / 40;
+    return MediaQuery.of(context).size.width /40;
   }
 
   static TextStyle rowTextStyle(BuildContext context) {
@@ -59,7 +59,7 @@ class LastDescriptionScreen {
 
 class LastColumnScreen {
   static double getFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width /90;
+    return MediaQuery.of(context).size.width /70;
   }
 
   static TextStyle columnTextStyle(BuildContext context) {
