@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
@@ -24,17 +25,41 @@ class MobileCareerSectionOne extends StatelessWidget {
           ),
           ///girl image
           Padding(
-            padding: const EdgeInsets.only(top:80,left:140),
+            padding: const EdgeInsets.only(top:80,left:160),
             child: Image.asset(
               "images/girl_img.png",
               height: 300,
               width: 200,
             ),
           ),
+          SizedBox(height: 20,),
+          ///Drawer
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left:10,top:20),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  MyDrawer()),
+                    );
+                  },
+                  child: Icon(
+                    Icons.dehaze_rounded,
+                    color: ColorManager.white,
+                    size: MediaQuery.of(context).size.width / 15,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 20,),
           Padding(
             padding: EdgeInsets.only(
-                top: 40,
-                left: 20,),
+                top: 60,
+                left: 40,),
                // right: MediaQuery.of(context).size.width / 5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,13 +68,13 @@ class MobileCareerSectionOne extends StatelessWidget {
                   children: [
                     Text(AppString.moldYour,
                         style: AllScreensConstant.customTextStyle(
-                            MediaQuery.of(context).size.width / 20,
+                            MediaQuery.of(context).size.width / 22,
                             FontWeightManager.bold,
                             ColorManager.white)),
                   ],
                 ),
                 const SizedBox(
-                  height: 15,
+                  height:35,
                 ),
                 Row(
                   children: [
@@ -67,7 +92,7 @@ class MobileCareerSectionOne extends StatelessWidget {
                       child: Padding(
                         padding: EdgeInsets.symmetric(
                             vertical: 8,
-                            horizontal: 10),
+                            horizontal:1),
                         child: Text(
                           AppString.applyTxt,
                           style: RButtonTheme.roundedButtonTextStyle,

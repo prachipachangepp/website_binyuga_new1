@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
+import '../../../presentation/value_manager.dart';
 
 class MobileCareerSectionTwo extends StatelessWidget {
   const MobileCareerSectionTwo({super.key});
@@ -17,7 +18,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                  top: 10,
+                  top: 50,
                   left: MediaQuery.of(context).size.width / 20,
                 ),
                 child: Text(AppString.sculptYour,
@@ -27,7 +28,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
               ),
             ],
           ),
-
+          SizedBox(height: 40,),
           /// Base Image
           Row(
             children: [
@@ -35,8 +36,8 @@ class MobileCareerSectionTwo extends StatelessWidget {
                 padding: const EdgeInsets.only(left:30,top:10),
                 child: Image.asset(
                   "images/Rectangle 682.png",
-                  height: 310,
-                  width: 300,
+                  height: AppSize.s636,
+                  width: MediaQuery.of(context).size.width / 1.1,
                 ),
               ),
             ],
@@ -44,18 +45,18 @@ class MobileCareerSectionTwo extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding: EdgeInsets.only(top:50,right:60,),
+            padding: EdgeInsets.only(bottom:40,left:15,),
 
             child: Image.asset(
               'images/rectangle.png',
-              height: 180,
-              width: 450,
+              height: 680,
+              width: MediaQuery.of(context).size.width / 1.2,
             ),
           ),
 
           ///inverted comma start
           Padding(
-            padding: const EdgeInsets.only(left:35,top:1),
+            padding: const EdgeInsets.only(left:35,top:80),
             child: Image.asset(
               'images/inverted_start_white.png',
               height: 200,
@@ -65,7 +66,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 left: 60,
-                top: 105),
+                top: 170),
             child: Text('We see every journey to success as a work of '
                 '\nart,where each decision and effort shapes the'
                 '\nway forward. Our mission is to help you carve'
@@ -82,7 +83,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
 
           ///Inverted Comma End
           Padding(
-            padding: const EdgeInsets.only(left:260,top:120,),
+            padding: const EdgeInsets.only(left:300,top:200,),
             child: Image.asset(
               'images/inverted_end_white.png',
               height: 200,

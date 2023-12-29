@@ -53,7 +53,7 @@ class MobileFeatureSectionTwo extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding: const EdgeInsets.only(left: 20,top: 40),
+            padding: const EdgeInsets.only(left: 30,top: 35),
             child: Image.asset(
               'images/rectangle.png',
               height: 520,
@@ -64,8 +64,8 @@ class MobileFeatureSectionTwo extends StatelessWidget {
           /// Comma 1
           Padding(
             padding: EdgeInsets.only(
-                left: 60,
-                top: 120),
+                left: 50,
+                top: 90),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,8 +80,8 @@ class MobileFeatureSectionTwo extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width / 4.3,
-                top: 220),
+                left: MediaQuery.of(context).size.width / 5,
+                top: 190),
             child: Text(AppString.featureTxtM,
                 style: TextStyle(
                     fontSize: MediaQuery.of(context).size.width / 28,
@@ -91,8 +91,8 @@ class MobileFeatureSectionTwo extends StatelessWidget {
           /// Comma 2
           Padding(
             padding: EdgeInsets.only(
-                right:85,
-                top: 205),
+                right:65,
+                top: 200),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

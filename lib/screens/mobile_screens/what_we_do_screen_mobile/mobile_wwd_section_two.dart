@@ -47,7 +47,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 left: 70,
-                bottom: 50),
+                top: 50),
             child: Image.asset(
               'images/rectangle.png',
               height: 680,
@@ -99,7 +99,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
           ///explore binyuga txt
           Padding(
             padding: const EdgeInsets.only(
-                top: AppPadding.p500, right: AppPadding.p58),
+                top: AppPadding.p500, right:90),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
