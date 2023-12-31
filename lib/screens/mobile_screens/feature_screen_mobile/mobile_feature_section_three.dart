@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-
 import '../../../presentation/value_manager.dart';
 
 class MobileFeatureSectionThree extends StatelessWidget {
   const MobileFeatureSectionThree({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Row(

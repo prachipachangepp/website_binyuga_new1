@@ -65,7 +65,7 @@ class _MobileWhatWeDoHomeScreenState extends State<MobileWhatWeDoHomeScreen> {
                             flex: 2,
                             child: Container(
                                 height: 100,
-                                width: MediaQuery.of(context).size.width, color: Colors.red,
+                                width: MediaQuery.of(context).size.width, color: Colors.white,
                                 child: BottomNavBarScreenMobile())),
                       ],
                     ),

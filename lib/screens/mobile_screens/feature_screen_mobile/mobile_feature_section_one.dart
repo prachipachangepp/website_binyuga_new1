@@ -7,14 +7,13 @@ import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
 import '../../website_screens/landing_page_home.dart';
 
-
 class MobileFeatureSectionOne extends StatelessWidget {
   const MobileFeatureSectionOne({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: AppSize.s400,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -25,17 +24,17 @@ class MobileFeatureSectionOne extends StatelessWidget {
             height: AppSize.s720,
             width: MediaQuery.of(context).size.width,
           ),
+
           ///Drawer
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left:15,top:20),
+                padding: const EdgeInsets.only(left: 15, top: AppPadding.p20),
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) =>  MyDrawer()),
+                      MaterialPageRoute(builder: (context) => MyDrawer()),
                     );
                   },
                   child: Icon(
@@ -47,11 +46,10 @@ class MobileFeatureSectionOne extends StatelessWidget {
               ),
             ],
           ),
+
           /// Content Column
           Padding(
-            padding: EdgeInsets.only(
-                top: AppPadding.p80,
-                left:40 ),
+            padding: const EdgeInsets.only(top: AppPadding.p80, left: 40),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -60,7 +58,6 @@ class MobileFeatureSectionOne extends StatelessWidget {
                   children: [
                     Text(
                       AppString.featureScreenText1,
-                      //  textAlign: TextAlign.end,
                       style: AllScreensConstant.customTextStyle(
                           MediaQuery.of(context).size.width / 25,
                           FontWeightManager.bold,
@@ -74,13 +71,12 @@ class MobileFeatureSectionOne extends StatelessWidget {
 
                 ///txt 2
                 Row(
-                  //  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Text(
                       AppString.featureScreenText2,
                       textAlign: TextAlign.start,
                       style: AllScreensConstant.customTextStyle(
-                          MediaQuery.of(context).size.width /35,
+                          MediaQuery.of(context).size.width / 35,
                           FontWeightManager.medium,
                           ColorManager.lightBlue),
                     ),
@@ -92,7 +88,6 @@ class MobileFeatureSectionOne extends StatelessWidget {
 
                 ///button
                 Row(
-                  //  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 20.0),
@@ -104,18 +99,12 @@ class MobileFeatureSectionOne extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const HomePage()),
+                            MaterialPageRoute(
+                                builder: (context) => const HomePage()),
                           );
                         },
-                        child: Text(
-                          AppString.readTxt,
-                          style: TextStyle(
-                            fontWeight: FontWeightManager.semiBold,
-                            fontSize: FontSize.s15,
-                            letterSpacing: -0.011,
-                            color: ColorManager.black,
-                          ),
-                        ),
+                        child: Text(AppString.readTxt,
+                            style: RButtonTheme.roundedButtonTextStyle),
                       ),
                     ),
                   ],

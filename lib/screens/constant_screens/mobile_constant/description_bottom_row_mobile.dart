@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 
@@ -12,19 +11,19 @@ class DescriptionBottomRowConstantMobile extends StatelessWidget {
       children: [
         Text(AppString.privacyNotice,
             style: BottomRowScreenMobile.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width /15),
+        SizedBox(width: MediaQuery.of(context).size.width /40),
         Text(AppString.cookiePolicy,
             style: BottomRowScreenMobile.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 20),
+        SizedBox(width: MediaQuery.of(context).size.width / 40),
         Text(AppString.disclaimer,
             style: BottomRowScreenMobile.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 20),
+        SizedBox(width: MediaQuery.of(context).size.width / 40),
         Text(AppString.securityPolicy,
             style: BottomRowScreenMobile.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 20),
+        SizedBox(width: MediaQuery.of(context).size.width / 40),
         Text(AppString.californiaNoticeAtCollection,
             style: BottomRowScreenMobile.bottomRowTextStyle(context)),
-        SizedBox(width: MediaQuery.of(context).size.width / 20),
+        SizedBox(width: MediaQuery.of(context).size.width / 40),
         Text(AppString.customizeCookies,
             style: BottomRowScreenMobile.bottomRowTextStyle(context)),
       ],

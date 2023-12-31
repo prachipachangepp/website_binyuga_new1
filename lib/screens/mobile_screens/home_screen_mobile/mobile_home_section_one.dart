@@ -90,7 +90,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 Text(AppString.homesTxt2,
                     textAlign: TextAlign.start,
                     style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width / 40,
+                        MediaQuery.of(context).size.width /65,
                         FontWeightManager.medium,
                         ColorManager.lightBlue)),
                 const SizedBox(

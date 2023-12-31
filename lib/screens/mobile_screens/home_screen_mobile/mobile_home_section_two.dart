@@ -30,7 +30,7 @@ class MobileHomeSectionTwo extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                      left: 40,top:10),
+                      left:20,top:10),
                   child: Image.asset("images/inverted_start.png",
                       width: MediaQuery.of(context).size.width / 20
                   ),
