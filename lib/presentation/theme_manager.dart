@@ -195,7 +195,7 @@ fontSize: 18);
 class CareerPageConstant {
 
 static double getNewFontSizeCareer(BuildContext context) {
-return MediaQuery.of(context).size.width / 55;
+return MediaQuery.of(context).size.width / 27;
 }
   static TextStyle careerTextStyle (BuildContext context){
     return GoogleFonts.inter(
@@ -203,6 +203,73 @@ return MediaQuery.of(context).size.width / 55;
       fontSize: getNewFontSizeCareer(context),
       decoration:TextDecoration.none,
       color: ColorManager.white);
+  }
+}
+
+class CareerAboutTxtConstant {
+
+  static double getNewFontSizeCareer(BuildContext context) {
+    return MediaQuery.of(context).size.width / 8;
+  }
+  static TextStyle careerAboutTxtStyle (BuildContext context){
+    return GoogleFonts.inter(
+        fontWeight: FontWeightManager.bold,
+        fontSize: getNewFontSizeCareer(context),
+        decoration:TextDecoration.none,
+        color: ColorManager.white);
+  }
+}
+
+class  CareerSculptTextConstant  {
+
+  static double getNewFontSizeCareer(BuildContext context) {
+    return MediaQuery.of(context).size.width / 17;
+  }
+  static TextStyle sculptTextStyle (BuildContext context){
+    return GoogleFonts.inter(
+        fontWeight: FontWeightManager.extraBold,
+        fontSize: getNewFontSizeCareer(context),
+        decoration:TextDecoration.none,
+        color: ColorManager.darkBlue1,);
+  }
+}
+class   CareerLongTxtConstant {
+
+  static double getNewFontSizeCareer(BuildContext context) {
+    return MediaQuery.of(context).size.width / 35;
+  }
+  static TextStyle  careerlongTextStyle(BuildContext context){
+    return GoogleFonts.inter(
+      fontWeight: FontWeightManager.medium,
+      fontSize: getNewFontSizeCareer(context),
+      decoration:TextDecoration.none,
+      color: ColorManager.white,);
+  }
+}
+class   CareerWhyTxtConstant {
+
+  static double getNewFontSizeCareer(BuildContext context) {
+    return MediaQuery.of(context).size.width / 15;
+  }
+  static TextStyle  careerwhyTextStyle(BuildContext context){
+    return GoogleFonts.inter(
+      fontWeight: FontWeightManager.bold,
+      fontSize: getNewFontSizeCareer(context),
+      decoration:TextDecoration.none,
+      color: ColorManager.white,);
+  }
+}
+class   CareerLoremTxtConstant {
+
+  static double getNewFontSizeCareer(BuildContext context) {
+    return MediaQuery.of(context).size.width / 45;
+  }
+  static TextStyle  careerloremTextStyle(BuildContext context){
+    return GoogleFonts.inter(
+      fontWeight: FontWeightManager.medium,
+      fontSize: getNewFontSizeCareer(context),
+      decoration:TextDecoration.none,
+      color: ColorManager.white,);
   }
 }
 
@@ -250,18 +317,22 @@ class FeatureLongTxtConstant {
 }
 
 
-// class AppConstants {
-//   // Image paths
-//   static const String imagePath1 = 'images/sd.png';
-//   static const String imagePath2 = 'images/ps.png';
-//   static const String imagePath3 = 'images/ui.png';
-//   static const String imagePath4 = 'images/wd.png';
-//   static const String imagePath5 = 'images/cm.png';
-//   static const String imagePath6 = 'images/ad.png';
-//
-//
-//
-//   // Texts
-//   static const String welcomeText = 'Welcome';
-//   static const String buttonText = 'Click me';
-// }
+class AppConstants {
+  // Image paths
+  static const String imagePath1 = 'images/sd.png';
+  static const String imagePath2 = 'images/ps.png';
+  static const String imagePath3 = 'images/ui.png';
+  static const String imagePath4 = 'images/wd.png';
+  static const String imagePath5 = 'images/cm.png';
+  static const String imagePath6 = 'images/ad.png';
+
+
+
+  // Texts
+  static const String buttonText1 = 'Software Development';
+  static const String buttonText2 = 'Application Development';
+  static const String buttonText3 = 'Web Development';
+  static const String buttonText4 = 'UI/UX Designing';
+  static const String buttonText5 = 'Career Monitoring';
+  static const String buttonText6 = 'Problem Solving';
+}
