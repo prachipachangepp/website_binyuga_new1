@@ -1,15 +1,11 @@
 ///start page code
-
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:website_binyuga_new1/my_drawer.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
-import '../../constant_screens/website_constant/description_page_constant.dart';
 import '../../website_screens/career_home.dart';
 import '../../website_screens/features_home.dart';
 import '../../website_screens/landing_page_home.dart';
@@ -22,9 +18,6 @@ class MobileHomeSectionOne extends StatefulWidget {
 }
 
 class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
-  bool _lights = false;
-  bool _isSearchBarVisible = false;
-  GlobalKey _searchKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -90,7 +83,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 Text(AppString.homesTxt2,
                     textAlign: TextAlign.start,
                     style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width / 40,
+                        MediaQuery.of(context).size.width /65,
                         FontWeightManager.medium,
                         ColorManager.lightBlue)),
                 const SizedBox(

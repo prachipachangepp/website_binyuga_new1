@@ -9,7 +9,8 @@ class BottomNavBarScreenMobile extends StatefulWidget {
   const BottomNavBarScreenMobile({super.key});
 
   @override
-  State<BottomNavBarScreenMobile> createState() => _BottomNavBarScreenMobileState();
+  State<BottomNavBarScreenMobile> createState() =>
+      _BottomNavBarScreenMobileState();
 }
 
 class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
@@ -48,11 +49,11 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
             ),
           ),
           child: Padding(
-            padding: EdgeInsets.only(
-                top: 30,
-              ),
+            padding: const EdgeInsets.only(
+              top: AppPadding.p30,
+            ),
             child: Container(
-              color: Colors.transparent,
+              color: ColorManager.nevyBlue,
               width: MediaQuery.of(context).size.width,
               child: FittedBox(
                 alignment: Alignment.topCenter,
@@ -106,15 +107,15 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
                       width: MediaQuery.of(context).size.width / 20,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left:10,top: 5),
+                      padding:
+                          const EdgeInsets.only(left: 10, top: AppPadding.p5),
                       child: Row(
                         children: [
                           Text('www.career@binyuga.com',
                               style: AllScreensConstant.customTextStyle(
                                   FontSize.s12,
                                   FontWeightManager.regular,
-                                  ColorManager.white)
-                             ),
+                                  ColorManager.white)),
                         ],
                       ),
                     ),
@@ -128,7 +129,10 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
                       child: Container(
                         decoration: BoxDecoration(
                             color: ColorManager.white,
-                            border: Border.all(color: Colors.white, width: 2),
+                            border: Border.all(
+                              color: ColorManager.white,
+                              width: AppSize.s2,
+                            ),
                             borderRadius: BorderRadius.circular(10)),
                         width: MediaQuery.of(context).size.width / 2.7,
                         height: AppSize.s30,
@@ -138,7 +142,8 @@ class _BottomNavBarScreenMobileState extends State<BottomNavBarScreenMobile> {
                           hint: Text(
                             countries[0],
                             style: TextStyle(
-                                color: ColorManager.black, fontSize: 11),
+                                color: ColorManager.black,
+                                fontSize: FontSize.s11),
                           ),
                           value: selectedCountry,
                           underline: const SizedBox(),

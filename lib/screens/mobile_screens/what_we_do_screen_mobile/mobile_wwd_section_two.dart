@@ -84,8 +84,8 @@ class MobileWWDSectionTwo extends StatelessWidget {
 
           Padding(
             padding: EdgeInsets.only(
-                right: 120,
-                top: 245),
+                right: 100,
+                top: 260),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

@@ -132,7 +132,7 @@ class AppString {
 
 
   /// WhatWeDo SubHomePage
-  static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness\n              Prosperity";
+  static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness\nProsperity";
   static const String explore = "Explore";
   static const String binyugaPvtLtd = "Binyuga.Pvt.Ltd";
   static const String weBelieveIn ="We believe in the power of envisioning, creating, \n"

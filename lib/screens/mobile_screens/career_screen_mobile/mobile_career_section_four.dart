@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
-
 
 class MobileCareerSectionFour extends StatelessWidget {
   const MobileCareerSectionFour({super.key});
@@ -14,59 +11,46 @@ class MobileCareerSectionFour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: ColorManager.skyBlue1,
       child: Stack(
         children: [
           Image.asset(
             'images/background1.png',
             fit: BoxFit.fill,
-            height: 400,
+            height: AppSize.s400,
             width: MediaQuery.of(context).size.width,
           ),
+
           ///start txt
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                  //left: MediaQuery.of(context).size.width / 90,
                   top: MediaQuery.of(context).size.height / 30,
                 ),
-                child: Text(
-                    AppString.loremTxtM,
+                child: Text(AppString.loremTxtM,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize:MediaQuery.of(context).size.width/27,
-                      fontWeight: FontWeightManager.medium,
-                      color: ColorManager.white,
-                    )
-                ),
+                    style: CareerPageConstant.careerTextStyle(context)),
               ),
             ],
           ),
+
           ///about us
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.only(
-                   // left: MediaQuery.of(context).size.width / 10,
-                    top: AppPadding.p190),
-                child: Text(
-                  AppString.aboutUs,
-                  style: GoogleFonts.inter(
-                    textStyle: TextStyle(
-                      fontWeight: FontWeightManager.bold,
-                      fontSize: MediaQuery.of(context).size.width / 8,
-                      color: ColorManager.white,
-                    ),
-                  ),
-                ),
+                padding: const EdgeInsets.only(top: AppPadding.p190),
+                child: Text(AppString.aboutUs,
+                    style: CareerAboutTxtConstant.careerAboutTxtStyle(context)),
               ),
             ],
           ),
+
           ///containers
           Padding(
-            padding: const EdgeInsets.only(top: 300,left: 20,right: 20),
+            padding: const EdgeInsets.only(
+                top: AppPadding.p300, left: 20, right:AppPadding.p20),
             child: Column(
               children: [
                 Row(
@@ -75,11 +59,10 @@ class MobileCareerSectionFour extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: AppSize.s187,
-                        //width: 180,
                         decoration: BoxDecoration(
                           color: Colors.blueGrey[700],
                           borderRadius:
-                          const BorderRadius.all(Radius.circular(35)),
+                              const BorderRadius.all(Radius.circular(35)),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.only(
@@ -87,13 +70,10 @@ class MobileCareerSectionFour extends StatelessWidget {
                           ),
                           child: Text(AppString.ourTxt,
                               textAlign: TextAlign.center,
-                              style:
-                              AllScreensConstant.customTextStyle(
+                              style: AllScreensConstant.customTextStyle(
                                   MediaQuery.of(context).size.width / 20,
                                   FontWeightManager.regular,
-                                  ColorManager.white)
-
-                          ),
+                                  ColorManager.white)),
                         ),
                       ),
                     ),
@@ -103,11 +83,10 @@ class MobileCareerSectionFour extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: AppSize.s187,
-                        // width: 180,
                         decoration: BoxDecoration(
                           color: Colors.blueGrey[700],
                           borderRadius:
-                          const BorderRadius.all(Radius.circular(35)),
+                              const BorderRadius.all(Radius.circular(35)),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.only(
@@ -118,34 +97,36 @@ class MobileCareerSectionFour extends StatelessWidget {
                               style: AllScreensConstant.customTextStyle(
                                   MediaQuery.of(context).size.width / 20,
                                   FontWeightManager.regular,
-                                  ColorManager.white)
-                          ),
+                                  ColorManager.white)),
                         ),
                       ),
                     ),
-
                   ],
                 ),
-                SizedBox(height: 30,),
+                const SizedBox(
+                  height: 30,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Expanded(
                       child: Container(
                         height: AppSize.s187,
-                        //  width: 180,
                         decoration: BoxDecoration(
                           color: Colors.blueGrey[700],
-                          borderRadius: const BorderRadius.all(Radius.circular(35)),),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(35)),
+                        ),
                         child: Padding(
-                          padding: const EdgeInsets.only(top: AppPadding.p25,),
+                          padding: const EdgeInsets.only(
+                            top: AppPadding.p25,
+                          ),
                           child: Text(AppString.diverTxt,
                               textAlign: TextAlign.center,
                               style: AllScreensConstant.customTextStyle(
                                   MediaQuery.of(context).size.width / 20,
                                   FontWeightManager.regular,
-                                  ColorManager.white)
-                          ),
+                                  ColorManager.white)),
                         ),
                       ),
                     ),
@@ -155,10 +136,11 @@ class MobileCareerSectionFour extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: AppSize.s187,
-                        // width: 180,
                         decoration: BoxDecoration(
                           color: Colors.blueGrey[700],
-                          borderRadius: const BorderRadius.all(Radius.circular(35)),),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(35)),
+                        ),
                         child: Padding(
                           padding: const EdgeInsets.only(
                             top: AppPadding.p25,
@@ -168,8 +150,7 @@ class MobileCareerSectionFour extends StatelessWidget {
                               style: AllScreensConstant.customTextStyle(
                                   MediaQuery.of(context).size.width / 20,
                                   FontWeightManager.regular,
-                                  ColorManager.white)
-                          ),
+                                  ColorManager.white)),
                         ),
                       ),
                     ),
@@ -178,7 +159,6 @@ class MobileCareerSectionFour extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );
