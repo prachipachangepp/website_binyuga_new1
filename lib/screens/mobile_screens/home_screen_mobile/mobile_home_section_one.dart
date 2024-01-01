@@ -106,7 +106,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                       MaterialPageRoute(
                           builder: (context) => const MobileCareerHomeScreen()),
                     );},
-                    text: AppString.exploreMore,
+                    text: "Explore",
                     padding: EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 20,

@@ -25,6 +25,7 @@ class CareerSectionOne extends StatelessWidget {
             padding: EdgeInsets.only(
               left: MediaQuery.of(context).size.width / 2,
               top: MediaQuery.of(context).size.height / 30,
+              right:10,
             ),
             child: Image.network(
               "images/girl_img.png",

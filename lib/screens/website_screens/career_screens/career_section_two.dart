@@ -91,14 +91,16 @@ class CareerSectionTwo extends StatelessWidget {
             padding: EdgeInsets.only(
                 left: MediaQuery.of(context).size.width / 1.7,
                 top: AppPadding.p470),
-            child: Row(
-              children: [
-                Image.network(
-                  'images/inverted_end_white.png',
-                  height: AppSize.s200,
-                  width: MediaQuery.of(context).size.width / 3,
-                ),
-              ],
+            child: Expanded(
+              child: Row(
+                children: [
+                  Image.network(
+                    'images/inverted_end_white.png',
+                    height: AppSize.s200,
+                    width: MediaQuery.of(context).size.width / 3,
+                  ),
+                ],
+              ),
             ),
           ),
         ]));

@@ -88,7 +88,7 @@ class MobileFeatureSectionTwo extends StatelessWidget {
           /// Comma 2
           Padding(
             padding: const EdgeInsets.only(
-                right: AppPadding.p70, top: AppPadding.p190),
+                right: AppPadding.p100, top: AppPadding.p170),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

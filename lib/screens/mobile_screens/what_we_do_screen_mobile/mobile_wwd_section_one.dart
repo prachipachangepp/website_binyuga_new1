@@ -23,7 +23,7 @@ class MobileWWDSectionOne extends StatelessWidget {
             child: Image.asset(
               'images/what_we_do_home.png',
               fit: BoxFit.fill,
-              height: 300,
+              height: 295,
               width: MediaQuery.of(context).size.width,
             ),
           ),
@@ -51,7 +51,7 @@ class MobileWWDSectionOne extends StatelessWidget {
           ),
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p70, left: AppPadding.p15),
+            padding: const EdgeInsets.only(top: AppPadding.p75, left: AppPadding.p15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -61,7 +61,7 @@ class MobileWWDSectionOne extends StatelessWidget {
                       FontSize.s20, FontWeightManager.bold, ColorManager.white),
                 ),
                 const SizedBox(
-                  height: AppSize.s20,
+                  height: AppSize.s30,
                 ),
                 Text(
                   AppString.homePageText2,
@@ -97,11 +97,11 @@ class MobileWWDSectionOne extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 left: MediaQuery.of(context).size.width / 2.45,
-                top: 100),
+                top: 80),
             child: Image.asset(
               'images/digital_innovation.png',
-              width: MediaQuery.of(context).size.width/1.8,
-              height: 400,
+              width: MediaQuery.of(context).size.width/1.5,
+              height: 500,
             ),
           ),
         ],
