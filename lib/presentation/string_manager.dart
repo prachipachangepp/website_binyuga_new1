@@ -207,7 +207,7 @@ class MobileAppString {
   static const String mobileunionTxt3= 'In addition to our primary endeavors, we '
   '\nhold a steadfast dedication to cultivating \n'
   'and instructing up-and-coming, innovative '
-  '\ntalent within the industry.' ;
+  '\ntalent within the industry.';
 
 
   /// Mobile WhatWeDoScreenPage
