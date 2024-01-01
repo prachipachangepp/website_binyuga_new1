@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../constant_screens/mobile_constant/app_filled_button.dart';
 import '../../constant_screens/mobile_constant/my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
@@ -71,24 +72,23 @@ class MobileWWDSectionOne extends StatelessWidget {
                 const SizedBox(
                   height: AppSize.s10,
                 ),
-                Padding(
-                  padding:  EdgeInsets.only(top: MediaQuery.of(context).size.height /50),
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const HomePage()),
-                      );
-                    },
-                    child: Text(
-                      AppString.letsTalk,
-                      style: AllScreensConstant.customTextStyle(
-                          FontSize.s15,
-                          FontWeightManager.medium,
-                          ColorManager.black),
-                    ),
+                AppFilledButton(
+                  onClick: (){ Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HomePage()),
+                  );},
+                  text: AppString.letsTalk,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 5,
+                    horizontal: 10,
                   ),
-                ),
+                  color: ColorManager.white,
+                  textStyle: TextStyle(
+                      fontWeight: FontWeightManager.semiBold,
+                      fontSize: FontSize.s13,
+                      letterSpacing: -0.011,
+                      color: ColorManager.black),),
               ],
             ),
           ),

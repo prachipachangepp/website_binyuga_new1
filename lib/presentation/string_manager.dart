@@ -201,3 +201,4 @@ class AppString {
       '\nto assist you in crafting your path towards'
       '\n success.';
 }
+

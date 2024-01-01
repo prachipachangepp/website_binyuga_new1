@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website_binyuga_new1/presentation/value_manager.dart';
+import '../../constant_screens/mobile_constant/app_filled_button.dart';
 import '../../constant_screens/mobile_constant/my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
@@ -79,27 +80,23 @@ class MobileCareerSectionOne extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    MaterialButton(
-                      color: ColorManager.white,
-                      shape: const RoundedRectangleBorder(
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(30.0))),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const HomePage()),
-                        );
-                      },
-                      child: Padding(
-                        padding:
-                            const EdgeInsets.symmetric(vertical: 8, horizontal: 1),
-                        child: Text(
-                          AppString.applyTxt,
-                          style: RButtonTheme.roundedButtonTextStyle,
-                        ),
+                    AppFilledButton(
+                      onClick: (){ Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()),
+                      );},
+                      text: AppString.applyTxt,
+                      padding: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 20,
                       ),
-                    ),
+                      color: ColorManager.white,
+                      textStyle: TextStyle(
+                          fontWeight: FontWeightManager.semiBold,
+                          fontSize: FontSize.s13,
+                          letterSpacing: -0.011,
+                          color: ColorManager.black),),
                   ],
                 ),
               ],

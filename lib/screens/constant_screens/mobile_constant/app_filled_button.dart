@@ -44,7 +44,7 @@ class _AppFilledButtonState extends State<AppFilledButton> {
           setState(() {
             isLoading = true;
           });
-          Future.delayed(Duration(seconds: 3), () {
+          Future.delayed(Duration(seconds: 1), () {
             widget.onClick!();
             setState(() {
               isLoading = false;

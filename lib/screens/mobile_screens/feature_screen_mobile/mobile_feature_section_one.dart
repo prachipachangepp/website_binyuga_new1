@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../constant_screens/mobile_constant/app_filled_button.dart';
 import '../../constant_screens/mobile_constant/my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
@@ -89,24 +90,23 @@ class MobileFeatureSectionOne extends StatelessWidget {
                 ///button
                 Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20.0),
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: ColorManager.white,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20))),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const HomePage()),
-                          );
-                        },
-                        child: Text(AppString.readTxt,
-                            style: RButtonTheme.roundedButtonTextStyle),
+                    AppFilledButton(
+                      onClick: (){ Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()),
+                      );},
+                      text: AppString.readTxt,
+                      padding: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 20,
                       ),
-                    ),
+                      color: ColorManager.white,
+                      textStyle: TextStyle(
+                          fontWeight: FontWeightManager.semiBold,
+                          fontSize: FontSize.s13,
+                          letterSpacing: -0.011,
+                          color: ColorManager.black),),
                   ],
                 ),
               ],
