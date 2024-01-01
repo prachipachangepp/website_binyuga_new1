@@ -8,7 +8,7 @@ class HomeScreen {
   static TextStyle sidebarTextStyle = GoogleFonts.inter(
       //textStyle: TextStyle(
       fontWeight: FontWeightManager.medium,
-      decoration:TextDecoration.none,
+      decoration: TextDecoration.none,
       fontSize: FontSize.s8,
       letterSpacing: -0.011,
       color: ColorManager.white
@@ -23,8 +23,7 @@ class RButtonTheme {
       fontWeight: FontWeightManager.semiBold,
       fontSize: FontSize.s15,
       letterSpacing: -0.011,
-      color: ColorManager.black
-  );
+      color: ColorManager.black);
 }
 
 ///changing elements
@@ -34,7 +33,7 @@ class AllScreensConstant {
     return TextStyle(
       fontSize: fontSize,
       fontFamily: FontConstants.fontFamily1,
-      decoration:TextDecoration.none,
+      decoration: TextDecoration.none,
       fontWeight: fontWeight,
       color: color,
     );
@@ -44,7 +43,7 @@ class AllScreensConstant {
 /// last DescriptionScreen
 class LastDescriptionScreen {
   static double getHeadingFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width /40;
+    return MediaQuery.of(context).size.width / 40;
   }
 
   static TextStyle rowTextStyle(BuildContext context) {
@@ -59,12 +58,12 @@ class LastDescriptionScreen {
 
 class LastDescriptionScreenHeadMobile {
   static double getHeadingFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width /30;
+    return MediaQuery.of(context).size.width / 30;
   }
 
   static TextStyle rowTextStyle(BuildContext context) {
     return GoogleFonts.inter(
-      //textStyle: TextStyle(
+        //textStyle: TextStyle(
         fontWeight: FontWeightManager.extraBold,
         fontSize: getHeadingFontSize(context),
         letterSpacing: -0.011,
@@ -74,7 +73,7 @@ class LastDescriptionScreenHeadMobile {
 
 class LastColumnScreen {
   static double getFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width /60;
+    return MediaQuery.of(context).size.width / 60;
   }
 
   static TextStyle columnTextStyle(BuildContext context) {
@@ -86,10 +85,11 @@ class LastColumnScreen {
     );
   }
 }
+
 ///mobile
 class LastColumnScreenMobile {
   static double getFontSize(BuildContext context) {
-    return MediaQuery.of(context).size.width /60;
+    return MediaQuery.of(context).size.width / 60;
   }
 
   static TextStyle columnTextStyle(BuildContext context) {
@@ -151,6 +151,7 @@ class UnionTxtScreen2 {
   static double getNewFont2Size(BuildContext context) {
     return MediaQuery.of(context).size.width / 42;
   }
+
   static TextStyle union2TextStyle(BuildContext context) {
     return GoogleFonts.inter(
         //textStyle: TextStyle(
@@ -183,140 +184,179 @@ class TeamMemberConstant {
       //)
       );
 }
+
 /// Bottom NavBar
 
 class BottomBarConstant {
-  static TextStyle emailTextStyle= GoogleFonts.inter(
-  //textStyle: TextStyle(
-color: ColorManager.white,
-fontSize: 18);
+  static TextStyle emailTextStyle = GoogleFonts.inter(
+      //textStyle: TextStyle(
+      color: ColorManager.white,
+      fontSize: 18);
 }
+
 /// Career page binyuga
 class CareerPageConstant {
-
-static double getNewFontSizeCareer(BuildContext context) {
-return MediaQuery.of(context).size.width / 27;
-}
-  static TextStyle careerTextStyle (BuildContext context){
-    return GoogleFonts.inter(
-      fontWeight: FontWeightManager.medium,
-      fontSize: getNewFontSizeCareer(context),
-      decoration:TextDecoration.none,
-      color: ColorManager.white);
-  }
-}
-
-class CareerAboutTxtConstant {
-
   static double getNewFontSizeCareer(BuildContext context) {
-    return MediaQuery.of(context).size.width / 8;
+    return MediaQuery.of(context).size.width / 27;
   }
-  static TextStyle careerAboutTxtStyle (BuildContext context){
+
+  static TextStyle careerTextStyle(BuildContext context) {
     return GoogleFonts.inter(
-        fontWeight: FontWeightManager.bold,
+        fontWeight: FontWeightManager.medium,
         fontSize: getNewFontSizeCareer(context),
-        decoration:TextDecoration.none,
+        decoration: TextDecoration.none,
         color: ColorManager.white);
   }
 }
 
-class  CareerSculptTextConstant  {
+class CareerAboutTxtConstant {
+  static double getNewFontSizeCareer(BuildContext context) {
+    return MediaQuery.of(context).size.width / 8;
+  }
 
+  static TextStyle careerAboutTxtStyle(BuildContext context) {
+    return GoogleFonts.inter(
+        fontWeight: FontWeightManager.bold,
+        fontSize: getNewFontSizeCareer(context),
+        decoration: TextDecoration.none,
+        color: ColorManager.white);
+  }
+}
+
+class CareerSculptTextConstant {
   static double getNewFontSizeCareer(BuildContext context) {
     return MediaQuery.of(context).size.width / 17;
   }
-  static TextStyle sculptTextStyle (BuildContext context){
+
+  static TextStyle sculptTextStyle(BuildContext context) {
     return GoogleFonts.inter(
-        fontWeight: FontWeightManager.extraBold,
-        fontSize: getNewFontSizeCareer(context),
-        decoration:TextDecoration.none,
-        color: ColorManager.darkBlue1,);
+      fontWeight: FontWeightManager.extraBold,
+      fontSize: getNewFontSizeCareer(context),
+      decoration: TextDecoration.none,
+      color: ColorManager.darkBlue1,
+    );
   }
 }
-class   CareerLongTxtConstant {
 
+class CareerLongTxtConstant {
   static double getNewFontSizeCareer(BuildContext context) {
     return MediaQuery.of(context).size.width / 30;
   }
-  static TextStyle  careerlongTextStyle(BuildContext context){
+
+  static TextStyle careerlongTextStyle(BuildContext context) {
     return GoogleFonts.inter(
       fontWeight: FontWeightManager.semiBold,
       fontSize: getNewFontSizeCareer(context),
-      decoration:TextDecoration.none,
-      letterSpacing:-0.011,
-      color: ColorManager.white,);
+      decoration: TextDecoration.none,
+      letterSpacing: -0.011,
+      color: ColorManager.white,
+    );
   }
 }
-class   CareerWhyTxtConstant {
 
+class CareerWhyTxtConstant {
   static double getNewFontSizeCareer(BuildContext context) {
     return MediaQuery.of(context).size.width / 15;
   }
-  static TextStyle  careerwhyTextStyle(BuildContext context){
+
+  static TextStyle careerwhyTextStyle(BuildContext context) {
     return GoogleFonts.inter(
       fontWeight: FontWeightManager.bold,
       fontSize: getNewFontSizeCareer(context),
-      decoration:TextDecoration.none,
-      color: ColorManager.white,);
+      decoration: TextDecoration.none,
+      color: ColorManager.white,
+    );
   }
 }
-class   CareerLoremTxtConstant {
 
+class CareerLoremTxtConstant {
   static double getNewFontSizeCareer(BuildContext context) {
     return MediaQuery.of(context).size.width / 45;
   }
-  static TextStyle  careerloremTextStyle(BuildContext context){
+
+  static TextStyle careerloremTextStyle(BuildContext context) {
     return GoogleFonts.inter(
       fontWeight: FontWeightManager.medium,
       fontSize: getNewFontSizeCareer(context),
-      decoration:TextDecoration.none,
-      color: ColorManager.white,);
+      decoration: TextDecoration.none,
+      color: ColorManager.white,
+    );
   }
 }
-
 
 /// WhatWeDo SubHome Page
 class WhatWeDoSubPageConstant {
   static double getNewFontSizeWWD(BuildContext context) {
     return MediaQuery.of(context).size.width / 15;
   }
-  static TextStyle subHomeTextStyle(BuildContext context){
+
+  static TextStyle subHomeTextStyle(BuildContext context) {
     return GoogleFonts.inter(
         fontSize: getNewFontSizeWWD(context),
         fontWeight: FontWeightManager.extraBold,
-        decoration:TextDecoration.none,
-        color: ColorManager.darkBlue1
-    );
+        decoration: TextDecoration.none,
+        color: ColorManager.darkBlue1);
   }
 }
 
 /// WhatWeDo ExploreScreen
 class WhatWeDoExploreConstant {
   static TextStyle subHomeTextStyle = GoogleFonts.inter(
-    backgroundColor:ColorManager.skyBlue1,
-    fontSize:  FontSize.s20,
+    backgroundColor: ColorManager.skyBlue1,
+    fontSize: FontSize.s20,
     color: ColorManager.white,
     fontWeight: FontWeightManager.extraBold,
   );
-
 }
+
+/// Mobile WWDExploreScreen
+class MobileExploreConstant {
+  static double getNewFontSizeCareer(BuildContext context) {
+    return MediaQuery.of(context).size.width / 30;
+  }
+
+  static TextStyle mobilesubHomeTextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+      fontWeight: FontWeightManager.bold,
+      fontSize: getNewFontSizeCareer(context),
+      decoration: TextDecoration.none,
+      color: ColorManager.white,
+    );
+  }
+}
+
+class MobileWWDExploreConstant {
+  static double getNewFontSizeCareer(BuildContext context) {
+    return MediaQuery.of(context).size.width / 40;
+  }
+
+  static TextStyle mobileHomeTextStyle(BuildContext context) {
+    return GoogleFonts.inter(
+      fontWeight: FontWeightManager.bold,
+      fontSize: getNewFontSizeCareer(context),
+      decoration: TextDecoration.none,
+      color: ColorManager.white,
+    );
+  }
+}
+
 ///FeatureSubHome Page
 class FeatureSubHomeConstant {
   static TextStyle featuresubHomeTextStyle = GoogleFonts.inter(
       fontSize: FontSize.s46,
       fontWeight: FontWeightManager.extraBold,
-      decoration:TextDecoration.none,
+      decoration: TextDecoration.none,
       color: ColorManager.darkBlue1);
 }
+
 /// FeatureSubHome Page LongText
 class FeatureLongTxtConstant {
   static TextStyle featurelongTextStyle = GoogleFonts.inter(
       fontSize: FontSize.s25,
       fontWeight: FontWeightManager.semiBold,
-      decoration:TextDecoration.none,
+      decoration: TextDecoration.none,
       color: ColorManager.white);
 }
-
 
 class AppConstants {
   // Image paths
@@ -326,8 +366,6 @@ class AppConstants {
   static const String imagePath4 = 'images/wd.png';
   static const String imagePath5 = 'images/cm.png';
   static const String imagePath6 = 'images/ad.png';
-
-
 
   // Texts
   static const String buttonText1 = 'Software Development';

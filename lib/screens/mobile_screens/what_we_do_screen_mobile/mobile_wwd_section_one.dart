@@ -13,17 +13,17 @@ class MobileWWDSectionOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height:300,
+      height:AppSize.s300,
       color: ColorManager.white,
       child: Stack(
         children: [
           /// Background Image
           Padding(
-            padding: const EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.only(top:AppPadding.p10),
             child: Image.asset(
               'images/what_we_do_home.png',
               fit: BoxFit.fill,
-              height: 295,
+              height:AppSize.s295,
               width: MediaQuery.of(context).size.width,
             ),
           ),
@@ -31,11 +31,14 @@ class MobileWWDSectionOne extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left:15,top:20),
+                padding: const EdgeInsets.only(left:15,top:AppPadding.p20),
                 child: GestureDetector(
                   onTap: () {
-                        showDialog(context: context,builder: (BuildContext context)=>
-                        Row(mainAxisAlignment: MainAxisAlignment.start, children: [MyDrawer()]));
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  MyDrawer()),
+                    );
                   },
                   child: Icon(
                     Icons.dehaze_rounded,
@@ -61,9 +64,9 @@ class MobileWWDSectionOne extends StatelessWidget {
                   height: AppSize.s30,
                 ),
                 Text(
-                  AppString.homePageText2,
+                  MobileAppString.mobilewwdSecondtxt,
                   style: AllScreensConstant.customTextStyle(
-                      7,
+                      8,
                       FontWeightManager.medium, ColorManager.lightBlue),
                 ),
                 const SizedBox(
@@ -81,11 +84,8 @@ class MobileWWDSectionOne extends StatelessWidget {
                     horizontal: 10,
                   ),
                   color: ColorManager.white,
-                  textStyle: TextStyle(
-                      fontWeight: FontWeightManager.semiBold,
-                      fontSize: FontSize.s13,
-                      letterSpacing: -0.011,
-                      color: ColorManager.black),),
+                  textStyle: AllScreensConstant.customTextStyle(FontSize.s13,
+                      FontWeightManager.bold, ColorManager.black),),
               ],
             ),
           ),
@@ -94,11 +94,11 @@ class MobileWWDSectionOne extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 left: MediaQuery.of(context).size.width / 2.45,
-                top: 80),
+                top:AppPadding.p80),
             child: Image.asset(
               'images/digital_innovation.png',
               width: MediaQuery.of(context).size.width/1.5,
-              height: 500,
+              height:AppSize.s500,
             ),
           ),
         ],

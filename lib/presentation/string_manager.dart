@@ -16,7 +16,6 @@ class AppString {
   static const String whatWeDo = "What we do";
   static const String features = "Features";
   static const String career = "Career";
-  static const String mobileHOmetxt2 = "Whether it's a custom software\nsolution, a user-friendly app, or a\ncaptivating website, wmeet but\nexceed your expectations.";
 
 
   /// About Us screen
@@ -141,7 +140,7 @@ class AppString {
   static const String sculptYour = "Sculpt Your Path to Success";
   static const String moldYour = "Mold Your Dreams\nInto Reality";
   static const String exploreBinyuga = "Explore\nBinyuga.Pvt.Ltd.";
-  static const String weAreDedicated = "We're dedicated to more than just\ntechnology transformation; our goal is\nto bring about meaningful change that\nresonates with our clients and the\ncommunities they impact.";
+
 
   /// WhatWeDoExploreScreen Page
   static const String softwareDev = "Software Development";
@@ -160,12 +159,6 @@ class AppString {
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
       "\n solutions and results.";
-  static const String featureTxtM = "We believe in the power of envisioning,\ncreating,"
-      "nd realizing. It all starts with\na dream, an idea, or "
-      "a vision.\n"
-      "We then roll up our sleeves to build and\nbring  "
-      "that dream to life, translating it\ninto tangible"
-      "solutions and results.";
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
@@ -187,50 +180,86 @@ class AppString {
   static const String binyugaWebsite = 'Binyuga Website';
 
 
-  static const String weSee1 = 'We see every journey to success as a '
-      '\nwork of art, where each decision and '
-      '\neffort shapes the way forward. Our '
-      '\nmission is to help you carve out your '
-      '\nunique route to achievement, providing '
-      '\nthe tools, support, and expertise you need '
-      '\nto achieve your goals. Just as a sculptor '
-      '\nmolds clay into a masterpiece, we are here '
-      '\nto assist you in crafting your path towards'
-      '\n success.';
 }
 
 
-
-
-
+/// Mobile String Constants
 
 class MobileAppString {
   /// Home screen
-  static const String contactUs = "Whether it's a custom software "
-      "\nsolution, a user-friendly app, or a "
-      "\ncaptivating website, we meet but "
-      "\nexceed your expectations.";
+  static const String mobileHomeTxt2 = "Whether it's a custom software "
+  "\nsolution, a user-friendly app, or a "
+  "\ncaptivating website, we meet but "
+  "\nexceed your expectations.";
   static const String mobileExplore = "Explore";
 
+
   static const String mobileunionTxt1 = "We adopt a fresh and distinctive "
-      "\napproach for every project, \ninvesting time to deeply.";
+  "\napproach for every project, \ninvesting time to deeply.";
 
   static const String mobileunionTxt2 =
-      'Continual learning is at our core, '
-      '\nallowing us to embrace new '
-      '\ntrends and technologies and '
-      '\nincorporate them into our '
-      '\nprojects.';
+  'Continual learning is at our core, '
+  '\nallowing us to embrace new '
+  '\ntrends and technologies and '
+  '\nincorporate them into our '
+  '\nprojects.';
 
-  static const String  mobileunionTxt3= 'In addition to our primary endeavors, we '
-      '\nhold a steadfast dedication to cultivating \n'
-      'and instructing up-and-coming, innovative '
-      '\ntalent within the industry.' ;
-
-
+  static const String mobileunionTxt3= 'In addition to our primary endeavors, we '
+  '\nhold a steadfast dedication to cultivating \n'
+  'and instructing up-and-coming, innovative '
+  '\ntalent within the industry.' ;
 
 
+  /// Mobile WhatWeDoScreenPage
 
+  static const String mobilewwdSecondtxt = 'Our company harnesses cutting-edge '
+  '\ntechnologies and strategic IT solutions \n'
+  'to empower business. We believe that '
+  '\ninnovation and technology are the '
+  '\ndriving forces behind success in the '
+  '\ndigital age. ';
+
+  static const String weAreDedicated = "We're dedicated to more than just"
+  "\ntechnology transformation; our goal is"
+  "\nto bring about meaningful change that"
+  "\nresonates with our clients and the"
+  "\ncommunities they impact.";
+
+
+
+
+/// MobileCareerPageScreen
+static const String weSee1 = 'We see every journey to success as a '
+'\nwork of art, where each decision and '
+  '\neffort shapes the way forward. Our '
+  '\nmission is to help you carve out your '
+  '\nunique route to achievement, providing '
+  '\nthe tools, support, and expertise you need '
+  '\nto achieve your goals. Just as a sculptor '
+  '\nmolds clay into a masterpiece, we are here '
+  '\nto assist you in crafting your path towards'
+  '\n success.';
+
+  static const String mobileCareerTxt1 = 'Lorem ipsum dolor sit amet '
+  '\nconsectetur adipiscing elit, '
+  '\nmollis quam proin molestie a '
+  '\nenim, arcu potenti rutrum risus '
+  '\ntorquent vel. Ut facilisis '
+  '\ncondimentum vitae nam curae '
+  '\nnec curabitur, gravida convallis'
+   '\nnatoque lobortis sagittis'
+  '\nscelerisque malesuada, cubilia '
+  '\nullamcorper tempor fermentum '
+      '\ntellus odio.';
+
+
+  /// MobileFeatureScreen
+  static const String featureTxtM = "We believe in the power of envisioning,\ncreating,"
+      "nd realizing. It all starts with\na dream, an idea, or "
+      "a vision.\n"
+      "We then roll up our sleeves to build and\nbring "
+      "that dream to life, translating it\ninto tangible"
+      "solutions and results.";
 
 
 
