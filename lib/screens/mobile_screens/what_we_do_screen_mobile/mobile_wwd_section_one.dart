@@ -34,11 +34,8 @@ class MobileWWDSectionOne extends StatelessWidget {
                 padding: const EdgeInsets.only(left:15,top:AppPadding.p20),
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>  MyDrawer()),
-                    );
+                    showDialog(context: context,builder: (BuildContext context)=>
+                        Row(mainAxisAlignment: MainAxisAlignment.start, children: [MyDrawer()]));
                   },
                   child: Icon(
                     Icons.dehaze_rounded,
