@@ -15,6 +15,7 @@ import '../../website_screens/career_home.dart';
 import '../../website_screens/features_home.dart';
 import '../../website_screens/landing_page_home.dart';
 import '../career_page_mobile.dart';
+import '../feature_page_mobile.dart';
 
 class MobileHomeSectionOne extends StatefulWidget {
   const MobileHomeSectionOne({super.key});
@@ -24,9 +25,6 @@ class MobileHomeSectionOne extends StatefulWidget {
 }
 
 class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
-  bool _lights = false;
-  bool _isSearchBarVisible = false;
-  GlobalKey _searchKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -56,11 +54,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             padding: const EdgeInsets.only(top: AppPadding.p70,left: 10),
             child: GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) =>  MyDrawer()),
-                );
+                showDialog(context: context,builder: (BuildContext context)=>
+                    Row(mainAxisAlignment: MainAxisAlignment.start, children: [MyDrawer()]));
               },
               child: Padding(
                 padding: const EdgeInsets.only(top:AppPadding.p10),
@@ -152,7 +147,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const CareerHomeScreen()),
+                              builder: (context) => const MobileCareerHomeScreen()),
                         );
                       },
                       child: Icon(
@@ -187,7 +182,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const FeaturesHomeScreen()),
+                              builder: (context) => const MobileFeaturesHomeScreen()),
                         );
                       },
                       child: Icon(
