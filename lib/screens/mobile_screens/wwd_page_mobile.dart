@@ -20,10 +20,6 @@ class _MobileWhatWeDoHomeScreenState extends State<MobileWhatWeDoHomeScreen> {
   Widget build(BuildContext context) {
     Size screenWidth;
     return Scaffold(
-        appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(kToolbarHeight),
-          child: ResponsiveAppBar(),
-        ),
         body: LayoutBuilder(builder: (context, constraints) {
           screenWidth = MediaQuery.of(context).size;
           List<Widget> body = [
