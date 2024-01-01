@@ -37,7 +37,7 @@ class MobileHomeSectionThree extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left:20),
                   child: Text(
-                    AppString.unionTxt1,
+                    MobileAppString.mobileunionTxt1,
                     style: TextStyle(
                       // fontWeight: FontWeightManager.medium,
                         fontSize: FontSize.s7,
@@ -71,7 +71,7 @@ class MobileHomeSectionThree extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left:10,top:AppPadding.p230),
                 child: Text(
-                  AppString.unionTxt3,
+                  MobileAppString.mobileunionTxt3,
                   style: TextStyle(
                      // fontWeight: FontWeightManager.medium,
                       fontSize: 7,

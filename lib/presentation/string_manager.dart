@@ -89,7 +89,10 @@ class AppString {
 
   static const String unionTxt3 =
       "In addition to our primary endeavors, we hold\na steadfast dedication to cultivating and\ninstructing up-and-coming, innovative talent\nwithin the industry.\n"
-      '\nThis is achieved through a multifaceted\napproach that encompasses organizing\ndiverse courses and internships, allowing\nnewcomers to gain hands-on experience.';
+      '\nThis is achieved through a multifaceted'
+      '\napproach that encompasses organizing'
+      '\ndiverse courses and internships, allowing'
+      '\nnewcomers to gain hands-on experience.';
 
   ///Bottom Navbar screen
   static const String email = "www.career@binyuga.com";
@@ -202,19 +205,23 @@ class MobileAppString {
 
 
   static const String mobileunionTxt1 = "We adopt a fresh and distinctive "
-  "\napproach for every project, \ninvesting time to deeply.";
+  "\napproach for every project, \ninvesting time to deeply."
 
-  static const String mobileunionTxt2 =
-  'Continual learning is at our core, '
+  '\nContinual learning is at our core, '
   '\nallowing us to embrace new '
   '\ntrends and technologies and '
   '\nincorporate them into our '
   '\nprojects.';
 
   static const String mobileunionTxt3= 'In addition to our primary endeavors, we '
-  '\nhold a steadfast dedication to cultivating \n'
-  'and instructing up-and-coming, innovative '
-  '\ntalent within the industry.' ;
+  '\nhold a steadfast dedication to cultivating '
+  '\nand instructing up-and-coming, innovative '
+  '\ntalent within the industry.'
+      '\nThis is achieved through a multifaceted'
+      '\napproach that encompasses organizing'
+      '\ndiverse courses and internships, allowing'
+      '\nnewcomers to gain hands-on experience.';
+
 
 
   /// Mobile WhatWeDoScreenPage
