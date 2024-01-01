@@ -46,7 +46,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
           ///rectangle
           Padding(
             padding: EdgeInsets.only(
-              bottom: AppPadding.p40,
+              bottom: AppPadding.p20,
               left: 17,
             ),
             child: Image.asset(
@@ -62,13 +62,13 @@ class MobileCareerSectionTwo extends StatelessWidget {
             child: Image.asset(
               'images/inverted_start_white.png',
               height: AppSize.s200,
-              width: MediaQuery.of(context).size.width / 20,
+              width: MediaQuery.of(context).size.width / 23,
             ),
           ),
           Padding(
             padding: EdgeInsets.only(left: 60, top: AppPadding.p170),
             child: Text(
-              AppString.weSee,
+              AppString.weSee1,
               style: CareerLongTxtConstant.careerlongTextStyle(context),
             ),
           ),
@@ -76,13 +76,13 @@ class MobileCareerSectionTwo extends StatelessWidget {
           ///Inverted Comma End
           Padding(
             padding: const EdgeInsets.only(
-              left: 230,
-              top: AppPadding.p190,
+              left: 130,
+              top: 240,
             ),
             child: Image.asset(
               'images/inverted_end_white.png',
               height: AppSize.s200,
-              width: MediaQuery.of(context).size.width / 20,
+              width: MediaQuery.of(context).size.width / 23,
             ),
           ),
         ]));
