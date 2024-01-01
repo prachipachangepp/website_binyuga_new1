@@ -85,7 +85,7 @@ class _MobileWWDSectionThreeState extends State<MobileWWDSectionThree> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      height: AppSize.s780,
+      height: AppSize.s700,
       child: Stack(
         children: [
           Column(
