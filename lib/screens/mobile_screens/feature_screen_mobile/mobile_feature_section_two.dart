@@ -77,7 +77,7 @@ class MobileFeatureSectionTwo extends StatelessWidget {
             padding: EdgeInsets.only(
                 left: MediaQuery.of(context).size.width / 5,
                 top: AppPadding.p190),
-            child: Text(MobileAppString.featureTxtM,
+            child: Text(AppString.featureTxtM,
                 style: AllScreensConstant.customTextStyle(
                   MediaQuery.of(context).size.width / 30,
                   FontWeightManager.medium,

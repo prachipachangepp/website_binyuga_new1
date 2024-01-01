@@ -162,12 +162,7 @@ class AppString {
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
       "\n solutions and results.";
-  static const String featureTxtM = "We believe in the power of envisioning,\ncreating,"
-      "nd realizing. It all starts with\na dream, an idea, or "
-      "a vision.\n"
-      "We then roll up our sleeves to build and\nbring  "
-      "that dream to life, translating it\ninto tangible"
-      "solutions and results.";
+
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
@@ -237,6 +232,13 @@ class MobileAppString {
   "\nto bring about meaningful change that"
   "\nresonates with our clients and the"
   "\ncommunities they impact.";
+
+  static const String featureTxtM = "We believe in the power of envisioning,\ncreating,"
+      "nd realizing. It all starts with\na dream, an idea, or "
+      "a vision.\n"
+      "We then roll up our sleeves to build and\nbring "
+      "that dream to life, translating it\ninto tangible"
+      "solutions and results.";
 
 
 
