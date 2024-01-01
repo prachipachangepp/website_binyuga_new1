@@ -15,6 +15,7 @@ import '../../website_screens/career_home.dart';
 import '../../website_screens/features_home.dart';
 import '../../website_screens/landing_page_home.dart';
 import '../career_page_mobile.dart';
+import '../feature_page_mobile.dart';
 
 class MobileHomeSectionOne extends StatefulWidget {
   const MobileHomeSectionOne({super.key});
@@ -145,7 +146,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const CareerHomeScreen()),
+                              builder: (context) => const MobileCareerHomeScreen()),
                         );
                       },
                       child: Icon(
@@ -180,7 +181,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const FeaturesHomeScreen()),
+                              builder: (context) => const MobileFeaturesHomeScreen()),
                         );
                       },
                       child: Icon(
