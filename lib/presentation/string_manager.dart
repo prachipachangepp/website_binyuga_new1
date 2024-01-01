@@ -198,3 +198,40 @@ class AppString {
       '\nto assist you in crafting your path towards'
       '\n success.';
 }
+
+
+
+
+
+
+class MobileAppString {
+  /// Home screen
+  static const String contactUs = "Whether it's a custom software "
+      "\nsolution, a user-friendly app, or a "
+      "\ncaptivating website, we meet but "
+      "\nexceed your expectations.";
+  static const String mobileExplore = "Explore";
+
+  static const String mobileunionTxt1 = "We adopt a fresh and distinctive "
+      "\napproach for every project, \ninvesting time to deeply.";
+
+  static const String mobileunionTxt2 =
+      'Continual learning is at our core, '
+      '\nallowing us to embrace new '
+      '\ntrends and technologies and '
+      '\nincorporate them into our '
+      '\nprojects.';
+
+  static const String  mobileunionTxt3= 'In addition to our primary endeavors, we '
+      '\nhold a steadfast dedication to cultivating \n'
+      'and instructing up-and-coming, innovative '
+      '\ntalent within the industry.' ;
+
+
+
+
+
+
+
+
+}
