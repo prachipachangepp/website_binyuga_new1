@@ -1,11 +1,16 @@
 ///start page code
+
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/app_filled_button.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/my_drawer.dart';
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
+
 import '../../website_screens/career_home.dart';
 import '../../website_screens/features_home.dart';
 import '../../website_screens/landing_page_home.dart';
@@ -18,6 +23,9 @@ class MobileHomeSectionOne extends StatefulWidget {
 }
 
 class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
+  bool _lights = false;
+  bool _isSearchBarVisible = false;
+  GlobalKey _searchKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -91,34 +99,23 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 ),
 
                 ///button
-                MaterialButton(
-                  color: ColorManager.white,
-                  shape: const RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.all(Radius.circular(30.0))),
-                  onPressed: () {
-                    Navigator.push(
+                AppFilledButton(
+                    onClick: (){ Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const CareerHomeScreen()),
-                    );
-                  },
-                  child: Padding(
+                    );},
+                    text: AppString.exploreMore,
                     padding: EdgeInsets.symmetric(
-                        // vertical: AppPadding.p2,
-                        horizontal:
-                            MediaQuery.of(context).size.width / 100),
-                    child: Text(
-                      AppString.exploreMore,
-                      //style: RButtonTheme.roundedButtonTextStyle,
-                      style: TextStyle(
-                          fontWeight: FontWeightManager.semiBold,
-                          fontSize: FontSize.s13,
-                          letterSpacing: -0.011,
-                          color: ColorManager.black),
+                      vertical: 10,
+                      horizontal: 20,
                     ),
-                  ),
-                ),
+                    color: ColorManager.white,
+                    textStyle: TextStyle(
+                        fontWeight: FontWeightManager.semiBold,
+                        fontSize: FontSize.s13,
+                        letterSpacing: -0.011,
+                        color: ColorManager.black),),
               ],
             ),
           ),
