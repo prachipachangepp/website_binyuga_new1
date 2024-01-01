@@ -82,7 +82,6 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 const SizedBox(
                   height: AppSize.s10,
                 ),
-
                 ///hometxt 2
                 Text(MobileAppString.mobileHomeTxt2,
                     textAlign: TextAlign.start,

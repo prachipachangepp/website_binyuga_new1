@@ -89,7 +89,10 @@ class AppString {
 
   static const String unionTxt3 =
       "In addition to our primary endeavors, we hold\na steadfast dedication to cultivating and\ninstructing up-and-coming, innovative talent\nwithin the industry.\n"
-      '\nThis is achieved through a multifaceted\napproach that encompasses organizing\ndiverse courses and internships, allowing\nnewcomers to gain hands-on experience.';
+      '\nThis is achieved through a multifaceted'
+      '\napproach that encompasses organizing'
+      '\ndiverse courses and internships, allowing'
+      '\nnewcomers to gain hands-on experience.';
 
   ///Bottom Navbar screen
   static const String email = "www.career@binyuga.com";
@@ -159,6 +162,12 @@ class AppString {
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
       "\n solutions and results.";
+  static const String featureTxtM = "We believe in the power of envisioning,\ncreating,"
+      "nd realizing. It all starts with\na dream, an idea, or "
+      "a vision.\n"
+      "We then roll up our sleeves to build and\nbring  "
+      "that dream to life, translating it\ninto tangible"
+      "solutions and results.";
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
@@ -183,7 +192,8 @@ class AppString {
 }
 
 
-/// Mobile String Constants
+
+
 
 class MobileAppString {
   /// Home screen
@@ -195,26 +205,29 @@ class MobileAppString {
 
 
   static const String mobileunionTxt1 = "We adopt a fresh and distinctive "
-  "\napproach for every project, \ninvesting time to deeply.";
-
-  static const String mobileunionTxt2 =
-  'Continual learning is at our core, '
+  "\napproach for every project, \ninvesting time to deeply."
+  '\n\nContinual learning is at our core, '
   '\nallowing us to embrace new '
   '\ntrends and technologies and '
   '\nincorporate them into our '
   '\nprojects.';
 
   static const String mobileunionTxt3= 'In addition to our primary endeavors, we '
-  '\nhold a steadfast dedication to cultivating \n'
-  'and instructing up-and-coming, innovative '
-  '\ntalent within the industry.';
+  '\nhold a steadfast dedication to cultivating '
+  '\nand instructing up-and-coming, innovative '
+  '\ntalent within the industry.'
+      '\n\nThis is achieved through a multifaceted'
+      '\napproach that encompasses organizing'
+      '\ndiverse courses and internships, allowing'
+      '\nnewcomers to gain hands-on experience.';
+
 
 
   /// Mobile WhatWeDoScreenPage
 
   static const String mobilewwdSecondtxt = 'Our company harnesses cutting-edge '
-  '\ntechnologies and strategic IT solutions \n'
-  'to empower business. We believe that '
+  '\ntechnologies and strategic IT solutions '
+  '\nto empower business. We believe that '
   '\ninnovation and technology are the '
   '\ndriving forces behind success in the '
   '\ndigital age. ';
@@ -251,16 +264,6 @@ static const String weSee1 = 'We see every journey to success as a '
   '\nscelerisque malesuada, cubilia '
   '\nullamcorper tempor fermentum '
       '\ntellus odio.';
-
-
-  /// MobileFeatureScreen
-  static const String featureTxtM = "We believe in the power of envisioning,\ncreating,"
-      "nd realizing. It all starts with\na dream, an idea, or "
-      "a vision.\n"
-      "We then roll up our sleeves to build and\nbring "
-      "that dream to life, translating it\ninto tangible"
-      "solutions and results.";
-
 
 
 }
