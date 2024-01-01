@@ -77,7 +77,7 @@ class MobileFeatureSectionTwo extends StatelessWidget {
             padding: EdgeInsets.only(
                 left: MediaQuery.of(context).size.width / 5,
                 top: AppPadding.p190),
-            child: Text(AppString.featureTxtM,
+            child: Text(MobileAppString.featureTxtM,
                 style: AllScreensConstant.customTextStyle(
                   MediaQuery.of(context).size.width / 30,
                   FontWeightManager.medium,
@@ -88,7 +88,7 @@ class MobileFeatureSectionTwo extends StatelessWidget {
           /// Comma 2
           Padding(
             padding: const EdgeInsets.only(
-                right: AppPadding.p100, top: AppPadding.p170),
+                right: AppPadding.p80, top: AppPadding.p190),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

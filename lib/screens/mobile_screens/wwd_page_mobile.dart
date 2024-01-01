@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/color_manager.dart';
+import 'package:website_binyuga_new1/presentation/value_manager.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/bottom_nav_bar_mobile.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/description_page_constant_mobile.dart';
 import 'package:website_binyuga_new1/screens/mobile_screens/what_we_do_screen_mobile/mobile_wwd_section_one.dart';
@@ -8,9 +10,9 @@ import '../constant_screens/website_constant/responsive_app_bar.dart';
 
 class MobileWhatWeDoHomeScreen extends StatefulWidget {
   const MobileWhatWeDoHomeScreen({super.key});
-
   @override
-  State<MobileWhatWeDoHomeScreen> createState() => _MobileWhatWeDoHomeScreenState();
+  State<MobileWhatWeDoHomeScreen> createState() =>
+      _MobileWhatWeDoHomeScreenState();
 }
 
 class _MobileWhatWeDoHomeScreenState extends State<MobileWhatWeDoHomeScreen> {
@@ -34,29 +36,25 @@ class _MobileWhatWeDoHomeScreenState extends State<MobileWhatWeDoHomeScreen> {
                         Expanded(
                             flex: 1,
                             child: Container(
-                              height: 400,
-                                color: Colors.red, child: MobileWWDSectionOne())),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Expanded(
-                            flex: 1, child: Container(child: MobileWWDSectionTwo())),
+                                height: AppSize.s400,
+                                color: ColorManager.white,
+                                child: const MobileWWDSectionOne())),
                       ],
                     ),
                     Row(
                       children: [
                         Expanded(
                             flex: 1,
-                            child: Container(child: MobileWWDSectionThree())),
+                            child:
+                                Container(child: const MobileWWDSectionTwo())),
                       ],
                     ),
                     Row(
                       children: [
                         Expanded(
-                            flex: 2,
-                            child:
-                            Container(child: DescriptionScreenConstantMobile())),
+                            flex: 1,
+                            child: Container(
+                                child: const MobileWWDSectionThree())),
                       ],
                     ),
                     Row(
@@ -64,9 +62,19 @@ class _MobileWhatWeDoHomeScreenState extends State<MobileWhatWeDoHomeScreen> {
                         Expanded(
                             flex: 2,
                             child: Container(
-                                height: 100,
-                                width: MediaQuery.of(context).size.width, color: Colors.white,
-                                child: BottomNavBarScreenMobile())),
+                                child:
+                                    const DescriptionScreenConstantMobile())),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                            flex: 2,
+                            child: Container(
+                                height: AppSize.s100,
+                                width: MediaQuery.of(context).size.width,
+                                color: ColorManager.white,
+                                child: const BottomNavBarScreenMobile())),
                       ],
                     ),
                   ],
@@ -76,7 +84,6 @@ class _MobileWhatWeDoHomeScreenState extends State<MobileWhatWeDoHomeScreen> {
           ];
           return ListView.builder(
               shrinkWrap: true,
-              // controller: _controller,
               itemCount: body.length,
               itemBuilder: (context, index) {
                 return body[index];
