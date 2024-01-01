@@ -121,37 +121,37 @@ class AppString {
       'tellus odio.';
 
   static const String ourTxt = 'OUR EMPLOYEE';
-  static const String nationTxt ='NATIONALITIES';
+  static const String nationTxt = 'NATIONALITIES';
   static const String diverTxt = 'DIVERSITY';
-  static const String devlopTxt ='DEVELOPMENT';
+  static const String devlopTxt = 'DEVELOPMENT';
   static const String applyTxt = 'Apply Now';
 
-   /// WhatWeDoHomeScreen
+  /// WhatWeDoHomeScreen
   static const String homePageText1 = 'Elevating Success with\nInnovative Tech';
-  static const String homePageText2 =  'Our company harnesses cutting-edge\ntechnologies and strategic IT solutions to \nempower business. We believe that\ninnovation and technology are the driving \nforces behind success in the digital age. ';
+  static const String homePageText2 = 'Our company harnesses cutting-edge\ntechnologies and strategic IT solutions to \nempower business. We believe that\ninnovation and technology are the driving \nforces behind success in the digital age. ';
 
 
   /// WhatWeDo SubHomePage
   static const String trustPropelsBuisnessProsperity = "Trust Propels Buisness\nProsperity";
   static const String explore = "Explore";
   static const String binyugaPvtLtd = "Binyuga.Pvt.Ltd";
-  static const String weBelieveIn ="We believe in the power of envisioning, creating, \n"
+  static const String weBelieveIn = "We believe in the power of envisioning, creating, \n"
       "nd realizing. It all starts with a dream, an idea, or "
       "\n a vision. "
       "\n We then roll up our sleeves to build and bring  "
       "\n that dream to life, translating it into tangible"
       "\n solutions and results.";
-  static const String sculptYour ="Sculpt Your Path to Success";
+  static const String sculptYour = "Sculpt Your Path to Success";
   static const String moldYour = "Mold Your Dreams\nInto Reality";
-  static const String exploreBinyuga ="Explore\nBinyuga.Pvt.Ltd.";
-  static const String weAreDedicated ="We're dedicated to more than just\ntechnology transformation; our goal is\nto bring about meaningful change that\nresonates with our clients and the\ncommunities they impact.";
+  static const String exploreBinyuga = "Explore\nBinyuga.Pvt.Ltd.";
+  static const String weAreDedicated = "We're dedicated to more than just\ntechnology transformation; our goal is\nto bring about meaningful change that\nresonates with our clients and the\ncommunities they impact.";
 
   /// WhatWeDoExploreScreen Page
   static const String softwareDev = "Software Development";
   static const String appDev = "Application Development";
   static const String webDev = "Web Development";
-  static const String uiDes= "UI/UX Designing";
-  static const String careerMentor= "Career Monitoring";
+  static const String uiDes = "UI/UX Designing";
+  static const String careerMentor = "Career Monitoring";
   static const String problemSolve = "Problem Solving";
 
   /// FeatureSubHome Page
@@ -172,13 +172,13 @@ class AppString {
 
   /// FeatureStartScrren Page
   static const String readMore = "Read More";
-  static const String  featureScreenText1= "Turning Dreams into Features,and Features\ninto Reality";
-  static const String featureScreenText2 =  'We specialize in crafting customized solutions to meet'
+  static const String featureScreenText1 = "Turning Dreams into Features,and Features\ninto Reality";
+  static const String featureScreenText2 = 'We specialize in crafting customized solutions to meet'
       'your\nunique needs,ensuring that our products align '
       'perfectly\nwith your goals.Our services are designed'
       'offer the best\nvalue for your investment,optimizing'
       'your budget without\ncompromising quality.';
-  static const String  weSee ="We see every journey to success as a work of art, "
+  static const String weSee = "We see every journey to success as a work of art, "
       '\nwhere each decision and effort shapes the way '
       '\nforward. Our mission is to help you carve out your '
       '\nunique route to achievement, providing the tools, '
@@ -186,8 +186,18 @@ class AppString {
       '\ngoals. Just as a sculptor molds clay into a '
       '\nmasterpiece, we are here to assist you in crafting '
       '\n your path towards success. ';
-  static const String  readTxt = 'Read More';
-  static const String  binyugaWebsite = 'Binyuga Website';
+  static const String readTxt = 'Read More';
+  static const String binyugaWebsite = 'Binyuga Website';
 
 
+  static const String weSee1 = 'We see every journey to success as a '
+      '\nwork of art, where each decision and '
+      '\neffort shapes the way forward. Our '
+      '\nmission is to help you carve out your '
+      '\nunique route to achievement, providing '
+      '\nthe tools, support, and expertise you need '
+      '\nto achieve your goals. Just as a sculptor '
+      '\nmolds clay into a masterpiece, we are here '
+      '\nto assist you in crafting your path towards'
+      '\n success.';
 }
