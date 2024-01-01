@@ -7,7 +7,6 @@ import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../website_screens/landing_page_home.dart';
-import '../home_screen_mobile/mobile_home_section_one.dart';
 
 class MobileCareerSectionOne extends StatelessWidget {
   const MobileCareerSectionOne({super.key});

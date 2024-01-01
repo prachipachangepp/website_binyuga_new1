@@ -240,7 +240,7 @@ class CareerSculptTextConstant {
 
 class CareerLongTxtConstant {
   static double getNewFontSizeCareer(BuildContext context) {
-    return MediaQuery.of(context).size.width / 30;
+    return MediaQuery.of(context).size.width / 35;
   }
 
   static TextStyle careerlongTextStyle(BuildContext context) {

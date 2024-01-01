@@ -79,7 +79,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(
               left: AppPadding.p130,
-              top: AppPadding.p240,
+              top: AppPadding.p220,
             ),
             child: Image.asset(
               'images/inverted_end_white.png',

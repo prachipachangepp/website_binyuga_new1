@@ -48,7 +48,7 @@ class MobileHomeSectionFive extends StatelessWidget {
                         )),
                   ],
                 ),
-                const SizedBox(height: AppSize.s30,),
+                const SizedBox(height: 30,),
                 ///txt 2
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

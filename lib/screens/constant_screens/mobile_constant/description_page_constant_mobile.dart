@@ -21,7 +21,7 @@ class _DescriptionScreenConstantMobileState
   Widget build(BuildContext context) {
     return Container(
       height: AppSize.s300,
-      color: ColorManager.nevyBlue,
+      color: ColorManager.purple,
       child: Padding(
         padding: EdgeInsets.only(
           top: AppPadding.p100,

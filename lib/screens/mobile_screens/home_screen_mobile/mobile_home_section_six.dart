@@ -17,7 +17,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSize.s300,
+      height: 300,
       color: ColorManager.nevyBlue,
       child: Center(
         child: Column(
@@ -26,7 +26,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(
-                    top: AppPadding.p20,
+                    top: 20,
                   ),
                   child: Image.asset(
                     "images/binyuga_logo.png",
@@ -38,7 +38,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
                     ? _buildAnimatedSearchBar()
                     : SizedBox.shrink(),
                 Padding(
-                  padding: const EdgeInsets.only(right: AppPadding.p35,top:AppPadding.p20),
+                  padding: const EdgeInsets.only(right: AppPadding.p35,top:20),
                   child: GestureDetector(
                     onTap: () {
                       _toggleSearchBar();
@@ -343,7 +343,7 @@ class _MobileHomeSectionSixState extends State<MobileHomeSectionSix> {
               key: _searchKey,
               duration: Duration(milliseconds: 300),
               width: _isSearchBarVisible ? 180 : 0,
-              height: AppSize.s40,
+              height: 40,
               child: TextField(
                 style: TextStyle(color: Colors.black),
                 cursorColor: Colors.grey,

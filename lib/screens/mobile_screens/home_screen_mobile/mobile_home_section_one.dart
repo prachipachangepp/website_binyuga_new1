@@ -29,7 +29,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      height:AppSize.s420,
+      height: 420,
       child: Stack(
         children: [
           /// Base Image
@@ -42,7 +42,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
           ///boy img
           Padding(
-            padding: EdgeInsets.only(left: 170, top: AppPadding.p120),
+            padding: EdgeInsets.only(left: 170, top: 120),
             child: Image.asset(
               "images/boy.png",
               //  height: MediaQuery.of(context).size.height / 1.3,
@@ -51,14 +51,14 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p70,left: 10),
+            padding: const EdgeInsets.only(top: 70.0,left: 10),
             child: GestureDetector(
               onTap: () {
                 showDialog(context: context,builder: (BuildContext context)=>
                     Row(mainAxisAlignment: MainAxisAlignment.start, children: [MyDrawer()]));
               },
               child: Padding(
-                padding: const EdgeInsets.only(top:AppPadding.p10),
+                padding: const EdgeInsets.only(top:10),
                 child: Icon(
                   Icons.dehaze_rounded,
                   color: ColorManager.white,
@@ -83,7 +83,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                   height: AppSize.s10,
                 ),
                 ///hometxt 2
-                Text(MobileAppString.mobileHomeTxt2,
+                Text(AppString.homesTxt2,
                     textAlign: TextAlign.start,
                     style: AllScreensConstant.customTextStyle(
                         MediaQuery.of(context).size.width /65,
@@ -100,7 +100,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                       MaterialPageRoute(
                           builder: (context) => const MobileCareerHomeScreen()),
                     );},
-                    text: MobileAppString.mobileExplore,
+                    text: "Explore",
                     padding: EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 20,
