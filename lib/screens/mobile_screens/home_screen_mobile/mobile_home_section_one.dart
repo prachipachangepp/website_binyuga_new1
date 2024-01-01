@@ -44,7 +44,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
           ///boy img
           Padding(
-            padding: EdgeInsets.only(left: 170, top: 120),
+            padding: EdgeInsets.only(left: 170, top: AppPadding.p120),
             child: Image.asset(
               "images/boy.png",
               //  height: MediaQuery.of(context).size.height / 1.3,
@@ -89,7 +89,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 ),
 
                 ///hometxt 2
-                Text(AppString.homesTxt2,
+                Text(MobileAppString.mobileHomeTxt2,
                     textAlign: TextAlign.start,
                     style: AllScreensConstant.customTextStyle(
                         MediaQuery.of(context).size.width /65,

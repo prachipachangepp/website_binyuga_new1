@@ -25,7 +25,7 @@ class _MobileHomeSectionFourState extends State<MobileHomeSectionFour> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 40,left:40,right:20),
+              padding: const EdgeInsets.only(top:AppPadding.p40,left:40,right:20),
               child: Text(AppString.aboutUs1,
                 style: GoogleFonts.inter(
                   textStyle: AllScreensConstant.customTextStyle(
@@ -36,7 +36,7 @@ class _MobileHomeSectionFourState extends State<MobileHomeSectionFour> {
               ),
             ),],
         ),
-        const SizedBox(height: 10),
+        const SizedBox(height: AppSize.s10),
         Text(
             AppString.everyYear,
             textAlign: TextAlign.center,
@@ -63,7 +63,7 @@ class _MobileHomeSectionFourState extends State<MobileHomeSectionFour> {
                         fontFamily: FontConstants.fontFamily1,
                         color: ColorManager.skyBlue1),
                   ),
-                  const SizedBox(height: AppPadding.p8,),
+                  const SizedBox(height: AppSize.s8,),
                   Text(
                       AppString.successfullyProject,
                       textAlign: TextAlign.center,
@@ -83,7 +83,7 @@ class _MobileHomeSectionFourState extends State<MobileHomeSectionFour> {
              //   crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 30),
+                    padding: const EdgeInsets.only(top: AppPadding.p30),
                     child: Text(
                       'OO',
                       textAlign: TextAlign.center,

@@ -70,7 +70,7 @@ class MobileCareerSectionTwo extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: AppPadding.p60, top: AppPadding.p170),
             child: Text(
-              AppString.weSee1,
+              MobileAppString.weSee1,
               style: CareerLongTxtConstant.careerlongTextStyle(context),
             ),
           ),

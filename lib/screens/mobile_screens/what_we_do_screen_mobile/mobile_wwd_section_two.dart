@@ -76,7 +76,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
             padding: EdgeInsets.only(
                 left:85,
                 top:255),
-            child: Text(AppString.weAreDedicated,
+            child: Text(MobileAppString.weAreDedicated,
                 style: AllScreensConstant.customTextStyle(
                   MediaQuery.of(context).size.width / 27,
                   FontWeightManager.semiBold,
