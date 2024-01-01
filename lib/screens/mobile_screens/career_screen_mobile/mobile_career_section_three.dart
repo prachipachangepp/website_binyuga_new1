@@ -21,7 +21,7 @@ class MobileCareerSectionThree extends StatelessWidget {
 
         ///txt
         Padding(
-          padding: const EdgeInsets.only(left: 20, top: AppPadding.p40),
+          padding: const EdgeInsets.only(left: AppPadding.p20, top: AppPadding.p40),
           child: Text('Why Binyuga.Pvt.Ltd.',
               style: CareerWhyTxtConstant.careerwhyTextStyle(context)),
         ),
@@ -30,7 +30,7 @@ class MobileCareerSectionThree extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 20),
+              padding: const EdgeInsets.only(left: AppPadding.p20),
               child: Image.asset(
                 "images/woman.png",
                 height: AppSize.s355,

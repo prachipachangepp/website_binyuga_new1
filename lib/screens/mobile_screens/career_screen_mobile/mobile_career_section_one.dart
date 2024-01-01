@@ -25,22 +25,20 @@ class MobileCareerSectionOne extends StatelessWidget {
 
           ///girl image
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p80, left: 160),
+            padding: const EdgeInsets.only(top: AppPadding.p80, left: AppPadding.p160),
             child: Image.asset(
               "images/girl_img.png",
               height: AppSize.s300,
               width: AppSize.s200,
             ),
           ),
-          const SizedBox(
-            height: AppSize.s20,
-          ),
+          const SizedBox(height: AppSize.s20,),
 
           ///Drawer
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 10, top: AppPadding.p20),
+                padding: const EdgeInsets.only(left: AppPadding.p10, top: AppPadding.p20),
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -61,7 +59,7 @@ class MobileCareerSectionOne extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(
               top: AppPadding.p60,
-              left: 40,
+              left: AppPadding.p40,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -75,9 +73,8 @@ class MobileCareerSectionOne extends StatelessWidget {
                             ColorManager.white)),
                   ],
                 ),
-                const SizedBox(
-                  height: AppSize.s35,
-                ),
+                const SizedBox(height: AppSize.s35,),
+                ///btn
                 Row(
                   children: [
                     AppFilledButton(
@@ -87,16 +84,13 @@ class MobileCareerSectionOne extends StatelessWidget {
                             builder: (context) => const HomePage()),
                       );},
                       text: AppString.applyTxt,
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 20,
                       ),
                       color: ColorManager.white,
-                      textStyle: TextStyle(
-                          fontWeight: FontWeightManager.semiBold,
-                          fontSize: FontSize.s13,
-                          letterSpacing: -0.011,
-                          color: ColorManager.black),),
+                      textStyle: AllScreensConstant.customTextStyle(FontSize.s13,
+                          FontWeightManager.bold, ColorManager.black),),
                   ],
                 ),
               ],

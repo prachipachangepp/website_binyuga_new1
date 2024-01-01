@@ -30,7 +30,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 15, top: AppPadding.p20),
+                padding: const EdgeInsets.only(left: AppPadding.p15, top: AppPadding.p20),
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -50,7 +50,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
 
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p80, left: 40),
+            padding: const EdgeInsets.only(top: AppPadding.p80, left: AppPadding.p40),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -66,10 +66,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: AppSize.s10,
-                ),
-
+                const SizedBox(height: AppSize.s10,),
                 ///txt 2
                 Row(
                   children: [
@@ -83,9 +80,7 @@ class MobileFeatureSectionOne extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: AppSize.s30,
-                ),
+                const SizedBox(height: AppSize.s30,),
 
                 ///button
                 Row(
@@ -97,16 +92,13 @@ class MobileFeatureSectionOne extends StatelessWidget {
                             builder: (context) => const HomePage()),
                       );},
                       text: AppString.readTxt,
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 20,
                       ),
                       color: ColorManager.white,
-                      textStyle: TextStyle(
-                          fontWeight: FontWeightManager.semiBold,
-                          fontSize: FontSize.s13,
-                          letterSpacing: -0.011,
-                          color: ColorManager.black),),
+                      textStyle: AllScreensConstant.customTextStyle(FontSize.s13,
+                          FontWeightManager.bold, ColorManager.black),),
                   ],
                 ),
               ],
