@@ -13,7 +13,8 @@ class MobileWWDSectionTwo extends StatelessWidget {
     return Container(
         height: AppSize.s636,
         width: MediaQuery.of(context).size.width,
-        child: Stack(children: [
+        child: Stack(children:
+             [
           ///txt 1
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
