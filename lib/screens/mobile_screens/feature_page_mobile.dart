@@ -10,7 +10,6 @@ import 'feature_screen_mobile/mobile_feature_section_two.dart';
 
 class MobileFeaturesHomeScreen extends StatefulWidget {
   const MobileFeaturesHomeScreen({super.key});
-
   @override
   State<MobileFeaturesHomeScreen> createState() =>
       _MobileFeaturesHomeScreenState();
@@ -64,7 +63,8 @@ class _MobileFeaturesHomeScreenState extends State<MobileFeaturesHomeScreen> {
                         Expanded(
                             flex: 2,
                             child: Container(
-                                child: const DescriptionScreenConstantMobile())),
+                                child:
+                                    const DescriptionScreenConstantMobile())),
                       ],
                     ),
                     Row(

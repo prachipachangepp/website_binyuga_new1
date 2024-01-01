@@ -7,23 +7,22 @@ import '../../../presentation/value_manager.dart';
 
 class MobileWWDSectionTwo extends StatelessWidget {
   const MobileWWDSectionTwo({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Container(
         height: AppSize.s636,
         width: MediaQuery.of(context).size.width,
-        child: Stack(children:
-             [
+        child: Stack(children: [
           ///txt 1
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.only(
-                    top: AppPadding.p70,),
+                  top: AppPadding.p70,
+                ),
                 child: Text(AppString.trustPropelsBuisnessProsperity,
-                       textAlign: TextAlign.center,
+                    textAlign: TextAlign.center,
                     style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
               ),
             ],
@@ -33,7 +32,6 @@ class MobileWWDSectionTwo extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(
               left: AppPadding.p30,
-
             ),
             child: Row(
               children: [
@@ -48,19 +46,17 @@ class MobileWWDSectionTwo extends StatelessWidget {
 
           ///rectangle
           Padding(
-            padding: EdgeInsets.only(
-                left: 55,
-                top: 50),
+            padding: EdgeInsets.only(left: 55, top: AppPadding.p50),
             child: Image.asset(
               'images/rectangle.png',
-              height: 680,
+              height: AppSize.s680,
               width: MediaQuery.of(context).size.width / 1.20,
             ),
           ),
 
           ///inverted comma start
           Padding(
-            padding: const EdgeInsets.only(left:65,top: AppPadding.p150),
+            padding: const EdgeInsets.only(left: 65, top: AppPadding.p150),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -73,9 +69,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(
-                left:85,
-                top:255),
+            padding: EdgeInsets.only(left: 85, top: AppPadding.p255),
             child: Text(MobileAppString.weAreDedicated,
                 style: AllScreensConstant.customTextStyle(
                   MediaQuery.of(context).size.width / 27,
@@ -85,16 +79,15 @@ class MobileWWDSectionTwo extends StatelessWidget {
           ),
 
           Padding(
-            padding: EdgeInsets.only(
-                right: 100,
-                top: 245),
+            padding:
+                EdgeInsets.only(right: AppPadding.p100, top: AppPadding.p245),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Image.asset(
                   'images/inverted_end.png',
                   height: AppSize.s200,
-                  width: MediaQuery.of(context).size.width /20,
+                  width: MediaQuery.of(context).size.width / 20,
                 ),
               ],
             ),
@@ -103,7 +96,8 @@ class MobileWWDSectionTwo extends StatelessWidget {
           ///explore binyuga txt
           Padding(
             padding: const EdgeInsets.only(
-                top: AppPadding.p500,),
+              top: AppPadding.p500,
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -116,7 +110,3 @@ class MobileWWDSectionTwo extends StatelessWidget {
         ]));
   }
 }
-
-
-
-
