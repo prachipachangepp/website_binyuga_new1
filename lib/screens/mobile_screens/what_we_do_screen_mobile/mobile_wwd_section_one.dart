@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../constant_screens/mobile_constant/app_filled_button.dart';
-import '../../constant_screens/mobile_constant/my_drawer.dart';
+
 import '../../../presentation/color_manager.dart';
 import '../../../presentation/font_manager.dart';
 import '../../../presentation/string_manager.dart';
 import '../../../presentation/theme_manager.dart';
 import '../../../presentation/value_manager.dart';
+import '../../constant_screens/mobile_constant/my_drawer.dart';
 import '../../website_screens/landing_page_home.dart';
 
 class MobileWWDSectionOne extends StatelessWidget {
@@ -48,7 +49,7 @@ class MobileWWDSectionOne extends StatelessWidget {
           ),
           /// Content Column
           Padding(
-            padding: const EdgeInsets.only(top: AppPadding.p75, left: AppPadding.p15),
+            padding: const EdgeInsets.only(top: AppPadding.p70, left: AppPadding.p15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

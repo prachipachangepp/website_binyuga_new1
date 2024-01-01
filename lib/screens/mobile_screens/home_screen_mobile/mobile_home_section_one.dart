@@ -15,7 +15,6 @@ import '../../website_screens/career_home.dart';
 import '../../website_screens/features_home.dart';
 import '../../website_screens/landing_page_home.dart';
 import '../career_page_mobile.dart';
-import '../feature_page_mobile.dart';
 
 class MobileHomeSectionOne extends StatefulWidget {
   const MobileHomeSectionOne({super.key});
@@ -25,11 +24,14 @@ class MobileHomeSectionOne extends StatefulWidget {
 }
 
 class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
+  bool _lights = false;
+  bool _isSearchBarVisible = false;
+  GlobalKey _searchKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      height: 420,
+      height:AppSize.s420,
       child: Stack(
         children: [
           /// Base Image
@@ -42,22 +44,26 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
           ///boy img
           Padding(
-            padding: EdgeInsets.only(left: 170, top: 120),
+            padding: EdgeInsets.only(left: 170, top: AppPadding.p120),
             child: Image.asset(
               "images/boy.png",
+              //  height: MediaQuery.of(context).size.height / 1.3,
               height: AppSize.s490,
               width: MediaQuery.of(context).size.width / 2.2,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 70.0,left: 10),
+            padding: const EdgeInsets.only(top: AppPadding.p70,left: 10),
             child: GestureDetector(
               onTap: () {
-                showDialog(context: context,builder: (BuildContext context)=>
-                    Row(mainAxisAlignment: MainAxisAlignment.start, children: [MyDrawer()]));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>  MyDrawer()),
+                );
               },
               child: Padding(
-                padding: const EdgeInsets.only(top:10),
+                padding: const EdgeInsets.only(top:AppPadding.p10),
                 child: Icon(
                   Icons.dehaze_rounded,
                   color: ColorManager.white,
@@ -83,7 +89,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 ),
 
                 ///hometxt 2
-                Text(AppString.homesTxt2,
+                Text(MobileAppString.mobileHomeTxt2,
                     textAlign: TextAlign.start,
                     style: AllScreensConstant.customTextStyle(
                         MediaQuery.of(context).size.width /65,
@@ -100,8 +106,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                       MaterialPageRoute(
                           builder: (context) => const MobileCareerHomeScreen()),
                     );},
-                    text: "Explore",
-                    padding: const EdgeInsets.symmetric(
+                    text: MobileAppString.mobileExplore,
+                    padding: EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 20,
                     ),
@@ -146,7 +152,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const MobileCareerHomeScreen()),
+                              builder: (context) => const CareerHomeScreen()),
                         );
                       },
                       child: Icon(
@@ -181,7 +187,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const MobileFeaturesHomeScreen()),
+                              builder: (context) => const FeaturesHomeScreen()),
                         );
                       },
                       child: Icon(

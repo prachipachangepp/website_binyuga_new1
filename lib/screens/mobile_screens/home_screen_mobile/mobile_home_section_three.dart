@@ -12,6 +12,7 @@ class MobileHomeSectionThree extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
      height: AppSize.s400,
+    //  width: 400,
       color: ColorManager.white,
       child: Stack(
         children: [
@@ -20,26 +21,26 @@ class MobileHomeSectionThree extends StatelessWidget {
             'images/union.png',
             fit: BoxFit.fill,
             height: AppSize.s400,
-            width: AppSize.s470,
+            width:AppSize.s470,
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom:AppPadding.p100,top:AppPadding.p20,left:15),
+            padding: const EdgeInsets.only(bottom:100,top:AppPadding.p20,left:15),
             child: Row(
               children: [
                 Image.asset(
                   "images/union_1.png",
-                  height:  AppSize.s126,
-                  width:  AppSize.s180,
+                  height: AppSize.s126,
+                  width: AppSize.s180,
                 ),
 
 
                 Padding(
                   padding: const EdgeInsets.only(left:20),
                   child: Text(
-                    AppString.unionTxt1,
+                    MobileAppString.mobileunionTxt1,
                     style: TextStyle(
                       // fontWeight: FontWeightManager.medium,
-                        fontSize: FontSize.s7,
+                        fontSize: FontSize.s8,
                         color: ColorManager.white),
                   ),
                 ),
@@ -53,7 +54,7 @@ class MobileHomeSectionThree extends StatelessWidget {
                 child: Image.asset(
                   "images/rectangle.png",
                   height: AppSize.s145,
-                  width:AppSize.s200,
+                  width: AppSize.s200,
                 ),
               ),
             ],
@@ -70,10 +71,10 @@ class MobileHomeSectionThree extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left:10,top:AppPadding.p230),
                 child: Text(
-                  AppString.unionTxt3,
+                  MobileAppString.mobileunionTxt3,
                   style: TextStyle(
                      // fontWeight: FontWeightManager.medium,
-                      fontSize: FontSize.s7,
+                      fontSize: FontSize.s8,
                       color: ColorManager.white),
                 ),
               ),
@@ -84,7 +85,7 @@ class MobileHomeSectionThree extends StatelessWidget {
                 padding: const EdgeInsets.only(top:AppPadding.p230,left:12),
                 child: Image.asset(
                   "images/union_2.png",
-                  height:AppPadding.p126,
+                  height:AppSize.s126,
                   width: AppSize.s180,
                 ),
               ),
@@ -94,8 +95,8 @@ class MobileHomeSectionThree extends StatelessWidget {
             padding: const EdgeInsets.only(top:AppPadding.p220,left:155),
             child: Image.asset(
               "images/rectangle.png",
-              height:AppSize.s145,
-              width:AppSize.s200,
+              height: AppSize.s145,
+              width: AppSize.s200,
                       ),
           ),
         ],
