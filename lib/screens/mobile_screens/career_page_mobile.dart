@@ -3,7 +3,6 @@ import 'package:website_binyuga_new1/presentation/color_manager.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/bottom_nav_bar_mobile.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/description_page_constant_mobile.dart';
 import '../../presentation/value_manager.dart';
-import '../constant_screens/website_constant/responsive_app_bar.dart';
 import 'career_screen_mobile/mobile_career_section_four.dart';
 import 'career_screen_mobile/mobile_career_section_one.dart';
 import 'career_screen_mobile/mobile_career_section_three.dart';
@@ -15,10 +14,6 @@ class MobileCareerHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const PreferredSize(
-        preferredSize: Size.fromHeight(kToolbarHeight),
-        child: ResponsiveAppBar(),
-      ),
       body: ListView(
         physics: const BouncingScrollPhysics(),
         children: [

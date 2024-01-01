@@ -24,9 +24,6 @@ class MobileHomeSectionOne extends StatefulWidget {
 }
 
 class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
-  bool _lights = false;
-  bool _isSearchBarVisible = false;
-  GlobalKey _searchKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -47,7 +44,6 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             padding: EdgeInsets.only(left: 170, top: 120),
             child: Image.asset(
               "images/boy.png",
-              //  height: MediaQuery.of(context).size.height / 1.3,
               height: AppSize.s490,
               width: MediaQuery.of(context).size.width / 2.2,
             ),
@@ -56,11 +52,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             padding: const EdgeInsets.only(top: 70.0,left: 10),
             child: GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) =>  MyDrawer()),
-                );
+                showDialog(context: context,builder: (BuildContext context)=>
+                    Row(mainAxisAlignment: MainAxisAlignment.start, children: [MyDrawer()]));
               },
               child: Padding(
                 padding: const EdgeInsets.only(top:10),
@@ -107,7 +100,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                           builder: (context) => const MobileCareerHomeScreen()),
                     );},
                     text: "Explore",
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 20,
                     ),
