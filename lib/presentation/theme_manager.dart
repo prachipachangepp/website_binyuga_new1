@@ -86,7 +86,7 @@ class LastColumnScreen {
     );
   }
 }
-///mobilr
+///mobile
 class LastColumnScreenMobile {
   static double getFontSize(BuildContext context) {
     return MediaQuery.of(context).size.width /60;
@@ -236,13 +236,14 @@ class  CareerSculptTextConstant  {
 class   CareerLongTxtConstant {
 
   static double getNewFontSizeCareer(BuildContext context) {
-    return MediaQuery.of(context).size.width / 35;
+    return MediaQuery.of(context).size.width / 30;
   }
   static TextStyle  careerlongTextStyle(BuildContext context){
     return GoogleFonts.inter(
-      fontWeight: FontWeightManager.medium,
+      fontWeight: FontWeightManager.semiBold,
       fontSize: getNewFontSizeCareer(context),
       decoration:TextDecoration.none,
+      letterSpacing:-0.011,
       color: ColorManager.white,);
   }
 }

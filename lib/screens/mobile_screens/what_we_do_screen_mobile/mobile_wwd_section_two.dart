@@ -23,6 +23,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
                 padding: const EdgeInsets.only(
                     top: AppPadding.p70,),
                 child: Text(AppString.trustPropelsBuisnessProsperity,
+                       textAlign: TextAlign.center,
                     style: WhatWeDoSubPageConstant.subHomeTextStyle(context)),
               ),
             ],
@@ -39,7 +40,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
                 Image.asset(
                   "images/Rectangle 682.png",
                   height: AppSize.s636,
-                  width: MediaQuery.of(context).size.width / 1.2,
+                  width: MediaQuery.of(context).size.width / 1.15,
                 ),
               ],
             ),
@@ -48,18 +49,18 @@ class MobileWWDSectionTwo extends StatelessWidget {
           ///rectangle
           Padding(
             padding: EdgeInsets.only(
-                left: 70,
+                left: 55,
                 top: 50),
             child: Image.asset(
               'images/rectangle.png',
               height: 680,
-              width: MediaQuery.of(context).size.width / 1.3,
+              width: MediaQuery.of(context).size.width / 1.20,
             ),
           ),
 
           ///inverted comma start
           Padding(
-            padding: const EdgeInsets.only(left:80,top: AppPadding.p200),
+            padding: const EdgeInsets.only(left:65,top: AppPadding.p150),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -73,12 +74,12 @@ class MobileWWDSectionTwo extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(
-                left:100,
-                top:280),
+                left:85,
+                top:255),
             child: Text(AppString.weAreDedicated,
                 style: AllScreensConstant.customTextStyle(
-                  MediaQuery.of(context).size.width / 30,
-                  FontWeightManager.medium,
+                  MediaQuery.of(context).size.width / 27,
+                  FontWeightManager.semiBold,
                   ColorManager.white,
                 )),
           ),
@@ -86,7 +87,7 @@ class MobileWWDSectionTwo extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 right: 100,
-                top: 260),
+                top: 245),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:website_binyuga_new1/presentation/color_manager.dart';
+import 'package:website_binyuga_new1/presentation/value_manager.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/bottom_nav_bar_mobile.dart';
 import 'package:website_binyuga_new1/screens/constant_screens/mobile_constant/description_page_constant_mobile.dart';
-import '../constant_screens/website_constant/bottom_nav_bar.dart';
-import '../constant_screens/website_constant/description_page_constant.dart';
 import '../constant_screens/website_constant/responsive_app_bar.dart';
-import '../website_screens/features_screens/features_section_three.dart';
-import '../website_screens/features_screens/features_section_two.dart';
 import 'feature_screen_mobile/mobile_feature_section_one.dart';
 import 'feature_screen_mobile/mobile_feature_section_three.dart';
 import 'feature_screen_mobile/mobile_feature_section_two.dart';
 
 class MobileFeaturesHomeScreen extends StatefulWidget {
-  const  MobileFeaturesHomeScreen({super.key});
+  const MobileFeaturesHomeScreen({super.key});
 
   @override
-  State< MobileFeaturesHomeScreen> createState() => _MobileFeaturesHomeScreenState();
+  State<MobileFeaturesHomeScreen> createState() =>
+      _MobileFeaturesHomeScreenState();
 }
 
-class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
+class _MobileFeaturesHomeScreenState extends State<MobileFeaturesHomeScreen> {
   @override
   Widget build(BuildContext context) {
     Size screenWidth;
@@ -38,8 +37,8 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                         Expanded(
                             flex: 2,
                             child: Container(
-                                color: Colors.white,
-                                child: MobileFeatureSectionOne())),
+                                color: ColorManager.white,
+                                child: const MobileFeatureSectionOne())),
                       ],
                     ),
                     Row(
@@ -47,8 +46,8 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                         Expanded(
                             flex: 2,
                             child: Container(
-                              height: 500,
-                                child: MobileFeatureSectionTwo())),
+                                height: AppSize.s500,
+                                child: const MobileFeatureSectionTwo())),
                       ],
                     ),
                     Row(
@@ -56,17 +55,8 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                         Expanded(
                             flex: 1,
                             child: Container(
-                              height: 400,
-                                //color:Colors.grey,
-                                child: MobileFeatureSectionThree())),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Expanded(
-                            flex: 2,
-                            child:
-                            Container(child: DescriptionScreenConstantMobile())),
+                                height: AppSize.s400,
+                                child: const MobileFeatureSectionThree())),
                       ],
                     ),
                     Row(
@@ -74,8 +64,17 @@ class _MobileFeaturesHomeScreenState extends State< MobileFeaturesHomeScreen> {
                         Expanded(
                             flex: 2,
                             child: Container(
-                                height: 100,
-                                width: MediaQuery.of(context).size.width,child: BottomNavBarScreenMobile())),
+                                child: const DescriptionScreenConstantMobile())),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                            flex: 2,
+                            child: Container(
+                                height: AppSize.s100,
+                                width: MediaQuery.of(context).size.width,
+                                child: const BottomNavBarScreenMobile())),
                       ],
                     ),
                   ],
