@@ -226,8 +226,8 @@ class MobileAppString {
   /// Mobile WhatWeDoScreenPage
 
   static const String mobilewwdSecondtxt = 'Our company harnesses cutting-edge '
-  '\ntechnologies and strategic IT solutions \n'
-  'to empower business. We believe that '
+  '\ntechnologies and strategic IT solutions '
+  '\nto empower business. We believe that '
   '\ninnovation and technology are the '
   '\ndriving forces behind success in the '
   '\ndigital age. ';
