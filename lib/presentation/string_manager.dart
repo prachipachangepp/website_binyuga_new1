@@ -206,7 +206,6 @@ class MobileAppString {
 
   static const String mobileunionTxt1 = "We adopt a fresh and distinctive "
   "\napproach for every project, \ninvesting time to deeply."
-
   '\nContinual learning is at our core, '
   '\nallowing us to embrace new '
   '\ntrends and technologies and '

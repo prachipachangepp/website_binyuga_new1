@@ -40,7 +40,7 @@ class MobileHomeSectionThree extends StatelessWidget {
                     MobileAppString.mobileunionTxt1,
                     style: TextStyle(
                       // fontWeight: FontWeightManager.medium,
-                        fontSize: FontSize.s7,
+                        fontSize: FontSize.s8,
                         color: ColorManager.white),
                   ),
                 ),
@@ -74,7 +74,7 @@ class MobileHomeSectionThree extends StatelessWidget {
                   MobileAppString.mobileunionTxt3,
                   style: TextStyle(
                      // fontWeight: FontWeightManager.medium,
-                      fontSize: 7,
+                      fontSize: FontSize.s8,
                       color: ColorManager.white),
                 ),
               ),
