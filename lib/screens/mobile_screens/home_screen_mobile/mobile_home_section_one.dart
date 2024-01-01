@@ -31,7 +31,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      height: 420,
+      height:AppSize.s420,
       child: Stack(
         children: [
           /// Base Image
@@ -53,7 +53,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 70.0,left: 10),
+            padding: const EdgeInsets.only(top: AppPadding.p70,left: 10),
             child: GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -63,7 +63,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 );
               },
               child: Padding(
-                padding: const EdgeInsets.only(top:10),
+                padding: const EdgeInsets.only(top:AppPadding.p10),
                 child: Icon(
                   Icons.dehaze_rounded,
                   color: ColorManager.white,
@@ -106,7 +106,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                       MaterialPageRoute(
                           builder: (context) => const MobileCareerHomeScreen()),
                     );},
-                    text: "Explore",
+                    text: MobileAppString.mobileExplore,
                     padding: EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 20,
