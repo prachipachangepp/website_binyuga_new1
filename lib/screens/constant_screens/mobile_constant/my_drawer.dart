@@ -11,8 +11,8 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        height:MediaQuery.of(context).size.height / 30,
-        width:MediaQuery.of(context).size.height / 50,
+       // height:MediaQuery.of(context).size.height / 30,
+        width:MediaQuery.of(context).size.width * 1,
         color: Color(0xff210B32),
         child: ListView(
           padding: EdgeInsets.zero,
