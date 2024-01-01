@@ -74,7 +74,7 @@ class MobileHomeSectionThree extends StatelessWidget {
                   MobileAppString.mobileunionTxt3,
                   style: TextStyle(
                      // fontWeight: FontWeightManager.medium,
-                      fontSize: FontSize.s8,
+                      fontSize: 8,
                       color: ColorManager.white),
                 ),
               ),
