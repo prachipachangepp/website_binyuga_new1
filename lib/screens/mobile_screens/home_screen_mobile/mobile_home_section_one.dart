@@ -51,14 +51,17 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 70.0,left: 10),
+            padding: const EdgeInsets.only(top: 70.0, left: 10),
             child: GestureDetector(
               onTap: () {
-                showDialog(context: context,builder: (BuildContext context)=>
-                    Row(mainAxisAlignment: MainAxisAlignment.start, children: [MyDrawer()]));
+                showDialog(
+                    context: context,
+                    builder: (BuildContext context) => Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [MyDrawer()]));
               },
               child: Padding(
-                padding: const EdgeInsets.only(top:10),
+                padding: const EdgeInsets.only(top: 10),
                 child: Icon(
                   Icons.dehaze_rounded,
                   color: ColorManager.white,
@@ -70,7 +73,7 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
           Padding(
             padding: EdgeInsets.only(
                 top: AppPadding.p80,
-                left: MediaQuery.of(context).size.width /5.5),
+                left: MediaQuery.of(context).size.width / 5.5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -82,11 +85,12 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                 const SizedBox(
                   height: AppSize.s10,
                 ),
+
                 ///hometxt 2
                 Text(AppString.homesTxt2,
                     textAlign: TextAlign.start,
                     style: AllScreensConstant.customTextStyle(
-                        MediaQuery.of(context).size.width /65,
+                        MediaQuery.of(context).size.width / 65,
                         FontWeightManager.medium,
                         ColorManager.lightBlue)),
                 const SizedBox(
@@ -95,22 +99,25 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
 
                 ///button
                 AppFilledButton(
-                    onClick: (){ Navigator.push(
+                  onClick: () {
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const MobileCareerHomeScreen()),
-                    );},
-                    text: "Explore",
-                    padding: EdgeInsets.symmetric(
-                      vertical: 10,
-                      horizontal: 20,
-                    ),
-                    color: ColorManager.white,
-                    textStyle: TextStyle(
-                        fontWeight: FontWeightManager.semiBold,
-                        fontSize: FontSize.s13,
-                        letterSpacing: -0.011,
-                        color: ColorManager.black),),
+                    );
+                  },
+                  text: "Explore",
+                  padding: EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 20,
+                  ),
+                  color: ColorManager.white,
+                  textStyle: TextStyle(
+                      fontWeight: FontWeightManager.semiBold,
+                      fontSize: FontSize.s13,
+                      letterSpacing: -0.011,
+                      color: ColorManager.black),
+                ),
               ],
             ),
           ),
@@ -146,7 +153,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const MobileCareerHomeScreen()),
+                              builder: (context) =>
+                                  const MobileCareerHomeScreen()),
                         );
                       },
                       child: Icon(
@@ -181,7 +189,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const MobileFeaturesHomeScreen()),
+                              builder: (context) =>
+                                  const MobileFeaturesHomeScreen()),
                         );
                       },
                       child: Icon(
@@ -213,10 +222,8 @@ class _MobileHomeSectionOneState extends State<MobileHomeSectionOne> {
               ],
             ),
           ),
-
         ],
       ),
     );
   }
-
 }
